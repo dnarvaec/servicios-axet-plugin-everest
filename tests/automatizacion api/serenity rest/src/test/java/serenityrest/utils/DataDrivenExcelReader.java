@@ -23,8 +23,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 /**
- * Lee el workbook datadriven.xlsx y reconstruye los payloads anidados usados
- * por las pruebas. La hoja recaudo comparte consulta_factura y pago_factura.
+ * Lee el workbook datadriven.xlsx y reconstruye, por caso, el payload, los
+ * headers y el resultado esperado usados por las pruebas. Las columnas con
+ * prefijo "header." y "expected." se extraen aparte del body de la petición.
+ * La hoja recaudo comparte consulta_factura y pago_factura por prefijo de columna.
  */
 public final class DataDrivenExcelReader {
 
@@ -33,9 +35,20 @@ public final class DataDrivenExcelReader {
     );
     private static final DataFormatter DATA_FORMATTER = new DataFormatter(Locale.US);
     private static final Pattern PATH_SEGMENT = Pattern.compile("([^\\[\\]]+)(?:\\[(\\d+)\\])?");
+    private static final String HEADER_NODE = "header";
+    private static final String EXPECTED_NODE = "expected";
 
-    // Cache indexado por (RequestType, caso) — el número de caso es el selector maestro
-    private static final Map<RequestType, Map<Integer, Map<String, Object>>> ALL_PAYLOADS = loadAllPayloads();
+    // Caches indexados por (RequestType, caso) — el número de caso es el selector maestro
+    private static final Map<RequestType, Map<Integer, Map<String, Object>>> ALL_PAYLOADS;
+    private static final Map<RequestType, Map<Integer, Map<String, String>>> ALL_HEADERS;
+    private static final Map<RequestType, Map<Integer, Map<String, String>>> ALL_EXPECTED;
+
+    static {
+        LoadedWorkbook loaded = loadAllPayloads();
+        ALL_PAYLOADS = loaded.payloads();
+        ALL_HEADERS = loaded.headers();
+        ALL_EXPECTED = loaded.expected();
+    }
 
     private DataDrivenExcelReader() {}
 
@@ -43,49 +56,103 @@ public final class DataDrivenExcelReader {
         return payloadFor(RequestType.RETIRO, caso);
     }
 
+    public static Map<String, String> retiroHeaders(int caso) {
+        return headersFor(RequestType.RETIRO, caso);
+    }
+
+    public static Map<String, String> retiroExpected(int caso) {
+        return expectedFor(RequestType.RETIRO, caso);
+    }
+
     public static Map<String, Object> depositoPayload(int caso) {
         return payloadFor(RequestType.DEPOSITO, caso);
     }
 
-    public static Map<String, Object> consultaFacturaPayload(int caso, String trnRqUID) {
-        Map<String, Object> payload = payloadFor(RequestType.CONSULTA_FACTURA, caso);
-        Map<String, Object> objOperacion = childMap(payload, "obj_operacion");
-        Map<String, Object> transaction = childMap(objOperacion, "Transaction");
-        transaction.put("TrnRqUID", trnRqUID);
-        return payload;
+    public static Map<String, String> depositoHeaders(int caso) {
+        return headersFor(RequestType.DEPOSITO, caso);
+    }
+
+    public static Map<String, String> depositoExpected(int caso) {
+        return expectedFor(RequestType.DEPOSITO, caso);
+    }
+
+    public static Map<String, Object> consultaFacturaPayload(int caso) {
+        return payloadFor(RequestType.CONSULTA_FACTURA, caso);
+    }
+
+    public static Map<String, String> consultaFacturaHeaders(int caso) {
+        return headersFor(RequestType.CONSULTA_FACTURA, caso);
+    }
+
+    public static Map<String, String> consultaFacturaExpected(int caso) {
+        return expectedFor(RequestType.CONSULTA_FACTURA, caso);
     }
 
     public static Map<String, Object> pagoFacturaPayload(int caso) {
         return payloadFor(RequestType.PAGO_FACTURA, caso);
     }
 
+    public static Map<String, String> pagoFacturaHeaders(int caso) {
+        return headersFor(RequestType.PAGO_FACTURA, caso);
+    }
+
+    public static Map<String, String> pagoFacturaExpected(int caso) {
+        return expectedFor(RequestType.PAGO_FACTURA, caso);
+    }
+
     public static Map<String, Object> pagoObligacionPayload(int caso) {
         return payloadFor(RequestType.PAGO_OBLIGACIONES, caso);
     }
 
+    public static Map<String, String> pagoObligacionHeaders(int caso) {
+        return headersFor(RequestType.PAGO_OBLIGACIONES, caso);
+    }
+
+    public static Map<String, String> pagoObligacionExpected(int caso) {
+        return expectedFor(RequestType.PAGO_OBLIGACIONES, caso);
+    }
+
     private static Map<String, Object> payloadFor(RequestType requestType, int caso) {
-        Map<Integer, Map<String, Object>> byCase = ALL_PAYLOADS.get(requestType);
+        Map<String, Object> payload = lookup(ALL_PAYLOADS, requestType, caso);
+        return deepCopyMap(payload);
+    }
+
+    private static Map<String, String> headersFor(RequestType requestType, int caso) {
+        return new LinkedHashMap<>(lookup(ALL_HEADERS, requestType, caso));
+    }
+
+    private static Map<String, String> expectedFor(RequestType requestType, int caso) {
+        return new LinkedHashMap<>(lookup(ALL_EXPECTED, requestType, caso));
+    }
+
+    private static <V> V lookup(Map<RequestType, Map<Integer, V>> source, RequestType requestType, int caso) {
+        Map<Integer, V> byCase = source.get(requestType);
         if (byCase == null) {
-            throw new IllegalStateException("No existe payload configurado para " + requestType);
+            throw new IllegalStateException("No existe informaci\u00f3n configurada para " + requestType);
         }
-        Map<String, Object> payload = byCase.get(caso);
-        if (payload == null) {
+        V value = byCase.get(caso);
+        if (value == null) {
             throw new IllegalStateException(
                 "No existe el caso " + caso + " para " + requestType + ". Casos disponibles: " + byCase.keySet()
             );
         }
-        return deepCopyMap(payload);
+        return value;
     }
 
-    private static Map<RequestType, Map<Integer, Map<String, Object>>> loadAllPayloads() {
+    private static LoadedWorkbook loadAllPayloads() {
         EnumMap<RequestType, Map<Integer, Map<String, Object>>> payloads = new EnumMap<>(RequestType.class);
+        EnumMap<RequestType, Map<Integer, Map<String, String>>> headers = new EnumMap<>(RequestType.class);
+        EnumMap<RequestType, Map<Integer, Map<String, String>>> expected = new EnumMap<>(RequestType.class);
 
         try (InputStream inputStream = Files.newInputStream(WORKBOOK_PATH);
              Workbook workbook = WorkbookFactory.create(inputStream)) {
             for (RequestType requestType : RequestType.values()) {
-                payloads.put(requestType, readAllPayloads(workbook, requestType));
+                SheetData sheetData = readSheetData(workbook, requestType);
+                payloads.put(requestType, sheetData.payloads());
+                headers.put(requestType, sheetData.headers());
+                expected.put(requestType, sheetData.expected());
             }
-            return payloads;
+            return new LoadedWorkbook(payloads, headers, expected);
         } catch (IOException exception) {
             throw new IllegalStateException(
                 "No fue posible leer el workbook datadriven: " + WORKBOOK_PATH.toAbsolutePath(),
@@ -94,15 +161,17 @@ public final class DataDrivenExcelReader {
         }
     }
 
-    private static Map<Integer, Map<String, Object>> readAllPayloads(Workbook workbook, RequestType requestType) {
+    private static SheetData readSheetData(Workbook workbook, RequestType requestType) {
         Sheet sheet = workbook.getSheet(requestType.sheetName);
         if (sheet == null) {
             throw new IllegalStateException("No existe la hoja '" + requestType.sheetName + "' en datadriven.xlsx");
         }
 
-        Map<Integer, String> headers = headersOf(sheet.getRow(0));
-        Integer casoCol = casoColumn(headers);
-        LinkedHashMap<Integer, Map<String, Object>> byCase = new LinkedHashMap<>();
+        Map<Integer, String> headerColumns = headersOf(sheet.getRow(0));
+        Integer casoCol = casoColumn(headerColumns);
+        LinkedHashMap<Integer, Map<String, Object>> byCasePayload = new LinkedHashMap<>();
+        LinkedHashMap<Integer, Map<String, String>> byCaseHeaders = new LinkedHashMap<>();
+        LinkedHashMap<Integer, Map<String, String>> byCaseExpected = new LinkedHashMap<>();
 
         for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
             Row row = sheet.getRow(rowIndex);
@@ -123,7 +192,7 @@ public final class DataDrivenExcelReader {
                 continue;
             }
 
-            Map<String, Object> flattened = flattenedValues(headers, row, requestType);
+            Map<String, Object> flattened = flattenedValues(headerColumns, row, requestType);
             if (flattened.isEmpty()) {
                 continue;
             }
@@ -132,16 +201,52 @@ public final class DataDrivenExcelReader {
             for (Map.Entry<String, Object> entry : flattened.entrySet()) {
                 putNestedValue(nested, entry.getKey(), entry.getValue());
             }
-            byCase.put(caso, nested);
+
+            byCaseHeaders.put(caso, toStringMap(nested.remove(HEADER_NODE)));
+            byCaseExpected.put(caso, toStringMap(nested.remove(EXPECTED_NODE)));
+            byCasePayload.put(caso, nested);
         }
 
-        if (byCase.isEmpty()) {
+        if (byCasePayload.isEmpty()) {
             throw new IllegalStateException(
                 "No se encontraron filas con columna 'Caso' para " + requestType + " en la hoja '" + requestType.sheetName + "'"
             );
         }
-        return byCase;
+        return new SheetData(byCasePayload, byCaseHeaders, byCaseExpected);
     }
+
+    @SuppressWarnings("unchecked")
+    private static Map<String, String> toStringMap(Object node) {
+        LinkedHashMap<String, String> result = new LinkedHashMap<>();
+        if (node instanceof Map<?, ?> mapNode) {
+            for (Map.Entry<?, ?> entry : ((Map<String, Object>) mapNode).entrySet()) {
+                result.put(String.valueOf(entry.getKey()), stringify(entry.getValue()));
+            }
+        }
+        return result;
+    }
+
+    private static String stringify(Object value) {
+        if (value == null) {
+            return "";
+        }
+        if (value instanceof BigDecimal bigDecimal) {
+            return bigDecimal.toPlainString();
+        }
+        return String.valueOf(value);
+    }
+
+    private record LoadedWorkbook(
+        Map<RequestType, Map<Integer, Map<String, Object>>> payloads,
+        Map<RequestType, Map<Integer, Map<String, String>>> headers,
+        Map<RequestType, Map<Integer, Map<String, String>>> expected
+    ) {}
+
+    private record SheetData(
+        Map<Integer, Map<String, Object>> payloads,
+        Map<Integer, Map<String, String>> headers,
+        Map<Integer, Map<String, String>> expected
+    ) {}
 
     private static Map<Integer, String> headersOf(Row headerRow) {
         if (headerRow == null) {

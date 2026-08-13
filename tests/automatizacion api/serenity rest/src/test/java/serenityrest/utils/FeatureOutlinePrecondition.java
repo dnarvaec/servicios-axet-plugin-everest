@@ -12,6 +12,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
@@ -20,10 +24,13 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 /**
- * Precondicion de ejecucion:
- * 1) Lee datadriven.xlsx y cuenta las filas de datos por hoja.
- * 2) Convierte escenarios a Scenario Outline (Esquema del escenario).
- * 3) Actualiza la seccion Ejemplos de cada escenario con los casos detectados.
+ * Precondicion de ejecucion — 100% data-driven, sin bindings de archivos hardcodeados:
+ * 1) Descubre TODOS los .feature bajo features/.
+ * 2) Para cada Esquema del escenario cuyo bloque "Ejemplos:" declare
+ *    ##@externaldata@<path>@<hoja>, regenera la tabla de Ejemplos leyendo de esa
+ *    hoja EXACTAMENTE las columnas que el escenario referencia como <placeholder>.
+ * Un escenario nuevo con N filas en su hoja, o una hoja/columna nueva, no requiere
+ * tocar esta clase — solo el .feature (marcador + placeholders) y el Excel.
  */
 public final class FeatureOutlinePrecondition {
 
@@ -31,14 +38,9 @@ public final class FeatureOutlinePrecondition {
     private static final Path FEATURES_ROOT = Paths.get("src", "test", "resources", "features");
     private static final Path TARGET_FEATURES_ROOT = Paths.get("target", "test-classes", "features");
 
-    private static final List<FeatureSheetBinding> BINDINGS = List.of(
-        new FeatureSheetBinding(Paths.get("retiro", "retiro.feature"), "retiro"),
-        new FeatureSheetBinding(Paths.get("deposito", "deposito.feature"), "deposito"),
-        new FeatureSheetBinding(Paths.get("recaudo", "recaudo.feature"), "recaudo"),
-        new FeatureSheetBinding(Paths.get("pagos", "pago-obligaciones.feature"), "pago_obligaciones")
-    );
-
     private static final DataFormatter FORMATTER = new DataFormatter(Locale.US);
+    private static final Pattern PLACEHOLDER = Pattern.compile("<([A-Za-z0-9_]+)>");
+    private static final Pattern EXTERNAL_DATA_MARKER = Pattern.compile("##@externaldata@[^@]+@(.+)$");
 
     private FeatureOutlinePrecondition() {
     }
@@ -48,81 +50,37 @@ public final class FeatureOutlinePrecondition {
     }
 
     public static synchronized void synchronizeFeaturesWithExcel() {
-        Map<String, Integer> rowsPerSheet = countRowsPerSheet();
-
-        for (FeatureSheetBinding binding : BINDINGS) {
-            Integer caseCount = rowsPerSheet.get(binding.sheetName());
-            if (caseCount == null || caseCount <= 0) {
-                throw new IllegalStateException("La hoja '" + binding.sheetName() + "' no tiene filas de datos para generar escenarios.");
-            }
-
-            Path featurePath = FEATURES_ROOT.resolve(binding.featurePath());
-            if (!Files.exists(featurePath)) {
-                throw new IllegalStateException("No existe el feature esperado: " + featurePath.toAbsolutePath());
-            }
-
-            rewriteFeatureAsOutline(featurePath, caseCount, binding.sheetName());
-        }
-
-        mirrorFeaturesToTarget();
-    }
-
-    private static Map<String, Integer> countRowsPerSheet() {
-        LinkedHashMap<String, Integer> counts = new LinkedHashMap<>();
+        List<Path> featureFiles = discoverFeatureFiles();
 
         try (InputStream inputStream = Files.newInputStream(WORKBOOK_PATH);
              Workbook workbook = WorkbookFactory.create(inputStream)) {
-
-            for (FeatureSheetBinding binding : BINDINGS) {
-                Sheet sheet = workbook.getSheet(binding.sheetName());
-                if (sheet == null) {
-                    throw new IllegalStateException(
-                        "No existe la hoja '" + binding.sheetName() + "' en " + WORKBOOK_PATH.toAbsolutePath()
-                    );
-                }
-                counts.put(binding.sheetName(), countDataRows(sheet));
+            for (Path featurePath : featureFiles) {
+                rewriteFeatureAsOutline(featurePath, workbook);
             }
-
-            return counts;
         } catch (IOException exception) {
             throw new IllegalStateException(
                 "No fue posible leer el archivo datadriven: " + WORKBOOK_PATH.toAbsolutePath(),
                 exception
             );
         }
+
+        mirrorFeaturesToTarget(featureFiles);
     }
 
-    private static int countDataRows(Sheet sheet) {
-        int count = 0;
-        for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
-            Row row = sheet.getRow(rowIndex);
-            if (row == null) {
-                continue;
-            }
-            if (hasAnyValue(row)) {
-                count++;
-            }
+    private static List<Path> discoverFeatureFiles() {
+        if (!Files.isDirectory(FEATURES_ROOT)) {
+            return List.of();
         }
-        return count;
+        try (Stream<Path> walk = Files.walk(FEATURES_ROOT)) {
+            return walk.filter(path -> path.toString().endsWith(".feature"))
+                .sorted()
+                .collect(Collectors.toList());
+        } catch (IOException exception) {
+            throw new IllegalStateException("No fue posible recorrer " + FEATURES_ROOT.toAbsolutePath(), exception);
+        }
     }
 
-    private static boolean hasAnyValue(Row row) {
-        short firstCell = row.getFirstCellNum();
-        short lastCell = row.getLastCellNum();
-        if (firstCell < 0 || lastCell < 0) {
-            return false;
-        }
-
-        for (int col = firstCell; col < lastCell; col++) {
-            String value = FORMATTER.formatCellValue(row.getCell(col)).trim();
-            if (!value.isEmpty()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private static void rewriteFeatureAsOutline(Path featurePath, int caseCount, String sheetName) {
+    private static void rewriteFeatureAsOutline(Path featurePath, Workbook workbook) {
         List<String> rawLines;
         try {
             rawLines = Files.readAllLines(featurePath, StandardCharsets.UTF_8);
@@ -130,6 +88,8 @@ public final class FeatureOutlinePrecondition {
             throw new IllegalStateException("No fue posible leer el feature: " + featurePath.toAbsolutePath(), exception);
         }
 
+        // La hoja que gobierna cada escenario se lee de su propio marcador ANTES de limpiarlo.
+        List<String> sheetByScenarioOrdinal = sheetNameByScenarioOrdinal(rawLines);
         List<String> lines = removeAutoGeneratedExampleBlocks(rawLines);
         List<ScenarioBlock> blocks = parseScenarioBlocks(lines);
         if (blocks.isEmpty()) {
@@ -138,15 +98,16 @@ public final class FeatureOutlinePrecondition {
 
         List<String> output = new ArrayList<>();
         int cursor = 0;
-        for (ScenarioBlock block : blocks) {
+        for (int ordinal = 0; ordinal < blocks.size(); ordinal++) {
+            ScenarioBlock block = blocks.get(ordinal);
             output.addAll(lines.subList(cursor, block.startLine()));
 
-            // Mantener escenarios con Ejemplos estáticos propios (ej. no-happy-path MOCK-x)
-            // Los que tenían ##@externaldata ya perdieron sus Ejemplos en removeAutoGeneratedExampleBlocks
-            if (block.isParameterizedOutline() && block.examplesStartLine() >= 0) {
-                output.addAll(lines.subList(block.startLine(), block.endLineExclusive()));
+            String sheetName = ordinal < sheetByScenarioOrdinal.size() ? sheetByScenarioOrdinal.get(ordinal) : null;
+            if (sheetName != null) {
+                output.addAll(renderOutlineBlock(lines, block, workbook, sheetName));
             } else {
-                output.addAll(renderOutlineBlock(lines, block, caseCount, sheetName));
+                // Sin marcador ##@externaldata — escenario estático, no gestionado por Excel.
+                output.addAll(lines.subList(block.startLine(), block.endLineExclusive()));
             }
             cursor = block.endLineExclusive();
         }
@@ -161,6 +122,27 @@ public final class FeatureOutlinePrecondition {
         }
     }
 
+    private static List<String> sheetNameByScenarioOrdinal(List<String> rawLines) {
+        List<String> sheetByOrdinal = new ArrayList<>();
+        int currentOrdinal = -1;
+
+        for (String rawLine : rawLines) {
+            String trimmed = rawLine.trim();
+            if (isScenarioLine(trimmed)) {
+                currentOrdinal++;
+                sheetByOrdinal.add(null);
+                continue;
+            }
+
+            Matcher marker = EXTERNAL_DATA_MARKER.matcher(trimmed);
+            if (marker.matches() && currentOrdinal >= 0) {
+                sheetByOrdinal.set(currentOrdinal, marker.group(1).trim());
+            }
+        }
+
+        return sheetByOrdinal;
+    }
+
     private static List<String> removeAutoGeneratedExampleBlocks(List<String> lines) {
         List<String> cleaned = new ArrayList<>();
 
@@ -170,7 +152,7 @@ public final class FeatureOutlinePrecondition {
 
             if ((trimmed.equals("Ejemplos:") || trimmed.equals("Examples:"))
                 && i + 1 < lines.size()
-                && lines.get(i + 1).contains("##@externaldata@src/test/resources/datadriven/datadriven.xlsx@")) {
+                && lines.get(i + 1).trim().startsWith("##@externaldata@")) {
 
                 i += 2;
                 while (i < lines.size()) {
@@ -196,8 +178,7 @@ public final class FeatureOutlinePrecondition {
         List<Integer> starts = new ArrayList<>();
 
         for (int i = 0; i < lines.size(); i++) {
-            String trimmed = lines.get(i).trim();
-            if (isScenarioLine(trimmed)) {
+            if (isScenarioLine(lines.get(i).trim())) {
                 starts.add(i);
             }
         }
@@ -226,23 +207,15 @@ public final class FeatureOutlinePrecondition {
     }
 
     private static ScenarioBlock buildBlock(List<String> lines, int start, int endExclusive) {
-        boolean hasPlaceholders = false;
         int examplesStart = -1;
-
         for (int i = start; i < endExclusive; i++) {
-            String line = lines.get(i);
-            String trimmed = line.trim();
-
-            if (examplesStart < 0 && (trimmed.startsWith("Ejemplos:") || trimmed.startsWith("Examples:"))) {
+            String trimmed = lines.get(i).trim();
+            if (trimmed.startsWith("Ejemplos:") || trimmed.startsWith("Examples:")) {
                 examplesStart = i;
-            }
-
-            if (line.contains("<") && line.contains(">")) {
-                hasPlaceholders = true;
+                break;
             }
         }
-
-        return new ScenarioBlock(start, endExclusive, examplesStart, hasPlaceholders);
+        return new ScenarioBlock(start, endExclusive, examplesStart);
     }
 
     private static boolean isScenarioLine(String trimmedLine) {
@@ -252,7 +225,7 @@ public final class FeatureOutlinePrecondition {
     private static List<String> renderOutlineBlock(
         List<String> lines,
         ScenarioBlock block,
-        int caseCount,
+        Workbook workbook,
         String sheetName
     ) {
         List<String> rendered = new ArrayList<>();
@@ -261,22 +234,110 @@ public final class FeatureOutlinePrecondition {
         rendered.add(toScenarioOutlineLine(scenarioLine));
 
         int contentEnd = block.examplesStartLine() >= 0 ? block.examplesStartLine() : block.endLineExclusive();
+        List<String> placeholders = new ArrayList<>();
         for (int i = block.startLine() + 1; i < contentEnd; i++) {
-            rendered.add(lines.get(i));
+            String line = lines.get(i);
+            rendered.add(line);
+            collectPlaceholders(line, placeholders);
+        }
+
+        if (placeholders.isEmpty()) {
+            throw new IllegalStateException(
+                "El escenario en la l\u00ednea " + (block.startLine() + 1)
+                    + " declara ##@externaldata@..@" + sheetName + " pero no usa ning\u00fan <placeholder>."
+            );
         }
 
         if (!rendered.isEmpty() && !rendered.get(rendered.size() - 1).trim().isEmpty()) {
             rendered.add("");
         }
 
+        List<List<String>> rows = readExampleRows(workbook, sheetName, placeholders);
+
         rendered.add("    Ejemplos:");
         rendered.add("      ##@externaldata@src/test/resources/datadriven/datadriven.xlsx@" + sheetName);
-        rendered.add("      | Caso |");
-        for (int i = 1; i <= caseCount; i++) {
-            rendered.add("      |" + i + "|");
+        rendered.add("      | " + String.join(" | ", placeholders) + " |");
+        for (List<String> row : rows) {
+            rendered.add("      |" + String.join("|", row) + "|");
         }
 
         return rendered;
+    }
+
+    private static void collectPlaceholders(String line, List<String> placeholders) {
+        Matcher matcher = PLACEHOLDER.matcher(line);
+        while (matcher.find()) {
+            String name = matcher.group(1);
+            if (!placeholders.contains(name)) {
+                placeholders.add(name);
+            }
+        }
+    }
+
+    private static List<List<String>> readExampleRows(Workbook workbook, String sheetName, List<String> columnNames) {
+        Sheet sheet = workbook.getSheet(sheetName);
+        if (sheet == null) {
+            throw new IllegalStateException("No existe la hoja '" + sheetName + "' en datadriven.xlsx");
+        }
+
+        Row headerRow = sheet.getRow(0);
+        if (headerRow == null) {
+            throw new IllegalStateException("La hoja '" + sheetName + "' no tiene fila de encabezados");
+        }
+
+        Map<String, Integer> columnIndexByHeader = new LinkedHashMap<>();
+        for (int col = 0; col < headerRow.getLastCellNum(); col++) {
+            String header = FORMATTER.formatCellValue(headerRow.getCell(col)).trim();
+            if (!header.isBlank()) {
+                columnIndexByHeader.put(header, col);
+            }
+        }
+
+        List<Integer> columnIndexes = new ArrayList<>();
+        for (String columnName : columnNames) {
+            Integer index = columnIndexByHeader.get(columnName);
+            if (index == null) {
+                throw new IllegalStateException(
+                    "La hoja '" + sheetName + "' no tiene la columna '" + columnName
+                        + "' requerida por el <placeholder> del escenario."
+                );
+            }
+            columnIndexes.add(index);
+        }
+
+        List<List<String>> rows = new ArrayList<>();
+        for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
+            Row row = sheet.getRow(rowIndex);
+            if (row == null || !hasAnyValue(row)) {
+                continue;
+            }
+            List<String> values = new ArrayList<>();
+            for (int columnIndex : columnIndexes) {
+                values.add(FORMATTER.formatCellValue(row.getCell(columnIndex)).trim());
+            }
+            rows.add(values);
+        }
+
+        if (rows.isEmpty()) {
+            throw new IllegalStateException("La hoja '" + sheetName + "' no tiene filas de datos.");
+        }
+        return rows;
+    }
+
+    private static boolean hasAnyValue(Row row) {
+        short firstCell = row.getFirstCellNum();
+        short lastCell = row.getLastCellNum();
+        if (firstCell < 0 || lastCell < 0) {
+            return false;
+        }
+
+        for (int col = firstCell; col < lastCell; col++) {
+            String value = FORMATTER.formatCellValue(row.getCell(col)).trim();
+            if (!value.isEmpty()) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static String toScenarioOutlineLine(String line) {
@@ -304,15 +365,15 @@ public final class FeatureOutlinePrecondition {
         return normalized;
     }
 
-    private static void mirrorFeaturesToTarget() {
+    private static void mirrorFeaturesToTarget(List<Path> featureFiles) {
         if (!Files.exists(TARGET_FEATURES_ROOT)) {
             return;
         }
 
         try {
-            for (FeatureSheetBinding binding : BINDINGS) {
-                Path source = FEATURES_ROOT.resolve(binding.featurePath());
-                Path target = TARGET_FEATURES_ROOT.resolve(binding.featurePath());
+            for (Path source : featureFiles) {
+                Path relative = FEATURES_ROOT.relativize(source);
+                Path target = TARGET_FEATURES_ROOT.resolve(relative);
                 Files.createDirectories(target.getParent());
                 Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
             }
@@ -321,9 +382,6 @@ public final class FeatureOutlinePrecondition {
         }
     }
 
-    private record FeatureSheetBinding(Path featurePath, String sheetName) {
-    }
-
-    private record ScenarioBlock(int startLine, int endLineExclusive, int examplesStartLine, boolean isParameterizedOutline) {
+    private record ScenarioBlock(int startLine, int endLineExclusive, int examplesStartLine) {
     }
 }

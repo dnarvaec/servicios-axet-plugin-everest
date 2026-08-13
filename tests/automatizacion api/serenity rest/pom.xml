@@ -50,13 +50,6 @@
       <version>1.10.2</version>
       <scope>test</scope>
     </dependency>
-    <!-- JUnit 4 — requerido por Serenity para Scenario Outline con Examples -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
     <!-- Motor Cucumber para JUnit 5 Platform — requerido por @IncludeEngines("cucumber") -->
     <dependency>
       <groupId>io.cucumber</groupId>
@@ -103,10 +96,23 @@
 
   <build>
     <plugins>
-      <!-- Ejecuta los tests JUnit 5 -->
+      <!-- Desactivado a favor de failsafe: si surefire falla en la fase "test", el build
+           se detiene antes de llegar a "post-integration-test" y el reporte Serenity no se genera -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+
+      <!-- Ejecuta los tests JUnit 5. integration-test no detiene el build si fallan;
+           verify (fase posterior a post-integration-test) sí falla el build al final,
+           garantizando que el reporte Serenity se genere incluso con fallos -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
         <version>3.2.5</version>
         <configuration>
           <includes>
@@ -116,6 +122,15 @@
             <serenity.env>${serenity.env}</serenity.env>
           </systemPropertyVariables>
         </configuration>
+        <executions>
+          <execution>
+            <id>run-tests</id>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 
       <!-- Genera living documentation HTML en post-integration-test -->

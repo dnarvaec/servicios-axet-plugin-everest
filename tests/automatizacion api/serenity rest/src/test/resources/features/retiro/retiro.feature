@@ -11,52 +11,44 @@ Característica: TX-01 Retiro de efectivo con OTP
   @smoke @e2e
   Esquema del escenario: Retiro de efectivo con OTP - respuesta exitosa
     Cuando realiza un retiro de efectivo con OTP del caso <Caso>
-    Entonces la transacción de retiro es exitosa con código "200"
+    Entonces la transacción de retiro es exitosa
     Y el campo endDt del retiro está presente
 
     Ejemplos:
       ##@externaldata@src/test/resources/datadriven/datadriven.xlsx@retiro
       | Caso |
       |1|
-      |2|
-      |3|
 
   @e2e @validacion-estado
   Esquema del escenario: Retiro de efectivo - severidad Info confirmada
     Cuando realiza un retiro de efectivo con OTP del caso <Caso>
-    Entonces la severidad del retiro es "Info"
+    Entonces la severidad del retiro es la esperada
 
     Ejemplos:
       ##@externaldata@src/test/resources/datadriven/datadriven.xlsx@retiro
       | Caso |
       |1|
-      |2|
-      |3|
 
   @e2e @validacion-mensaje
   Esquema del escenario: Retiro de efectivo - descripción transacción exitosa
     Cuando realiza un retiro de efectivo con OTP del caso <Caso>
-    Entonces la descripción del retiro es "Transaccion exitosa"
+    Entonces la descripción del retiro es la esperada
 
     Ejemplos:
       ##@externaldata@src/test/resources/datadriven/datadriven.xlsx@retiro
       | Caso |
       |1|
-      |2|
-      |3|
 
   @e2e @flujo-completo
   Esquema del escenario: Retiro de efectivo - validación completa de respuesta
     Cuando realiza un retiro de efectivo con OTP del caso <Caso>
-    Entonces la transacción de retiro es exitosa con código "200"
-    Y la severidad del retiro es "Info"
-    Y la descripción del retiro es "Transaccion exitosa"
+    Entonces la transacción de retiro es exitosa
+    Y la severidad del retiro es la esperada
+    Y la descripción del retiro es la esperada
     Y el campo endDt del retiro está presente
 
     Ejemplos:
       ##@externaldata@src/test/resources/datadriven/datadriven.xlsx@retiro
       | Caso |
       |1|
-      |2|
-      |3|
 

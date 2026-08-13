@@ -33,7 +33,7 @@ MODULOS/RECURSOS       :
 
        MOCK DE ESTADOS PARA EL ENDPOINT DE CONSULTA (TX-03/TX-04):
        El campo TrnRqUID del body controla el estado funcional retornado.
-       Catálogo oficial completo: agentes/Análisis Colección Postman - Everest AVC.md §10
+       Catálogo oficial completo: agentes/Análisis Colección Postman - Everest AVC.md §7
 
        IMPORTANTE:
        - Diferenciar siempre el HTTP Status Code del campo StatusCode del JSON.
@@ -57,6 +57,11 @@ NOTAS ESPECIALES       :
   - En TX-03 consultas, TrnRqUID controla la respuesta funcional del mock.
   - HTTP status y body.StatusCode son validaciones independientes.
   - No confundir StatusCode=204 del JSON con HTTP 204.
+  - Ver agentes/Análisis Colección Postman - Everest AVC.md §5 (inconsistencias vigentes),
+    §8 (seguridad) y §9 (notas de automatización) — validado en vivo (2026-08-03): el mock
+    no valida contenido de X-Channel/X-CompanyId/X-IdentSerialNum/X-GovIssueIdentType,
+    ni el cifrado de AcctKey/Phone/OtpValue en RETIRO. Solo exige presencia de X-ClientDt.
+    No fue necesario modificar TestData.java.
 ```
 
 ## Tarjeta de Referencia Rápida
@@ -242,7 +247,7 @@ Cuando el usuario solicite automatizar escenarios de estados para TX-03:
 El endpoint POST /everest/orq/consultas/api/v1/consulta permite controlar
 el estado funcional retornado mediante el campo TrnRqUID del body.
 
-Matriz: catálogo oficial en agentes/Análisis Colección Postman - Everest AVC.md §10.
+Matriz: catálogo oficial en agentes/Análisis Colección Postman - Everest AVC.md §7.
 
 Reglas de implementación:
 

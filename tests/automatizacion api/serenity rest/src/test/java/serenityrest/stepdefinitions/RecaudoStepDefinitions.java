@@ -4,18 +4,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
-import io.restassured.RestAssured;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 import serenityrest.screenplay.questions.TheResponse;
+import serenityrest.utils.ApiAssertions;
 import serenityrest.utils.ApiEndpoints;
 import serenityrest.utils.TestData;
 
@@ -24,32 +21,24 @@ import serenityrest.utils.TestData;
  * Flujo de dos pasos: consulta de factura (paso 1) → pago de factura (paso 2)
  *
  * Invariantes de red corporativa NTT:
- *   - RestAssured.useRelaxedHTTPSValidation() en @Before (proxy MITM)
+ *   - Setup común (RestAssured, actor, ability) vive en Hooks.java
  *   - PROHIBIDO Tasks.instrumented() en API tests
  */
 public class RecaudoStepDefinitions {
 
     private Actor actor;
+    private int casoActual;
 
     @Before
-    public void configurarEscenario() {
-        // Obligatorio en red NTT/corporativa — proxy MITM con certificado propio
-        RestAssured.useRelaxedHTTPSValidation();
-        OnStage.setTheStage(Cast.ofStandardActors());
-        actor = OnStage.theActorCalled("API Tester");
-        actor.whoCan(CallAnApi.at(ApiEndpoints.API_BASE_URL));
-    }
-
-    @After
-    public void cerrarEscenario() {
-        OnStage.drawTheCurtain();
+    public void obtenerActor() {
+        actor = OnStage.theActorInTheSpotlight();
     }
 
     // ── Dado ──────────────────────────────────────────────────────────────────
 
     @Dado("el actor est\u00e1 autorizado para operar en la API de recaudo")
     public void elActorEstaAutorizadoParaRecaudo() {
-        // La ability CallAnApi ya fue configurada en @Before
+        // La ability CallAnApi ya fue configurada en Hooks
     }
 
     // ── Cuando — Paso 1: Consulta ─────────────────────────────────────────────
@@ -57,21 +46,12 @@ public class RecaudoStepDefinitions {
 
     @Cuando("consulta la factura del convenio TX-03 del caso {int}")
     public void consultaLaFacturaDelConvenio(int caso) {
+        casoActual = caso;
         actor.attemptsTo(
             Post.to(ApiEndpoints.Consultas.CONSULTA_FACTURA)
                 .with(requestSpec -> requestSpec
-                    .headers(TestData.consultaFacturaHeaders("003001"))
+                    .headers(TestData.consultaFacturaHeaders(caso))
                     .body(TestData.consultaFacturaPayload(caso)))
-        );
-    }
-
-    @Cuando("consulta la factura del convenio TX-03 con trnRqUID {string}")
-    public void consultaLaFacturaDelConvenioConTrnRqUID(String trnRqUID) {
-        actor.attemptsTo(
-            Post.to(ApiEndpoints.Consultas.CONSULTA_FACTURA)
-                .with(requestSpec -> requestSpec
-                    .headers(TestData.consultaFacturaHeaders("003001"))
-                    .body(TestData.consultaFacturaPayload(trnRqUID)))
         );
     }
 
@@ -79,50 +59,21 @@ public class RecaudoStepDefinitions {
 
     @Cuando("realiza el pago de la factura del convenio del caso {int}")
     public void realizaElPagoDeLaFactura(int caso) {
+        casoActual = caso;
         actor.attemptsTo(
             Post.to(ApiEndpoints.Pagos.PAGO_FACTURA)
                 .with(requestSpec -> requestSpec
-                    .headers(TestData.pagoFacturaHeaders())
+                    .headers(TestData.pagoFacturaHeaders(caso))
                     .body(TestData.pagoFacturaPayload(caso)))
         );
     }
 
     // ── Entonces — Validaciones de Consulta (Paso 1) ─────────────────────────
+    // El resultado esperado viene de datadriven.xlsx (hoja recaudo, prefijo consulta_factura/pago_factura).
 
-    @Entonces("la consulta de factura es exitosa con c\u00f3digo {string}")
-    public void laConsultaDeFacturaEsExitosa(String codigoEsperado) {
-        assertThat(
-            "HTTP status code debe ser 200",
-            actor.asksFor(TheResponse.statusCode()),
-            equalTo(200)
-        );
-        assertThat(
-            "msgRsHdr.status.statusCode debe ser " + codigoEsperado,
-            actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusCode")),
-            equalTo(codigoEsperado)
-        );
-    }
-
-    @Entonces("la consulta no happy path retorna status code {string} y estado corporativo {string}")
-    public void laConsultaNoHappyPathRetornaStatusCodeYEstadoCorporativo(
-        String statusCodeEsperado,
-        String estadoCorporativoEsperado
-    ) {
-        assertThat(
-            "HTTP status code debe ser 200",
-            actor.asksFor(TheResponse.statusCode()),
-            equalTo(200)
-        );
-        assertThat(
-            "msgRsHdr.status.statusCode debe ser " + statusCodeEsperado,
-            actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusCode")),
-            equalTo(statusCodeEsperado)
-        );
-        assertThat(
-            "msgRsHdr.status.statusDesc debe ser " + estadoCorporativoEsperado,
-            actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusDesc")),
-            equalTo(estadoCorporativoEsperado)
-        );
+    @Entonces("la consulta de factura es exitosa")
+    public void laConsultaDeFacturaEsExitosa() {
+        ApiAssertions.assertTransaccionExitosa(actor, TestData.consultaFacturaExpected(casoActual));
     }
 
     @Entonces("la respuesta contiene el nombre del convenio")
@@ -154,22 +105,14 @@ public class RecaudoStepDefinitions {
 
     // ── Entonces — Validaciones de Pago (Paso 2) ─────────────────────────────
 
-    @Entonces("el pago de la factura es exitoso con c\u00f3digo {string}")
-    public void elPagoDeLaFacturaEsExitoso(String codigoEsperado) {
-        assertThat(
-            "HTTP status code debe ser 200",
-            actor.asksFor(TheResponse.statusCode()),
-            equalTo(200)
-        );
-        assertThat(
-            "msgRsHdr.status.statusCode debe ser " + codigoEsperado,
-            actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusCode")),
-            equalTo(codigoEsperado)
-        );
+    @Entonces("el pago de la factura es exitoso")
+    public void elPagoDeLaFacturaEsExitoso() {
+        ApiAssertions.assertTransaccionExitosa(actor, TestData.pagoFacturaExpected(casoActual));
     }
 
-    @Entonces("la severidad del recaudo es {string}")
-    public void laSeveridadDelRecaudoEs(String severidadEsperada) {
+    @Entonces("la severidad del recaudo es la esperada")
+    public void laSeveridadDelRecaudoEsLaEsperada() {
+        String severidadEsperada = TestData.pagoFacturaExpected(casoActual).get("severity");
         assertThat(
             "msgRsHdr.status.severity debe ser " + severidadEsperada,
             actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.severity")),
@@ -177,8 +120,9 @@ public class RecaudoStepDefinitions {
         );
     }
 
-    @Entonces("la descripci\u00f3n del recaudo es {string}")
-    public void laDescripcionDelRecaudoEs(String descripcionEsperada) {
+    @Entonces("la descripci\u00f3n del recaudo es la esperada")
+    public void laDescripcionDelRecaudoEsLaEsperada() {
+        String descripcionEsperada = TestData.pagoFacturaExpected(casoActual).get("statusDesc");
         assertThat(
             "msgRsHdr.status.statusDesc debe ser " + descripcionEsperada,
             actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusDesc")),

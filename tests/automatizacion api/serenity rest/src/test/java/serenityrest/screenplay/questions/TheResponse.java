@@ -26,13 +26,22 @@ public final class TheResponse {
     }
 
     // ── Body — path JSON ──────────────────────────────────────────────────────
+    // Se valida el content-type ANTES de parsear: si el body no es JSON (p.ej. un 404/500
+    // "text/plain" del gateway), se falla con un AssertionError legible en vez de dejar que
+    // RestAssured lance IllegalStateException ("Cannot determine which path implementation...").
 
     public static <T> Question<T> field(String jsonPath) {
-        return actor -> SerenityRest.lastResponse().path(jsonPath);
+        return actor -> {
+            assertJsonResponse(jsonPath);
+            return SerenityRest.lastResponse().path(jsonPath);
+        };
     }
 
     public static Question<String> fieldAsString(String jsonPath) {
-        return actor -> SerenityRest.lastResponse().path(jsonPath).toString();
+        return actor -> {
+            assertJsonResponse(jsonPath);
+            return SerenityRest.lastResponse().path(jsonPath).toString();
+        };
     }
 
     // ── Body completo como String ─────────────────────────────────────────────
@@ -56,6 +65,22 @@ public final class TheResponse {
     // ── Validación de campo no nulo ───────────────────────────────────────────
 
     public static Question<Boolean> fieldIsNotNull(String jsonPath) {
-        return actor -> SerenityRest.lastResponse().path(jsonPath) != null;
+        return actor -> {
+            assertJsonResponse(jsonPath);
+            return SerenityRest.lastResponse().path(jsonPath) != null;
+        };
+    }
+
+    // ── Guarda interna ────────────────────────────────────────────────────────
+
+    private static void assertJsonResponse(String jsonPath) {
+        String contentType = SerenityRest.lastResponse().contentType();
+        if (contentType == null || !contentType.toLowerCase().contains("json")) {
+            throw new AssertionError(
+                "No se puede leer el campo '" + jsonPath + "' del body: la respuesta no es JSON "
+                    + "(status=" + SerenityRest.lastResponse().statusCode()
+                    + ", content-type=" + contentType + ")"
+            );
+        }
     }
 }

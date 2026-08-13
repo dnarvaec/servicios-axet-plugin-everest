@@ -20,7 +20,7 @@ MODULOS/RECURSOS       :
                                                        1º POST /everest/orq/consultas/api/v1/consulta
                                                        2º POST /api/v1/pagos/pago-factura
   TX-04  Pago de obligaciones y TC Aval (Efectivo)   FLUJO DOS PASOS (igual que TX-03)
-CODIGOS_RESPUESTA      : catálogo oficial en agentes/Análisis Colección Postman - Everest AVC.md §10
+CODIGOS_RESPUESTA      : catálogo oficial en agentes/Análisis Colección Postman - Everest AVC.md §7
                          (única fuente válida; no redeclarar aquí ni reinterpretar valores)
 HERRAMIENTA DE AUTO    : Serenity BDD + REST Assured + Cucumber (Screenplay Pattern)
 RUTA DE AUTOMATIZACION : tests/automatizacion api/serenity rest/
