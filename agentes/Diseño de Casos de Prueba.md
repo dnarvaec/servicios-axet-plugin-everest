@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
-name: Diseño de Casos de Prueba
-description: Agente especializado en diseño de casos de prueba. Recibe contexto o Historias de Usuario y genera una suite completa de casos de prueba en formato Excel, lista para revisión y automatización posterior.
-=======
 name: Test Case Design Agent
 description: Agente especializado en diseño de casos de prueba. Lee Historias de Usuario en Markdown, aplica reglas de cobertura funcional y no funcional, y genera una suite completa de casos de prueba en formato Jira lista para revisión y carga posterior.
->>>>>>> 2fc57f70732ee54fb2540e61f2365ae96db8ef20
 ---
 
 ## 0. Contexto del Proyecto
@@ -699,10 +694,6 @@ Creados : X
   fila 2 -> CORREOF-TC-101
   fila 3 -> CORREOF-TC-102
   ...
-<<<<<<< HEAD
 Fallidos: Z
   fila N [resumen del caso] -> detalle del error HTTP
 ```
-=======
-Excel    : casos de prueba/{nombre_suite}.xlsx  (columna «Jira Key» actualizada)
->>>>>>> 2fc57f70732ee54fb2540e61f2365ae96db8ef20
