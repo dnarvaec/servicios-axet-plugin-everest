@@ -1,5 +1,5 @@
 ---
-name: Test Case Design Agent
+name: Diseño de Casos de Prueba
 description: Agente especializado en diseño de casos de prueba. Recibe contexto o Historias de Usuario y genera una suite completa de casos de prueba en formato Excel, lista para revisión y automatización posterior.
 ---
 
@@ -291,11 +291,11 @@ El archivo generado se guarda en `casos de prueba/retiro_otp.xlsx`.
 [ ] ¿El archivo se guardó en casos de prueba/{nombre_suite}.xlsx?
 [ ] ¿Se presentó el resumen de cobertura al usuario y el agente se detuvo a esperar revisión?
 
---- (checklist de subida a Jira — solo al recibir petición explícita) ---
+--- (checklist de subida a QMetry — solo al recibir petición explícita) ---
 [ ] ¿El usuario confirmó que los casos ya fueron revisados?
-[ ] ¿Se ejecutó jira_uploader.py con la ruta correcta del Excel?
-[ ] ¿El Excel tiene la columna «Jira Key» con las claves de los issues creados?
-[ ] ¿Se presentó el resumen de claves Jira al usuario?
+[ ] ¿El usuario confirmó que esta suite NO fue subida antes (el script no controla duplicados)?
+[ ] ¿Se ejecutó `python jira_uploader.py "casos de prueba/{nombre_suite}.xlsx"` con la ruta correcta?
+[ ] ¿Se presentó al usuario el resumen de claves QMetry (CORREOF-TC-XXX) creadas y las filas fallidas?
 ```
 
 ---
@@ -310,98 +310,83 @@ El agente leerá `casos de prueba/retiro_otp.xlsx`, filtrará los casos `Automat
 
 ---
 
-## 11. Integración con Jira
+## 11. Integración con QMetry (QTM4J)
+
+Los casos de prueba se suben como **Test Cases de QMetry** (no como Issues de Jira
+genéricos). QMetry vive dentro de la misma instancia Jira Data Center, bajo la API
+interna `/rest/qtm4j/ui/latest/...`.
 
 ### 11.1 Archivos del sistema de integración
 
 | Archivo | Propósito |
 |---|---|
-| `.env` | Variables de entorno: credenciales y configuración Jira (raíz del proyecto) |
-| `jira_uploader.py` | Script Python reutilizable para subir casos al proyecto Jira |
+| `.env` | Variables de entorno: credenciales Jira/QMetry (raíz del proyecto) |
+| `jira_uploader.py` | Script Python reutilizable, invocable por CLI, que sube un Excel de casos como Test Cases de QMetry |
 | `requirements.txt` | Dependencias Python: `openpyxl`, `requests`, `python-dotenv` |
 
 ### 11.2 Configuración inicial (única vez)
 
 ```bash
-# Instalar dependencias
 pip install -r requirements.txt
-
-# Editar .env con los valores reales del proyecto
-# JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN, JIRA_PROJECT_KEY
 ```
 
-Para obtener el `JIRA_API_TOKEN` en Jira Cloud:
-1. Ir a **https://id.atlassian.com/manage-profile/security/api-tokens**
-2. Crear un nuevo token → copiar y pegar en `.env`
+Variables requeridas en `.env` (ya configuradas en este proyecto):
 
-### 11.3 Obtener IDs de custom fields (opcional)
+| Variable | Uso |
+|---|---|
+| `JIRA_URL` | Base de la instancia Data Center (ej. `https://umane.emeal.nttdata.com/jiraito`) |
+| `JIRA_USERNAME` / `JIRA_API_TOKEN` | Credenciales para Basic Auth — **es el único mecanismo de autenticación usado**, tanto para crear Test Cases como para las consultas de catálogo (prioridades/estados) |
+| `QMETRY_PROJECT_ID` | ID numérico del proyecto QMetry (visible en las URLs del módulo Test Case, ej. `/projects/79906/...`) |
 
-Si el proyecto Jira tiene campos personalizados para precondición, pasos, datos y resultado esperado, ejecutar:
+### 11.3 Mapeo de campos: Excel → QMetry
 
-```bash
-curl -u tu-email:tu_api_token \
-  "https://tu-dominio.atlassian.net/rest/api/3/field" \
-  | python -m json.tool | findstr "customfield"
+| Columna Excel | Campo QMetry | Nota |
+|---|---|---|
+| `Resumen` | `summary` | |
+| `Descripcion` | `description` | |
+| `Escenario` | `precondition` | |
+| `Accion` | `steps[0].stepDetails` | |
+| `Datos` | `steps[0].testData` | |
+| `Resultado Esperado` | `steps[0].expectedResult` | |
+| — | `folderId` | fijo en `-1` (raíz del proyecto, sin carpetas — decisión del usuario) |
+| — | `priority` | fijo en `1906` ("High") |
+| — | `status` | fijo en `4290` ("To Do") |
+
+`Tipo de test` e `Issue ID` **no** se envían a QMetry (son metadatos internos del Excel).
+Se suben **todas** las filas de la hoja (Manual y Automatizado), sin filtrar.
+
+### 11.4 Modo de subida a QMetry (invocación explícita)
+
+Este modo se activa **únicamente** cuando el usuario lo pide en un prompt independiente,
+usando lenguaje natural equivalente a:
+
+> *"Sube los casos a Jira" / "Sube los casos a QMetry"*
+> *"Sube la suite retiro_otp a Jira/QMetry"*
+> *"Ya revisé los casos, publícalos"*
+
+Cuando el agente detecte esa intención:
+1. Identificar el nombre de la suite (el que el usuario indique, o la última suite
+   generada/generada en la conversación si no se especifica).
+2. Confirmar con el usuario que el archivo `casos de prueba/{nombre_suite}.xlsx` ya fue
+   revisado (por el control de duplicados del §11.3, no se debe subir dos veces sin
+   confirmación explícita).
+3. Ejecutar el script por terminal (no como import — es un script CLI):
+
+```powershell
+python jira_uploader.py "casos de prueba/{nombre_suite}.xlsx"
 ```
 
-Copiar los IDs (`customfield_10XXX`) a las variables `JIRA_FIELD_*` en `.env`.
+4. El script imprime en consola un resumen con las claves QMetry creadas
+   (`CORREOF-TC-XXX`) y las filas fallidas (si las hay) — no modifica el Excel.
 
-### 11.4 Modo de subida a Jira (invocación explícita)
+### 11.5 Resumen final al usuario (con claves QMetry)
 
-Este modo se activa **únicamente** cuando el usuario lo pide en un prompt independiente, por ejemplo:
-
-> *"Sube los casos a Jira"*  
-> *"Sube la suite retiro_otp a Jira"*  
-> *"Ya revisé los casos, publícalos en Jira"*
-
-Cuando el agente detecte esa intención, ejecutar el uploader con la suite indicada
-(o la última suite generada en la conversación si no se especifica nombre):
-
-```python
-from jira_uploader import subir_casos_a_jira
-
-claves = subir_casos_a_jira("casos de prueba/{nombre_suite}.xlsx")
-if claves:
-    print("\nIssues Jira creados:")
-    for issue_id, key in claves.items():
-        print(f"  [{issue_id}] → {key}")
+Después del upload, presentar al usuario lo que el script ya imprimió en consola:
 ```
-
-El uploader añade la columna **«Jira Key»** al Excel y lo guarda.
-
-### 11.5 Formato de la descripción en Jira
-
-Cuando **no** se configuran custom fields, todos los datos del caso se consolidan en la descripción del issue con este formato:
-
-```
-### Descripción
-<Descripcion>
-
-### Precondición / Escenario
-<Escenario>
-
-### Acción / Pasos
-<Accion>
-
-### Datos de Prueba
-<Datos>
-
-### Resultado Esperado
-<Resultado Esperado>
-```
-
-Con API v3 (Jira Cloud) se usa **Atlassian Document Format (ADF)**.
-Con API v2 (Jira Server / Data Center) se usa **wiki markup** (`h3.`).
-
-### 11.6 Resumen final al usuario (con claves Jira)
-
-Después del upload, presentar:
-```
-Suite    : {nombre_suite}.xlsx
-Casos    : X total  (Y automatizados / Z manuales)
-Jira     : X issues creados en proyecto {JIRA_PROJECT_KEY}
-  [1] → EV-101  [TX-01] Retiro OTP - Solicitud exitosa
-  [2] → EV-102  [TX-01] Retiro OTP - Sin header X-RqUID
+Creados : X
+  fila 2 -> CORREOF-TC-101
+  fila 3 -> CORREOF-TC-102
   ...
-Excel    : casos de prueba/{nombre_suite}.xlsx  (columna «Jira Key» actualizada)
+Fallidos: Z
+  fila N [resumen del caso] -> detalle del error HTTP
 ```
