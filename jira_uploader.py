@@ -16,8 +16,7 @@ import requests
 from dotenv import load_dotenv
 
 COLUMNAS_ESPERADAS = [
-    "Issue ID", "Tipo de test", "Resumen", "Descripcion", "Escenario",
-    "Resultado Final", "Accion", "Datos", "Resultado Esperado",
+    "Resumen", "Descripcion", "Escenario", "Accion", "Datos", "Resultado Esperado",
 ]
 FOLDER_ID_DEFAULT = -1  # sin carpeta, raíz del proyecto (decisión del usuario)
 PRIORITY_ID_DEFAULT = 1906  # "High" (confirmado vía GET .../priorities del proyecto 79906)
