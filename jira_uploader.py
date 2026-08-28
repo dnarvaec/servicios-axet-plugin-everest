@@ -6,7 +6,11 @@ Autenticación: Basic Auth con JIRA_USERNAME/JIRA_API_TOKEN (no se usa Open API 
 QMetry; la creación de Test Cases solo se validó contra este endpoint con Basic Auth).
 
 Uso:
-    python jira_uploader.py "casos de prueba/suite_automatizacion_everest.xlsx"
+    python jira_uploader.py "casos de prueba/suite_automatizacion_everest.xlsx" [fila_inicio]
+
+    fila_inicio (opcional): número de fila del Excel desde la cual reanudar la subida
+    (por defecto 2, la primera fila de datos). Útil para reintentar tras un error
+    parcial (ej. rate limit) sin volver a crear las filas ya subidas.
 """
 import os
 import sys
@@ -75,7 +79,7 @@ def _crear_test_case(sesion, config, payload):
     return cuerpo["key"]
 
 
-def subir_casos_a_qmetry(ruta_excel):
+def subir_casos_a_qmetry(ruta_excel, fila_inicio=2):
     config = _cargar_configuracion()
     wb = openpyxl.load_workbook(ruta_excel)
     hoja = wb.active
@@ -86,7 +90,7 @@ def subir_casos_a_qmetry(ruta_excel):
 
     creados, fallidos = {}, []
 
-    for num_fila in range(2, hoja.max_row + 1):
+    for num_fila in range(fila_inicio, hoja.max_row + 1):
         resumen = hoja.cell(row=num_fila, column=cols["Resumen"]).value
         if not resumen:
             continue  # fila vacía
@@ -114,9 +118,10 @@ def _imprimir_resumen(resultado):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python jira_uploader.py <ruta_al_excel>")
+    if len(sys.argv) not in (2, 3):
+        print("Uso: python jira_uploader.py <ruta_al_excel> [fila_inicio]")
         sys.exit(1)
-    resultado = subir_casos_a_qmetry(sys.argv[1])
+    fila_inicio = int(sys.argv[2]) if len(sys.argv) == 3 else 2
+    resultado = subir_casos_a_qmetry(sys.argv[1], fila_inicio)
     _imprimir_resumen(resultado)
     sys.exit(1 if resultado["fallidos"] else 0)
