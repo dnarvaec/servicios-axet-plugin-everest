@@ -112,6 +112,118 @@ public final class DataDrivenExcelReader {
         return expectedFor(RequestType.PAGO_OBLIGACIONES, caso);
     }
 
+    // ── Oficinas AVV ──────────────────────────────────────────────────────────
+
+    public static Map<String, Object> avvConsultaClientePayload(int caso) {
+        return payloadFor(RequestType.AVV_CONSULTA_CLIENTE, caso);
+    }
+
+    public static Map<String, String> avvConsultaClienteHeaders(int caso) {
+        return headersFor(RequestType.AVV_CONSULTA_CLIENTE, caso);
+    }
+
+    public static Map<String, String> avvConsultaClienteExpected(int caso) {
+        return expectedFor(RequestType.AVV_CONSULTA_CLIENTE, caso);
+    }
+
+    public static Map<String, Object> avvConsultaProductosPayload(int caso) {
+        return payloadFor(RequestType.AVV_CONSULTA_PRODUCTOS, caso);
+    }
+
+    public static Map<String, String> avvConsultaProductosHeaders(int caso) {
+        return headersFor(RequestType.AVV_CONSULTA_PRODUCTOS, caso);
+    }
+
+    public static Map<String, String> avvConsultaProductosExpected(int caso) {
+        return expectedFor(RequestType.AVV_CONSULTA_PRODUCTOS, caso);
+    }
+
+    public static Map<String, Object> avvCarteraDetalladaPayload(int caso) {
+        return payloadFor(RequestType.AVV_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, String> avvCarteraDetalladaHeaders(int caso) {
+        return headersFor(RequestType.AVV_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, String> avvCarteraDetalladaExpected(int caso) {
+        return expectedFor(RequestType.AVV_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, Object> avvTcDetalladaPayload(int caso) {
+        return payloadFor(RequestType.AVV_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, String> avvTcDetalladaHeaders(int caso) {
+        return headersFor(RequestType.AVV_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, String> avvTcDetalladaExpected(int caso) {
+        return expectedFor(RequestType.AVV_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, Object> avvCdtDetalladoPayload(int caso) {
+        return payloadFor(RequestType.AVV_CDT_DETALLADO, caso);
+    }
+
+    public static Map<String, String> avvCdtDetalladoHeaders(int caso) {
+        return headersFor(RequestType.AVV_CDT_DETALLADO, caso);
+    }
+
+    public static Map<String, String> avvCdtDetalladoExpected(int caso) {
+        return expectedFor(RequestType.AVV_CDT_DETALLADO, caso);
+    }
+
+    // ── Oficinas BDB ──────────────────────────────────────────────────────────
+
+    public static Map<String, Object> bdbConsultaGeneralPayload(int caso) {
+        return payloadFor(RequestType.BDB_CONSULTA_GENERAL, caso);
+    }
+
+    public static Map<String, String> bdbConsultaGeneralHeaders(int caso) {
+        return headersFor(RequestType.BDB_CONSULTA_GENERAL, caso);
+    }
+
+    public static Map<String, String> bdbConsultaGeneralExpected(int caso) {
+        return expectedFor(RequestType.BDB_CONSULTA_GENERAL, caso);
+    }
+
+    public static Map<String, Object> bdbCarteraDetalladaPayload(int caso) {
+        return payloadFor(RequestType.BDB_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, String> bdbCarteraDetalladaHeaders(int caso) {
+        return headersFor(RequestType.BDB_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, String> bdbCarteraDetalladaExpected(int caso) {
+        return expectedFor(RequestType.BDB_CARTERA_DETALLADA, caso);
+    }
+
+    public static Map<String, Object> bdbTcDetalladaPayload(int caso) {
+        return payloadFor(RequestType.BDB_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, String> bdbTcDetalladaHeaders(int caso) {
+        return headersFor(RequestType.BDB_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, String> bdbTcDetalladaExpected(int caso) {
+        return expectedFor(RequestType.BDB_TC_DETALLADA, caso);
+    }
+
+    public static Map<String, Object> bdbCdtDetalladoPayload(int caso) {
+        return payloadFor(RequestType.BDB_CDT_DETALLADO, caso);
+    }
+
+    public static Map<String, String> bdbCdtDetalladoHeaders(int caso) {
+        return headersFor(RequestType.BDB_CDT_DETALLADO, caso);
+    }
+
+    public static Map<String, String> bdbCdtDetalladoExpected(int caso) {
+        return expectedFor(RequestType.BDB_CDT_DETALLADO, caso);
+    }
+
     private static Map<String, Object> payloadFor(RequestType requestType, int caso) {
         Map<String, Object> payload = lookup(ALL_PAYLOADS, requestType, caso);
         return deepCopyMap(payload);
@@ -450,7 +562,16 @@ public final class DataDrivenExcelReader {
         DEPOSITO("deposito", null),
         CONSULTA_FACTURA("recaudo", "consulta_factura"),
         PAGO_FACTURA("recaudo", "pago_factura"),
-        PAGO_OBLIGACIONES("pago_obligaciones", null);
+        PAGO_OBLIGACIONES("pago_obligaciones", null),
+        AVV_CONSULTA_CLIENTE("avv_consulta_cliente", null),
+        AVV_CONSULTA_PRODUCTOS("avv_consulta_productos", null),
+        AVV_CARTERA_DETALLADA("avv_cartera_detallada", null),
+        AVV_TC_DETALLADA("avv_tc_detallada", null),
+        AVV_CDT_DETALLADO("avv_cdt_detallado", null),
+        BDB_CONSULTA_GENERAL("bdb_consulta_general", null),
+        BDB_CARTERA_DETALLADA("bdb_cartera_detallada", null),
+        BDB_TC_DETALLADA("bdb_tc_detallada", null),
+        BDB_CDT_DETALLADO("bdb_cdt_detallado", null);
 
         private final String sheetName;
         private final String rowSelector;

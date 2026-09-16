@@ -1,0 +1,735 @@
+{
+  "info": {
+    "_postman_id": "223ecb76-6f06-4cd7-9fe5-79a2db63cf07",
+    "name": "Everest Oficinas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16266309"
+  },
+  "item": [
+    {
+      "name": "AVV",
+      "item": [
+        {
+          "name": "Consulta General Cliente y Productos",
+          "item": [
+            {
+              "name": "consulta-cliente",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "test-trace-001"
+                  },
+                  {
+                    "key": "X-IdentDispositivo",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-TokenUsuario",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.test"
+                  },
+                  {
+                    "key": "X-TokenGrupo",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.grupo"
+                  },
+                  {
+                    "key": "X-FechaTransaccion",
+                    "value": "08-09-2026"
+                  },
+                  {
+                    "key": "X-HoraTransaccion",
+                    "value": "10:00:00.000Z"
+                  },
+                  {
+                    "key": "X-IdFuncionario",
+                    "value": "1016034423"
+                  },
+                  {
+                    "key": "X-Oficina",
+                    "value": "001"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_CLIENTE\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"C\",\n        \"numeroDocumento\": \"86068761\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "consulta-general-productos",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "test-trace-002"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "99966666"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-08T10:00:00.000"
+                  },
+                  {
+                    "key": "X-SessKey",
+                    "value": "cualquier-sesion"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_PRODUCTOS\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"86068761\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Consulta Detallada",
+          "item": [
+            {
+              "name": "consulta-detallada",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "test-rquid-001"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-08T10:00:00.000"
+                  },
+                  {
+                    "key": "X-SessKey",
+                    "value": "test-session-key"
+                  },
+                  {
+                    "key": "X-NextDay",
+                    "value": "2026-09-09T10:00:00"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CARTERA\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\",\n      \"numeroObligacion\": \"26456554\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "tc detallada",
+          "item": [
+            {
+              "name": "consulta-tc-detallada",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-tc-adp-avv-001"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "a1b2c3d4-0001-0000-0000-000000000002"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-09T10:00:00.000"
+                  },
+                  {
+                    "key": "X-SessKey",
+                    "value": "session-key-001"
+                  },
+                  {
+                    "key": "X-NextDay",
+                    "value": "2026-09-10T00:00:00"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_TC\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"referenciaTarjeta\": \"4111111111111111\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "consulta cdt",
+          "item": [
+            {
+              "name": "consulta-cdt-detallado",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.10.111.110"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-10T10:00:00"
+                  },
+                  {
+                    "key": "X-SessKey",
+                    "value": "sess-abc123"
+                  },
+                  {
+                    "key": "X-NextDay",
+                    "value": "false"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CDT\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\",\n      \"numeroProducto\": \"26456554\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BDB",
+      "item": [
+        {
+          "name": "Consulta General Cliente y Productos",
+          "item": [
+            {
+              "name": "consulta-general",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-local-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "a18eafa0-ce60-11e0-9572-000010867937"
+                  },
+                  {
+                    "key": "X-Channel",
+                    "value": "OFICINAS"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "127.0.0.1"
+                  },
+                  {
+                    "key": "X-Name",
+                    "value": "ofic-consultas-orq"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_GENERAL\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Consulta Detallada",
+          "item": [
+            {
+              "name": "consulta-detallada",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "test-rquid-001"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-Channel",
+                    "value": "OFI"
+                  },
+                  {
+                    "key": "X-Name",
+                    "value": "ofic-consultas-adp-bbog"
+                  },
+                  {
+                    "key": "X-TerminalId",
+                    "value": "TERM001"
+                  },
+                  {
+                    "key": "X-CompanyId",
+                    "value": "PENDIENTE_DEFINIR"
+                  },
+                  {
+                    "key": "X-NetworkOwner",
+                    "value": "PENDIENTE"
+                  },
+                  {
+                    "key": "X-Journey",
+                    "value": "CONSULTA"
+                  },
+                  {
+                    "key": "x-api-key",
+                    "value": "TU_API_KEY"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CARTERA\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"numeroObligacion\": \"559536650\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "consulta cdt",
+          "item": [
+            {
+              "name": "consulta-cdt-detallado",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-CompanyId",
+                    "value": "PENDIENTE_DEFINIR"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.10.111.110"
+                  },
+                  {
+                    "key": "X-TerminalId",
+                    "value": "TERM01"
+                  },
+                  {
+                    "key": "X-NetworkOwner",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Journey",
+                    "value": "CONSULTA_CDT"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CDT\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"numeroProducto\": \"0000000026456554\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "tc detallada",
+          "item": [
+            {
+              "name": "consulta-tc-detallada",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-tc-adp-bbog-001"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "a1b2c3d4-0001-0000-0000-000000000001"
+                  },
+                  {
+                    "key": "X-CompanyId",
+                    "value": "0001234"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  },
+                  {
+                    "key": "X-TerminalId",
+                    "value": "TERM-001"
+                  },
+                  {
+                    "key": "X-NetworkOwner",
+                    "value": "AVAL"
+                  },
+                  {
+                    "key": "X-Journey",
+                    "value": "OFICINAS"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_TC\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\",\n      \"referenciaTarjeta\": \"4111111111111111\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

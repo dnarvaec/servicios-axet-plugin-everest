@@ -7,8 +7,9 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features")
+@SelectClasspathResource("features/oficinas/oficinas-avv.feature")
+@SelectClasspathResource("features/oficinas/oficinas-bdb.feature")
 @ConfigurationParameter(key = "cucumber.glue",        value = "serenityrest.stepdefinitions")
 @ConfigurationParameter(key = "cucumber.filter.tags", value = "not @ignore")
 @ConfigurationParameter(key = "cucumber.plugin",      value = "io.cucumber.core.plugin.SerenityReporterParallel")
-class CucumberRunnerTest {}
+public class CucumberRunnerTest {}

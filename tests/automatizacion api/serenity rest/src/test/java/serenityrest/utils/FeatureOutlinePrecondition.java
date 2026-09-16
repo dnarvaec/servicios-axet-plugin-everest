@@ -197,7 +197,9 @@ public final class FeatureOutlinePrecondition {
         int end = nextStart;
         while (end > currentStart + 1) {
             String prev = lines.get(end - 1).trim();
-            if (prev.isEmpty() || prev.startsWith("@")) {
+            // Los tags comentados con "#" (deshabilitados manualmente) cuentan igual
+            // que un tag activo o una línea en blanco al delimitar el bloque anterior.
+            if (prev.isEmpty() || prev.startsWith("@") || prev.startsWith("#")) {
                 end--;
                 continue;
             }

@@ -14,12 +14,29 @@
     <java.version>17</java.version>
     <serenity.version>4.2.34</serenity.version>
     <rest-assured.version>5.4.0</rest-assured.version>
+    <junit.version>5.11.4</junit.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Entorno activo para serenity.conf -->
     <serenity.env>dev</serenity.env>
   </properties>
+
+  <!-- Fuerza una única versión consistente para TODOS los artefactos org.junit.* (platform,
+       jupiter, vintage, suite). Sin esto, Maven resuelve por "nearest wins" y distintos
+       ejecutores (mvn verify vs Run Test del IDE) pueden cargar un jupiter-engine más nuevo
+       que el junit-platform-engine transitivo, causando NoSuchMethodError en discovery. -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <!-- Serenity BDD core con Screenplay -->
@@ -28,6 +45,12 @@
       <artifactId>serenity-core</artifactId>
       <version>${serenity.version}</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <!-- Serenity Screenplay REST — CallAnApi + Get/Post/Put/Delete interactions -->
     <dependency>
@@ -42,12 +65,58 @@
       <artifactId>serenity-cucumber</artifactId>
       <version>${serenity.version}</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
-    <!-- JUnit 5 Platform Suite (runner) -->
+    <!-- JUnit 5 Platform Suite (runner) — versión gobernada por junit-bom de arriba -->
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-suite</artifactId>
-      <version>1.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Motor JUnit Jupiter — declarado explícitamente para que junit-bom lo gestione
+         y quede alineado con junit-platform-suite/launcher/engine. -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-commons</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-suite-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- Launcher explícito — algunos ejecutores del IDE lo requieren en el classpath
+         del proyecto para descubrir tests con la misma versión que el resto de JUnit. -->
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-launcher</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- SerenityReporterParallel inspecciona ParentRunner durante la ejecución local. -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <!-- Motor Cucumber para JUnit 5 Platform — requerido por @IncludeEngines("cucumber") -->
@@ -118,6 +187,9 @@
           <includes>
             <include>**/runner/*Test.java</include>
           </includes>
+          <forkCount>1</forkCount>
+          <reuseForks>false</reuseForks>
+          <forkedProcessTimeoutInSeconds>300</forkedProcessTimeoutInSeconds>
           <systemPropertyVariables>
             <serenity.env>${serenity.env}</serenity.env>
           </systemPropertyVariables>

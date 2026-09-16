@@ -80,6 +80,28 @@ public final class ApiEndpoints {
         public static final String CONSULTA_FACTURA = "/everest/orq/consultas/api/v1/consulta";
     }
 
+    // ── Oficinas — orquestador de consultas ADP AVV / BDB ──────────────────────
+    /**
+     * Host distinto al de Pagos/Consultas (arriba). Confirmado en vivo (2026-09-15):
+     * responde HTTP 200 para las 9 operaciones de este módulo — ver
+     * /memories/repo/oficinas-consulta-notes.md.
+     */
+    public static final class Oficinas {
+
+        /** Host propio de Oficinas — distinto de API_BASE_URL. La ability del actor
+         *  se reconfigura a este host solo para escenarios @oficinas (ver Hooks.java);
+         *  por eso los paths de abajo son relativos, no URLs absolutas. */
+        public static final String BASE_URL = "https://d299ks4asy14z3.cloudfront.net";
+
+        /** POST — Orquestador ADP AVV (CONSULTA_CLIENTE, CONSULTA_PRODUCTOS,
+         *  CONSULTA_DETALLADA_CARTERA, CONSULTA_DETALLADA_TC, CONSULTA_DETALLADA_CDT). */
+        public static final String CONSULTA_AVV = "/api/v1/everst/ofi/avv/adp/consulta";
+
+        /** POST — Orquestador ADP BDB (CONSULTA_GENERAL, CONSULTA_DETALLADA_CARTERA,
+         *  CONSULTA_DETALLADA_TC, CONSULTA_DETALLADA_CDT). */
+        public static final String CONSULTA_BDB = "/api/v1/everst/ofi/bog/adp/consulta";
+    }
+
     // ── Auth — paths de autenticación (si aplica en futuros sprints) ──────────
     public static final class Auth {
         /** POST — Login, devuelve token de sesión */
