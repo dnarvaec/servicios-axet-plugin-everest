@@ -1,5 +1,5 @@
 ﻿---
-name: API Testing Agent - Serenity BDD + REST Assured
+name: Automatizar y Ejecutar
 description: Agente especializado en automatizacion de pruebas de API REST usando Serenity BDD con REST Assured. Genera living documentation, reportes ejecutivos y suites de prueba con cobertura completa de endpoints.
 ---
 
