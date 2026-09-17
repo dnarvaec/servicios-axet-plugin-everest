@@ -385,17 +385,18 @@ Eres un **Agente de Diseño de Casos de Prueba** responsable de:
 
 La plantilla se encuentra en `casos de prueba/plantilla_base.xlsx`.
 
-| # | Columna | Tipo | Descripción |
-|---|---------|------|-------------|
-| 1 | **Issue ID** | Número | Identificador único secuencial (ej: 1, 2, 3...) |
-| 2 | **Tipo de test** | Texto | `Automatizado` o `Manual` |
-| 3 | **Resumen** | Texto | Título corto descriptivo del caso (máx. 80 chars) |
-| 4 | **Descripcion** | Texto | Descripción del objetivo del caso de prueba |
-| 5 | **Escenario** | Texto | Contexto o precondición (en formato Given si aplica) |
-| 6 | **Resultado Final** | Texto | `Pending` para casos nuevos (se actualiza tras ejecución) |
-| 7 | **Accion** | Texto | Pasos a ejecutar / llamada HTTP con método, endpoint y headers clave |
-| 8 | **Datos** | Texto | Datos de entrada (payload JSON resumido o campos clave) |
-| 9 | **Resultado Esperado** | Texto | HTTP status code + campos clave de la respuesta esperada |
+| # | Columna | Col | Tipo | Descripción |
+|---|---------|-----|------|-------------|
+| 1 | **Issue ID** | A | Número | Identificador único secuencial (ej: 1, 2, 3...) |
+| 2 | **Tipo de test** | B | Texto | `Automatizado` o `Manual` |
+| 3 | **Resumen** | C | Texto | Título corto descriptivo del caso (máx. 80 chars) |
+| 4 | **Descripcion** | D | Texto | Descripción del objetivo del caso de prueba |
+| 5 | **Escenario** | E | Texto | Contexto o precondición (en formato Given si aplica) |
+| 6 | **Resultado Final** | F | Texto | `Pending` para casos nuevos (se actualiza tras ejecución) |
+| 7 | **Accion** | G | Texto | Pasos a ejecutar / llamada HTTP con método, endpoint y headers clave |
+| 8 | **Datos** | H | Texto | Datos de entrada (payload JSON resumido o campos clave) |
+| 9 | **Resultado Esperado** | I | Texto | HTTP status code + campos clave de la respuesta esperada |
+| 21 | **Folders** | U | Texto | **Carpeta destino en QMetry** (opcional). Nombre de la carpeta donde se agrupará el test case al subir a Jira. Si se deja vacío, el caso va a la raíz del proyecto. Puede haber múltiples carpetas distintas en el mismo Excel; el script `jira_uploader.py` crea cada una automáticamente si no existe. Ejemplo: `TX-01 Retiro OTP` o `Regresión/Sprint-12`. |
 
 ### 2.1 Convenciones de escritura
 
@@ -655,12 +656,34 @@ Variables requeridas en `.env` (ya configuradas en este proyecto):
 | `Accion` | `steps[0].stepDetails` | |
 | `Datos` | `steps[0].testData` | |
 | `Resultado Esperado` | `steps[0].expectedResult` | |
-| — | `folderId` | fijo en `-1` (raíz del proyecto, sin carpetas — decisión del usuario) |
+| `Folders` (col U) | `folderId` | **Opcional.** Si la columna existe, el script agrupa el test case en la carpeta indicada. Si la carpeta no existe en QMetry se crea automáticamente. Si la celda está vacía, el test case va a la raíz (`folderId = -1`). Un mismo Excel puede tener múltiples carpetas distintas; el script crea cada carpeta una sola vez (caché interno por nombre). |
 | — | `priority` | fijo en `1906` ("High") |
 | — | `status` | fijo en `4290` ("To Do") |
 
 `Tipo de test` e `Issue ID` **no** se envían a QMetry (son metadatos internos del Excel).
 Se suben **todas** las filas de la hoja (Manual y Automatizado), sin filtrar.
+
+#### Comportamiento detallado de la columna Folders
+
+1. **Sin columna Folders**: todos los test cases se crean en la raíz del proyecto (`folderId = -1`).
+2. **Con columna Folders, celda vacía**: ese test case va a la raíz.
+3. **Con columna Folders, celda con nombre**: el script busca la carpeta en un caché local.  
+   - Si no está en caché, intenta crearla via `POST /rest/qtm4j/ui/latest/folders`.  
+   - Si la API devuelve 409 (ya existe), recarga el catálogo de carpetas y usa el id encontrado.  
+   - Si no puede resolver la carpeta por ningún medio, el test case sube a la raíz y se imprime un aviso.
+4. **Múltiples carpetas en un mismo Excel**: cada carpeta distinta se crea una sola vez; las filas siguientes con el mismo nombre reutilizan el id ya cacheado.
+
+#### Comportamiento de la columna `Folders`
+
+El script aplica la siguiente estrategia al resolver cada valor de `Folders`:
+
+1. **Celda vacía / sin columna** → el test case se ubica en la raíz del proyecto (`folderId = -1`).
+2. **Nombre en caché local** → reutiliza el `folderId` ya resuelto (sin llamadas extra a la API).
+3. **Nombre nuevo** → llama a `POST /rest/qtm4j/ui/latest/folders` para crear la carpeta y guarda el id en caché.
+4. **Carpeta ya existe (HTTP 409)** → recarga el catálogo de carpetas del proyecto, busca por nombre y reutiliza el id existente.
+5. **Fallo irrecuperable** → imprime un aviso y sube el caso a la raíz (nunca interrumpe la subida completa).
+
+El nombre de la carpeta debe coincidir exactamente con el valor de la columna `Folders` en el Excel (sensible a mayúsculas en QMetry).
 
 ### 11.4 Modo de subida a QMetry (invocación explícita)
 
