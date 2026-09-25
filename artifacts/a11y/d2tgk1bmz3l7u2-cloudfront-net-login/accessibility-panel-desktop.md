@@ -1,0 +1,183 @@
+- generic [ref=e1]:
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - img "EVEREST" [ref=e19]
+      - generic [ref=e20]:
+        - img "Grupo AVAL" [ref=e21]
+        - generic [ref=e22]:
+          - button "Notificaciones, 2 sin leer" [ref=e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e27]: "2"
+          - button "Accesibilidad" [expanded] [active] [ref=e28] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e35] [cursor=pointer]
+        - button "user user" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: user
+          - generic "user" [ref=e42]: U
+    - generic [ref=e43]:
+      - complementary [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e47] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e50]:
+          - link "Consultar Cliente" [ref=e51] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e58] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e62]: Notificaciones
+            - generic "2 sin leer" [ref=e63]: "2"
+          - link "Centro de Ayuda" [ref=e64] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e224]:
+            - navigation "Ubicación" [ref=e225]:
+              - generic [ref=e226]: Consultar Cliente
+              - generic [ref=e227]: /
+            - button "Nueva consulta" [ref=e228] [cursor=pointer]
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - img "Cliente" [ref=e231]: —
+              - generic [ref=e233]:
+                - generic [ref=e234]:
+                  - generic [ref=e235]:
+                    - heading [level=2]
+                    - button "Editar cliente" [ref=e236] [cursor=pointer]
+                  - paragraph [ref=e238]:
+                    - text: "79485236 · · Fecha vinculación:"
+                    - strong
+                - img "AV Villas" [ref=e239]
+            - generic [ref=e240]:
+              - generic [ref=e241]: Saldo disponible
+              - generic [ref=e245]: Saldo créditos
+              - generic [ref=e249]: Deuda tarjetas
+              - generic [ref=e253]: Inversiones
+          - generic [ref=e257]:
+            - tablist [ref=e258]:
+              - tab "Cuentas 0" [ref=e259] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=e260]: "0"
+              - tab "Tarjeta de Crédito 0" [ref=e261] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=e262]: "0"
+              - tab "Créditos 0" [ref=e263] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=e264]: "0"
+              - tab "Inversiones 0" [selected] [ref=e265] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=e266]: "0"
+            - tabpanel [ref=e267]:
+              - generic [ref=e329]:
+                - paragraph [ref=e330]:
+                  - text: "0 productos · valor total:"
+                  - strong
+                - list
+        - dialog [ref=e115]:
+          - generic [ref=e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e117] [cursor=pointer]
+          - separator [ref=e121]
+        - dialog "Tarjetas Débito" [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - heading "Tarjetas Débito" [level=2] [ref=e126]
+              - generic [ref=e274]:
+                - strong [ref=e275]: "3 Tarjetas:"
+                - text: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación
+            - button "Cerrar panel" [ref=e127] [cursor=pointer]
+          - separator [ref=e131]
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - generic [ref=e280]: VISA
+                  - generic [ref=e282]:
+                    - generic [ref=e283]: 4509 ···· ···· 8841
+                    - generic [ref=e284]: Visa Débito · vence 05/2034
+                - generic [ref=e285]: Activa
+              - generic [ref=e286]:
+                - generic [ref=e287]: Entrega y último uso
+                - generic [ref=e288]: 10/08/2026 · Entregada en oficina
+              - button "Bloquear" [ref=e290] [cursor=pointer]
+            - generic [ref=e294]:
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - generic [ref=e297]: VISA
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: 4566 ···· ···· 2907
+                    - generic [ref=e301]: Visa Débito · vence 05/2034
+                - generic [ref=e302]: Bloqueada
+              - generic [ref=e303]:
+                - generic [ref=e304]: Entrega y último uso
+                - generic [ref=e305]: 18/08/2026 · Bloqueo por intentos fallidos
+                - generic [ref=e306]: 17/07/2026 · Entregada en oficina
+              - generic [ref=e307]:
+                - generic [ref=e308]: Desbloquear tarjeta y restablecer sus servicios.
+                - button "Desbloquear" [ref=e309] [cursor=pointer]
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - generic [ref=e316]: MC
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: 2221 ···· ···· 3325
+                    - generic [ref=e320]: Master Débito · vence 05/2034
+                - generic [ref=e321]: Pendiente de Activación
+              - generic [ref=e322]:
+                - generic [ref=e323]: Entrega y último uso
+                - generic [ref=e324]: 01/07/2026 · Entregada en oficina
+              - button "Activar tarjeta" [ref=e326] [cursor=pointer]
+        - dialog [ref=e133]:
+          - generic [ref=e134]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e135] [cursor=pointer]
+        - dialog [ref=e140]:
+          - generic [ref=e141]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e142] [cursor=pointer]
+        - dialog [ref=e147]:
+          - generic [ref=e148]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e149] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e154]:
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - strong [ref=e160]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e162]:
+          - strong [ref=e165]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e167]:
+          - strong [ref=e171]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e172]: API 23ms
+  - region "Notificaciones"
+  - group [ref=e331]:
+    - heading "Accesibilidad" [level=2] [ref=e332]
+    - generic [ref=e333]:
+      - region "Tamaño de texto" [ref=e334]:
+        - paragraph [ref=e335]: Tamaño de texto
+        - generic [ref=e336]:
+          - button "Disminuir tamaño de texto" [ref=e337] [cursor=pointer]: A-
+          - status [ref=e338]:
+            - generic [ref=e339]: "14"
+            - generic [ref=e340]: px
+          - button "Aumentar tamaño de texto" [ref=e341] [cursor=pointer]: A+
+        - group "Elegir tamaño de texto" [ref=e342]:
+          - button "12" [ref=e343] [cursor=pointer]
+          - button "14" [pressed] [ref=e344] [cursor=pointer]
+          - button "16" [ref=e345] [cursor=pointer]
+          - button "18" [ref=e346] [cursor=pointer]
+          - button "20" [ref=e347] [cursor=pointer]
+        - button "Restablecer tamaño de texto a 14 píxeles" [ref=e348] [cursor=pointer]: Restablecer
+      - generic [ref=e349]:
+        - generic [ref=e350]:
+          - paragraph [ref=e351]: Alto contraste
+          - paragraph [ref=e352]: Mayor legibilidad
+        - switch "Alto contraste" [ref=e353] [cursor=pointer]
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - paragraph [ref=e356]: Reducir movimiento
+          - paragraph [ref=e357]: Sin animaciones
+        - switch "Reducir movimiento" [ref=e358] [cursor=pointer]

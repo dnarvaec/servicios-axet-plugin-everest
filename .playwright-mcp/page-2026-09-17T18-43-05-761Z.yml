@@ -1,0 +1,109 @@
+- generic [ref=e1]:
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - img "EVEREST" [ref=e19]
+      - generic [ref=e20]:
+        - img "Grupo AVAL" [ref=e21]
+        - generic [ref=e22]:
+          - button "Notificaciones, 2 sin leer" [ref=e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e27]: "2"
+          - button "Accesibilidad" [ref=e28] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e35] [cursor=pointer]
+        - button "user user" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: user
+          - generic "user" [ref=e42]: U
+    - generic [ref=e43]:
+      - complementary [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e47] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e50]:
+          - link "Consultar Cliente" [ref=e51] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e58] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e62]: Notificaciones
+            - generic "2 sin leer" [ref=e63]: "2"
+          - link "Centro de Ayuda" [ref=e64] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e324]:
+            - navigation "Ubicación" [ref=e325]:
+              - generic [ref=e326]: Consultar Cliente
+              - generic [ref=e327]: /
+            - button "Nueva consulta" [ref=e328] [cursor=pointer]
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - img "Cliente" [ref=e331]: —
+              - generic [ref=e333]:
+                - generic [ref=e334]:
+                  - generic [ref=e335]:
+                    - heading [level=2]
+                    - button "Editar cliente" [ref=e336] [cursor=pointer]
+                  - paragraph [ref=e338]:
+                    - text: "79485236 · · Fecha vinculación:"
+                    - strong
+                - img "AV Villas" [ref=e339]
+            - generic [ref=e340]:
+              - generic [ref=e341]: Saldo disponible
+              - generic [ref=e345]: Saldo créditos
+              - generic [ref=e349]: Deuda tarjetas
+              - generic [ref=e353]: Inversiones
+          - generic [ref=e357]:
+            - tablist [ref=e358]:
+              - tab "Cuentas 0" [ref=e359] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=e360]: "0"
+              - tab "Tarjeta de Crédito 0" [active] [selected] [ref=e361] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=e362]: "0"
+              - tab "Créditos 0" [ref=e363] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=e364]: "0"
+              - tab "Inversiones 0" [ref=e365] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=e366]: "0"
+            - tabpanel [ref=e367]:
+              - paragraph [ref=e373]:
+                - text: "0 tarjetas · Cupo disponible:"
+                - strong [ref=e374]: $0
+        - dialog [ref=e115]:
+          - generic [ref=e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e117] [cursor=pointer]
+          - separator [ref=e121]
+        - dialog "Tarjetas Débito" [ref=e123]:
+          - generic [ref=e124]:
+            - heading "Tarjetas Débito" [level=2] [ref=e126]
+            - button "Cerrar panel" [ref=e127] [cursor=pointer]
+          - separator [ref=e131]
+        - dialog [ref=e133]:
+          - generic [ref=e134]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e135] [cursor=pointer]
+        - dialog [ref=e140]:
+          - generic [ref=e141]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e142] [cursor=pointer]
+        - dialog [ref=e147]:
+          - generic [ref=e148]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e149] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e154]:
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - strong [ref=e160]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e162]:
+          - strong [ref=e165]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e167]:
+          - strong [ref=e171]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e172]: API 23ms
+  - region "Notificaciones"

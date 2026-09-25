@@ -1,0 +1,439 @@
+{
+  "title": "E-commerce Test Plan",
+  "description": "This test plan covers all user stories in user_stories/ and prioritizes test types and functional areas to focus QA effort on high-value, high-risk features first.",
+  "scope": {
+    "user_stories_range": "US001–US010, US101",
+    "user_stories": [
+      "US001",
+      "US002",
+      "US003",
+      "US004",
+      "US005",
+      "US006",
+      "US007",
+      "US008",
+      "US009",
+      "US010",
+      "US101"
+    ]
+  },
+  "priorities": [
+    {
+      "level": 1,
+      "label": "Priority 1 (Critical / High Risk)",
+      "user_stories": [
+        { "id": "US004", "name": "Checkout Process" },
+        { "id": "US002", "name": "Add to Cart" },
+        { "id": "US001", "name": "Product Search" },
+        { "id": "US008", "name": "Filtering/Sorting" }
+      ]
+    },
+    {
+      "level": 2,
+      "label": "Priority 2 (High / Business Value)",
+      "user_stories": [
+        { "id": "US003", "name": "User Registration" },
+        { "id": "US006", "name": "Order Tracking" },
+        { "id": "US009", "name": "Returns & Refunds" }
+      ]
+    },
+    {
+      "level": 3,
+      "label": "Priority 3 (Medium)",
+      "user_stories": [
+        { "id": "US005", "name": "Product Reviews" },
+        { "id": "US007", "name": "Wishlist" },
+        { "id": "US010", "name": "Recommendations" },
+        { "id": "US101", "name": "Look" }
+      ]
+    }
+  ],
+  "test_strategy": {
+    "test_types": [
+      {
+        "type": "Unit Tests",
+        "description": "Validate business logic (cart calculations, validation rules, recommendation ranking functions, search parsing).",
+        "frequency": "Every commit"
+      },
+      {
+        "type": "Integration Tests",
+        "description": "Test interactions between services (cart ↔ inventory, checkout ↔ payment gateway, registration ↔ email service, returns ↔ warehouse).",
+        "frequency": "On merge to main"
+      },
+      {
+        "type": "End-to-End (E2E) Tests",
+        "description": "Simulate user flows in a browser for critical paths: search → add to cart → checkout; register → purchase; order tracking flow.",
+        "frequency": "Nightly and on release candidates"
+      },
+      {
+        "type": "Performance Tests",
+        "description": "Load tests for search, product listing (filters), and checkout under expected peak traffic.",
+        "frequency": "Before major releases and after performance-impacting changes"
+      },
+      {
+        "type": "Security Tests",
+        "description": "Focus on registration, payment, and data exposure (GDPR). Include vulnerability scanning and PCI compliance checks for payment flows."
+      },
+      {
+        "type": "Accessibility Tests",
+        "description": "Verify key pages meet WCAG AA (search, product page, cart, checkout).",
+        "frequency": "On front-end release pipeline"
+      },
+      {
+        "type": "Usability / Manual Exploratory Tests",
+        "description": "Focus on recommendations, product reviews, and wishlist sharing flows."
+      },
+      {
+        "type": "Regression Tests",
+        "description": "Automated regression suite containing smoke tests for all critical features."
+      }
+    ]
+  },
+  "user_stories": [
+    {
+      "id": "US001",
+      "name": "Product Search",
+      "priority_level": 1,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["search parsing", "partial match behavior"]
+        },
+        {
+          "test_type": "Integration",
+          "items": ["search ↔ product catalog indexing"]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "search bar visibility",
+            "results within 2s",
+            "\"no results\" flow"
+          ]
+        },
+        {
+          "test_type": "Performance",
+          "items": ["search response time under load"]
+        }
+      ]
+    },
+    {
+      "id": "US002",
+      "name": "Add to Cart",
+      "priority_level": 1,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["cart item add/remove", "quantity validation"]
+        },
+        {
+          "test_type": "Integration",
+          "items": [
+            "cart ↔ inventory reservations",
+            "session persistence"
+          ]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "add to cart button",
+            "cart count update",
+            "success notification",
+            "OOS handling"
+          ]
+        },
+        {
+          "test_type": "Regression",
+          "items": ["optimistic UI update reconciliation"]
+        }
+      ]
+    },
+    {
+      "id": "US003",
+      "name": "User Registration",
+      "priority_level": 2,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["password/email validation", "duplicate checks"]
+        },
+        {
+          "test_type": "Integration",
+          "items": ["email delivery", "GDPR acceptance logging"]
+        },
+        {
+          "test_type": "Security",
+          "items": ["password storage", "input sanitization"]
+        },
+        {
+          "test_type": "E2E",
+          "items": ["registration flow", "confirmation email receipt"]
+        }
+      ]
+    },
+    {
+      "id": "US004",
+      "name": "Checkout Process",
+      "priority_level": 1,
+      "critical": true,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["order total", "discounts", "shipping calculation"]
+        },
+        {
+          "test_type": "Integration",
+          "items": ["payment gateway", "shipping rate API", "discount service"]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "full multi-step checkout",
+            "success & failure paths",
+            "order confirmation email"
+          ]
+        },
+        {
+          "test_type": "Security",
+          "items": [
+            "PCI DSS compliance tests",
+            "vulnerability scans on payment flows"
+          ]
+        },
+        {
+          "test_type": "Performance",
+          "items": ["concurrency tests on order placement"]
+        }
+      ]
+    },
+    {
+      "id": "US005",
+      "name": "Product Reviews",
+      "priority_level": 3,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["review validation", "helpfulness counters"]
+        },
+        {
+          "test_type": "Integration",
+          "items": [
+            "purchase-check to allow review posting",
+            "image upload service"
+          ]
+        },
+        {
+          "test_type": "E2E",
+          "items": ["post-review only after purchase", "moderation flags"]
+        }
+      ]
+    },
+    {
+      "id": "US006",
+      "name": "Order Tracking",
+      "priority_level": 2,
+      "areas": [
+        {
+          "test_type": "Integration",
+          "items": ["carrier APIs", "notification system (email/SMS)"]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "tracking page",
+            "order history",
+            "guest tracking by order+email"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "US007",
+      "name": "Wishlist",
+      "priority_level": 3,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["wishlist CRUD", "share token generation"]
+        },
+        {
+          "test_type": "Integration",
+          "items": ["email sharing", "price-drop notification service"]
+        },
+        {
+          "test_type": "E2E",
+          "items": ["add/remove from wishlist", "move to cart"]
+        }
+      ]
+    },
+    {
+      "id": "US008",
+      "name": "Product Filtering",
+      "priority_level": 1,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["filter composition logic", "sort logic"]
+        },
+        {
+          "test_type": "Integration",
+          "items": ["faceted counts", "catalog service"]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "apply multiple filters",
+            "clear filters",
+            "back navigation preserves state"
+          ]
+        },
+        {
+          "test_type": "Performance",
+          "items": ["large-catalog filtering latency"]
+        }
+      ]
+    },
+    {
+      "id": "US009",
+      "name": "Returns & Refunds",
+      "priority_level": 2,
+      "areas": [
+        {
+          "test_type": "Integration",
+          "items": [
+            "refund API",
+            "label generation",
+            "warehouse intake"
+          ]
+        },
+        {
+          "test_type": "E2E",
+          "items": [
+            "submit return",
+            "upload photos",
+            "track return",
+            "refund processed in timeframe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "US010",
+      "name": "Recommendations",
+      "priority_level": 3,
+      "areas": [
+        {
+          "test_type": "Unit",
+          "items": ["recommendation rules", "dismissal persistence"]
+        },
+        {
+          "test_type": "Integration",
+          "items": [
+            "user events pipeline",
+            "model/algorithm endpoint"
+          ]
+        },
+        {
+          "test_type": "E2E / Manual",
+          "items": [
+            "relevance checks",
+            "dismiss/undo",
+            "anonymous fallback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "US101",
+      "name": "Look",
+      "priority_level": 2,
+      "areas": [
+        {
+          "test_type": "Manual / Visual",
+          "items": [
+            "verify the referenced image is implemented and responsive"
+          ]
+        }
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "name": "Dev",
+      "purpose": "Daily development and unit tests"
+    },
+    {
+      "name": "CI",
+      "purpose": "Integration and automated E2E tests",
+      "notes": "Use test doubles for payment/carriers"
+    },
+    {
+      "name": "Staging",
+      "purpose": "Production-like for full E2E and performance/security tests",
+      "notes": "Use sandboxed payment and carrier APIs"
+    },
+    {
+      "name": "Prod",
+      "purpose": "Monitoring, smoke checks, and synthetic transactions"
+    }
+  ],
+  "test_data": {
+    "datasets": [
+      "Products with variants and inventory levels",
+      "User accounts (regular, premium)",
+      "Orders in various states",
+      "Pre-created wishlists and recommendation histories"
+    ]
+  },
+  "criteria": {
+    "entry": [
+      "Feature branch merged to CI",
+      "Unit tests passing",
+      "Migrations applied to test DB"
+    ],
+    "exit": [
+      "All Priority 1 acceptance tests passing",
+      "No critical or high-severity defects",
+      "Performance targets met for affected features"
+    ]
+  },
+  "automation_strategy": {
+    "unit_suite_target_time": "< 2 minutes",
+    "rules": [
+      "Run unit tests on every commit",
+      "Run integration tests selectively on feature merges",
+      "Run full E2E nightly and before releases",
+      "Use parallel execution in CI to shorten runtime"
+    ],
+    "tools": {
+      "frontend_e2e": ["Playwright", "Cypress"],
+      "js_unit": ["Jest", "Mocha"],
+      "python_services": ["pytest"]
+    }
+  },
+  "risks": [
+    {
+      "name": "Payment integration",
+      "mitigations": [
+        "Use sandboxed gateways and contract tests",
+        "Perform security reviews early"
+      ]
+    },
+    {
+      "name": "Inventory race conditions",
+      "mitigations": [
+        "Add contract/integration tests",
+        "Simulate concurrent adds"
+      ]
+    },
+    {
+      "name": "Search/filter performance at scale",
+      "mitigations": [
+        "Run load tests with representative catalog sizes"
+      ]
+    }
+  ],
+  "maintenance": {
+    "policy": "Update this document when new user stories are added or when acceptance criteria significantly change."
+  }
+}

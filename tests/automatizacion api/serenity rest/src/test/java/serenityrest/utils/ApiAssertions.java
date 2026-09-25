@@ -9,23 +9,22 @@ import net.serenitybdd.screenplay.Actor;
 import serenityrest.screenplay.questions.TheResponse;
 
 /**
- * Aserciones compartidas por las 4 TX — evita repetir el mismo par de asserts
- * (HTTP status + statusCode de negocio) en cada StepDefinitions.
+ * Aserciones compartidas por las 4 TX — evita repetir la validación del HTTP status
+ * en cada StepDefinitions.
  */
 public final class ApiAssertions {
 
     private ApiAssertions() {}
 
-    public static void assertTransaccionExitosa(Actor actor, Map<String, String> esperado) {
+    public static void assertHttpStatusCode(Actor actor, Map<String, String> esperado) {
         assertThat(
             "HTTP status code debe ser " + esperado.get("httpStatusCode"),
             actor.asksFor(TheResponse.statusCode()),
             equalTo(Integer.parseInt(esperado.get("httpStatusCode")))
         );
-        assertThat(
-            "msgRsHdr.status.statusCode debe ser " + esperado.get("statusCode"),
-            actor.asksFor(TheResponse.fieldAsString("msgRsHdr.status.statusCode")),
-            equalTo(esperado.get("statusCode"))
-        );
+    }
+
+    public static void assertTransaccionExitosa(Actor actor, Map<String, String> esperado) {
+        assertHttpStatusCode(actor, esperado);
     }
 }

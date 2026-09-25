@@ -1,0 +1,1 @@
+"{\n  \"status\": \"suggestions-only\",\n  \"scope\": \"WCAG 2.2 A/AA desktop only\",\n  \"revalidated\": false,\n  \"reasonNotValidated\": \"External target; no source patch applied. Semantic counts retained from baseline.\",\n  \"countsRetainedFromBaseline\": true,\n  \"semantic_issues\": []\n}"

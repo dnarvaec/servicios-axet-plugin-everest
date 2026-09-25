@@ -59,7 +59,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"operacion\": \"CONSULTA_CLIENTE\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"C\",\n        \"numeroDocumento\": \"86068761\"\n    }\n}",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_CLIENTE\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"23456789\"\n    }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -122,7 +122,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"operacion\": \"CONSULTA_PRODUCTOS\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"86068761\"\n    }\n  }",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_INVALIDA\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"ab@!#\"\n    }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -202,7 +202,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CARTERA\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\",\n      \"numeroObligacion\": \"26456554\"\n    }\n  }",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_CARTERA\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"numeroObligacion\": \"99999999999999999\"\n    }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -278,7 +278,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_TC\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"referenciaTarjeta\": \"4111111111111111\"\n    }\n}",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_DETALLADA_TC\",\n    \"obj_operacion\": {\n        \"tipoDocumento\": \"CC\",\n        \"numeroDocumento\": \"12345678\",\n        \"referenciaTarjeta\": \"9999999999999999\"\n    }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -383,6 +383,391 @@
                     "consulta"
                   ]
                 }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TD definitivo",
+          "item": [
+            {
+              "name": "BAVV — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"86068761\",\n    \"numeroTarjeta\": \"4532123456789012\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BAVV — ERROR (tarjeta no encontrada 422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"00000000\",\n    \"numeroTarjeta\": \"4532123456789012\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "Trigger: numeroDocumento=00000000 → ADP envía nroDocumento=0 al mock → mock retorna codRespuesta=99 'TARJETA NO ENCONTRADA' → ADP lanza 422"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Actualizacion datos cliente",
+          "item": [
+            {
+              "name": "BAVV — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"86068761\",\n    \"datosActualizar\": {\n      \"nombre1\": \"JUAN\",\n      \"apellido1\": \"GARCIA\",\n      \"celular\": \"3001234567\",\n      \"correoElectronico\": \"juan.garcia@test.com\",\n      \"ingresosMensuales\": 5000000\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/actualizacion/actualizacion-datos-cliente",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "actualizacion",
+                    "actualizacion-datos-cliente"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BAVV — ERROR (cliente no encontrado 422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"00000000\",\n    \"datosActualizar\": {\n      \"nombre1\": \"JUAN\",\n      \"apellido1\": \"GARCIA\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/avv/actualizacion/actualizacion-datos-cliente",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "avv",
+                    "actualizacion",
+                    "actualizacion-datos-cliente"
+                  ]
+                },
+                "description": "Trigger: numeroDocumento=00000000 → mock AVV devuelve codRespuesta 201 → ADP lanza 422"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TC",
+          "item": [
+            {
+              "name": "BAVV — OK (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-avv-ok-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"6013678000024336\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bavv_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bavv_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "AVV PFBA_CanalOtros295/WRBA_CanalOtros_BloqTempMedios. Campos: tipoDocumento, numeroDocumento, numeroTarjeta. tipoProducto=TC e indBloqueo=S fijos en el ADP. Respuesta esperada: HTTP 200."
+              },
+              "response": []
+            },
+            {
+              "name": "BAVV — ERROR solicitud invalida banco (400)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-avv-400-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"33333333\",\n    \"numeroTarjeta\": \"6013678000024336\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bavv_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bavv_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroDocumento=33333333 → ADP envía nroDocumento=33333333 (Long) al mock AVV → mock retorna HTTP 400 → ADP lanza 400 solicitud invalida. Respuesta esperada: HTTP 400."
+              },
+              "response": []
+            },
+            {
+              "name": "BAVV — ERROR comunicacion banco (502)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-avv-500-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BAVV"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BAVV"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"44444444\",\n    \"numeroTarjeta\": \"6013678000024336\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bavv_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bavv_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroDocumento=44444444 → ADP envía nroDocumento=44444444 (Long) al mock AVV → mock retorna HTTP 500 → ADP lanza 502 error de comunicacion. Respuesta esperada: HTTP 502."
               },
               "response": []
             }
@@ -724,6 +1109,2129 @@
                     "consulta"
                   ]
                 }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TD definitivo",
+          "item": [
+            {
+              "name": "BBOG — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"4551234567890123\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BBOG — ERROR (tarjeta ya bloqueada 409)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"1111111111111111\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=1111111111111111 → ADP envía cardNumber='1111111111111111' al mock BdB → mock retorna 409 tarjeta ya bloqueada"
+              },
+              "response": []
+            },
+            {
+              "name": "BBOG — ERROR (tarjeta no encontrada 404)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"0000000000000000\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=0000000000000000 → ADP envía cardNumber='0000000000000000' al mock BdB → mock retorna 404"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Actualizacion datos cliente",
+          "item": [
+            {
+              "name": "BBOG — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"datosActualizar\": {\n      \"nombre1\": \"JUAN\",\n      \"apellido1\": \"GARCIA\",\n      \"celular\": \"3001234567\",\n      \"correoElectronico\": \"juan.garcia@test.com\",\n      \"ingresosMensuales\": 5000000\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/bog/actualizacion/actualizacion-datos-cliente",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "bog",
+                    "actualizacion",
+                    "actualizacion-datos-cliente"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BBOG — ERROR (BdB 500)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "00000000-0000-0000-0000-000000000000"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"datosActualizar\": {\n      \"nombre1\": \"JUAN\",\n      \"apellido1\": \"GARCIA\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bbog_local}}/actualizacion-datos-cliente",
+                  "host": [
+                    "{{bbog_local}}"
+                  ],
+                  "path": [
+                    "actualizacion-datos-cliente"
+                  ]
+                },
+                "description": "Trigger: X-Trace-Id=00000000-0000-0000-0000-000000000000 → llega como X-RqUID al mock BdB → stub error 500"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TC",
+          "item": [
+            {
+              "name": "BBOG — OK (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bbog-ok-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bbog_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bbog_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "BdB credit-card-management POST /V1/Product/credit-card/block. ADP mapea: numeroTarjeta→CardId, LockId=P y BlockReason=33 fijos. causal solo se usa para log SQS, no se envia al banco. Causales: BL01=Robo, BL02=Perdida, BL03=Fraude. Respuesta esperada: HTTP 200."
+              },
+              "response": []
+            },
+            {
+              "name": "BBOG — ERROR comunicacion banco (502)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bbog-500-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"0000000000000000\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bbog_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bbog_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=0000000000000000 → ADP envía CardId='0000000000000000' al mock BdB → mock retorna HTTP 500 → ADP lanza 502 error de comunicacion. Respuesta esperada: HTTP 502."
+              },
+              "response": []
+            },
+            {
+              "name": "BBOG — ERROR estado tarjeta incompatible (422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bbog-409-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BBOG"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"1111111111111111\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bbog_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bbog_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=1111111111111111 → ADP envía CardId='1111111111111111' al mock BdB → mock retorna HTTP 409 conflicto estado tarjeta → ADP lanza 422 estado de tarjeta no permite bloqueo. Respuesta esperada: HTTP 422."
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OCC",
+      "item": [
+        {
+          "name": "consulta general",
+          "item": [
+            {
+              "name": "consulta-productos",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-$(date +%s)"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "9276974045"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-11T10:00:00.000"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_PRODUCTOS\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"75090488\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "consulta-cliente",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer <JWT>"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-occ-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "a1b2c3d4-0000-0000-0000-000000000001"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-14T10:00:00Z"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_CLIENTE\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "consulta-detallada-productos",
+          "item": [
+            {
+              "name": "consulta-detallada-productos",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-occ-005"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "CANAL_OFICINAS"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-RqUID",
+                    "value": "9276974049"
+                  },
+                  {
+                    "key": "X-ClientDt",
+                    "value": "2026-09-14T10:00:05.227"
+                  },
+                  {
+                    "key": "X-IPAddr",
+                    "value": "10.0.0.1"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"operacion\": \"CONSULTA_DETALLADA_CDT\",\r\n    \"obj_operacion\": {\r\n        \"tipoDocumento\": \"CC\",\r\n        \"numeroDocumento\": \"75090488\",\r\n        \"acctId\": \"CDT-001\",\r\n        \"acctType\": \"CDA\"\r\n    }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TD definitivo",
+          "item": [
+            {
+              "name": "BOCC — OK (causal BL01 Robo)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "OCC BloqueoCancelacionTarjetaDebitoCarton (SOAP). Causales: BL01=Robo, BL02=Perdida, BL03=Fraude"
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — OK (causal BL02 Perdida)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-002"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL02\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — ERROR (negocio OCC 422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "99999"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "Trigger: X-Trace-Id=99999 → ADP propaga como SesionId en el SOAP (via resolveRqUID) → mock OCC retorna error de negocio → ADP lanza 422"
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — OK (causal BL03 Fraude)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-003"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL03\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Actualizacion datos cliente",
+          "item": [
+            {
+              "name": "BOCC — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numDocumento\": \"12345678\",\n    \"datosActualizar\": {\n      \"celular\": \"3001234567\",\n      \"correoElectronico\": \"juan.garcia@test.com\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/actualizacion-datos",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "actualizacion-datos"
+                  ]
+                },
+                "description": "OCC UpdateCustomerData (REST OAuth 2.0 PUT). Campos: numDocumento (no numeroDocumento), datosActualizar.celular y/o correoElectronico"
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — ERROR (identificacion no encontrada 400)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numDocumento\": \"99999\",\n    \"datosActualizar\": {\n      \"celular\": \"3001234567\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/occ/actualizacion/actualizacion-datos",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "occ",
+                    "actualizacion",
+                    "actualizacion-datos"
+                  ]
+                },
+                "description": "Trigger: header Sesionid=99999 en el mock OCC → 400 identificacion no encontrada. El Sesionid lo pone el ADP como ptcionId (UUID), usar directamente contra el ADP para el trigger exacto."
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TC",
+          "item": [
+            {
+              "name": "BOCC — OK BL01 Robo (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bocc-ok-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL01\",\n    \"clienteNombre\": \"JUAN PEREZ\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bocc_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bocc_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "OCC REST POST /products/credit-cards/block (OAuth 2.0). ADP mapea: numeroTarjeta→TrjtaNro, causal→BloqueoCod, clienteNombre→ClienteNombre. NO requiere tipoDocumento ni numeroDocumento. Causales: BL01=Robo, BL02=Perdida, BL03=Fraude. Respuesta esperada: HTTP 200."
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — OK BL02 Perdida (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bocc-ok-002"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL02\",\n    \"clienteNombre\": \"JUAN PEREZ\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bocc_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bocc_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — OK BL03 Fraude (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bocc-ok-003"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL03\",\n    \"clienteNombre\": \"JUAN PEREZ\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bocc_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bocc_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — ERROR negocio OCC tarjeta no bloqueable (422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bocc-206-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"numeroTarjeta\": \"0000000000000000\",\n    \"causal\": \"BL01\",\n    \"clienteNombre\": \"JUAN PEREZ\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bocc_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bocc_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=0000000000000000 → ADP envía TrjtaNro='0000000000000000' al mock OCC → mock retorna HTTP 206 (tarjeta no puede ser bloqueada) → ADP lo interpreta como error de negocio y lanza 422. Respuesta esperada: HTTP 422."
+              },
+              "response": []
+            },
+            {
+              "name": "BOCC — ERROR comunicacion banco (502)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bocc-500-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BOCC"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BOCC"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"numeroTarjeta\": \"1111111111111111\",\n    \"causal\": \"BL01\",\n    \"clienteNombre\": \"JUAN PEREZ\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bocc_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bocc_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=1111111111111111 → ADP envía TrjtaNro='1111111111111111' al mock OCC → mock retorna HTTP 500 → ADP lanza 502 error de comunicacion. Respuesta esperada: HTTP 502."
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "POP",
+      "item": [
+        {
+          "name": "consulta general",
+          "item": [
+            {
+              "name": "consulta-productos",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer <jwt-del-asesor>"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "550e8400-e29b-41d4-a716-446655440000"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_PRODUCTOS\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "consulta-cliente",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer <JWT>"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpo-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"operacion\": \"CONSULTA_CLIENTE\",\n    \"obj_operacion\": {\n      \"tipoDocumento\": \"CC\",\n      \"numeroDocumento\": \"12345678\"\n    }\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "consulta-detallada-productos",
+          "item": [
+            {
+              "name": "consulta-detallada-productos",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpo-002"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "CANAL_OFICINAS"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"operacion\": \"CONSULTA_DETALLADA_CARTERA\",\r\n    \"obj_operacion\": {\r\n        \"tipoDocumento\": \"CC\",\r\n        \"numeroDocumento\": \"12131415\",\r\n        \"acctId\": \"5391689991756210\",\r\n        \"acctType\": \"CCA\"\r\n    }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/adp/consulta",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "adp",
+                    "consulta"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TD definitivo",
+          "item": [
+            {
+              "name": "BPOP — OK (causal BL01 Robo)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "BPO LockDebitCardBySofia (SOAP). Causales: BL01=Robo (lockReason=1), BL02=Perdida (lockReason=2), BL03=Fraude (lockReason=4)"
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — OK (causal BL03 Fraude)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-003"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL03\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — OK (causal BL02 Perdida)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-002"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL02\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR (negocio BPO 422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "00000000-0000-0000-0000-000000000000"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TD_DEFINITIVO\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5307100045685945\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/bloqueo-td",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "bloqueo-td"
+                  ]
+                },
+                "description": "Trigger: X-Trace-Id=00000000-0000-0000-0000-000000000000 → ADP propaga como RqUID en el SOAP (via resolveRqUID) → mock BPO LockDebitCard retorna error de negocio → ADP lanza 422"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Actualizacion datos cliente",
+          "item": [
+            {
+              "name": "BPOP — OK",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"datosActualizar\": {\n      \"celular\": \"3001234567\",\n      \"correoElectronico\": \"juan.garcia@test.com\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/actualizacion-datos",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "actualizacion-datos"
+                  ]
+                },
+                "description": "BPO MaintainGrupoAval (SOAP). Campos: numeroDocumento, datosActualizar.celular y/o correoElectronico"
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR (RqUID cero 400)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "00000000-0000-0000-0000-000000000000"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BBOG"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"ACTUALIZACION_DATOS\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"datosActualizar\": {\n      \"celular\": \"3001234567\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/pop/actualizacion/actualizacion-datos",
+                  "protocol": "https",
+                  "host": [
+                    "d299ks4asy14z3",
+                    "cloudfront",
+                    "net"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "everst",
+                    "ofi",
+                    "pop",
+                    "actualizacion",
+                    "actualizacion-datos"
+                  ]
+                },
+                "description": "Trigger: mock BPO MaintainGrupoAval usa RqUID=00000000-0000-0000-0000-000000000000 en el body SOAP para devolver error. El RqUID lo genera el ADP como UUID interno — usar directamente contra el ADP para trigger exacto."
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Bloqueo TC",
+          "item": [
+            {
+              "name": "BPOP — OK BL01 Robo (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-ok-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "BPO SrvCodeCardBlock/modCodeCardBlock (SOAP, namespace urn://grupoaval.com/accounts/v1/). ADP mapea: numeroTarjeta→AcctId, causal→BlockCode1, acctType=B fijo. Causales: BL01=Robo, BL02=Perdida, BL03=Fraude. StatusCode exitoso: 0. Respuesta esperada: HTTP 200."
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR tarjeta no encontrada BPO StatusCode 1160 (404)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-1160-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"9999999999999999\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=9999999999999999 → ADP envía AcctId='9999999999999999' al mock BPO → mock retorna SOAP HTTP 200 con StatusCode=1160 CARD NUMBER NOT FOUND → ADP lanza 404. Respuesta esperada: HTTP 404."
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — OK BL03 Fraude (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-ok-003"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL03\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — OK BL02 Perdida (200)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-ok-002"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"4111222233334444\",\n    \"causal\": \"BL02\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR estado incompatible BPO StatusCode 1200 (422)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-1200-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"7777777777777777\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=7777777777777777 → ADP envía AcctId='7777777777777777' al mock BPO → mock retorna SOAP HTTP 200 con StatusCode=1200 ESTADO INCOMPATIBLE PARA EL BLOQUEO → ADP lanza 422. Respuesta esperada: HTTP 422."
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR tecnico BPO StatusCode 300 (502)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-300-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"3333333333333333\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=3333333333333333 → ADP envía AcctId='3333333333333333' al mock BPO → mock retorna SOAP HTTP 200 con StatusCode=300 error tecnico en backend → ADP lanza 502. Respuesta esperada: HTTP 502."
+              },
+              "response": []
+            },
+            {
+              "name": "BPOP — ERROR SOAP Fault banco (502)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer test-token"
+                  },
+                  {
+                    "key": "X-Trace-Id",
+                    "value": "trace-bpop-fault-001"
+                  },
+                  {
+                    "key": "X-Origin-Bank",
+                    "value": "BPOP"
+                  },
+                  {
+                    "key": "X-Destination-Bank",
+                    "value": "BPOP"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"operacion\": \"BLOQUEO_TC\",\n  \"obj_operacion\": {\n    \"tipoDocumento\": \"CC\",\n    \"numeroDocumento\": \"12345678\",\n    \"numeroTarjeta\": \"5555555555555555\",\n    \"causal\": \"BL01\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{bpop_local}}/bloqueo-tc",
+                  "host": [
+                    "{{bpop_local}}"
+                  ],
+                  "path": [
+                    "bloqueo-tc"
+                  ]
+                },
+                "description": "Trigger: numeroTarjeta=5555555555555555 → ADP envía AcctId='5555555555555555' al mock BPO → mock retorna HTTP 500 con SOAP Fault faultstring='Error tecnico en el procesamiento de la tarjeta de credito' → ADP lanza 502. Respuesta esperada: HTTP 502."
               },
               "response": []
             }

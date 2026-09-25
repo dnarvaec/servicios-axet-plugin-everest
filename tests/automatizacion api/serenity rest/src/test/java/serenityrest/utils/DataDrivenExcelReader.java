@@ -224,6 +224,27 @@ public final class DataDrivenExcelReader {
         return expectedFor(RequestType.BDB_CDT_DETALLADO, caso);
     }
 
+    public static Map<String, Object> officePayload(String sheetName, int caso) {
+        return payloadFor(requestType(sheetName), caso);
+    }
+
+    public static Map<String, String> officeHeaders(String sheetName, int caso) {
+        return headersFor(requestType(sheetName), caso);
+    }
+
+    public static Map<String, String> officeExpected(String sheetName, int caso) {
+        return expectedFor(requestType(sheetName), caso);
+    }
+
+    private static RequestType requestType(String sheetName) {
+        for (RequestType type : RequestType.values()) {
+            if (type.sheetName.equals(sheetName)) {
+                return type;
+            }
+        }
+        throw new IllegalArgumentException("Hoja de Oficinas no soportada: " + sheetName);
+    }
+
     private static Map<String, Object> payloadFor(RequestType requestType, int caso) {
         Map<String, Object> payload = lookup(ALL_PAYLOADS, requestType, caso);
         return deepCopyMap(payload);
@@ -571,7 +592,23 @@ public final class DataDrivenExcelReader {
         BDB_CONSULTA_GENERAL("bdb_consulta_general", null),
         BDB_CARTERA_DETALLADA("bdb_cartera_detallada", null),
         BDB_TC_DETALLADA("bdb_tc_detallada", null),
-        BDB_CDT_DETALLADO("bdb_cdt_detallado", null);
+        BDB_CDT_DETALLADO("bdb_cdt_detallado", null),
+        AVV_BLOQUEO_TD("avv_bloqueo_td", null),
+        BDB_BLOQUEO_TD("bdb_bloqueo_td", null),
+        OCC_BLOQUEO_TD("occ_bloqueo_td", null),
+        BPOP_BLOQUEO_TD("bpop_bloqueo_td", null),
+        AVV_ACTUALIZACION_DATOS("avv_actualizacion_datos", null),
+        BDB_ACTUALIZACION_DATOS("bdb_actualizacion_datos", null),
+        OCC_ACTUALIZACION_DATOS("occ_actualizacion_datos", null),
+        BPOP_ACTUALIZACION_DATOS("bpop_actualizacion_datos", null),
+        OCC_CONSULTA_CLIENTE("occ_consulta_cliente", null),
+        OCC_CONSULTA_PRODUCTOS("occ_consulta_productos", null),
+        OCC_CONSULTA_CDT("occ_consulta_cdt", null),
+        BPOP_CONSULTA_CLIENTE("bpop_consulta_cliente", null),
+        BPOP_CONSULTA_PRODUCTOS("bpop_consulta_productos", null),
+        BPOP_CONSULTA_CARTERA("bpop_consulta_cartera", null),
+        ORQ_CONSULTA_TC("orq_consulta_tc", null),
+        ORQ_CONSULTA_CDT("orq_consulta_cdt", null);
 
         private final String sheetName;
         private final String rowSelector;

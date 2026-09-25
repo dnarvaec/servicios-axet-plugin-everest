@@ -80,7 +80,7 @@ public class OficinasAvvStepDefinitions {
         );
     }
 
-    @Cuando("consulta la tarjeta de cr\u00e9dito detallada en AVV del caso {int}")
+    @Cuando("consulta la tarjeta de credito detallada en AVV del caso {int}")
     public void consultaLaTarjetaDeCreditoDetalladaEnAvv(int caso) {
         casoActual = caso;
         actor.attemptsTo(
@@ -120,7 +120,7 @@ public class OficinasAvvStepDefinitions {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.avvCarteraDetalladaExpected(casoActual));
     }
 
-    @Entonces("la consulta de tarjeta de cr\u00e9dito detallada en AVV es exitosa")
+    @Entonces("la consulta de tarjeta de credito detallada en AVV es exitosa")
     public void laConsultaDeTarjetaDeCreditoDetalladaEnAvvEsExitosa() {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.avvTcDetalladaExpected(casoActual));
     }
@@ -145,7 +145,7 @@ public class OficinasAvvStepDefinitions {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.avvCarteraDetalladaExpected(casoActual));
     }
 
-    @Entonces("la respuesta de tarjeta de crédito detallada en AVV coincide con el error esperado")
+    @Entonces("la respuesta de tarjeta de credito detallada en AVV coincide con el error esperado")
     public void laRespuestaDeTarjetaDeCreditoDetalladaEnAvvCoincideConElErrorEsperado() {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.avvTcDetalladaExpected(casoActual));
     }

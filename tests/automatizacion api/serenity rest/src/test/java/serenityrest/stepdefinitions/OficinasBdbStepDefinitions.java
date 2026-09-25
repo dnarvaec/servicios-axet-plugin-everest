@@ -69,7 +69,7 @@ public class OficinasBdbStepDefinitions {
         );
     }
 
-    @Cuando("consulta la tarjeta de cr\u00e9dito detallada en BDB del caso {int}")
+    @Cuando("consulta la tarjeta de credito detallada en BDB del caso {int}")
     public void consultaLaTarjetaDeCreditoDetalladaEnBdb(int caso) {
         casoActual = caso;
         actor.attemptsTo(
@@ -104,7 +104,7 @@ public class OficinasBdbStepDefinitions {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.bdbCarteraDetalladaExpected(casoActual));
     }
 
-    @Entonces("la consulta de tarjeta de cr\u00e9dito detallada en BDB es exitosa")
+    @Entonces("la consulta de tarjeta de credito detallada en BDB es exitosa")
     public void laConsultaDeTarjetaDeCreditoDetalladaEnBdbEsExitosa() {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.bdbTcDetalladaExpected(casoActual));
     }
@@ -124,7 +124,7 @@ public class OficinasBdbStepDefinitions {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.bdbCarteraDetalladaExpected(casoActual));
     }
 
-    @Entonces("la respuesta de tarjeta de crédito detallada en BDB coincide con el error esperado")
+    @Entonces("la respuesta de tarjeta de credito detallada en BDB coincide con el error esperado")
     public void laRespuestaDeTarjetaDeCreditoDetalladaEnBdbCoincideConElErrorEsperado() {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.bdbTcDetalladaExpected(casoActual));
     }
@@ -134,7 +134,7 @@ public class OficinasBdbStepDefinitions {
         ApiAssertions.assertTransaccionExitosa(actor, TestData.bdbCdtDetalladoExpected(casoActual));
     }
 
-    @Entonces("el envelope de respuesta de Oficinas BDB est\u00e1 presente")
+    @Entonces("el envelope de respuesta de Oficinas BDB esta presente")
     public void elEnvelopeDeRespuestaDeOficinasBdbEstaPresente() {
         assertThat(
             "msgRsHdr.status debe estar presente",

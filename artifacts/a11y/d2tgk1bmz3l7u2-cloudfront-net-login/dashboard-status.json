@@ -1,0 +1,1 @@
+"{\n  \"dashboard\": {\n    \"status\": \"fallback-generated\",\n    \"generatorError\": \"Error generando dashboard: 'str' object has no attribute 'get'\",\n    \"fallbackPath\": \"dashboard.html\"\n  },\n  \"status\": \"suggestions-only\",\n  \"revalidated\": false,\n  \"reasonNotValidated\": \"External target; no source patch applied.\"\n}"

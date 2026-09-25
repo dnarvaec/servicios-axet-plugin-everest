@@ -100,6 +100,26 @@ public final class ApiEndpoints {
         /** POST — Orquestador ADP BDB (CONSULTA_GENERAL, CONSULTA_DETALLADA_CARTERA,
          *  CONSULTA_DETALLADA_TC, CONSULTA_DETALLADA_CDT). */
         public static final String CONSULTA_BDB = "/api/v1/everst/ofi/bog/adp/consulta";
+
+        /** POST — Orquestador ADP Banco de Occidente. */
+        public static final String CONSULTA_OCC = "/api/v1/everst/ofi/occ/adp/consulta";
+
+        /** POST — Orquestador ADP Banco Popular. */
+        public static final String CONSULTA_BPOP = "/api/v1/everst/ofi/pop/adp/consulta";
+
+        public static final String BLOQUEO_TD_AVV = "/api/v1/everst/ofi/avv/actualizacion/bloqueo-td";
+        public static final String BLOQUEO_TD_BDB = "/api/v1/everst/ofi/bog/actualizacion/bloqueo-td";
+        public static final String BLOQUEO_TD_OCC = "/api/v1/everst/ofi/occ/actualizacion/bloqueo-td";
+        public static final String BLOQUEO_TD_BPOP = "/api/v1/everst/ofi/pop/actualizacion/bloqueo-td";
+
+        public static final String ACTUALIZACION_DATOS_AVV =
+            "/api/v1/everst/ofi/avv/actualizacion/actualizacion-datos-cliente";
+        public static final String ACTUALIZACION_DATOS_BDB =
+            "/api/v1/everst/ofi/bog/actualizacion/actualizacion-datos-cliente";
+        public static final String ACTUALIZACION_DATOS_OCC =
+            "/api/v1/everst/ofi/occ/actualizacion/actualizacion-datos";
+        public static final String ACTUALIZACION_DATOS_BPOP =
+            "/api/v1/everst/ofi/pop/actualizacion/actualizacion-datos";
     }
 
     // ── Auth — paths de autenticación (si aplica en futuros sprints) ──────────
