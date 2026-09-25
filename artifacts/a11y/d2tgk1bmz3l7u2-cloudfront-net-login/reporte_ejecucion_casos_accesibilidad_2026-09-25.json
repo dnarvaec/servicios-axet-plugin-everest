@@ -1,0 +1,51 @@
+{
+  "ejecutadoEl": "2026-09-25",
+  "entorno": "web (no móvil)",
+  "sitio": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "fuenteCasos": "casos de prueba/casos everest.xlsx (hoja 'Casos funcionales', filtro Labels contiene 'accesibilidad')",
+  "totalCasosFiltrados": 67,
+  "bancosProbados": [
+    "Banco de Bogotá (BDB)",
+    "Banco de Occidente (OCC)",
+    "Banco Popular (BPO)",
+    "AV Villas (AVV)"
+  ],
+  "cedulasUsadas": [
+    {
+      "pool": "A",
+      "cc": "12345678",
+      "banco": "BDB",
+      "nombre": "JUAN CARLOS RODRIGUEZ GOMEZ"
+    },
+    {
+      "pool": "B",
+      "cc": "23456789",
+      "banco": "AVV",
+      "nombre": "MARIA FERNANDA LOPEZ VARGAS"
+    },
+    {
+      "pool": "C",
+      "cc": "34567890",
+      "banco": "BPO",
+      "nombre": "PEDRO ANDRES MARTINEZ DIAZ"
+    },
+    {
+      "pool": "D",
+      "cc": "45678901",
+      "banco": "OCC",
+      "nombre": "ANA LUCIA HERRERA MUNOZ"
+    }
+  ],
+  "hallazgosClaveReales": [
+    "axe-core: color-contrast (serious) en título de cliente y etiquetas de cuentas/créditos/tarjetas — WCAG 1.4.3, confirmado en BDB y AVV.",
+    "axe-core: button-name (critical) en selects 'Departamento'/'Ciudad' del formulario 'Editar cliente' (HU-203) — WCAG 4.1.2, sin nombre accesible.",
+    "axe-core: scrollable-region-focusable (serious) en panel de bloqueo de tarjeta (HU-201) — WCAG 2.1.1.",
+    "Campos de detalle (Tarjeta de Crédito y CDT) con etiquetas SIN valor visible: 'Cupo para avances', 'Pago total', 'Días en mora', 'Tasa E.A.', 'RENTABILIDAD', 'Capital inicial', 'Plazo' — confirmado en BDB y AVV.",
+    "Resumen de Créditos (lista) muestra 'Cuota Mensual' y 'Próximo Pago' sin valor, y códigos abreviados no explicados ('Cre Lib', 'Cre Con') — confirmado en BDB y BPO.",
+    "Ciudad del cliente mostrada como código DIVIPOL crudo ('11001','10010') en vez de nombre legible — confirmado en AVV y OCC; BDB y BPO sí muestran nombre de ciudad.",
+    "Estado vacío de productos (0 items) no incluye mensaje descriptivo, solo 'Total disponible:' en blanco — confirmado en BPO (créditos/cuentas en 0).",
+    "Enmascaramiento de número de tarjeta (••••NNNN) consistente y correcto en todos los bancos probados — hallazgo positivo.",
+    "Fechas (vencimiento, apertura, corte) con formato DD/MM/AAAA consistente cuando están presentes — hallazgo positivo."
+  ],
+  "nota": "Los flujos de confirmación de Bloqueo TD Definitivo (HU-201) y Actualización de Datos (HU-203) se inspeccionaron hasta el formulario/paso previo a la confirmación; no se ejecutó 'Confirmar'/'Guardar' para evitar mutar datos reales del entorno compartido (acción no reversible). El veredicto de esos pasos finales se basa en los defectos ya confirmados en el mismo componente de UI."
+}

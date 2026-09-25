@@ -1,0 +1,148 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - img "EVEREST" [ref=f1e6]
+      - generic [ref=f1e7]:
+        - img "Grupo AVAL" [ref=f1e8]
+        - generic [ref=f1e9]:
+          - button "Notificaciones, 2 sin leer" [ref=f1e142] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f1e143]: "2"
+          - button "Accesibilidad" [ref=f1e11] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f1e18] [cursor=pointer]
+        - button "user user" [ref=f1e20] [cursor=pointer]:
+          - generic [ref=f1e21]: user
+          - generic "user" [ref=f1e22]: U
+    - generic [ref=f1e23]:
+      - complementary [ref=f1e24]:
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f1e27] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f1e28]:
+          - link "Consultar Cliente" [ref=f1e29] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f1e144] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f1e40]: Notificaciones
+            - generic "2 sin leer" [ref=f1e145]: "2"
+          - link "Centro de Ayuda" [ref=f1e41] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f1e43]:
+        - generic [ref=f1e44]:
+          - generic [ref=f1e151]:
+            - navigation "Ubicación" [ref=f1e152]:
+              - generic [ref=f1e153]: Consultar Cliente
+              - generic [ref=f1e154]: /
+              - generic [ref=f1e155]: RODRIGUEZ GOMEZ,JUAN CARLOS
+            - button "Nueva consulta" [ref=f1e156] [cursor=pointer]
+          - generic [ref=f1e157]:
+            - generic [ref=f1e158]:
+              - img "RODRIGUEZ GOMEZ,JUAN CARLOS" [ref=f1e159]: RG
+              - generic [ref=f1e161]:
+                - generic [ref=f1e162]:
+                  - generic [ref=f1e163]:
+                    - heading "RODRIGUEZ GOMEZ,JUAN CARLOS" [level=2] [ref=f1e164]
+                    - button "Editar cliente" [ref=f1e165] [cursor=pointer]
+                  - paragraph [ref=f1e167]:
+                    - text: "12345678 · BOGOTA D.C. · Fecha vinculación:"
+                    - strong [ref=f1e168]: Junio 2018
+                - img "Banco de Bogotá" [ref=f1e169]
+            - generic [ref=f1e170]:
+              - generic [ref=f1e171]:
+                - generic [ref=f1e172]: Saldo disponible
+                - generic [ref=f1e175]: $ 3.350.000
+                - generic [ref=f1e176]: 2 cuentas
+              - generic [ref=f1e177]:
+                - generic [ref=f1e178]: Saldo créditos
+                - generic [ref=f1e181]: $ 13.000.000
+                - generic [ref=f1e182]: 2 obligaciones
+              - generic [ref=f1e183]:
+                - generic [ref=f1e184]: Deuda tarjetas
+                - generic [ref=f1e187]: $ 1.120.000
+                - generic [ref=f1e188]: 2 tarjetas
+              - generic [ref=f1e189]:
+                - generic [ref=f1e190]: Inversiones
+                - generic [ref=f1e193]: $ 15.000.000
+                - generic [ref=f1e194]: 2 CDT's
+          - generic [ref=f1e195]:
+            - tablist [ref=f1e196]:
+              - tab "Cuentas 2" [selected] [ref=f1e197] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=f1e198]: "2"
+              - tab "Tarjeta de Crédito 2" [ref=f1e199] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=f1e200]: "2"
+              - tab "Créditos 2" [ref=f1e201] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=f1e202]: "2"
+              - tab "Inversiones 2" [ref=f1e203] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=f1e204]: "2"
+            - tabpanel [ref=f1e205]:
+              - generic [ref=f1e206]:
+                - generic [ref=f1e207]:
+                  - paragraph [ref=f1e208]:
+                    - text: "2 cuentas de depósito · Total disponible:"
+                    - strong [ref=f1e209]: $ 3.350.000
+                  - button "Consultar tarjetas débito" [ref=f1e210] [cursor=pointer]
+                - list [ref=f1e211]:
+                  - listitem [ref=f1e212]:
+                    - generic [ref=f1e213]:
+                      - generic [ref=f1e214]: Cuenta de Ahorros
+                      - generic [ref=f1e215]: 0001 0000 1234 5678 · Ahorros
+                    - generic [ref=f1e216]:
+                      - generic [ref=f1e217]: Saldo disponible
+                      - generic [ref=f1e218]: $ 2.500.000
+                    - generic [ref=f1e219]:
+                      - generic [ref=f1e220]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0001 0000 1234 5678" [ref=f1e221] [cursor=pointer]:
+                        - generic [ref=f1e222]: Ver detalles
+                  - listitem [ref=f1e227]:
+                    - generic [ref=f1e228]:
+                      - generic [ref=f1e229]: Cuenta de Ahorros
+                      - generic [ref=f1e230]: 0002 0000 1234 5678 · Ahorros
+                    - generic [ref=f1e231]:
+                      - generic [ref=f1e232]: Saldo disponible
+                      - generic [ref=f1e233]: $ 850.000
+                    - generic [ref=f1e234]:
+                      - generic [ref=f1e235]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0002 0000 1234 5678" [ref=f1e236] [cursor=pointer]:
+                        - generic [ref=f1e237]: Ver detalles
+        - dialog [ref=f1e83]:
+          - generic [ref=f1e84]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e85] [cursor=pointer]
+          - separator [ref=f1e89]
+        - dialog "Tarjetas Débito" [ref=f1e91]:
+          - generic [ref=f1e92]:
+            - heading "Tarjetas Débito" [level=2] [ref=f1e94]
+            - button "Cerrar panel" [ref=f1e95] [cursor=pointer]
+          - separator [ref=f1e99]
+        - dialog [ref=f1e101]:
+          - generic [ref=f1e102]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e103] [cursor=pointer]
+        - dialog [ref=f1e108]:
+          - generic [ref=f1e109]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e110] [cursor=pointer]
+        - dialog [ref=f1e115]:
+          - generic [ref=f1e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e117] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f1e122]:
+      - generic [ref=f1e123]:
+        - generic [ref=f1e124]:
+          - strong [ref=f1e128]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f1e130]:
+          - strong [ref=f1e133]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f1e135]:
+          - strong [ref=f1e139]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f1e140]: API 23ms
+  - region "Notificaciones"

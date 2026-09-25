@@ -1,0 +1,91 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - banner [ref=f4e4]:
+      - img "EVEREST" [ref=f4e6]
+      - generic [ref=f4e7]:
+        - img "Grupo AVAL" [ref=f4e8]
+        - generic [ref=f4e9]:
+          - button "Notificaciones" [ref=f4e10] [cursor=pointer]
+          - button "Accesibilidad" [ref=f4e11] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f4e18] [cursor=pointer]
+        - button "user user" [ref=f4e20] [cursor=pointer]:
+          - generic [ref=f4e21]: user
+          - generic "user" [ref=f4e22]: U
+    - generic [ref=f4e23]:
+      - complementary [ref=f4e24]:
+        - generic [ref=f4e25]:
+          - generic [ref=f4e26]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f4e27] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f4e28]:
+          - link "Consultar Cliente" [ref=f4e29] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones" [ref=f4e36] [cursor=pointer]:
+            - /url: /asesor/notifications
+          - link "Centro de Ayuda" [ref=f4e41] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f4e43]:
+        - generic [ref=f4e45]:
+          - generic [ref=f4e48]:
+            - heading "Consultar cliente" [level=1] [ref=f4e49]
+            - paragraph [ref=f4e50]: Selecciona el banco y completa los datos del cliente para validar su identidad.
+          - separator [ref=f4e51]
+          - generic [ref=f4e52]:
+            - button [pressed] [ref=f4e53] [cursor=pointer]:
+              - img "Banco de Bogotá" [ref=f4e54]
+            - button [ref=f4e55] [cursor=pointer]:
+              - img "Banco de Occidente" [ref=f4e56]
+            - button [ref=f4e57] [cursor=pointer]:
+              - img "banco popular" [ref=f4e58]
+            - button [ref=f4e59] [cursor=pointer]:
+              - img "AV Villas" [ref=f4e60]
+          - note [ref=f4e61]:
+            - generic [ref=f4e62]: Solicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad
+          - generic [ref=f4e63]:
+            - generic [ref=f4e65]:
+              - generic [ref=f4e66]: Tipo de documento *
+              - combobox "Tipo de documento *" [ref=f4e68] [cursor=pointer]:
+                - generic [ref=f4e69]: Selecciona un tipo de documento
+            - generic [ref=f4e72]:
+              - generic [ref=f4e73]: Número de documento *
+              - textbox "Número de documento *" [disabled] [ref=f4e74]:
+                - /placeholder: "Ej: 79485236"
+            - button "Buscar cliente" [disabled] [ref=f4e78]: Buscar
+        - dialog [ref=f4e83]:
+          - generic [ref=f4e84]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f4e85] [cursor=pointer]
+          - separator [ref=f4e89]
+        - dialog "Tarjetas Débito" [ref=f4e91]:
+          - generic [ref=f4e92]:
+            - heading "Tarjetas Débito" [level=2] [ref=f4e94]
+            - button "Cerrar panel" [ref=f4e95] [cursor=pointer]
+          - separator [ref=f4e99]
+        - dialog [ref=f4e101]:
+          - generic [ref=f4e102]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f4e103] [cursor=pointer]
+        - dialog [ref=f4e108]:
+          - generic [ref=f4e109]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f4e110] [cursor=pointer]
+        - dialog [ref=f4e115]:
+          - generic [ref=f4e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f4e117] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f4e122]:
+      - generic [ref=f4e123]:
+        - generic [ref=f4e124]:
+          - strong [ref=f4e128]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f4e130]:
+          - strong [ref=f4e133]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f4e135]:
+          - strong [ref=f4e139]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f4e140]: API 23ms
+  - region "Notificaciones"
