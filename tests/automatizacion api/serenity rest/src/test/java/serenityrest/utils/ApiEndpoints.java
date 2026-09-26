@@ -112,6 +112,12 @@ public final class ApiEndpoints {
         public static final String BLOQUEO_TD_OCC = "/api/v1/everst/ofi/occ/actualizacion/bloqueo-td";
         public static final String BLOQUEO_TD_BPOP = "/api/v1/everst/ofi/pop/actualizacion/bloqueo-td";
 
+        // HU-202 — Bloqueo de Tarjeta de Credito por banco.
+        public static final String BLOQUEO_TC_AVV = "/api/v1/everst/ofi/avv/actualizacion/bloqueo-tc";
+        public static final String BLOQUEO_TC_BDB = "/api/v1/everst/ofi/bog/actualizacion/bloqueo-tc";
+        public static final String BLOQUEO_TC_OCC = "/api/v1/everst/ofi/occ/actualizacion/bloqueo-tc";
+        public static final String BLOQUEO_TC_BPOP = "/api/v1/everst/ofi/pop/actualizacion/bloqueo-tc";
+
         public static final String ACTUALIZACION_DATOS_AVV =
             "/api/v1/everst/ofi/avv/actualizacion/actualizacion-datos-cliente";
         public static final String ACTUALIZACION_DATOS_BDB =

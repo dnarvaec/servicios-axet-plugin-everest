@@ -103,6 +103,7 @@ public class NuevasOficinasStepDefinitions {
     private static String sheetNameFor(String banco, String operacion) {
         String prefix = prefixFor(banco);
         if ("BLOQUEO_TD_DEFINITIVO".equals(operacion)) return prefix + "bloqueo_td";
+        if ("BLOQUEO_TC".equals(operacion)) return prefix + "bloqueo_tc";
         if ("ACTUALIZACION_DATOS".equals(operacion)) return prefix + "actualizacion_datos";
         if ("CONSULTA_CLIENTE".equals(operacion)) return prefix + "consulta_cliente";
         if ("CONSULTA_PRODUCTOS".equals(operacion)) return prefix + "consulta_productos";
@@ -121,6 +122,7 @@ public class NuevasOficinasStepDefinitions {
 
     private static String endpointForSheet(String sheetName) {
         if (sheetName.endsWith("_bloqueo_td")) return bloqueoTdEndpointForSheet(sheetName);
+        if (sheetName.endsWith("_bloqueo_tc")) return bloqueoTcEndpointForSheet(sheetName);
         if (sheetName.endsWith("_actualizacion_datos")) return actualizacionDatosEndpointForSheet(sheetName);
         if (sheetName.startsWith("avv_")) return ApiEndpoints.Oficinas.CONSULTA_AVV;
         if (sheetName.startsWith("bdb_")) return ApiEndpoints.Oficinas.CONSULTA_BDB;
@@ -135,6 +137,14 @@ public class NuevasOficinasStepDefinitions {
         if (sheetName.startsWith("occ_")) return ApiEndpoints.Oficinas.BLOQUEO_TD_OCC;
         if (sheetName.startsWith("bpop_")) return ApiEndpoints.Oficinas.BLOQUEO_TD_BPOP;
         throw new IllegalArgumentException("No hay endpoint de bloqueo TD configurado para hoja: " + sheetName);
+    }
+
+    private static String bloqueoTcEndpointForSheet(String sheetName) {
+        if (sheetName.startsWith("avv_")) return ApiEndpoints.Oficinas.BLOQUEO_TC_AVV;
+        if (sheetName.startsWith("bdb_")) return ApiEndpoints.Oficinas.BLOQUEO_TC_BDB;
+        if (sheetName.startsWith("occ_")) return ApiEndpoints.Oficinas.BLOQUEO_TC_OCC;
+        if (sheetName.startsWith("bpop_")) return ApiEndpoints.Oficinas.BLOQUEO_TC_BPOP;
+        throw new IllegalArgumentException("No hay endpoint de bloqueo TC configurado para hoja: " + sheetName);
     }
 
     private static String actualizacionDatosEndpointForSheet(String sheetName) {
