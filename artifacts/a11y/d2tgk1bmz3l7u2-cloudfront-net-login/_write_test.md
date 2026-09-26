@@ -1,0 +1,1 @@
+"Prueba de escritura de artefacto de texto plano."

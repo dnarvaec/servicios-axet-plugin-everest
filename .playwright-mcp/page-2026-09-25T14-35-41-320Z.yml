@@ -1,0 +1,118 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e3]:
+    - banner [ref=f5e4]:
+      - img "EVEREST" [ref=f5e6]
+      - generic [ref=f5e7]:
+        - img "Grupo AVAL" [ref=f5e8]
+        - generic [ref=f5e9]:
+          - button "Notificaciones, 2 sin leer" [ref=f5e142] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f5e143]: "2"
+          - button "Accesibilidad" [ref=f5e11] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f5e18] [cursor=pointer]
+        - button "user user" [ref=f5e20] [cursor=pointer]:
+          - generic [ref=f5e21]: user
+          - generic "user" [ref=f5e22]: U
+    - generic [ref=f5e23]:
+      - complementary [ref=f5e24]:
+        - generic [ref=f5e25]:
+          - generic [ref=f5e26]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f5e27] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f5e28]:
+          - link "Consultar Cliente" [ref=f5e29] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f5e144] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f5e40]: Notificaciones
+            - generic "2 sin leer" [ref=f5e145]: "2"
+          - link "Centro de Ayuda" [ref=f5e41] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f5e43]:
+        - generic [ref=f5e44]:
+          - generic [ref=f5e151]:
+            - navigation "Ubicación" [ref=f5e152]:
+              - generic [ref=f5e153]: Consultar Cliente
+              - generic [ref=f5e154]: /
+              - generic [ref=f5e155]: PEDRO ANDRES MARTINEZ DIAZ
+            - button "Nueva consulta" [ref=f5e156] [cursor=pointer]
+          - generic [ref=f5e157]:
+            - generic [ref=f5e158]:
+              - img "PEDRO ANDRES MARTINEZ DIAZ" [ref=f5e159]: PA
+              - generic [ref=f5e161]:
+                - generic [ref=f5e162]:
+                  - generic [ref=f5e163]:
+                    - heading "PEDRO ANDRES MARTINEZ DIAZ" [level=2] [ref=f5e164]
+                    - button "Editar cliente" [ref=f5e165] [cursor=pointer]
+                  - paragraph [ref=f5e167]:
+                    - text: "34567890 · BOGOTA DC · Fecha vinculación:"
+                    - strong
+                - img "banco popular" [ref=f5e168]
+            - generic [ref=f5e169]:
+              - generic [ref=f5e170]:
+                - generic [ref=f5e171]: Saldo créditos
+                - generic [ref=f5e174]: $ 35.000.000
+                - generic [ref=f5e175]: 1 obligaciones
+              - generic [ref=f5e176]:
+                - generic [ref=f5e177]: Inversiones
+                - generic [ref=f5e180]: $ 25.000.000
+                - generic [ref=f5e181]: 1 CDT's
+          - generic [ref=f5e182]:
+            - tablist [ref=f5e183]:
+              - tab "Cuentas 0" [selected] [ref=f5e184] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=f5e185]: "0"
+              - tab "Tarjeta de Crédito 0" [ref=f5e186] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=f5e187]: "0"
+              - tab "Créditos 1" [ref=f5e188] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=f5e189]: "1"
+              - tab "Inversiones 1" [ref=f5e190] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=f5e191]: "1"
+            - tabpanel [ref=f5e192]:
+              - generic [ref=f5e193]:
+                - generic [ref=f5e194]:
+                  - paragraph [ref=f5e195]:
+                    - text: "0 cuentas de depósito · Total disponible:"
+                    - strong
+                  - button "Consultar tarjetas débito" [ref=f5e196] [cursor=pointer]
+                - list
+        - dialog [ref=f5e83]:
+          - generic [ref=f5e84]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f5e85] [cursor=pointer]
+          - separator [ref=f5e89]
+        - dialog "Tarjetas Débito" [ref=f5e91]:
+          - generic [ref=f5e92]:
+            - heading "Tarjetas Débito" [level=2] [ref=f5e94]
+            - button "Cerrar panel" [ref=f5e95] [cursor=pointer]
+          - separator [ref=f5e99]
+        - dialog [ref=f5e101]:
+          - generic [ref=f5e102]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f5e103] [cursor=pointer]
+        - dialog [ref=f5e108]:
+          - generic [ref=f5e109]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f5e110] [cursor=pointer]
+        - dialog [ref=f5e115]:
+          - generic [ref=f5e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f5e117] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f5e122]:
+      - generic [ref=f5e123]:
+        - generic [ref=f5e124]:
+          - strong [ref=f5e128]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f5e130]:
+          - strong [ref=f5e133]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f5e135]:
+          - strong [ref=f5e139]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f5e140]: API 23ms
+  - region "Notificaciones"
