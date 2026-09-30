@@ -1,0 +1,302 @@
+{
+  "status": "baseline-only",
+  "revalidated": false,
+  "mode": "external-target",
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "viewport": {
+    "width": 1324,
+    "height": 666
+  },
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.10.3"
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#999999",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.84,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"_sidebar_pcipt_1 \">",
+                  "target": [
+                    "._sidebar_pcipt_1"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"_title_pcipt_42\">MIS HERRAMIENTAS</span>",
+          "target": [
+            "._title_pcipt_42"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": {
+                "messageKey": "controlsWithinPopup",
+                "needsReview": "aria-controls=\"header-notifications-panel\""
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-notifications-panel\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<button class=\"_iconBtn_1scnq_59\" aria-label=\"Notificaciones, 2 sin leer\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"header-notifications-panel\"><img alt=\"\" src=\"/icons/notification-bell.svg\"><span class=\"_badge_1scnq_84\" aria-hidden=\"true\">2</span></button>",
+          "target": [
+            "button[aria-label=\"Notificaciones, 2 sin leer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-notifications-panel\""
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": {
+                "messageKey": "controlsWithinPopup",
+                "needsReview": "aria-controls=\"header-a11y-panel\""
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-a11y-panel\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<button class=\"_iconBtn_1scnq_59 \" aria-label=\"Accesibilidad\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"header-a11y-panel\">",
+          "target": [
+            "button[aria-label=\"Accesibilidad\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-a11y-panel\""
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": {
+                "messageKey": "controlsWithinPopup",
+                "needsReview": "aria-controls=\"header-help-panel\""
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-help-panel\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<button class=\"_iconBtn_1scnq_59\" aria-label=\"Centro de ayuda\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"header-help-panel\"><img alt=\"\" src=\"/icons/help-question.svg\"></button>",
+          "target": [
+            "button[aria-label=\"Centro de ayuda\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-help-panel\""
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": {
+                "messageKey": "controlsWithinPopup",
+                "needsReview": "aria-controls=\"header-logout-panel\""
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-logout-panel\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"_userInfo_1scnq_108\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"header-logout-panel\"><span class=\"_userName_1scnq_130\">user</span><div class=\"_avatar_1lj08_1\" aria-label=\"user\" title=\"user\">U</div></button>",
+          "target": [
+            "._userInfo_1scnq_108"
+          ],
+          "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"header-logout-panel\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e63946",
+                "contrastRatio": 4.16,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"_badge_1scnq_84\" aria-hidden=\"true\">2</span>",
+                  "target": [
+                    "._badge_1scnq_84"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"_badge_1scnq_84\" aria-hidden=\"true\">2</span>",
+          "target": [
+            "._badge_1scnq_84"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0a84ff",
+                "contrastRatio": 3.64,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"_avatar_1lj08_1\" aria-label=\"user\" title=\"user\">U</div>",
+                  "target": [
+                    "._avatar_1lj08_1"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"_avatar_1lj08_1\" aria-label=\"user\" title=\"user\">U</div>",
+          "target": [
+            "._avatar_1lj08_1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#64748b",
+                "bgColor": "#f1f5f9",
+                "contrastRatio": 4.34,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"_badge_pcipt_132\" aria-label=\"2 sin leer\">2</span>",
+                  "target": [
+                    "._badge_pcipt_132"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"_badge_pcipt_132\" aria-label=\"2 sin leer\">2</span>",
+          "target": [
+            "._badge_pcipt_132"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "violationCount": 1,
+    "affectedNodes": 1,
+    "incompleteCount": 2,
+    "passRuleCount": 25
+  }
+}

@@ -1,1 +1,16 @@
-"{\n  \"status\": \"suggestions-only\",\n  \"scope\": \"WCAG 2.2 A/AA desktop only\",\n  \"revalidated\": false,\n  \"reasonNotValidated\": \"External target; no source patch applied. Semantic counts retained from baseline.\",\n  \"countsRetainedFromBaseline\": true,\n  \"semantic_issues\": []\n}"
+{
+  "status": "suggestions-only",
+  "revalidated": false,
+  "reasonNotValidated": "No se aplicaron cambios ni se repitió evaluación semántica; conteos y equivalencias se conservan del baseline.",
+  "countsRetainedFromBaseline": true,
+  "scope": "WCAG A/AA; desktop",
+  "semantic_issues": [],
+  "caseEquivalence": {
+    "index": "issues-by-key.json",
+    "count": 79,
+    "statuses": {
+      "WARN": 79
+    }
+  },
+  "reasonCountsWereNotRecomputed": true
+}

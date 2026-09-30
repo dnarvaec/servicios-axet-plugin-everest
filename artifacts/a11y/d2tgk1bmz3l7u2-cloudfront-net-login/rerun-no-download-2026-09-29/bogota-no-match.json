@@ -1,0 +1,178 @@
+{
+  "url": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar cliente\n\nSelecciona el banco y completa los datos del cliente para validar su identidad.\n\nSolicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad\nTipo de documento *\nCédula de ciudadanía\nNúmero de documento *\n \nBuscar\nCliente no encontrado\n\nNo encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.\n\nNueva consulta\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+  "dialogs": [
+    {
+      "label": "",
+      "heading": "",
+      "text": ""
+    },
+    {
+      "label": "Tarjetas Débito",
+      "heading": "Tarjetas Débito",
+      "text": "Tarjetas Débito"
+    },
+    {
+      "label": "",
+      "heading": "",
+      "text": ""
+    },
+    {
+      "label": "",
+      "heading": "",
+      "text": ""
+    },
+    {
+      "label": "",
+      "heading": "",
+      "text": ""
+    }
+  ],
+  "controls": [
+    {
+      "tag": "BUTTON",
+      "text": "2",
+      "aria": "Notificaciones, 2 sin leer",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Accesibilidad",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Centro de ayuda",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "user\nU",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Colapsar menú",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cédula de ciudadanía",
+      "aria": null,
+      "role": "combobox",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "text",
+      "checked": false,
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Buscar",
+      "aria": "Buscar cliente",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Nueva consulta",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    }
+  ]
+}

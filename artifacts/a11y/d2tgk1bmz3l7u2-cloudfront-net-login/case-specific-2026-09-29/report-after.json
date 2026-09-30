@@ -1,0 +1,2354 @@
+{
+  "mode": "external-target",
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "timestamp": "2026-09-29",
+  "status": "suggestions-only",
+  "revalidated": false,
+  "countsRetainedFromBaseline": true,
+  "countsUnchangedOrNotRevalidated": "Los conteos conservan los resultados baseline; no se calculó un estado posterior.",
+  "viewport": {
+    "name": "desktop",
+    "width": 1366,
+    "height": 768
+  },
+  "wcagScope": [
+    "A",
+    "AA"
+  ],
+  "mobileExecuted": false,
+  "caseResultsRetainedFromBaseline": {
+    "PASS": 3,
+    "FAIL": 2,
+    "WARN": 74
+  },
+  "totalCases": 79,
+  "axeViolationsDesktop": 1,
+  "axeViolationsMobile": null,
+  "findings": [
+    {
+      "id": "axe-color-contrast-title",
+      "source": "axe-core",
+      "ruleId": "color-contrast",
+      "wcag": [
+        "1.4.3"
+      ],
+      "status": "FAIL",
+      "impact": "serious",
+      "description": "MIS HERRAMIENTAS presenta contraste 2.84:1, menor que el mínimo 4.5:1.",
+      "selector": "._title_pcipt_42",
+      "evidence": {
+        "foreground": "#999999",
+        "background": "#FFFFFF",
+        "contrastRatio": 2.84,
+        "expectedRatio": "4.5:1"
+      }
+    },
+    {
+      "id": "EV-10",
+      "issueKey": "EV-10",
+      "source": "case-criteria",
+      "criterion": "Rótulos y orden claros para nombre, segmento y datos de contacto, sin abreviaturas ambiguas.",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-11",
+      "issueKey": "EV-11",
+      "source": "case-criteria",
+      "criterion": "Estados y errores de consulta claros, comprensibles y accionables.",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "status": "PASS",
+      "impact": "none",
+      "description": "El aviso dice: «No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.» Identifica el problema y propone verificar los datos o intentar otra entidad.",
+      "evidence": {
+        "element": "Alerta «Cliente no encontrado»",
+        "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+        "observation": "El aviso dice: «No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.» Identifica el problema y propone verificar los datos o intentar otra entidad.",
+        "screenshot": "screenshots/06-cliente-no-encontrado.png"
+      },
+      "selector": "Alerta «Cliente no encontrado»"
+    },
+    {
+      "id": "EV-12",
+      "issueKey": "EV-12",
+      "source": "case-criteria",
+      "criterion": "Teléfonos y correos con formato legible y uniforme, sin concatenaciones.",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-22",
+      "issueKey": "EV-22",
+      "source": "case-criteria",
+      "criterion": "Categorías de cuentas, CDT, carteras y tarjetas agrupadas y navegables.",
+      "userStory": "HU-101-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-23",
+      "issueKey": "EV-23",
+      "source": "case-criteria",
+      "criterion": "Saldo total, disponible, sobregiro y deuda identificados con etiquetas.",
+      "userStory": "HU-101-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-24",
+      "issueKey": "EV-24",
+      "source": "case-criteria",
+      "criterion": "Mensaje claro y no alarmista cuando no hay productos o se devuelve 206.",
+      "userStory": "HU-101-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-34",
+      "issueKey": "EV-34",
+      "source": "case-criteria",
+      "criterion": "Jerarquía y separación claras entre cliente y productos.",
+      "userStory": "HU-101-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-35",
+      "issueKey": "EV-35",
+      "source": "case-criteria",
+      "criterion": "Respuesta parcial identifica el bloque no disponible sin confundir los datos disponibles.",
+      "userStory": "HU-101-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-36",
+      "issueKey": "EV-36",
+      "source": "case-criteria",
+      "criterion": "Cifras, cuentas y saldos inequívocos y legibles.",
+      "userStory": "HU-101-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-46",
+      "issueKey": "EV-46",
+      "source": "case-criteria",
+      "criterion": "Capital, intereses corrientes e intereses de mora identificados por separado.",
+      "userStory": "HU-102-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-47",
+      "issueKey": "EV-47",
+      "source": "case-criteria",
+      "criterion": "Fechas de corte, vencimiento y próximo pago en formato estándar.",
+      "userStory": "HU-102-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-48",
+      "issueKey": "EV-48",
+      "source": "case-criteria",
+      "criterion": "Error indica claramente que la obligación no fue localizada.",
+      "userStory": "HU-102-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-58",
+      "issueKey": "EV-58",
+      "source": "case-criteria",
+      "criterion": "Cuota a pagar, deuda total y plazos claramente diferenciados.",
+      "userStory": "HU-102-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-59",
+      "issueKey": "EV-59",
+      "source": "case-criteria",
+      "criterion": "Estado y tasa autoexplicativos, sin códigos opacos.",
+      "userStory": "HU-102-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-60",
+      "issueKey": "EV-60",
+      "source": "case-criteria",
+      "criterion": "Errores 404/422 explican si el crédito no existe o si es una condición de negocio.",
+      "userStory": "HU-102-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-70",
+      "issueKey": "EV-70",
+      "source": "case-criteria",
+      "criterion": "Cupo aprobado y disponible, saldo diferido y total correctamente etiquetados.",
+      "userStory": "HU-103-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-71",
+      "issueKey": "EV-71",
+      "source": "case-criteria",
+      "criterion": "Franquicia y estado comprensibles, sin códigos opacos.",
+      "userStory": "HU-103-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-72",
+      "issueKey": "EV-72",
+      "source": "case-criteria",
+      "criterion": "Mensaje claro de tarjeta no encontrada.",
+      "userStory": "HU-103-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-82",
+      "issueKey": "EV-82",
+      "source": "case-criteria",
+      "criterion": "Cupos y saldos financieros legibles y diferenciados.",
+      "userStory": "HU-103-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-83",
+      "issueKey": "EV-83",
+      "source": "case-criteria",
+      "criterion": "Cuotas diferidas y franquicia autoexplicativas.",
+      "userStory": "HU-103-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-84",
+      "issueKey": "EV-84",
+      "source": "case-criteria",
+      "criterion": "Mensaje claro de tarjeta inexistente.",
+      "userStory": "HU-103-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-94",
+      "issueKey": "EV-94",
+      "source": "case-criteria",
+      "criterion": "Capital o monto, tasa EA y plazo claramente expuestos.",
+      "userStory": "HU-104-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-95",
+      "issueKey": "EV-95",
+      "source": "case-criteria",
+      "criterion": "Fechas de constitución y vencimiento cronológicas y legibles.",
+      "userStory": "HU-104-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-96",
+      "issueKey": "EV-96",
+      "source": "case-criteria",
+      "criterion": "Mensaje claro de CDT inexistente.",
+      "userStory": "HU-104-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-106",
+      "issueKey": "EV-106",
+      "source": "case-criteria",
+      "criterion": "Capital inicial distinguible de los intereses ganados.",
+      "userStory": "HU-104-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-107",
+      "issueKey": "EV-107",
+      "source": "case-criteria",
+      "criterion": "Plazo, periodicidad y fechas entendibles sin jerga técnica.",
+      "userStory": "HU-104-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-108",
+      "issueKey": "EV-108",
+      "source": "case-criteria",
+      "criterion": "Mensaje claro de certificado no encontrado.",
+      "userStory": "HU-104-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-114",
+      "issueKey": "EV-114",
+      "source": "case-criteria",
+      "criterion": "Datos del cliente claros, consistentes y comprensibles.",
+      "userStory": "HU-101-ADP-BPO-CLIENTE",
+      "status": "FAIL",
+      "impact": "moderate",
+      "description": "El resumen muestra «PEDRO ANDRES MARTINEZ DIAZ», documento 34567890 y ubicación BOGOTA DC; el campo «Fecha vinculación:» aparece sin valor, por lo que el resumen no es completamente consistente/comprensible.",
+      "evidence": {
+        "element": "Resumen de cliente; «Fecha vinculación:»",
+        "text": "34567890 · BOGOTA DC · Fecha vinculación: [vacío]",
+        "observation": "El resumen muestra «PEDRO ANDRES MARTINEZ DIAZ», documento 34567890 y ubicación BOGOTA DC; el campo «Fecha vinculación:» aparece sin valor, por lo que el resumen no es completamente consistente/comprensible.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Resumen de cliente; «Fecha vinculación:»"
+    },
+    {
+      "id": "EV-115",
+      "issueKey": "EV-115",
+      "source": "case-criteria",
+      "criterion": "Mensajes legibles y orientativos.",
+      "userStory": "HU-101-ADP-BPO-CLIENTE",
+      "status": "PASS",
+      "impact": "none",
+      "description": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-121",
+      "issueKey": "EV-121",
+      "source": "case-criteria",
+      "criterion": "Productos claros, consistentes y comprensibles.",
+      "userStory": "HU-101-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-122",
+      "issueKey": "EV-122",
+      "source": "case-criteria",
+      "criterion": "Mensajes de productos legibles y orientativos.",
+      "userStory": "HU-101-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-128",
+      "issueKey": "EV-128",
+      "source": "case-criteria",
+      "criterion": "Datos del cliente claros y comprensibles.",
+      "userStory": "HU-101-ADP-OCC-CLIENTE",
+      "status": "FAIL",
+      "impact": "moderate",
+      "description": "El resumen presenta «23456789 · 10010 · Fecha vinculación: Marzo 2019»; el código numérico de ubicación carece de etiqueta o nombre legible.",
+      "evidence": {
+        "element": "Resumen de cliente; ubicación mostrada como «10010»",
+        "text": "23456789 · 10010 · Fecha vinculación: Marzo 2019",
+        "observation": "El resumen presenta «23456789 · 10010 · Fecha vinculación: Marzo 2019»; el código numérico de ubicación carece de etiqueta o nombre legible.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Resumen de cliente; ubicación mostrada como «10010»"
+    },
+    {
+      "id": "EV-129",
+      "issueKey": "EV-129",
+      "source": "case-criteria",
+      "criterion": "Mensajes del cliente legibles y orientativos.",
+      "userStory": "HU-101-ADP-OCC-CLIENTE",
+      "status": "PASS",
+      "impact": "none",
+      "description": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-135",
+      "issueKey": "EV-135",
+      "source": "case-criteria",
+      "criterion": "Productos claros y comprensibles.",
+      "userStory": "HU-101-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-136",
+      "issueKey": "EV-136",
+      "source": "case-criteria",
+      "criterion": "Mensajes de productos legibles y orientativos.",
+      "userStory": "HU-101-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-142",
+      "issueKey": "EV-142",
+      "source": "case-criteria",
+      "criterion": "Detalle de cartera o tarjeta claro y comprensible.",
+      "userStory": "HU-102-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-143",
+      "issueKey": "EV-143",
+      "source": "case-criteria",
+      "criterion": "Mensajes de detalle legibles y orientativos.",
+      "userStory": "HU-102-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-149",
+      "issueKey": "EV-149",
+      "source": "case-criteria",
+      "criterion": "Detalle de cartera claro y comprensible.",
+      "userStory": "HU-102-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-150",
+      "issueKey": "EV-150",
+      "source": "case-criteria",
+      "criterion": "Mensajes de detalle legibles y orientativos.",
+      "userStory": "HU-102-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-156",
+      "issueKey": "EV-156",
+      "source": "case-criteria",
+      "criterion": "Consulta detallada de tarjeta de crédito clara y comprensible.",
+      "userStory": "HU-103-ORQ",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-157",
+      "issueKey": "EV-157",
+      "source": "case-criteria",
+      "criterion": "Mensajes de consulta de tarjeta de crédito legibles y orientativos.",
+      "userStory": "HU-103-ORQ",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-163",
+      "issueKey": "EV-163",
+      "source": "case-criteria",
+      "criterion": "Consulta detallada de CDT clara y comprensible.",
+      "userStory": "HU-104-ORQ",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-164",
+      "issueKey": "EV-164",
+      "source": "case-criteria",
+      "criterion": "Mensajes de consulta de CDT legibles y orientativos.",
+      "userStory": "HU-104-ORQ",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-173",
+      "issueKey": "EV-173",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo comprensible y no ambigua.",
+      "userStory": "HU-201-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-174",
+      "issueKey": "EV-174",
+      "source": "case-criteria",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "userStory": "HU-201-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-175",
+      "issueKey": "EV-175",
+      "source": "case-criteria",
+      "criterion": "Datos sensibles de tarjeta protegidos; causal y estado entendibles.",
+      "userStory": "HU-201-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-185",
+      "issueKey": "EV-185",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "userStory": "HU-201-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-186",
+      "issueKey": "EV-186",
+      "source": "case-criteria",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "userStory": "HU-201-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-187",
+      "issueKey": "EV-187",
+      "source": "case-criteria",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "userStory": "HU-201-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-198",
+      "issueKey": "EV-198",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "userStory": "HU-201-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-199",
+      "issueKey": "EV-199",
+      "source": "case-criteria",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "userStory": "HU-201-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-200",
+      "issueKey": "EV-200",
+      "source": "case-criteria",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "userStory": "HU-201-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-210",
+      "issueKey": "EV-210",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "userStory": "HU-201-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-211",
+      "issueKey": "EV-211",
+      "source": "case-criteria",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "userStory": "HU-201-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-212",
+      "issueKey": "EV-212",
+      "source": "case-criteria",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "userStory": "HU-201-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-220",
+      "issueKey": "EV-220",
+      "source": "case-criteria",
+      "criterion": "Confirmación de actualización indica qué datos cambiaron, sin jerga.",
+      "userStory": "HU-203-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-221",
+      "issueKey": "EV-221",
+      "source": "case-criteria",
+      "criterion": "Errores de datos indican qué corregir.",
+      "userStory": "HU-203-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-222",
+      "issueKey": "EV-222",
+      "source": "case-criteria",
+      "criterion": "Teléfonos, correos y preferencias con rótulos consistentes.",
+      "userStory": "HU-203-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-231",
+      "issueKey": "EV-231",
+      "source": "case-criteria",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "userStory": "HU-203-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-232",
+      "issueKey": "EV-232",
+      "source": "case-criteria",
+      "criterion": "Errores indican qué dato corregir.",
+      "userStory": "HU-203-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-233",
+      "issueKey": "EV-233",
+      "source": "case-criteria",
+      "criterion": "Contactos y preferencias claramente rotulados.",
+      "userStory": "HU-203-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-242",
+      "issueKey": "EV-242",
+      "source": "case-criteria",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "userStory": "HU-203-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-243",
+      "issueKey": "EV-243",
+      "source": "case-criteria",
+      "criterion": "Errores indican qué dato corregir.",
+      "userStory": "HU-203-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-244",
+      "issueKey": "EV-244",
+      "source": "case-criteria",
+      "criterion": "Contactos y preferencias con rótulos consistentes.",
+      "userStory": "HU-203-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-253",
+      "issueKey": "EV-253",
+      "source": "case-criteria",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "userStory": "HU-203-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-254",
+      "issueKey": "EV-254",
+      "source": "case-criteria",
+      "criterion": "Errores indican qué dato corregir.",
+      "userStory": "HU-203-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-255",
+      "issueKey": "EV-255",
+      "source": "case-criteria",
+      "criterion": "Contactos y preferencias con rótulos consistentes.",
+      "userStory": "HU-203-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-279",
+      "issueKey": "EV-279",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo TC indica resultado, estado e información necesaria claramente.",
+      "userStory": "HU-202-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-280",
+      "issueKey": "EV-280",
+      "source": "case-criteria",
+      "criterion": "Errores 404/502/504/400 distinguen causa y siguiente acción.",
+      "userStory": "HU-202-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-281",
+      "issueKey": "EV-281",
+      "source": "case-criteria",
+      "criterion": "Número TC muestra solo últimos 4 dígitos; causal y estado rotulados.",
+      "userStory": "HU-202-ADP-BPO",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-282",
+      "issueKey": "EV-282",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo preventivo indica resultado y estado.",
+      "userStory": "HU-202-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-283",
+      "issueKey": "EV-283",
+      "source": "case-criteria",
+      "criterion": "Errores 422/502/504/400 claros y accionables.",
+      "userStory": "HU-202-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-284",
+      "issueKey": "EV-284",
+      "source": "case-criteria",
+      "criterion": "TC enmascarada a últimos 4 dígitos; causal y estado rotulados.",
+      "userStory": "HU-202-ADP-BDB",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-285",
+      "issueKey": "EV-285",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo definitivo clara y normalizada.",
+      "userStory": "HU-202-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-286",
+      "issueKey": "EV-286",
+      "source": "case-criteria",
+      "criterion": "Errores 422/502/504 distinguen causa y acción.",
+      "userStory": "HU-202-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-287",
+      "issueKey": "EV-287",
+      "source": "case-criteria",
+      "criterion": "TC enmascarada; causal y estado claros.",
+      "userStory": "HU-202-ADP-OCC",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-288",
+      "issueKey": "EV-288",
+      "source": "case-criteria",
+      "criterion": "Confirmación de bloqueo comunica resultado, estado y autorización cuando aplique.",
+      "userStory": "HU-202-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-289",
+      "issueKey": "EV-289",
+      "source": "case-criteria",
+      "criterion": "Errores 422/502/504/400 específicos y accionables.",
+      "userStory": "HU-202-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    },
+    {
+      "id": "EV-290",
+      "issueKey": "EV-290",
+      "source": "case-criteria",
+      "criterion": "Número TC enmascarado a últimos 4 dígitos; causal y estado comprensibles.",
+      "userStory": "HU-202-ADP-AVV",
+      "status": "WARN",
+      "impact": "minor",
+      "description": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      },
+      "selector": "Checkbox «Verifica la identidad del cliente»"
+    }
+  ],
+  "testResults": [
+    {
+      "issueKey": "EV-10",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "Rótulos y orden claros para nombre, segmento y datos de contacto, sin abreviaturas ambiguas.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-11",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "Estados y errores de consulta claros, comprensibles y accionables.",
+      "result": "PASS",
+      "evidence": {
+        "element": "Alerta «Cliente no encontrado»",
+        "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+        "observation": "El aviso dice: «No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.» Identifica el problema y propone verificar los datos o intentar otra entidad.",
+        "screenshot": "screenshots/06-cliente-no-encontrado.png"
+      }
+    },
+    {
+      "issueKey": "EV-12",
+      "userStory": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "Teléfonos y correos con formato legible y uniforme, sin concatenaciones.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-22",
+      "userStory": "HU-101-ADP-AVV",
+      "criterion": "Categorías de cuentas, CDT, carteras y tarjetas agrupadas y navegables.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-23",
+      "userStory": "HU-101-ADP-AVV",
+      "criterion": "Saldo total, disponible, sobregiro y deuda identificados con etiquetas.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-24",
+      "userStory": "HU-101-ADP-AVV",
+      "criterion": "Mensaje claro y no alarmista cuando no hay productos o se devuelve 206.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-34",
+      "userStory": "HU-101-ADP-BDB",
+      "criterion": "Jerarquía y separación claras entre cliente y productos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-35",
+      "userStory": "HU-101-ADP-BDB",
+      "criterion": "Respuesta parcial identifica el bloque no disponible sin confundir los datos disponibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-36",
+      "userStory": "HU-101-ADP-BDB",
+      "criterion": "Cifras, cuentas y saldos inequívocos y legibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-46",
+      "userStory": "HU-102-ADP-AVV",
+      "criterion": "Capital, intereses corrientes e intereses de mora identificados por separado.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-47",
+      "userStory": "HU-102-ADP-AVV",
+      "criterion": "Fechas de corte, vencimiento y próximo pago en formato estándar.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-48",
+      "userStory": "HU-102-ADP-AVV",
+      "criterion": "Error indica claramente que la obligación no fue localizada.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-58",
+      "userStory": "HU-102-ADP-BDB",
+      "criterion": "Cuota a pagar, deuda total y plazos claramente diferenciados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-59",
+      "userStory": "HU-102-ADP-BDB",
+      "criterion": "Estado y tasa autoexplicativos, sin códigos opacos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-60",
+      "userStory": "HU-102-ADP-BDB",
+      "criterion": "Errores 404/422 explican si el crédito no existe o si es una condición de negocio.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-70",
+      "userStory": "HU-103-ADP-AVV",
+      "criterion": "Cupo aprobado y disponible, saldo diferido y total correctamente etiquetados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-71",
+      "userStory": "HU-103-ADP-AVV",
+      "criterion": "Franquicia y estado comprensibles, sin códigos opacos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-72",
+      "userStory": "HU-103-ADP-AVV",
+      "criterion": "Mensaje claro de tarjeta no encontrada.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-82",
+      "userStory": "HU-103-ADP-BDB",
+      "criterion": "Cupos y saldos financieros legibles y diferenciados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-83",
+      "userStory": "HU-103-ADP-BDB",
+      "criterion": "Cuotas diferidas y franquicia autoexplicativas.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-84",
+      "userStory": "HU-103-ADP-BDB",
+      "criterion": "Mensaje claro de tarjeta inexistente.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-94",
+      "userStory": "HU-104-ADP-AVV",
+      "criterion": "Capital o monto, tasa EA y plazo claramente expuestos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-95",
+      "userStory": "HU-104-ADP-AVV",
+      "criterion": "Fechas de constitución y vencimiento cronológicas y legibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-96",
+      "userStory": "HU-104-ADP-AVV",
+      "criterion": "Mensaje claro de CDT inexistente.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-106",
+      "userStory": "HU-104-ADP-BDB",
+      "criterion": "Capital inicial distinguible de los intereses ganados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-107",
+      "userStory": "HU-104-ADP-BDB",
+      "criterion": "Plazo, periodicidad y fechas entendibles sin jerga técnica.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-108",
+      "userStory": "HU-104-ADP-BDB",
+      "criterion": "Mensaje claro de certificado no encontrado.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-114",
+      "userStory": "HU-101-ADP-BPO-CLIENTE",
+      "criterion": "Datos del cliente claros, consistentes y comprensibles.",
+      "result": "FAIL",
+      "evidence": {
+        "element": "Resumen de cliente; «Fecha vinculación:»",
+        "text": "34567890 · BOGOTA DC · Fecha vinculación: [vacío]",
+        "observation": "El resumen muestra «PEDRO ANDRES MARTINEZ DIAZ», documento 34567890 y ubicación BOGOTA DC; el campo «Fecha vinculación:» aparece sin valor, por lo que el resumen no es completamente consistente/comprensible.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-115",
+      "userStory": "HU-101-ADP-BPO-CLIENTE",
+      "criterion": "Mensajes legibles y orientativos.",
+      "result": "PASS",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-121",
+      "userStory": "HU-101-ADP-BPO",
+      "criterion": "Productos claros, consistentes y comprensibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-122",
+      "userStory": "HU-101-ADP-BPO",
+      "criterion": "Mensajes de productos legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-128",
+      "userStory": "HU-101-ADP-OCC-CLIENTE",
+      "criterion": "Datos del cliente claros y comprensibles.",
+      "result": "FAIL",
+      "evidence": {
+        "element": "Resumen de cliente; ubicación mostrada como «10010»",
+        "text": "23456789 · 10010 · Fecha vinculación: Marzo 2019",
+        "observation": "El resumen presenta «23456789 · 10010 · Fecha vinculación: Marzo 2019»; el código numérico de ubicación carece de etiqueta o nombre legible.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-129",
+      "userStory": "HU-101-ADP-OCC-CLIENTE",
+      "criterion": "Mensajes del cliente legibles y orientativos.",
+      "result": "PASS",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "El texto visible «Realiza la validación biométrica y marca esta casilla para continuar con el proceso» comunica la condición y el siguiente paso en lenguaje directo; la casilla quedó sin marcar.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-135",
+      "userStory": "HU-101-ADP-OCC",
+      "criterion": "Productos claros y comprensibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-136",
+      "userStory": "HU-101-ADP-OCC",
+      "criterion": "Mensajes de productos legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-142",
+      "userStory": "HU-102-ADP-BPO",
+      "criterion": "Detalle de cartera o tarjeta claro y comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-143",
+      "userStory": "HU-102-ADP-BPO",
+      "criterion": "Mensajes de detalle legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-149",
+      "userStory": "HU-102-ADP-OCC",
+      "criterion": "Detalle de cartera claro y comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-150",
+      "userStory": "HU-102-ADP-OCC",
+      "criterion": "Mensajes de detalle legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-156",
+      "userStory": "HU-103-ORQ",
+      "criterion": "Consulta detallada de tarjeta de crédito clara y comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-157",
+      "userStory": "HU-103-ORQ",
+      "criterion": "Mensajes de consulta de tarjeta de crédito legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-163",
+      "userStory": "HU-104-ORQ",
+      "criterion": "Consulta detallada de CDT clara y comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-164",
+      "userStory": "HU-104-ORQ",
+      "criterion": "Mensajes de consulta de CDT legibles y orientativos.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-173",
+      "userStory": "HU-201-ADP-AVV",
+      "criterion": "Confirmación de bloqueo comprensible y no ambigua.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-174",
+      "userStory": "HU-201-ADP-AVV",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-175",
+      "userStory": "HU-201-ADP-AVV",
+      "criterion": "Datos sensibles de tarjeta protegidos; causal y estado entendibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-185",
+      "userStory": "HU-201-ADP-BDB",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-186",
+      "userStory": "HU-201-ADP-BDB",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-187",
+      "userStory": "HU-201-ADP-BDB",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-198",
+      "userStory": "HU-201-ADP-BPO",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-199",
+      "userStory": "HU-201-ADP-BPO",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-200",
+      "userStory": "HU-201-ADP-BPO",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-210",
+      "userStory": "HU-201-ADP-OCC",
+      "criterion": "Confirmación de bloqueo comprensible.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-211",
+      "userStory": "HU-201-ADP-OCC",
+      "criterion": "Error de bloqueo explica el problema y la acción necesaria.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-212",
+      "userStory": "HU-201-ADP-OCC",
+      "criterion": "Tarjeta enmascarada; causal y estado protegidos y claros.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-220",
+      "userStory": "HU-203-ADP-AVV",
+      "criterion": "Confirmación de actualización indica qué datos cambiaron, sin jerga.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-221",
+      "userStory": "HU-203-ADP-AVV",
+      "criterion": "Errores de datos indican qué corregir.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-222",
+      "userStory": "HU-203-ADP-AVV",
+      "criterion": "Teléfonos, correos y preferencias con rótulos consistentes.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-231",
+      "userStory": "HU-203-ADP-BDB",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-232",
+      "userStory": "HU-203-ADP-BDB",
+      "criterion": "Errores indican qué dato corregir.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-233",
+      "userStory": "HU-203-ADP-BDB",
+      "criterion": "Contactos y preferencias claramente rotulados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-242",
+      "userStory": "HU-203-ADP-BPO",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-243",
+      "userStory": "HU-203-ADP-BPO",
+      "criterion": "Errores indican qué dato corregir.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-244",
+      "userStory": "HU-203-ADP-BPO",
+      "criterion": "Contactos y preferencias con rótulos consistentes.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-253",
+      "userStory": "HU-203-ADP-OCC",
+      "criterion": "Confirmación indica qué datos cambiaron, sin jerga.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-254",
+      "userStory": "HU-203-ADP-OCC",
+      "criterion": "Errores indican qué dato corregir.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-255",
+      "userStory": "HU-203-ADP-OCC",
+      "criterion": "Contactos y preferencias con rótulos consistentes.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-279",
+      "userStory": "HU-202-ADP-BPO",
+      "criterion": "Confirmación de bloqueo TC indica resultado, estado e información necesaria claramente.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-280",
+      "userStory": "HU-202-ADP-BPO",
+      "criterion": "Errores 404/502/504/400 distinguen causa y siguiente acción.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-281",
+      "userStory": "HU-202-ADP-BPO",
+      "criterion": "Número TC muestra solo últimos 4 dígitos; causal y estado rotulados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-282",
+      "userStory": "HU-202-ADP-BDB",
+      "criterion": "Confirmación de bloqueo preventivo indica resultado y estado.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-283",
+      "userStory": "HU-202-ADP-BDB",
+      "criterion": "Errores 422/502/504/400 claros y accionables.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-284",
+      "userStory": "HU-202-ADP-BDB",
+      "criterion": "TC enmascarada a últimos 4 dígitos; causal y estado rotulados.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/07-bogota-perfil-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-285",
+      "userStory": "HU-202-ADP-OCC",
+      "criterion": "Confirmación de bloqueo definitivo clara y normalizada.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-286",
+      "userStory": "HU-202-ADP-OCC",
+      "criterion": "Errores 422/502/504 distinguen causa y acción.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-287",
+      "userStory": "HU-202-ADP-OCC",
+      "criterion": "TC enmascarada; causal y estado claros.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-288",
+      "userStory": "HU-202-ADP-AVV",
+      "criterion": "Confirmación de bloqueo comunica resultado, estado y autorización cuando aplique.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-289",
+      "userStory": "HU-202-ADP-AVV",
+      "criterion": "Errores 422/502/504/400 específicos y accionables.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    },
+    {
+      "issueKey": "EV-290",
+      "userStory": "HU-202-ADP-AVV",
+      "criterion": "Número TC enmascarado a últimos 4 dígitos; causal y estado comprensibles.",
+      "result": "WARN",
+      "evidence": {
+        "element": "Checkbox «Verifica la identidad del cliente»",
+        "text": "Realiza la validación biométrica y marca esta casilla para continuar con el proceso.",
+        "observation": "La vista visible indica «Realiza la validación biométrica y marca esta casilla para continuar con el proceso». El gate impide llegar al contenido de este criterio; no se marcó la casilla. Cuando aplica, el envío de bloqueo/actualización también se omitió por instrucción expresa.",
+        "screenshot": "screenshots/05-avvillas-cliente-gate.png"
+      }
+    }
+  ],
+  "dashboard": {
+    "status": "generated",
+    "totalFindings": 0,
+    "missingArtifacts": 1,
+    "note": "No se generaron artefactos móviles por solicitud expresa."
+  },
+  "runtimeValidationAttempted": false,
+  "runtimeValidationAllowed": false,
+  "reasonNotValidated": "No se aplicaron parches en la app externa; no se enviaron operaciones de bloqueo o actualización.",
+  "appliedChanges": [],
+  "suggestedChanges": [
+    "Corregir el contraste del rótulo MIS HERRAMIENTAS.",
+    "Hacer comprensibles y completos los datos de perfil observados."
+  ]
+}

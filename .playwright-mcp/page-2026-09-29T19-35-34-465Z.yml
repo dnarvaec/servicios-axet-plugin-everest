@@ -1,0 +1,98 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e3]:
+    - banner [ref=f7e4]:
+      - img "EVEREST" [ref=f7e6]
+      - generic [ref=f7e7]:
+        - img "Grupo AVAL" [ref=f7e8]
+        - generic [ref=f7e9]:
+          - button "Notificaciones, 2 sin leer" [ref=f7e10] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f7e11]: "2"
+          - button "Accesibilidad" [ref=f7e12] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f7e19] [cursor=pointer]
+        - button "user user" [ref=f7e21] [cursor=pointer]:
+          - generic [ref=f7e22]: user
+          - generic "user" [ref=f7e23]: U
+    - generic [ref=f7e24]:
+      - complementary [ref=f7e25]:
+        - generic [ref=f7e26]:
+          - generic [ref=f7e27]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f7e28] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f7e29]:
+          - link "Consultar Cliente" [ref=f7e30] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f7e37] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f7e41]: Notificaciones
+            - generic "2 sin leer" [ref=f7e42]: "2"
+          - link "Centro de Ayuda" [ref=f7e43] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f7e45]:
+        - generic [ref=f7e155]:
+          - generic [ref=f7e158]:
+            - heading "Consultar cliente" [level=1] [ref=f7e159]
+            - paragraph [ref=f7e160]: Selecciona el banco y completa los datos del cliente para validar su identidad.
+          - separator [ref=f7e161]
+          - generic [ref=f7e162]:
+            - button [ref=f7e163] [cursor=pointer]:
+              - img "Banco de Bogotá" [ref=f7e164]
+            - button [ref=f7e165] [cursor=pointer]:
+              - img "Banco de Occidente" [ref=f7e166]
+            - button [ref=f7e167] [cursor=pointer]:
+              - img "banco popular" [ref=f7e168]
+            - button [pressed] [ref=f7e169] [cursor=pointer]:
+              - img "AV Villas" [ref=f7e170]
+          - note [ref=f7e171]:
+            - generic [ref=f7e172]: Solicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad
+          - generic [ref=f7e173]:
+            - generic [ref=f7e175]:
+              - generic [ref=f7e176]: Tipo de documento *
+              - combobox "Tipo de documento *" [ref=f7e178] [cursor=pointer]:
+                - generic [ref=f7e179]: Cédula de ciudadanía
+            - generic [ref=f7e182]:
+              - generic [ref=f7e183]: Número de documento *
+              - textbox "Número de documento *" [ref=f7e184]:
+                - /placeholder: "Ej: 79485236"
+                - text: "00000000"
+            - button "Buscar cliente" [ref=f7e188] [cursor=pointer]: Buscar
+          - alert [ref=f7e193]:
+            - paragraph [ref=f7e202]: Error de negocio
+            - button "Reintentar" [ref=f7e203] [cursor=pointer]
+        - dialog [ref=f7e96]:
+          - generic [ref=f7e97]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f7e98] [cursor=pointer]
+          - separator [ref=f7e102]
+        - dialog "Tarjetas Débito" [ref=f7e104]:
+          - generic [ref=f7e105]:
+            - heading "Tarjetas Débito" [level=2] [ref=f7e107]
+            - button "Cerrar panel" [ref=f7e108] [cursor=pointer]
+          - separator [ref=f7e112]
+        - dialog [ref=f7e114]:
+          - generic [ref=f7e115]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f7e116] [cursor=pointer]
+        - dialog [ref=f7e121]:
+          - generic [ref=f7e122]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f7e123] [cursor=pointer]
+        - dialog [ref=f7e128]:
+          - generic [ref=f7e129]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f7e130] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f7e135]:
+      - generic [ref=f7e136]:
+        - generic [ref=f7e137]:
+          - strong [ref=f7e141]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f7e143]:
+          - strong [ref=f7e146]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f7e148]:
+          - strong [ref=f7e152]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f7e153]: API 23ms
+  - region "Notificaciones"

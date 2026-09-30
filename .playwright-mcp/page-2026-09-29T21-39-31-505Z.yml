@@ -1,0 +1,129 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - img "EVEREST" [ref=e19]
+      - generic [ref=e20]:
+        - img "Grupo AVAL" [ref=e21]
+        - generic [ref=e22]:
+          - button "Notificaciones, 2 sin leer" [ref=e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e24]: "2"
+          - button "Accesibilidad" [ref=e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e32] [cursor=pointer]
+        - button "user user" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: user
+          - generic "user" [ref=e36]: U
+    - generic [ref=e37]:
+      - complementary [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e42]:
+          - link "Consultar Cliente" [ref=e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e54]: Notificaciones
+            - generic "2 sin leer" [ref=e55]: "2"
+          - link "Centro de Ayuda" [ref=e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e185]:
+            - navigation "Ubicación" [ref=e186]:
+              - generic [ref=e187]: Consultar Cliente
+              - generic [ref=e188]: /
+              - generic [ref=e189]: ANA LUCIA HERRERA MUNOZ
+            - button "Nueva consulta" [ref=e190] [cursor=pointer]
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - img "ANA LUCIA HERRERA MUNOZ" [ref=e193]: AL
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]:
+                    - heading "ANA LUCIA HERRERA MUNOZ" [level=2] [ref=e198]
+                    - button "Editar cliente" [ref=e199] [cursor=pointer]
+                  - paragraph [ref=e201]:
+                    - text: "45678901 · 11001 · Fecha vinculación:"
+                    - strong
+                - img "AV Villas" [ref=e202]
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: Saldo disponible
+                - generic [ref=e208]: $ 5.300.000
+                - generic [ref=e209]: 1 cuentas
+              - generic [ref=e210]:
+                - generic [ref=e211]: Saldo créditos
+                - generic [ref=e214]: $ 8.000.000
+                - generic [ref=e215]: 1 obligaciones
+          - generic [ref=e216]:
+            - tablist [ref=e217]:
+              - tab "Cuentas 1" [selected] [ref=e218] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=e219]: "1"
+              - tab "Tarjeta de Crédito 1" [ref=e220] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=e221]: "1"
+              - tab "Créditos 1" [ref=e222] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=e223]: "1"
+              - tab "Inversiones 0" [ref=e224] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=e225]: "0"
+            - tabpanel [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e228]:
+                  - paragraph [ref=e229]:
+                    - text: "1 cuentas de depósito · Total disponible:"
+                    - strong [ref=e230]: $ 5.300.000
+                  - button "Consultar tarjetas débito" [ref=e231] [cursor=pointer]
+                - list [ref=e232]:
+                  - listitem [ref=e233]:
+                    - generic [ref=e234]:
+                      - generic [ref=e235]: Cuenta de Ahorros
+                      - generic [ref=e236]: 0084 3800 5 · Ahorros
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: Saldo disponible
+                      - generic [ref=e239]: $ 5.300.000
+                    - generic [ref=e240]:
+                      - generic [ref=e241]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0084 3800 5" [ref=e242] [cursor=pointer]:
+                        - generic [ref=e243]: Ver detalles
+        - dialog [ref=e98]:
+          - generic [ref=e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e100] [cursor=pointer]
+          - separator [ref=e104]
+        - dialog "Tarjetas Débito" [ref=e106]:
+          - generic [ref=e107]:
+            - heading "Tarjetas Débito" [level=2] [ref=e109]
+            - button "Cerrar panel" [ref=e110] [cursor=pointer]
+          - separator [ref=e114]
+        - dialog [ref=e116]:
+          - generic [ref=e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e118] [cursor=pointer]
+        - dialog [ref=e123]:
+          - generic [ref=e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e125] [cursor=pointer]
+        - dialog [ref=e130]:
+          - generic [ref=e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - strong [ref=e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e145]:
+          - strong [ref=e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e150]:
+          - strong [ref=e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e155]: API 23ms
+  - region "Notificaciones"

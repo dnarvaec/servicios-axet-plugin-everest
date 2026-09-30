@@ -1,0 +1,1080 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "mode": "external-target",
+  "scope": "WCAG A/AA",
+  "mobileExecuted": false,
+  "caseCount": 58,
+  "authorizedIssueKeys": [
+    "EV-10",
+    "EV-11",
+    "EV-12",
+    "EV-22",
+    "EV-23",
+    "EV-24",
+    "EV-35",
+    "EV-46",
+    "EV-47",
+    "EV-48",
+    "EV-58",
+    "EV-59",
+    "EV-70",
+    "EV-72",
+    "EV-82",
+    "EV-83",
+    "EV-94",
+    "EV-95",
+    "EV-96",
+    "EV-107",
+    "EV-114",
+    "EV-115",
+    "EV-121",
+    "EV-122",
+    "EV-128",
+    "EV-136",
+    "EV-143",
+    "EV-157",
+    "EV-163",
+    "EV-164",
+    "EV-173",
+    "EV-175",
+    "EV-186",
+    "EV-187",
+    "EV-198",
+    "EV-200",
+    "EV-211",
+    "EV-212",
+    "EV-220",
+    "EV-221",
+    "EV-231",
+    "EV-232",
+    "EV-233",
+    "EV-242",
+    "EV-243",
+    "EV-244",
+    "EV-253",
+    "EV-255",
+    "EV-279",
+    "EV-281",
+    "EV-282",
+    "EV-283",
+    "EV-284",
+    "EV-285",
+    "EV-287",
+    "EV-288",
+    "EV-289",
+    "EV-290"
+  ],
+  "generatedAt": "2026-09-28",
+  "cases": [
+    {
+      "issueKey": "EV-10",
+      "status": "FAIL",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-11",
+      "status": "FAIL",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-12",
+      "status": "WARN",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-22",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-23",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-24",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-35",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-46",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-47",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-48",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-58",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-59",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-70",
+      "status": "FAIL",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-72",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-82",
+      "status": "FAIL",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-83",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-94",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-95",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-96",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-107",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-114",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-115",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-121",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-122",
+      "status": "WARN",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-128",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-136",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-143",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-157",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-163",
+      "status": "FAIL",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-164",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-173",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-175",
+      "status": "WARN",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-186",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-187",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-198",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-200",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-211",
+      "status": "WARN",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-212",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-220",
+      "status": "FAIL",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "Se observó una barrera de nombre/operación en el control durante el recorrido desktop.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-221",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-231",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-232",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-233",
+      "status": "WARN",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-242",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-243",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-244",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-253",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-255",
+      "status": "WARN",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-279",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-281",
+      "status": "WARN",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-282",
+      "status": "PASS",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-283",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-284",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-285",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-287",
+      "status": "WARN",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "La equivalencia se verificó mediante estado visible y mensajes; el caso exacto del registro local no pudo contrastarse porque el JSON local no es accesible desde el navegador.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-288",
+      "status": "PASS",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-289",
+      "status": "PASS",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    },
+    {
+      "issueKey": "EV-290",
+      "status": "PASS",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "controls": [
+        "selector de banco",
+        "Tipo de documento (Cédula de ciudadanía)",
+        "Número de documento",
+        "Buscar cliente",
+        "validación de identidad",
+        "pestañas de productos",
+        "Nueva consulta"
+      ],
+      "evidence": "El flujo autorizado se ejecutó y el estado visible fue coherente con el resultado esperado.",
+      "note": "Solo se evaluó desktop; alcance WCAG A/AA. No se ejecutaron acciones destructivas."
+    }
+  ],
+  "status": "suggestions-only",
+  "revalidated": false,
+  "reasonNotValidated": "Objetivo externo: no se modificó la aplicación; no existe estado post-fix validable.",
+  "countsRetainedFromBaseline": true,
+  "appliedChanges": [],
+  "suggestedChanges": [
+    {
+      "id": "missing-checkbox-name",
+      "severity": "serious",
+      "wcag": [
+        "4.1.2"
+      ],
+      "evidence": "La casilla de verificación de validación biométrica no expone nombre accesible en el árbol observado."
+    },
+    {
+      "id": "dialog-operability",
+      "severity": "moderate",
+      "wcag": [
+        "2.1.1",
+        "2.4.3"
+      ],
+      "evidence": "El panel Tarjetas Débito intercepta el clic de Ver detalles y su cierre no siempre devuelve el foco."
+    }
+  ]
+}

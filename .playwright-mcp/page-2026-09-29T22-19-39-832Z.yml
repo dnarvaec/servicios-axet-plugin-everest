@@ -1,0 +1,187 @@
+- generic [ref=f1e1]:
+  - generic [ref=f1e16]:
+    - banner [ref=f1e17]:
+      - img "EVEREST" [ref=f1e19]
+      - generic [ref=f1e20]:
+        - img "Grupo AVAL" [ref=f1e21]
+        - generic [ref=f1e22]:
+          - button "Notificaciones, 2 sin leer" [ref=f1e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f1e24]: "2"
+          - button "Accesibilidad" [ref=f1e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f1e32] [cursor=pointer]
+        - button "user user" [ref=f1e34] [cursor=pointer]:
+          - generic [ref=f1e35]: user
+          - generic "user" [ref=f1e36]: U
+    - generic [ref=f1e37]:
+      - complementary [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f1e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f1e42]:
+          - link "Consultar Cliente" [ref=f1e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f1e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f1e54]: Notificaciones
+            - generic "2 sin leer" [ref=f1e55]: "2"
+          - link "Centro de Ayuda" [ref=f1e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f1e58]:
+        - generic [ref=f1e59]:
+          - generic [ref=f1e186]:
+            - navigation "Ubicación" [ref=f1e187]:
+              - generic [ref=f1e188]: Consultar Cliente
+              - generic [ref=f1e189]: /
+              - generic [ref=f1e190]: RODRIGUEZ GOMEZ,JUAN CARLOS
+            - button "Nueva consulta" [ref=f1e191] [cursor=pointer]
+          - generic [ref=f1e192]:
+            - generic [ref=f1e193]:
+              - img "RODRIGUEZ GOMEZ,JUAN CARLOS" [ref=f1e194]: RG
+              - generic [ref=f1e196]:
+                - generic [ref=f1e197]:
+                  - generic [ref=f1e198]:
+                    - heading "RODRIGUEZ GOMEZ,JUAN CARLOS" [level=2] [ref=f1e199]
+                    - button "Editar cliente" [ref=f1e200] [cursor=pointer]
+                  - paragraph [ref=f1e202]:
+                    - text: "12345678 · BOGOTA D.C. · Fecha vinculación:"
+                    - strong [ref=f1e203]: Junio 2018
+                - img "Banco de Bogotá" [ref=f1e204]
+            - generic [ref=f1e205]:
+              - generic [ref=f1e206]:
+                - generic [ref=f1e207]: Saldo disponible
+                - generic [ref=f1e210]: $ 3.350.000
+                - generic [ref=f1e211]: 2 cuentas
+              - generic [ref=f1e212]:
+                - generic [ref=f1e213]: Saldo créditos
+                - generic [ref=f1e216]: $ 13.000.000
+                - generic [ref=f1e217]: 2 obligaciones
+              - generic [ref=f1e218]:
+                - generic [ref=f1e219]: Deuda tarjetas
+                - generic [ref=f1e222]: $ 1.120.000
+                - generic [ref=f1e223]: 2 tarjetas
+              - generic [ref=f1e224]:
+                - generic [ref=f1e225]: Inversiones
+                - generic [ref=f1e228]: $ 15.000.000
+                - generic [ref=f1e229]: 2 CDT's
+          - generic [ref=f1e230]:
+            - tablist [ref=f1e231]:
+              - tab "Cuentas 2" [ref=f1e232] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=f1e233]: "2"
+              - tab "Tarjeta de Crédito 2" [selected] [ref=f1e234] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=f1e235]: "2"
+              - tab "Créditos 2" [ref=f1e236] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=f1e237]: "2"
+              - tab "Inversiones 2" [ref=f1e238] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=f1e239]: "2"
+            - tabpanel [ref=f1e240]:
+              - generic [ref=f1e307]:
+                - paragraph [ref=f1e308]:
+                  - text: "2 tarjetas · Cupo disponible:"
+                  - strong [ref=f1e309]: $ 6.880.000
+                - generic [ref=f1e310]:
+                  - generic [ref=f1e311]:
+                    - generic [ref=f1e312]:
+                      - generic [ref=f1e313]: Tarjeta de Crédito
+                      - generic [ref=f1e314]: ••••5678 · Visa Gold
+                    - generic [ref=f1e315]:
+                      - generic [ref=f1e316]: Cupo Disponible
+                      - generic [ref=f1e317]: $ 4.200.000
+                    - generic [ref=f1e318]:
+                      - generic [ref=f1e319]: Activa
+                      - button "Ver detalles de la tarjeta Visa Gold terminada en 5678" [active] [ref=f1e320] [cursor=pointer]:
+                        - generic [ref=f1e321]: Ver detalles
+                  - generic [ref=f1e326]:
+                    - generic [ref=f1e327]:
+                      - generic [ref=f1e328]: Tarjeta de Crédito
+                      - generic [ref=f1e329]: ••••5678 · Mc Classic
+                    - generic [ref=f1e330]:
+                      - generic [ref=f1e331]: Cupo Disponible
+                      - generic [ref=f1e332]: $ 2.680.000
+                    - generic [ref=f1e333]:
+                      - generic [ref=f1e334]: Activa
+                      - button "Ver detalles de la tarjeta Mc Classic terminada en 5678" [ref=f1e335] [cursor=pointer]:
+                        - generic [ref=f1e336]: Ver detalles
+        - dialog [ref=f1e306]:
+          - generic [ref=f1e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e100] [cursor=pointer]
+          - separator [ref=f1e104]
+        - dialog "Tarjetas Débito" [ref=f1e106]:
+          - generic [ref=f1e107]:
+            - heading "Tarjetas Débito" [level=2] [ref=f1e109]
+            - button "Cerrar panel" [ref=f1e110] [cursor=pointer]
+          - separator [ref=f1e114]
+        - dialog "Tarjeta de Crédito · Visa Gold" [ref=f1e342]:
+          - generic [ref=f1e117]:
+            - generic [ref=f1e343]:
+              - heading "Tarjeta de Crédito · Visa Gold" [level=2] [ref=f1e344]
+              - generic [ref=f1e347]:
+                - generic [ref=f1e348]: ••••5678
+                - generic [ref=f1e349]:
+                  - button "Bloquear" [ref=f1e350] [cursor=pointer]
+                  - generic [ref=f1e354]: Activa
+            - button "Cerrar panel" [ref=f1e118] [cursor=pointer]
+          - generic [ref=f1e122]:
+            - generic [ref=f1e355]:
+              - generic [ref=f1e356]:
+                - generic [ref=f1e357]: Cupo disponible
+                - generic [ref=f1e358]: $ 4.200.000
+              - generic [ref=f1e359]: Cupo para avances
+              - generic [ref=f1e361]:
+                - generic [ref=f1e362]: Fecha límite de pago
+                - generic [ref=f1e363]: 19/10/2026
+            - generic [ref=f1e364]:
+              - heading "Facturación vigente" [level=3] [ref=f1e365]
+              - generic [ref=f1e366]:
+                - generic [ref=f1e367]:
+                  - generic [ref=f1e368]: Pago mínimo
+                  - generic [ref=f1e369]: $ 185.000
+                - generic [ref=f1e370]: Pago total
+                - generic [ref=f1e372]:
+                  - generic [ref=f1e373]: Fecha de corte
+                  - generic [ref=f1e374]: 25/09/2026
+                - generic [ref=f1e375]:
+                  - generic [ref=f1e376]: Fecha límite de pago
+                  - generic [ref=f1e377]: 19/10/2026
+                - generic [ref=f1e378]: Días en mora
+                - generic [ref=f1e380]: Valor en mora
+            - separator [ref=f1e382]
+            - generic [ref=f1e383]:
+              - heading "Condiciones" [level=3] [ref=f1e384]
+              - generic [ref=f1e385]:
+                - generic [ref=f1e386]: Tasa E.A. compras
+                - generic [ref=f1e388]: Tasa E.A. avances
+                - generic [ref=f1e390]: Cupo internacional
+                - generic [ref=f1e392]: Seguro de vida deudor
+                - generic [ref=f1e394]: Cuota de manejo
+                - generic [ref=f1e396]: Amparadas
+                - generic [ref=f1e398]: Fecha de expedición
+            - separator [ref=f1e400]
+        - dialog [ref=f1e123]:
+          - generic [ref=f1e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e125] [cursor=pointer]
+        - dialog [ref=f1e130]:
+          - generic [ref=f1e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f1e137]:
+      - generic [ref=f1e138]:
+        - generic [ref=f1e139]:
+          - strong [ref=f1e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f1e145]:
+          - strong [ref=f1e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f1e150]:
+          - strong [ref=f1e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f1e155]: API 23ms
+  - region "Notificaciones"

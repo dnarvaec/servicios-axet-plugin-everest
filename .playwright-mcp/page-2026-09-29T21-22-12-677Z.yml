@@ -1,0 +1,170 @@
+- generic [ref=e1]:
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - img "EVEREST" [ref=e19]
+      - generic [ref=e20]:
+        - img "Grupo AVAL" [ref=e21]
+        - generic [ref=e22]:
+          - button "Notificaciones, 2 sin leer" [ref=e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e24]: "2"
+          - button "Accesibilidad" [ref=e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e32] [cursor=pointer]
+        - button "user user" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: user
+          - generic "user" [ref=e36]: U
+    - generic [ref=e37]:
+      - complementary [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e42]:
+          - link "Consultar Cliente" [ref=e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e54]: Notificaciones
+            - generic "2 sin leer" [ref=e55]: "2"
+          - link "Centro de Ayuda" [ref=e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e920]:
+            - navigation "Ubicación" [ref=e921]:
+              - generic [ref=e922]: Consultar Cliente
+              - generic [ref=e923]: /
+              - generic [ref=e924]: ANA LUCIA HERRERA MUNOZ
+            - button "Nueva consulta" [ref=e925] [cursor=pointer]
+          - generic [ref=e926]:
+            - generic [ref=e927]:
+              - img "ANA LUCIA HERRERA MUNOZ" [ref=e928]: AL
+              - generic [ref=e930]:
+                - generic [ref=e931]:
+                  - generic [ref=e932]:
+                    - heading "ANA LUCIA HERRERA MUNOZ" [level=2] [ref=e933]
+                    - button "Editar cliente" [ref=e934] [cursor=pointer]
+                  - paragraph [ref=e936]:
+                    - text: "45678901 · 11001 · Fecha vinculación:"
+                    - strong
+                - img "AV Villas" [ref=e937]
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e940]: Saldo disponible
+                - generic [ref=e943]: $ 5.300.000
+                - generic [ref=e944]: 1 cuentas
+              - generic [ref=e945]:
+                - generic [ref=e946]: Saldo créditos
+                - generic [ref=e949]: $ 8.000.000
+                - generic [ref=e950]: 1 obligaciones
+          - generic [ref=e951]:
+            - tablist [ref=e952]:
+              - tab "Cuentas 1" [ref=e953] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=e954]: "1"
+              - tab "Tarjeta de Crédito 1" [selected] [ref=e955] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=e956]: "1"
+              - tab "Créditos 1" [ref=e957] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=e958]: "1"
+              - tab "Inversiones 0" [ref=e959] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=e960]: "0"
+            - tabpanel [ref=e961]:
+              - generic [ref=e1192]:
+                - paragraph [ref=e1193]:
+                  - text: "1 tarjetas · Cupo disponible:"
+                  - strong [ref=e1194]: $ 7.800.000
+                - generic [ref=e1196]:
+                  - generic [ref=e1197]:
+                    - generic [ref=e1198]: Tarjeta de Crédito
+                    - generic [ref=e1199]: ••••0045 ·
+                  - generic [ref=e1200]:
+                    - generic [ref=e1201]: Cupo Disponible
+                    - generic [ref=e1202]: $ 7.800.000
+                  - generic [ref=e1203]:
+                    - generic [ref=e1204]: Activa
+                    - button "Ver detalles de la tarjeta terminada en 0045" [active] [ref=e1205] [cursor=pointer]:
+                      - generic [ref=e1206]: Ver detalles
+        - dialog [ref=e1073]:
+          - generic [ref=e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e100] [cursor=pointer]
+          - separator [ref=e104]
+        - dialog "Tarjetas Débito" [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - heading "Tarjetas Débito" [level=2] [ref=e109]
+              - generic [ref=e1076]:
+                - strong [ref=e1077]: "3 Tarjetas:"
+                - text: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación
+            - button "Cerrar panel" [ref=e110] [cursor=pointer]
+          - separator [ref=e114]
+          - generic [ref=e1078]:
+            - generic [ref=e1079]:
+              - generic [ref=e1080]:
+                - generic [ref=e1081]:
+                  - generic [ref=e1082]: VISA
+                  - generic [ref=e1084]:
+                    - generic [ref=e1085]: 4509 ···· ···· 8841
+                    - generic [ref=e1086]: Visa Débito · vence 05/2034
+                - generic [ref=e1087]: Activa
+              - generic [ref=e1088]:
+                - generic [ref=e1089]: Entrega y último uso
+                - generic [ref=e1090]: 10/08/2026 · Entregada en oficina
+              - button "Bloquear" [ref=e1092] [cursor=pointer]
+            - generic [ref=e1093]:
+              - generic [ref=e1094]:
+                - generic [ref=e1095]:
+                  - generic [ref=e1096]: VISA
+                  - generic [ref=e1098]:
+                    - generic [ref=e1099]: 4566 ···· ···· 2907
+                    - generic [ref=e1100]: Visa Débito · vence 05/2034
+                - generic [ref=e1101]: Bloqueada
+              - generic [ref=e1102]:
+                - generic [ref=e1103]: Entrega y último uso
+                - generic [ref=e1104]: 18/08/2026 · Bloqueo por intentos fallidos
+                - generic [ref=e1105]: 17/07/2026 · Entregada en oficina
+              - generic [ref=e1106]:
+                - generic [ref=e1107]: Desbloquear tarjeta y restablecer sus servicios.
+                - button "Desbloquear" [ref=e1108] [cursor=pointer]
+            - generic [ref=e1109]:
+              - generic [ref=e1110]:
+                - generic [ref=e1111]:
+                  - generic [ref=e1112]: MC
+                  - generic [ref=e1114]:
+                    - generic [ref=e1115]: 2221 ···· ···· 3325
+                    - generic [ref=e1116]: Master Débito · vence 05/2034
+                - generic [ref=e1117]: Pendiente de Activación
+              - generic [ref=e1118]:
+                - generic [ref=e1119]: Entrega y último uso
+                - generic [ref=e1120]: 01/07/2026 · Entregada en oficina
+              - button "Activar tarjeta" [ref=e1122] [cursor=pointer]
+        - dialog [ref=e1273]:
+          - generic [ref=e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e118] [cursor=pointer]
+        - dialog [ref=e1191]:
+          - generic [ref=e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e125] [cursor=pointer]
+        - dialog [ref=e130]:
+          - generic [ref=e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - strong [ref=e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e145]:
+          - strong [ref=e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e150]:
+          - strong [ref=e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e155]: API 23ms
+  - region "Notificaciones"

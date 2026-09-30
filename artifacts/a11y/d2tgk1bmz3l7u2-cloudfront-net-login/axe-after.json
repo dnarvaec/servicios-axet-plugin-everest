@@ -1,1 +1,53 @@
-"{\n  \"status\": \"suggestions-only\",\n  \"scope\": \"WCAG 2.2 A/AA desktop only\",\n  \"revalidated\": false,\n  \"reasonNotValidated\": \"External target; no source patch applied. Counts retained from baseline and no after scan is claimed.\",\n  \"countsRetainedFromBaseline\": true\n}"
+{
+  "status": "suggestions-only",
+  "revalidated": false,
+  "reasonNotValidated": "No se modificó el target externo y no se ejecutó una pasada posterior; se conservan los conteos del baseline sin atribuir mejora.",
+  "countsRetainedFromBaseline": true,
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.9.0"
+  },
+  "scope": "WCAG A/AA; desktop",
+  "summary": {
+    "violationCount": 2,
+    "topRuleIds": [
+      "button-name",
+      "color-contrast"
+    ],
+    "desktopViolations": 2,
+    "mobileViolations": null
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1366,
+      "height": 768,
+      "violationCount": 2,
+      "incompleteCount": 2,
+      "source": "axe-before.json",
+      "revalidated": false
+    }
+  ],
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "target": "#tipoDoc",
+      "description": "El botón combobox no tiene nombre discernible."
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "target": "._title_pcipt_42",
+      "description": "Contraste 2.84:1; mínimo 4.5:1."
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr"
+    },
+    {
+      "id": "color-contrast"
+    }
+  ]
+}
