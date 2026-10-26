@@ -1,0 +1,828 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "scope": "WCAG A/AA; desktop",
+  "status": "baseline-only",
+  "results": [
+    {
+      "caso": "EV-10",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos están etiquetados de forma explícita, sin abreviaturas ambiguas y facilitando su lectura por asesores y herramientas de accesibilidad.",
+      "description": "Validar que los datos del cliente retornados (nombres, segmento, teléfonos, direcciones) cuenten con rotulado inequívoco y orden lógico para su consumo y visualización.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-11",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes proporcionan descripciones funcionales claras y accionables para el usuario final.",
+      "description": "Validar que ante clientes no encontrados o errores de consulta, los mensajes entregados describan la situación sin jerga técnica incomprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-12",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es uniforme, legible y no presenta concatenaciones confusas.",
+      "description": "Validar que los datos de contacto posean formatos legibles y estandarizados.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-22",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada categoría de producto está claramente delimitada y categorizada, permitiendo navegación y lectura sin confusiones.",
+      "description": "Validar que la estructura de salida diferencie nítidamente cada categoría de producto financiero para facilitar la comprensión del usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-23",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los campos diferencian con total claridad entre saldo total, saldo disponible, sobregiro y deuda.",
+      "description": "Validar que los valores monetarios de cada producto presenten etiquetas explícitas y comprensibles.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-24",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente la ausencia de productos sin causar confusión ni alarmas técnicas.",
+      "description": "Validar que el mensaje informativo para clientes sin productos sea respetuoso, claro y comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-34",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información está jerárquicamente estructurada, facilitando la comprensión y navegación del asesor.",
+      "description": "Validar que la respuesta consolidada presente una separación nítida entre la información personal del cliente y sus productos financieros.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-35",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje describe claramente la sección afectada sin causar confusión sobre los datos sí entregados.",
+      "description": "Validar que si se produce una respuesta parcial, el mensaje indique con precisión qué sección no estuvo disponible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-36",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos numéricos y financieros son inequívocos, legibles y fácilmente interpretables.",
+      "description": "Validar que los datos numéricos y monetarios cuenten con presentación legible y estandarizada.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-46",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los conceptos de capital, intereses corrientes e intereses de mora están nítidamente identificados.",
+      "description": "Validar que los diferentes conceptos de la deuda estén claramente diferenciados y rotulados para evitar malentendidos.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-47",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Las fechas siguen un formato estándar y legible para los usuarios y sistemas asistivos.",
+      "description": "Validar la legibilidad y coherencia de las fechas asociadas al plan de pagos de la obligación.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-48",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la obligación consultada no fue localizada.",
+      "description": "Validar que el mensaje de obligación no encontrada proporcione información clara al usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-58",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los campos permiten distinguir con total claridad el valor a pagar de la deuda total y los plazos restantes.",
+      "description": "Validar que la respuesta de saldo de crédito presente un desglose numérico comprensible y legible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-59",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es autoexplicativa y fácilmente interpretable por cualquier usuario.",
+      "description": "Validar que las tasas de interés y estados de la cuenta no presenten códigos numéricos oscuros.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-60",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes explican claramente si el crédito no existe o si presenta una condición particular de negocio.",
+      "description": "Validar que los mensajes de error en consulta de cartera orienten al usuario sobre la causa del rechazo.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-70",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada concepto monetario está etiquetado con precisión sin posibilidad de confusión sobre los fondos disponibles.",
+      "description": "Validar que los diferentes cupos y saldos de la tarjeta de crédito se presenten de forma intuitiva.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-71",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los valores son comprensibles y no presentan códigos numéricos opacos.",
+      "description": "Validar que franquicias (VISA, MASTERCARD) y estados (ACTIVA, BLOQUEADA) se expongan en lenguaje natural.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-72",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la tarjeta consultada no fue localizada.",
+      "description": "Validar que el mensaje de tarjeta no encontrada oriente adecuadamente al usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-82",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada concepto financiero es fácilmente comprensible y legible sin ambigüedades.",
+      "description": "Validar que los datos de cupos y saldos de TC presenten etiquetas inequívocas.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-83",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es autoexplicativa y comprensible.",
+      "description": "Validar que la cantidad de cuotas diferidas y el nombre de la franquicia se muestren con total claridad.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-84",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la tarjeta consultada no existe en el banco.",
+      "description": "Validar que el mensaje de error 404 sea orientativo para el asesor o usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-94",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los conceptos de rentabilidad, capital y tiempo están claramente expuestos sin ambigüedad.",
+      "description": "Validar que los datos de inversión del CDT cuenten con rotulado comprensible y formato legible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-95",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Las fechas siguen una estructura cronológica clara y legible.",
+      "description": "Validar la presentación uniforme de fechas en el certificado de depósito a término.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-96",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente la no existencia del CDT consultado.",
+      "description": "Validar que el mensaje de CDT no encontrado sea comprensible para el usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-106",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es nítida y permite distinguir con total claridad entre el capital inicial y los intereses ganados.",
+      "description": "Validar que los datos de capital, tasa y rendimientos acumulados presenten un rotulado claro.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-107",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos temporales se entienden de forma directa sin requerir conocimientos técnicos.",
+      "description": "Validar que los plazos, periodicidad y cronograma del CDT sean legibles y sin abreviaturas confusas.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-108",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente que el certificado consultado no fue encontrado en la entidad.",
+      "description": "Validar que el mensaje ante error 404 sea orientativo y accionable para el usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-114",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-115",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-121",
+      "hu": "HU-101-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-122",
+      "hu": "HU-101-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-128",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-129",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-135",
+      "hu": "HU-101-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-136",
+      "hu": "HU-101-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-142",
+      "hu": "HU-102-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-102-ADP-BPO-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-143",
+      "hu": "HU-102-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-102-ADP-BPO-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-149",
+      "hu": "HU-102-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-102-ADP-OCC-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-150",
+      "hu": "HU-102-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-102-ADP-OCC-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-156",
+      "hu": "HU-103-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-157",
+      "hu": "HU-103-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-163",
+      "hu": "HU-104-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-164",
+      "hu": "HU-104-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-173",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-174",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-175",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-185",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-186",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-187",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-198",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-199",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-200",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-210",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-211",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-212",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-220",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-221",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-222",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-231",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-232",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-233",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-242",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-243",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-244",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-253",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-254",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-255",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-279",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco Popular para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-280",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco Popular se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-281",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco Popular se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-282",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco de Bogotá para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-283",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco de Bogotá se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-284",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco de Bogotá se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-285",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco de Occidente para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-286",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco de Occidente se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-287",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco de Occidente se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-288",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de AV Villas para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-289",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de AV Villas se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-290",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en AV Villas se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-298",
+      "hu": "HU-302-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta identifica de forma expl?cita que la tarjeta qued? activa y presenta un mensaje legible y no ambiguo.",
+      "description": "Validar que el estado de activaci?n y el mensaje de confirmaci?n sean identificables sin depender del c?digo interno del banco.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-299",
+      "hu": "HU-302-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje del banco se conserva en un campo identificable y comprensible; el c?digo HTTP no es la ?nica explicaci?n del error.",
+      "description": "Comprobar que el mensaje de rechazo explique el problema sin mostrar ?nicamente c?digos t?cnicos.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-307",
+      "hu": "HU-302-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El resultado confirma el desbloqueo con un estado y mensaje inequ?vocos, sin requerir interpretar headers t?cnicos.",
+      "description": "Validar que el resultado exitoso identifique la operaci?n completada con texto comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-308",
+      "hu": "HU-302-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta conserva una explicaci?n de negocio identificable y legible junto con el estado de error.",
+      "description": "Comprobar que el mensaje de error sea distinguible del ?xito y no dependa solo del c?digo 409.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-316",
+      "hu": "HU-302-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La condici?n de bloqueo se identifica con texto comprensible y no solo con el nombre t?cnico ErrorPinAttempt.",
+      "description": "Validar que el resultado de la consulta previa exprese si la tarjeta cumple la condici?n de PIN errado.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-317",
+      "hu": "HU-302-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje identifica que el desbloqueo fue rechazado y conserva una explicaci?n entendible para el usuario.",
+      "description": "Comprobar que el error de negocio explique que la operaci?n no se complet?.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-324",
+      "hu": "HU-302-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta comunica que la tarjeta qued? activa con texto y estado identificables.",
+      "description": "Validar que el resultado no dependa de interpretar el c?digo RtaCod.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-325",
+      "hu": "HU-302-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje de error es legible, identifica el rechazo y no expone ?nicamente el c?digo bancario.",
+      "description": "Comprobar que RtaDesc se presente como una explicaci?n del error y no como un c?digo aislado.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-333",
+      "hu": "HU-303-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta identifica la activaci?n completada mediante un estado o mensaje expl?cito y no solo con un c?digo t?cnico.",
+      "description": "Validar que el resultado exitoso indique que el pl?stico fue activado con una confirmaci?n comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-334",
+      "hu": "HU-303-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada respuesta permite identificar el tipo de problema con lenguaje legible y sin presentar ?nicamente c?digos HTTP o internos.",
+      "description": "Comprobar que timeout, error de negocio y falla de comunicaci?n sean distinguibles en la respuesta.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-342",
+      "hu": "HU-303-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta indica que el pl?stico fue asociado y muestra el n?mero enmascarado en un campo identificable.",
+      "description": "Validar que el resultado exitoso y NumeroTarjetaRealce se presenten de forma clara sin revelar el n?mero completo.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-343",
+      "hu": "HU-303-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta explica que la asociaci?n no se complet? mediante un mensaje legible y distinguible del resultado exitoso.",
+      "description": "Comprobar que el error principal sea comprensible y no se confunda con la falla secundaria tolerada.",
+      "evidencia": []
+    }
+  ],
+  "evidence": [],
+  "execution": []
+}

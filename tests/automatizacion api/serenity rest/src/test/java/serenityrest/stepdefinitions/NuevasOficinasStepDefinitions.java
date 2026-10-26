@@ -102,6 +102,13 @@ public class NuevasOficinasStepDefinitions {
 
     private static String sheetNameFor(String banco, String operacion) {
         String prefix = prefixFor(banco);
+        if ("DESBLOQUEO_TD_PIN".equals(operacion)) return prefix + "desbloqueo_td_pin";
+        if ("ACTIVACION_PLASTICO_TD".equals(operacion)) {
+            if (!"BAVV".equals(banco) && !"BOCC".equals(banco)) {
+                throw new IllegalArgumentException("ACTIVACION_PLASTICO_TD no está disponible para " + banco);
+            }
+            return prefix + "activacion_plastico_td";
+        }
         if ("BLOQUEO_TD_DEFINITIVO".equals(operacion)) return prefix + "bloqueo_td";
         if ("BLOQUEO_TC".equals(operacion)) return prefix + "bloqueo_tc";
         if ("ACTUALIZACION_DATOS".equals(operacion)) return prefix + "actualizacion_datos";
@@ -121,6 +128,8 @@ public class NuevasOficinasStepDefinitions {
     }
 
     private static String endpointForSheet(String sheetName) {
+        if (sheetName.endsWith("_desbloqueo_td_pin")) return desbloqueoTdPinEndpointForSheet(sheetName);
+        if (sheetName.endsWith("_activacion_plastico_td")) return activacionPlasticoTdEndpointForSheet(sheetName);
         if (sheetName.endsWith("_bloqueo_td")) return bloqueoTdEndpointForSheet(sheetName);
         if (sheetName.endsWith("_bloqueo_tc")) return bloqueoTcEndpointForSheet(sheetName);
         if (sheetName.endsWith("_actualizacion_datos")) return actualizacionDatosEndpointForSheet(sheetName);
@@ -129,6 +138,20 @@ public class NuevasOficinasStepDefinitions {
         if (sheetName.startsWith("occ_") || sheetName.startsWith("orq_")) return ApiEndpoints.Oficinas.CONSULTA_OCC;
         if (sheetName.startsWith("bpop_")) return ApiEndpoints.Oficinas.CONSULTA_BPOP;
         throw new IllegalArgumentException("No hay endpoint configurado para hoja: " + sheetName);
+    }
+
+    private static String desbloqueoTdPinEndpointForSheet(String sheetName) {
+        if (sheetName.startsWith("avv_")) return ApiEndpoints.Oficinas.DESBLOQUEO_TD_PIN_AVV;
+        if (sheetName.startsWith("bdb_")) return ApiEndpoints.Oficinas.DESBLOQUEO_TD_PIN_BOG;
+        if (sheetName.startsWith("bpop_")) return ApiEndpoints.Oficinas.DESBLOQUEO_TD_PIN_POP;
+        if (sheetName.startsWith("occ_")) return ApiEndpoints.Oficinas.DESBLOQUEO_TD_PIN_OCC;
+        throw new IllegalArgumentException("No hay endpoint de desbloqueo TD PIN configurado para hoja: " + sheetName);
+    }
+
+    private static String activacionPlasticoTdEndpointForSheet(String sheetName) {
+        if (sheetName.startsWith("avv_")) return ApiEndpoints.Oficinas.ACTIVACION_PLASTICO_TD_AVV;
+        if (sheetName.startsWith("occ_")) return ApiEndpoints.Oficinas.ACTIVACION_PLASTICO_TD_OCC;
+        throw new IllegalArgumentException("No hay endpoint de activación de plástico TD configurado para hoja: " + sheetName);
     }
 
     private static String bloqueoTdEndpointForSheet(String sheetName) {

@@ -1,0 +1,1756 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "scope": "WCAG A/AA; desktop",
+  "status": "baseline-only",
+  "results": [
+    {
+      "caso": "EV-10",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos están etiquetados de forma explícita, sin abreviaturas ambiguas y facilitando su lectura por asesores y herramientas de accesibilidad.",
+      "description": "Validar que los datos del cliente retornados (nombres, segmento, teléfonos, direcciones) cuenten con rotulado inequívoco y orden lógico para su consumo y visualización.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-11",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes proporcionan descripciones funcionales claras y accionables para el usuario final.",
+      "description": "Validar que ante clientes no encontrados o errores de consulta, los mensajes entregados describan la situación sin jerga técnica incomprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-12",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es uniforme, legible y no presenta concatenaciones confusas.",
+      "description": "Validar que los datos de contacto posean formatos legibles y estandarizados.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-22",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada categoría de producto está claramente delimitada y categorizada, permitiendo navegación y lectura sin confusiones.",
+      "description": "Validar que la estructura de salida diferencie nítidamente cada categoría de producto financiero para facilitar la comprensión del usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-23",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los campos diferencian con total claridad entre saldo total, saldo disponible, sobregiro y deuda.",
+      "description": "Validar que los valores monetarios de cada producto presenten etiquetas explícitas y comprensibles.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-24",
+      "hu": "HU-101-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente la ausencia de productos sin causar confusión ni alarmas técnicas.",
+      "description": "Validar que el mensaje informativo para clientes sin productos sea respetuoso, claro y comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-34",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información está jerárquicamente estructurada, facilitando la comprensión y navegación del asesor.",
+      "description": "Validar que la respuesta consolidada presente una separación nítida entre la información personal del cliente y sus productos financieros.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-35",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje describe claramente la sección afectada sin causar confusión sobre los datos sí entregados.",
+      "description": "Validar que si se produce una respuesta parcial, el mensaje indique con precisión qué sección no estuvo disponible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-36",
+      "hu": "HU-101-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos numéricos y financieros son inequívocos, legibles y fácilmente interpretables.",
+      "description": "Validar que los datos numéricos y monetarios cuenten con presentación legible y estandarizada.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-46",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los conceptos de capital, intereses corrientes e intereses de mora están nítidamente identificados.",
+      "description": "Validar que los diferentes conceptos de la deuda estén claramente diferenciados y rotulados para evitar malentendidos.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-47",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Las fechas siguen un formato estándar y legible para los usuarios y sistemas asistivos.",
+      "description": "Validar la legibilidad y coherencia de las fechas asociadas al plan de pagos de la obligación.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-48",
+      "hu": "HU-102-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la obligación consultada no fue localizada.",
+      "description": "Validar que el mensaje de obligación no encontrada proporcione información clara al usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-58",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los campos permiten distinguir con total claridad el valor a pagar de la deuda total y los plazos restantes.",
+      "description": "Validar que la respuesta de saldo de crédito presente un desglose numérico comprensible y legible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-59",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es autoexplicativa y fácilmente interpretable por cualquier usuario.",
+      "description": "Validar que las tasas de interés y estados de la cuenta no presenten códigos numéricos oscuros.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-60",
+      "hu": "HU-102-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes explican claramente si el crédito no existe o si presenta una condición particular de negocio.",
+      "description": "Validar que los mensajes de error en consulta de cartera orienten al usuario sobre la causa del rechazo.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-70",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada concepto monetario está etiquetado con precisión sin posibilidad de confusión sobre los fondos disponibles.",
+      "description": "Validar que los diferentes cupos y saldos de la tarjeta de crédito se presenten de forma intuitiva.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-71",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los valores son comprensibles y no presentan códigos numéricos opacos.",
+      "description": "Validar que franquicias (VISA, MASTERCARD) y estados (ACTIVA, BLOQUEADA) se expongan en lenguaje natural.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-72",
+      "hu": "HU-103-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la tarjeta consultada no fue localizada.",
+      "description": "Validar que el mensaje de tarjeta no encontrada oriente adecuadamente al usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-82",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada concepto financiero es fácilmente comprensible y legible sin ambigüedades.",
+      "description": "Validar que los datos de cupos y saldos de TC presenten etiquetas inequívocas.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-83",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es autoexplicativa y comprensible.",
+      "description": "Validar que la cantidad de cuotas diferidas y el nombre de la franquicia se muestren con total claridad.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-84",
+      "hu": "HU-103-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje indica con claridad que la tarjeta consultada no existe en el banco.",
+      "description": "Validar que el mensaje de error 404 sea orientativo para el asesor o usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-94",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los conceptos de rentabilidad, capital y tiempo están claramente expuestos sin ambigüedad.",
+      "description": "Validar que los datos de inversión del CDT cuenten con rotulado comprensible y formato legible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-95",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Las fechas siguen una estructura cronológica clara y legible.",
+      "description": "Validar la presentación uniforme de fechas en el certificado de depósito a término.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-96",
+      "hu": "HU-104-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente la no existencia del CDT consultado.",
+      "description": "Validar que el mensaje de CDT no encontrado sea comprensible para el usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-106",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es nítida y permite distinguir con total claridad entre el capital inicial y los intereses ganados.",
+      "description": "Validar que los datos de capital, tasa y rendimientos acumulados presenten un rotulado claro.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-107",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos temporales se entienden de forma directa sin requerir conocimientos técnicos.",
+      "description": "Validar que los plazos, periodicidad y cronograma del CDT sean legibles y sin abreviaturas confusas.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-108",
+      "hu": "HU-104-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje informa claramente que el certificado consultado no fue encontrado en la entidad.",
+      "description": "Validar que el mensaje ante error 404 sea orientativo y accionable para el usuario.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-114",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-115",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-121",
+      "hu": "HU-101-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-122",
+      "hu": "HU-101-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-BPO-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-128",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-129",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-cliente.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-135",
+      "hu": "HU-101-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-136",
+      "hu": "HU-101-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-101-ADP-OCC-consulta-productos.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-142",
+      "hu": "HU-102-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-102-ADP-BPO-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-143",
+      "hu": "HU-102-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-102-ADP-BPO-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-149",
+      "hu": "HU-102-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-102-ADP-OCC-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-150",
+      "hu": "HU-102-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-102-ADP-OCC-consulta-detallada.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-156",
+      "hu": "HU-103-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-157",
+      "hu": "HU-103-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-163",
+      "hu": "HU-104-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La información es clara, consistente y comprensible para el consumo humano.",
+      "description": "Caso generado desde HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-164",
+      "hu": "HU-104-ORQ",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "description": "Caso generado desde HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md a partir del contrato documentado de la HU.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-173",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-174",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-175",
+      "hu": "HU-201-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-185",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-186",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-187",
+      "hu": "HU-201-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-198",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-199",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-200",
+      "hu": "HU-201-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-210",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-211",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-212",
+      "hu": "HU-201-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-220",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-221",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-222",
+      "hu": "HU-203-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de AV Villas sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-231",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-232",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-233",
+      "hu": "HU-203-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Bogota sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-242",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-243",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-244",
+      "hu": "HU-203-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco Popular sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-253",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-254",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El usuario entienda que dato debe corregir o validar.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-255",
+      "hu": "HU-203-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "description": "Validar que la informacion generada por el flujo de Banco de Occidente sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-279",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco Popular para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-280",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco Popular se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-281",
+      "hu": "HU-202-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco Popular se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-282",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco de Bogotá para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-283",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco de Bogotá se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-284",
+      "hu": "HU-202-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco de Bogotá se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-285",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de Banco de Occidente para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-286",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de Banco de Occidente se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-287",
+      "hu": "HU-202-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en Banco de Occidente se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-288",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "description": "Validar que la información generada por el flujo de AV Villas para un bloqueo exitoso de tarjeta de crédito sea comprensible, consistente y usable por personas que dependen de mensajes claros o ayudas de lectura.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-289",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "description": "Validar que los errores documentados para el flujo de AV Villas se comuniquen de manera clara, diferenciable y orientativa, evitando exponer códigos o términos técnicos como única explicación del problema.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-290",
+      "hu": "HU-202-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "description": "Validar que los datos relevantes del bloqueo de tarjeta de crédito en AV Villas se presenten con rotulado consistente y que el número de tarjeta se muestre enmascarado donde la HU exige protección en logs o salidas de auditoría.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-298",
+      "hu": "HU-302-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta identifica de forma expl?cita que la tarjeta qued? activa y presenta un mensaje legible y no ambiguo.",
+      "description": "Validar que el estado de activaci?n y el mensaje de confirmaci?n sean identificables sin depender del c?digo interno del banco.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-299",
+      "hu": "HU-302-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje del banco se conserva en un campo identificable y comprensible; el c?digo HTTP no es la ?nica explicaci?n del error.",
+      "description": "Comprobar que el mensaje de rechazo explique el problema sin mostrar ?nicamente c?digos t?cnicos.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-307",
+      "hu": "HU-302-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El resultado confirma el desbloqueo con un estado y mensaje inequ?vocos, sin requerir interpretar headers t?cnicos.",
+      "description": "Validar que el resultado exitoso identifique la operaci?n completada con texto comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-308",
+      "hu": "HU-302-ADP-BDB",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta conserva una explicaci?n de negocio identificable y legible junto con el estado de error.",
+      "description": "Comprobar que el mensaje de error sea distinguible del ?xito y no dependa solo del c?digo 409.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-316",
+      "hu": "HU-302-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La condici?n de bloqueo se identifica con texto comprensible y no solo con el nombre t?cnico ErrorPinAttempt.",
+      "description": "Validar que el resultado de la consulta previa exprese si la tarjeta cumple la condici?n de PIN errado.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-317",
+      "hu": "HU-302-ADP-BPO",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje identifica que el desbloqueo fue rechazado y conserva una explicaci?n entendible para el usuario.",
+      "description": "Comprobar que el error de negocio explique que la operaci?n no se complet?.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-324",
+      "hu": "HU-302-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta comunica que la tarjeta qued? activa con texto y estado identificables.",
+      "description": "Validar que el resultado no dependa de interpretar el c?digo RtaCod.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-325",
+      "hu": "HU-302-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "El mensaje de error es legible, identifica el rechazo y no expone ?nicamente el c?digo bancario.",
+      "description": "Comprobar que RtaDesc se presente como una explicaci?n del error y no como un c?digo aislado.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-333",
+      "hu": "HU-303-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta identifica la activaci?n completada mediante un estado o mensaje expl?cito y no solo con un c?digo t?cnico.",
+      "description": "Validar que el resultado exitoso indique que el pl?stico fue activado con una confirmaci?n comprensible.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-334",
+      "hu": "HU-303-ADP-AVV",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "Cada respuesta permite identificar el tipo de problema con lenguaje legible y sin presentar ?nicamente c?digos HTTP o internos.",
+      "description": "Comprobar que timeout, error de negocio y falla de comunicaci?n sean distinguibles en la respuesta.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-342",
+      "hu": "HU-303-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta indica que el pl?stico fue asociado y muestra el n?mero enmascarado en un campo identificable.",
+      "description": "Validar que el resultado exitoso y NumeroTarjetaRealce se presenten de forma clara sin revelar el n?mero completo.",
+      "evidencia": []
+    },
+    {
+      "caso": "EV-343",
+      "hu": "HU-303-ADP-OCC",
+      "resultado": "NO VERIFICADO",
+      "detalle": "Pendiente de comprobacion UI en esta continuacion. No se infiere PASS de capturas previas.",
+      "criterio": "La respuesta explica que la asociaci?n no se complet? mediante un mensaje legible y distinguible del resultado exitoso.",
+      "description": "Comprobar que el error principal sea comprensible y no se confunda con la falla secundaria tolerada.",
+      "evidencia": []
+    }
+  ],
+  "evidence": [
+    {
+      "id": "AVV-CC1-cuenta",
+      "bank": "AVV",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.700.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 1 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 1.200.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 008438001\nActiva\nSALDO DISPONIBLE\n$ 2.500.000\nCondiciones de la cuenta\nFecha de apertura\n02/10/2024\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc1-cuenta.png"
+    },
+    {
+      "id": "AVV-CC1-credito",
+      "bank": "AVV",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••8500\nSaldo a Capital\n$ 6.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n008438500\nAl día\nSALDO A CAPITAL\n$ 6.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nFecha apertura\n02/10/2023\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-avv-cc1-credito.png"
+    },
+    {
+      "id": "AVV-CC1-tc",
+      "bank": "AVV",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.000.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••0001 ·\nCupo Disponible\n$ 1.800.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 80.000\nPago total\nFecha de corte\n27/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\n0\nValor en mora\n$ 0\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-avv-cc1-tc.png"
+    },
+    {
+      "id": "AVV-CC1-cdt",
+      "bank": "AVV",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n008438111 ·\nVigente\nVer detalles\nCDT\n008438112 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco AV Villas\n008438111\nVigente\nVALOR ACTUAL\n$ 10.000.000\nRENTABILIDAD\nVENCIMIENTO\n02/04/2027\nDetalle de la inversión\nCapital inicial\nFecha de apertura\n02/04/2026\nPlazo",
+      "path": "screenshots/continuacion-avv-cc1-cdt.png"
+    },
+    {
+      "id": "AVV-CC1-edicion",
+      "bank": "AVV",
+      "surface": "edicion",
+      "text": "JUAN CARLOS RODRIGUEZ GOMEZ\n✕\n\nModifica los campos necesarios y guarda los cambios.\n\nCorreo*\nTeléfono residencia\nDepartamento*\nSelecciona un departamento\nCiudad*\nSelecciona una ciudad\nDirección de residencia*\nOcupación*\nCancelar\nGuardar",
+      "path": "screenshots/continuacion-avv-cc1-edicion.png"
+    },
+    {
+      "id": "AVV-CC1-bloqueo-tc",
+      "bank": "AVV",
+      "surface": "bloqueo-tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.000.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••0001 ·\nCupo Disponible\n$ 1.800.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nCancelar\nActiva\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nPérdida\nHurto\nSospecha de fraude\nConfirmar\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 80.000\nPago total\nFecha de corte\n27/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\n0\nValor en mora\n$ 0\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-avv-cc1-bloqueo-tc.png",
+      "identityGateConfirmed": true,
+      "mutation": "cancelada"
+    },
+    {
+      "id": "AVV-CC1-bloqueo-td",
+      "bank": "AVV",
+      "surface": "bloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.700.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 1 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 1.200.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nCancelar\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-avv-cc1-bloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "AVV-CC1-desbloqueo-td",
+      "bank": "AVV",
+      "surface": "desbloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.700.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 1 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 1.200.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-avv-cc1-desbloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "AVV-CC1-activacion-td",
+      "bank": "AVV",
+      "surface": "activacion-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.700.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 1 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 1.200.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-avv-cc1-activacion-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BDB-CC1-cliente",
+      "bank": "BDB",
+      "surface": "cliente",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-cliente.png"
+    },
+    {
+      "id": "BDB-CC1-cuenta",
+      "bank": "BDB",
+      "surface": "cuenta",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0001000012345678\nActiva\nSALDO DISPONIBLE\n$ 2.500.000\nCondiciones de la cuenta\nFecha de apertura\n12/06/2018\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-cuenta.png"
+    },
+    {
+      "id": "BDB-CC1-credito",
+      "bank": "BDB",
+      "surface": "credito",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 obligaciones vigentes\n\nCrédito Rotativo\n••••5678 · Cre Lib\nSaldo a Capital\n$ 5.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nCrédito Rotativo\n••••0001 · Cre Con\nSaldo a Capital\n$ 8.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n0001200012345678\nAl día\nSALDO A CAPITAL\n$ 5.000.000\nCUOTA MENSUAL\n$ 145.000\nCUOTA NO.\n48\nCondiciones de crédito\nTasa\n16.0%\nPlazo\n48 cuotas\nPróximo pago\n22/10/2026\nFecha apertura\n12/06/2018\nFecha vencimiento\n02/10/2027\nPróximas cuotas\nCUOTA\tFECHA\tVALOR\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-credito.png"
+    },
+    {
+      "id": "BDB-CC1-tc",
+      "bank": "BDB",
+      "surface": "tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 · Visa Gold\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 · Mc Classic\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito · Visa Gold\n••••5678\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 185.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-tc.png"
+    },
+    {
+      "id": "BDB-CC1-cdt",
+      "bank": "BDB",
+      "surface": "cdt",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n0001500012345678 ·\nVigente\nVer detalles\nCDT\n0001000012340002 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco de Bogotá\n0001500012345678\nVigente\nVALOR ACTUAL\n$ 10.000.000\nRENTABILIDAD\nVENCIMIENTO\n02/04/2027\nDetalle de la inversión\nCapital inicial\nFecha de apertura\n02/04/2026\nPlazo\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-cdt.png"
+    },
+    {
+      "id": "BDB-CC1-edicion",
+      "bank": "BDB",
+      "surface": "edicion",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n0001500012345678 ·\nVigente\nVer detalles\nCDT\n0001000012340002 ·\nVigente\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms\nRODRIGUEZ GOMEZ,JUAN CARLOS\n✕\n\nModifica los campos necesarios y guarda los cambios.\n\nCorreo*\nTeléfono residencia\nDepartamento*\nBogotá D.C.\nCiudad*\nBogotá D.C.\nDirección de residencia*\nOcupación*\nCancelar\nGuardar",
+      "path": "screenshots/continuacion-bdb-cc1-edicion.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BDB-CC1-bloqueo-tc",
+      "bank": "BDB",
+      "surface": "bloqueo-tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 · Visa Gold\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 · Mc Classic\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito · Visa Gold\n••••5678\nCancelar\nActiva\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 185.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-bloqueo-tc.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BDB-CC1-bloqueo-td",
+      "bank": "BDB",
+      "surface": "bloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nCancelar\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-bloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BDB-CC1-desbloqueo-td",
+      "bank": "BDB",
+      "surface": "desbloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-desbloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BDB-CC1-activacion-td",
+      "bank": "BDB",
+      "surface": "activacion-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bdb-cc1-activacion-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BPO-CC1-cliente",
+      "bank": "BPO",
+      "surface": "cliente",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-cliente.png"
+    },
+    {
+      "id": "BPO-CC1-cuenta",
+      "bank": "BPO",
+      "surface": "cuenta",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0012 3456 789\nActiva\nSALDO DISPONIBLE\n$ 2.500.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-cuenta.png"
+    },
+    {
+      "id": "BPO-CC1-credito",
+      "bank": "BPO",
+      "surface": "credito",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••8901\nSaldo a Capital\n$ 6.500.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito\n00345678901\nAl día\nSALDO A CAPITAL\n$ 6.500.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nPróximas cuotas\nCUOTA\tFECHA\tVALOR\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-credito.png"
+    },
+    {
+      "id": "BPO-CC1-tc",
+      "bank": "BPO",
+      "surface": "tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-tc.png"
+    },
+    {
+      "id": "BPO-CC1-cdt",
+      "bank": "BPO",
+      "surface": "cdt",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n00234567890 ·\nVigente\nVer detalles\nCDT\n00234567891 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco Popular\n00234567890\nVigente\nVALOR ACTUAL\n$ 10.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\n$ 10.000.000\nFecha de apertura\nPlazo\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-cdt.png"
+    },
+    {
+      "id": "BPO-CC1-edicion",
+      "bank": "BPO",
+      "surface": "edicion",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n00234567890 ·\nVigente\nVer detalles\nCDT\n00234567891 ·\nVigente\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms\nJUAN CARLOS RODRIGUEZ GOMEZ\n✕\n\nModifica los campos necesarios y guarda los cambios.\n\nCorreo*\nTeléfono residencia\nDepartamento*\nSelecciona un departamento\nCiudad*\nSelecciona una ciudad\nDirección de residencia*\nOcupación*\nCancelar\nGuardar",
+      "path": "screenshots/continuacion-bpo-cc1-edicion.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BPO-CC1-bloqueo-tc",
+      "bank": "BPO",
+      "surface": "bloqueo-tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nCancelar\nActiva\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-bloqueo-tc.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BPO-CC1-bloqueo-td",
+      "bank": "BPO",
+      "surface": "bloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nCancelar\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-bloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BPO-CC1-desbloqueo-td",
+      "bank": "BPO",
+      "surface": "desbloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-desbloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "BPO-CC1-activacion-td",
+      "bank": "BPO",
+      "surface": "activacion-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-bpo-cc1-activacion-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "OCC-CC1-cliente",
+      "bank": "OCC",
+      "surface": "cliente",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-cliente.png"
+    },
+    {
+      "id": "OCC-CC1-cuenta",
+      "bank": "OCC",
+      "surface": "cuenta",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0618 1234 5\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-cuenta.png"
+    },
+    {
+      "id": "OCC-CC1-credito",
+      "bank": "OCC",
+      "surface": "credito",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••2345\nSaldo a Capital\n$ 7.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito\n034000002345\nAl día\nSALDO A CAPITAL\n$ 7.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nPróximas cuotas\nCUOTA\tFECHA\tVALOR\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-credito.png"
+    },
+    {
+      "id": "OCC-CC1-tc",
+      "bank": "OCC",
+      "surface": "tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-tc.png"
+    },
+    {
+      "id": "OCC-CC1-cdt",
+      "bank": "OCC",
+      "surface": "cdt",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n034000001234 ·\nVigente\nVer detalles\nCDT\n034000009876 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco de Occidente\n034000001234\nVigente\nVALOR ACTUAL\n$ 10.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\nFecha de apertura\nPlazo\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-cdt.png"
+    },
+    {
+      "id": "OCC-CC1-edicion",
+      "bank": "OCC",
+      "surface": "edicion",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 productos · valor total: $ 15.000.000\n\nCDT\n034000001234 ·\nVigente\nVer detalles\nCDT\n034000009876 ·\nVigente\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms\nJUAN CARLOS RODRIGUEZ GOMEZ\n✕\n\nModifica los campos necesarios y guarda los cambios.\n\nCorreo*\nTeléfono residencia\nDepartamento*\nSelecciona un departamento\nCiudad*\nSelecciona una ciudad\nDirección de residencia*\nOcupación*\nCancelar\nGuardar",
+      "path": "screenshots/continuacion-occ-cc1-edicion.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "OCC-CC1-bloqueo-tc",
+      "bank": "OCC",
+      "surface": "bloqueo-tc",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 tarjetas · Cupo disponible: $ 6.880.000\n\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 4.200.000\nActiva\nVer detalles\nTarjeta de Crédito\n••••5678 ·\nCupo Disponible\n$ 2.680.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••5678\nCancelar\nActiva\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nCUPO DISPONIBLE\n$ 4.200.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-bloqueo-tc.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "OCC-CC1-bloqueo-td",
+      "bank": "OCC",
+      "surface": "bloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nCancelar\nConfirmo que validé la identidad del cliente\nMotivo de bloqueo\nSelecciona\nConfirmar\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-bloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "OCC-CC1-desbloqueo-td",
+      "bank": "OCC",
+      "surface": "desbloqueo-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nActivar tarjeta\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-desbloqueo-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "OCC-CC1-activacion-td",
+      "bank": "OCC",
+      "surface": "activacion-td",
+      "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nTarjetas Débito\n3 Tarjetas: 1 Activa, 1 Bloqueada, 1 Pendiente de Activación\nVISA\n4509 ···· ···· 8841\nVisa Débito · vence 05/2034\nActiva\nENTREGA Y ÚLTIMO USO\n10/08/2026 · Entregada en oficina\nBloquear\nVISA\n4566 ···· ···· 2907\nVisa Débito · vence 05/2034\nBloqueada\nENTREGA Y ÚLTIMO USO\n18/08/2026 · Bloqueo por intentos fallidos\n17/07/2026 · Entregada en oficina\nDesbloquear tarjeta y restablecer sus servicios.\nDesbloquear\nMC\n2221 ···· ···· 3325\nMaster Débito · vence 05/2034\nPendiente de Activación\nENTREGA Y ÚLTIMO USO\n01/07/2026 · Entregada en oficina\nConfirmo que validé la identidad del cliente\nCancelar\nConfirmar\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "path": "screenshots/continuacion-occ-cc1-activacion-td.png",
+      "mutation": "cancelada"
+    },
+    {
+      "id": "AVV-CC-2-cuenta",
+      "bank": "AVV",
+      "cc": "CC-2",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 008438002\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n02/10/2024\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-2-cuenta.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-2-credito",
+      "bank": "AVV",
+      "cc": "CC-2",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-2-credito.png",
+      "count": 0
+    },
+    {
+      "id": "AVV-CC-2-tc",
+      "bank": "AVV",
+      "cc": "CC-2",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 9.500.000\n\nTarjeta de Crédito\n••••0023 ·\nCupo Disponible\n$ 9.500.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••0023\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 9.500.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n24/10/2026\nFacturación vigente\nPago mínimo\n$ 250.000\nPago total\nFecha de corte\n29/09/2026\nFecha límite de pago\n24/10/2026\nDías en mora\n0\nValor en mora\n$ 0\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-avv-cc-2-tc.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-2-cdt",
+      "bank": "AVV",
+      "cc": "CC-2",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-2-cdt.png",
+      "count": 0
+    },
+    {
+      "id": "AVV-CC-3-cuenta",
+      "bank": "AVV",
+      "cc": "CC-3",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-3-cuenta.png",
+      "count": 0
+    },
+    {
+      "id": "AVV-CC-3-credito",
+      "bank": "AVV",
+      "cc": "CC-3",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••8003\nSaldo a Capital\n$ 35.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n008438003\nAl día\nSALDO A CAPITAL\n$ 35.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nFecha apertura\n02/10/2022\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-avv-cc-3-credito.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-3-tc",
+      "bank": "AVV",
+      "cc": "CC-3",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 tarjetas · Cupo disponible:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-3-tc.png",
+      "count": 0
+    },
+    {
+      "id": "AVV-CC-3-cdt",
+      "bank": "AVV",
+      "cc": "CC-3",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 productos · valor total: $ 25.000.000\n\nCDT\n008438004 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco AV Villas\n008438004\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\n02/04/2028\nDetalle de la inversión\nCapital inicial\nFecha de apertura\n02/04/2026\nPlazo",
+      "path": "screenshots/continuacion-avv-cc-3-cdt.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-4-cuenta",
+      "bank": "AVV",
+      "cc": "CC-4",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 5 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 008438005\nActiva\nSALDO DISPONIBLE\n$ 5.300.000\nCondiciones de la cuenta\nFecha de apertura\n02/10/2023\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-4-cuenta.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-4-credito",
+      "bank": "AVV",
+      "cc": "CC-4",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••8006\nSaldo a Capital\n$ 8.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n008438006\nAl día\nSALDO A CAPITAL\n$ 8.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nFecha apertura\n02/10/2024\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-avv-cc-4-credito.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-4-tc",
+      "bank": "AVV",
+      "cc": "CC-4",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 7.800.000\n\nTarjeta de Crédito\n••••0045 ·\nCupo Disponible\n$ 7.800.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••0045\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 7.800.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n23/10/2026\nFacturación vigente\nPago mínimo\n$ 220.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n23/10/2026\nDías en mora\n0\nValor en mora\n$ 0\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-avv-cc-4-tc.png",
+      "count": 1
+    },
+    {
+      "id": "AVV-CC-4-cdt",
+      "bank": "AVV",
+      "cc": "CC-4",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-avv-cc-4-cdt.png",
+      "count": 0
+    },
+    {
+      "id": "BDB-CC-2-cuenta",
+      "bank": "BDB",
+      "cc": "CC-2",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 2.500.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 2345 6789 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0001000023456789\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n22/03/2019\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-2-cuenta.png",
+      "count": 1,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0001000023456789\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n22/03/2019\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "BDB-CC-2-credito",
+      "bank": "BDB",
+      "cc": "CC-2",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 2.500.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-2-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BDB-CC-2-tc",
+      "bank": "BDB",
+      "cc": "CC-2",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 2.500.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 9.500.000\n\nTarjeta de Crédito\n••••6789 · Visa Gold\nCupo Disponible\n$ 9.500.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito · Visa Gold\n••••6789\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 9.500.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 320.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-bdb-cc-2-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito · Visa Gold\n••••6789\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 9.500.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 320.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "BDB-CC-2-cdt",
+      "bank": "BDB",
+      "cc": "CC-2",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 2.500.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-2-cdt.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BDB-CC-3-cuenta",
+      "bank": "BDB",
+      "cc": "CC-3",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-3-cuenta.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BDB-CC-3-credito",
+      "bank": "BDB",
+      "cc": "CC-3",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••7890 · Consumo\nSaldo a Capital\n$ 35.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n0001000034567890\nAl día\nSALDO A CAPITAL\n$ 35.000.000\nCUOTA MENSUAL\n$ 760.000\nCUOTA NO.\n72\nCondiciones de crédito\nTasa\n17.5%\nPlazo\n72 cuotas\nPróximo pago\n22/10/2026\nFecha apertura\n30/08/2021\nFecha vencimiento\n02/10/2027\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-bdb-cc-3-credito.png",
+      "count": 1,
+      "dialogs": [
+        "Crédito Rotativo\n0001000034567890\nAl día\nSALDO A CAPITAL\n$ 35.000.000\nCUOTA MENSUAL\n$ 760.000\nCUOTA NO.\n72\nCondiciones de crédito\nTasa\n17.5%\nPlazo\n72 cuotas\nPróximo pago\n22/10/2026\nFecha apertura\n30/08/2021\nFecha vencimiento\n02/10/2027\nPróximas cuotas\nCUOTA\tFECHA\tVALOR"
+      ]
+    },
+    {
+      "id": "BDB-CC-3-tc",
+      "bank": "BDB",
+      "cc": "CC-3",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 tarjetas · Cupo disponible:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-3-tc.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BDB-CC-3-cdt",
+      "bank": "BDB",
+      "cc": "CC-3",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 productos · valor total: $ 25.000.000\n\nCDT\n0001000034567891 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco de Bogotá\n0001000034567891\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\n02/10/2027\nDetalle de la inversión\nCapital inicial\nFecha de apertura\n02/10/2025\nPlazo",
+      "path": "screenshots/continuacion-bdb-cc-3-cdt.png",
+      "count": 1,
+      "dialogs": [
+        "CDT Banco de Bogotá\n0001000034567891\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\n02/10/2027\nDetalle de la inversión\nCapital inicial\nFecha de apertura\n02/10/2025\nPlazo"
+      ]
+    },
+    {
+      "id": "BDB-CC-4-cuenta",
+      "bank": "BDB",
+      "cc": "CC-4",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nDeuda tarjetas\n$ 2.200.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 4567 8901 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0001000045678901\nActiva\nSALDO DISPONIBLE\n$ 5.300.000\nCondiciones de la cuenta\nFecha de apertura\n15/07/2020\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-4-cuenta.png",
+      "count": 1,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0001000045678901\nActiva\nSALDO DISPONIBLE\n$ 5.300.000\nCondiciones de la cuenta\nFecha de apertura\n15/07/2020\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "BDB-CC-4-credito",
+      "bank": "BDB",
+      "cc": "CC-4",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nDeuda tarjetas\n$ 2.200.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 obligaciones vigentes\n\nCrédito Rotativo\n••••8902 · Consumo\nSaldo a Capital\n$ 8.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito Rotativo\n0001000045678902\nAl día\nSALDO A CAPITAL\n$ 8.000.000\nCUOTA MENSUAL\n$ 172.000\nCUOTA NO.\n84\nCondiciones de crédito\nTasa\n19.0%\nPlazo\n84 cuotas\nPróximo pago\n22/10/2026\nFecha apertura\n18/04/2016\nFecha vencimiento\n02/10/2027\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-bdb-cc-4-credito.png",
+      "count": 1,
+      "dialogs": [
+        "Crédito Rotativo\n0001000045678902\nAl día\nSALDO A CAPITAL\n$ 8.000.000\nCUOTA MENSUAL\n$ 172.000\nCUOTA NO.\n84\nCondiciones de crédito\nTasa\n19.0%\nPlazo\n84 cuotas\nPróximo pago\n22/10/2026\nFecha apertura\n18/04/2016\nFecha vencimiento\n02/10/2027\nPróximas cuotas\nCUOTA\tFECHA\tVALOR"
+      ]
+    },
+    {
+      "id": "BDB-CC-4-tc",
+      "bank": "BDB",
+      "cc": "CC-4",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nDeuda tarjetas\n$ 2.200.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 7.800.000\n\nTarjeta de Crédito\n••••8901 · Mastercard Gold\nCupo Disponible\n$ 7.800.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito · Mastercard Gold\n••••8901\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 7.800.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 265.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-bdb-cc-4-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito · Mastercard Gold\n••••8901\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 7.800.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\n22/10/2026\nFacturación vigente\nPago mínimo\n$ 265.000\nPago total\nFecha de corte\n28/09/2026\nFecha límite de pago\n22/10/2026\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "BDB-CC-4-cdt",
+      "bank": "BDB",
+      "cc": "CC-4",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nDeuda tarjetas\n$ 2.200.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bdb-cc-4-cdt.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-2-cuenta",
+      "bank": "BPO",
+      "cc": "CC-2",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0023 4567 890 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0023 4567 890\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-2-cuenta.png",
+      "count": 1,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0023 4567 890\nActiva\nSALDO DISPONIBLE\n$ 8.750.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "BPO-CC-2-credito",
+      "bank": "BPO",
+      "cc": "CC-2",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-2-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-2-tc",
+      "bank": "BPO",
+      "cc": "CC-2",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 25.000.000\n\nTarjeta de Crédito\n••••6789 ·\nCupo Disponible\n$ 25.000.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••6789\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 25.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-bpo-cc-2-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito ·\n••••6789\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 25.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "BPO-CC-2-cdt",
+      "bank": "BPO",
+      "cc": "CC-2",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-2-cdt.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-3-cuenta",
+      "bank": "BPO",
+      "cc": "CC-3",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-3-cuenta.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-3-credito",
+      "bank": "BPO",
+      "cc": "CC-3",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 obligaciones vigentes\n\nCrédito\n••••8901\nSaldo a Capital\n$ 35.000.000\nCuota Mensual\nPróximo Pago\nActiva\nVer detalles\nTarjetas Débito\nCrédito\n00345678901\nAl día\nSALDO A CAPITAL\n$ 35.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nPróximas cuotas\nCUOTA\tFECHA\tVALOR",
+      "path": "screenshots/continuacion-bpo-cc-3-credito.png",
+      "count": 1,
+      "dialogs": [
+        "Crédito\n00345678901\nAl día\nSALDO A CAPITAL\n$ 35.000.000\nCUOTA MENSUAL\nCUOTA NO.\nCondiciones de crédito\nPróximas cuotas\nCUOTA\tFECHA\tVALOR"
+      ]
+    },
+    {
+      "id": "BPO-CC-3-tc",
+      "bank": "BPO",
+      "cc": "CC-3",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 tarjetas · Cupo disponible:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-3-tc.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-3-cdt",
+      "bank": "BPO",
+      "cc": "CC-3",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n1 productos · valor total: $ 25.000.000\n\nCDT\n100034567891 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco Popular\n100034567891\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\n$ 25.000.000\nFecha de apertura\nPlazo",
+      "path": "screenshots/continuacion-bpo-cc-3-cdt.png",
+      "count": 1,
+      "dialogs": [
+        "CDT Banco Popular\n100034567891\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\n$ 25.000.000\nFecha de apertura\nPlazo"
+      ]
+    },
+    {
+      "id": "BPO-CC-4-cuenta",
+      "bank": "BPO",
+      "cc": "CC-4",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n2 cuentas de depósito · Total disponible: $ 8.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0045 6789 012 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nCuenta AFC\n1000 4567 8902 · AFC\nSaldo disponible\n$ 2.800.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0045 6789 012\nActiva\nSALDO DISPONIBLE\n$ 5.300.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-4-cuenta.png",
+      "count": 2,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0045 6789 012\nActiva\nSALDO DISPONIBLE\n$ 5.300.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "BPO-CC-4-credito",
+      "bank": "BPO",
+      "cc": "CC-4",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-4-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "BPO-CC-4-tc",
+      "bank": "BPO",
+      "cc": "CC-4",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 10.000.000\n\nTarjeta de Crédito\n••••8901 ·\nCupo Disponible\n$ 10.000.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••8901\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 10.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-bpo-cc-4-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito ·\n••••8901\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 10.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "BPO-CC-4-cdt",
+      "bank": "BPO",
+      "cc": "CC-4",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-bpo-cc-4-cdt.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-2-cuenta",
+      "bank": "OCC",
+      "cc": "CC-2",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nIdentidad validada\nSaldo disponible\n$ 475\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 475\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 2345 6 · Ahorros\nSaldo disponible\n$ 475\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0618 2345 6\nActiva\nSALDO DISPONIBLE\n$ 475\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-2-cuenta.png",
+      "count": 1,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0618 2345 6\nActiva\nSALDO DISPONIBLE\n$ 475\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "OCC-CC-2-credito",
+      "bank": "OCC",
+      "cc": "CC-2",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nIdentidad validada\nSaldo disponible\n$ 475\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-2-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-2-tc",
+      "bank": "OCC",
+      "cc": "CC-2",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nIdentidad validada\nSaldo disponible\n$ 475\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 25.000.000\n\nTarjeta de Crédito\n••••2345 ·\nCupo Disponible\n$ 25.000.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••2345\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 25.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-occ-cc-2-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito ·\n••••2345\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 25.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "OCC-CC-2-cdt",
+      "bank": "OCC",
+      "cc": "CC-2",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nIdentidad validada\nSaldo disponible\n$ 475\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-2-cdt.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-3-cuenta",
+      "bank": "OCC",
+      "cc": "CC-3",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nIdentidad validada\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n0\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-3-cuenta.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-3-credito",
+      "bank": "OCC",
+      "cc": "CC-3",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nIdentidad validada\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n0\nInversiones\n1\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-3-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-3-tc",
+      "bank": "OCC",
+      "cc": "CC-3",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nIdentidad validada\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n0\nInversiones\n1\n\n0 tarjetas · Cupo disponible:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-3-tc.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-3-cdt",
+      "bank": "OCC",
+      "cc": "CC-3",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nIdentidad validada\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n0\nInversiones\n1\n\n1 productos · valor total: $ 25.000.000\n\nCDT\n000006034 ·\nVigente\nVer detalles\nTarjetas Débito\nCDT Banco de Occidente\n000006034\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\nFecha de apertura\nPlazo",
+      "path": "screenshots/continuacion-occ-cc-3-cdt.png",
+      "count": 1,
+      "dialogs": [
+        "CDT Banco de Occidente\n000006034\nVigente\nVALOR ACTUAL\n$ 25.000.000\nRENTABILIDAD\nVENCIMIENTO\nDetalle de la inversión\nCapital inicial\nFecha de apertura\nPlazo"
+      ]
+    },
+    {
+      "id": "OCC-CC-4-cuenta",
+      "bank": "OCC",
+      "cc": "CC-4",
+      "surface": "cuenta",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 2.100.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n2 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 4567 8 · Ahorros\nSaldo disponible\n$ 2.100.000\nActiva\nVer detalles\nCuenta AFC\n0000 0604 5 · AFC\nSaldo disponible\n$ 3.200.000\nActiva\nVer detalles\nCuenta de Ahorros\nCuenta de Ahorros: 0618 4567 8\nActiva\nSALDO DISPONIBLE\n$ 2.100.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-4-cuenta.png",
+      "count": 2,
+      "dialogs": [
+        "Cuenta de Ahorros\nCuenta de Ahorros: 0618 4567 8\nActiva\nSALDO DISPONIBLE\n$ 2.100.000\nCondiciones de la cuenta\nFecha de apertura\n—\nOficina de radicación\n—\nTipo de titularidad\n—\nExención GMF (4x1000)\n—\nExtracto\n—"
+      ]
+    },
+    {
+      "id": "OCC-CC-4-credito",
+      "bank": "OCC",
+      "cc": "CC-4",
+      "surface": "credito",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 2.100.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 obligaciones vigentes\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-4-credito.png",
+      "count": 0,
+      "dialogs": []
+    },
+    {
+      "id": "OCC-CC-4-tc",
+      "bank": "OCC",
+      "cc": "CC-4",
+      "surface": "tc",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 2.100.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 tarjetas · Cupo disponible: $ 10.000.000\n\nTarjeta de Crédito\n••••4567 ·\nCupo Disponible\n$ 10.000.000\nActiva\nVer detalles\nTarjetas Débito\nTarjeta de Crédito ·\n••••4567\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 10.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición",
+      "path": "screenshots/continuacion-occ-cc-4-tc.png",
+      "count": 1,
+      "dialogs": [
+        "Tarjeta de Crédito ·\n••••4567\nBloquear\nActiva\nCUPO DISPONIBLE\n$ 10.000.000\nCUPO PARA AVANCES\nFECHA LÍMITE DE PAGO\nFacturación vigente\nPago mínimo\nPago total\nFecha de corte\nFecha límite de pago\nDías en mora\n0\nValor en mora\nCondiciones\nTasa E.A. compras\nTasa E.A. avances\nCupo internacional\nSeguro de vida deudor\nCuota de manejo\nAmparadas\nFecha de expedición"
+      ]
+    },
+    {
+      "id": "OCC-CC-4-cdt",
+      "bank": "OCC",
+      "cc": "CC-4",
+      "surface": "cdt",
+      "text": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 2.100.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n0 productos · valor total:\n\nTarjetas Débito",
+      "path": "screenshots/continuacion-occ-cc-4-cdt.png",
+      "count": 0,
+      "dialogs": []
+    }
+  ],
+  "execution": [
+    {
+      "bank": "AVV",
+      "cc": "CC-1",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.700.000\n2 cuentas\nSaldo créditos\n$ 6.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.700.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 1 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 1.200.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true,
+      "note": "Check de identidad del mock; no acredita una validacion biometrica real."
+    },
+    {
+      "bank": "BDB",
+      "cc": "CC-1",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nRODRIGUEZ GOMEZ,JUAN CARLOS\nNueva consulta\nRG\nRODRIGUEZ GOMEZ,JUAN CARLOS\n\n12345678 · BOGOTA D.C. · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 3.350.000\n2 cuentas\nSaldo créditos\n$ 13.000.000\n2 obligaciones\nDeuda tarjetas\n$ 1.120.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n2\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.350.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0002 0000 1234 5678 · Ahorros\nSaldo disponible\n$ 850.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BPO",
+      "cc": "CC-1",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 3.170.000\n2 cuentas\nSaldo créditos\n$ 6.500.000\n1 obligaciones\nDeuda tarjetas\n$ 6.880.000\n2 tarjetas\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 3.170.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0012 3456 789 · Ahorros\nSaldo disponible\n$ 2.500.000\nActiva\nVer detalles\nCuenta de Ahorros\n0019 8765 432 · Ahorros\nSaldo disponible\n$ 670.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "OCC",
+      "cc": "CC-1",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar Cliente\n/\nJUAN CARLOS RODRIGUEZ GOMEZ\nNueva consulta\nJC\nJUAN CARLOS RODRIGUEZ GOMEZ\n\n12345678 · 10010 · Fecha vinculación: Junio 2018\n\nIdentidad validada\nSaldo disponible\n$ 10.100.000\n2 cuentas\nSaldo créditos\n$ 7.000.000\n1 obligaciones\nInversiones\n$ 15.000.000\n2 CDT's\nCuentas\n2\nTarjeta de Crédito\n2\nCréditos\n1\nInversiones\n2\n\n2 cuentas de depósito · Total disponible: $ 10.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 1234 5 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nCuenta de Ahorros\n0618 0987 6 · Ahorros\nSaldo disponible\n$ 1.350.000\nActiva\nVer detalles\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "AVV",
+      "cc": "CC-2",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 2 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "AVV",
+      "cc": "CC-3",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "AVV",
+      "cc": "CC-4",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 11001 · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0084 3800 5 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BDB",
+      "cc": "CC-2",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nLOPEZ VARGAS,MARIA FERNANDA\nNueva consulta\nLV\nLOPEZ VARGAS,MARIA FERNANDA\n\n23456789 · BOGOTA D.C. · Fecha vinculación: Marzo 2017\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 2.500.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 2345 6789 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BDB",
+      "cc": "CC-3",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nMARTINEZ DIAZ,PEDRO ANDRES\nNueva consulta\nMD\nMARTINEZ DIAZ,PEDRO ANDRES\n\n34567890 · BOGOTA D.C. · Fecha vinculación: Agosto 2021\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BDB",
+      "cc": "CC-4",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nHERRERA MUNOZ,ANA LUCIA\nNueva consulta\nHM\nHERRERA MUNOZ,ANA LUCIA\n\n45678901 · BOGOTA D.C. · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n1 cuentas\nSaldo créditos\n$ 8.000.000\n1 obligaciones\nDeuda tarjetas\n$ 2.200.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n1\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0001 0000 4567 8901 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BPO",
+      "cc": "CC-2",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 8.750.000\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 8.750.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0023 4567 890 · Ahorros\nSaldo disponible\n$ 8.750.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BPO",
+      "cc": "CC-3",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo créditos\n$ 35.000.000\n1 obligaciones\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n1\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "BPO",
+      "cc": "CC-4",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nANA LUCIA HERRERA MUÑOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUÑOZ\n\n45678901 · BOGOTA DC · Fecha vinculación:\n\nIdentidad validada\nSaldo disponible\n$ 5.300.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n2 cuentas de depósito · Total disponible: $ 8.100.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0045 6789 012 · Ahorros\nSaldo disponible\n$ 5.300.000\nActiva\nVer detalles\nCuenta AFC\n1000 4567 8902 · AFC\nSaldo disponible\n$ 2.800.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "OCC",
+      "cc": "CC-2",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nMARIA FERNANDA LOPEZ VARGAS\nNueva consulta\nMF\nMARIA FERNANDA LOPEZ VARGAS\n\n23456789 · 10010 · Fecha vinculación: Marzo 2019\n\nIdentidad validada\nSaldo disponible\n$ 475\n1 cuentas\nDeuda tarjetas\n$ 25.000.000\n1 tarjetas\nCuentas\n1\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n1 cuentas de depósito · Total disponible: $ 475\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 2345 6 · Ahorros\nSaldo disponible\n$ 475\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "OCC",
+      "cc": "CC-3",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nPEDRO ANDRES MARTINEZ DIAZ\nNueva consulta\nPA\nPEDRO ANDRES MARTINEZ DIAZ\n\n34567890 · 10010 · Fecha vinculación: Agosto 2017\n\nIdentidad validada\nInversiones\n$ 25.000.000\n1 CDT's\nCuentas\n0\nTarjeta de Crédito\n0\nCréditos\n0\nInversiones\n1\n\n0 cuentas de depósito · Total disponible:\n\nConsultar tarjetas débito\nTarjetas Débito",
+      "identityConfirmed": true
+    },
+    {
+      "bank": "OCC",
+      "cc": "CC-4",
+      "action": "consulta y check identidad",
+      "before": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nVerifica la identidad del cliente\nRealiza la validación biométrica y marca esta casilla para continuar con el proceso.\nTarjetas Débito",
+      "after": "Consultar Cliente\n/\nANA LUCIA HERRERA MUNOZ\nNueva consulta\nAL\nANA LUCIA HERRERA MUNOZ\n\n45678901 · 10010 · Fecha vinculación: Abril 2016\n\nIdentidad validada\nSaldo disponible\n$ 2.100.000\n2 cuentas\nDeuda tarjetas\n$ 10.000.000\n1 tarjetas\nCuentas\n2\nTarjeta de Crédito\n1\nCréditos\n0\nInversiones\n0\n\n2 cuentas de depósito · Total disponible: $ 5.300.000\n\nConsultar tarjetas débito\nCuenta de Ahorros\n0618 4567 8 · Ahorros\nSaldo disponible\n$ 2.100.000\nActiva\nVer detalles\nCuenta AFC\n0000 0604 5 · AFC\nSaldo disponible\n$ 3.200.000\nActiva\nVer detalles\nTarjetas Débito",
+      "identityConfirmed": true
+    }
+  ]
+}

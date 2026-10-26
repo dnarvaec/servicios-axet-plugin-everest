@@ -93,6 +93,16 @@ public final class ApiEndpoints {
          *  por eso los paths de abajo son relativos, no URLs absolutas. */
         public static final String BASE_URL = "https://d299ks4asy14z3.cloudfront.net";
 
+        public static final String LOCAL_MOCK_BASE_URL = "https://d299ks4asy14z3.cloudfront.net";
+
+        public static final String DESBLOQUEO_TD_PIN_AVV = "/api/v1/everst/ofi/avv/actualizacion/desbloqueo-td-pin";
+        public static final String DESBLOQUEO_TD_PIN_BOG = "/api/v1/everst/ofi/bog/actualizacion/desbloqueo-td-pin";
+        public static final String DESBLOQUEO_TD_PIN_POP = "/api/v1/everst/ofi/pop/actualizacion/desbloqueo-td-pin";
+        public static final String DESBLOQUEO_TD_PIN_OCC = "/api/v1/everst/ofi/occ/actualizacion/desbloqueo-td-pin";
+
+        public static final String ACTIVACION_PLASTICO_TD_AVV = "/api/v1/everst/ofi/avv/actualizacion/activacion-plastico-td";
+        public static final String ACTIVACION_PLASTICO_TD_OCC = "/api/v1/everst/ofi/occ/actualizacion/activacion-plastico-td";
+
         /** POST — Orquestador ADP AVV (CONSULTA_CLIENTE, CONSULTA_PRODUCTOS,
          *  CONSULTA_DETALLADA_CARTERA, CONSULTA_DETALLADA_TC, CONSULTA_DETALLADA_CDT). */
         public static final String CONSULTA_AVV = "/api/v1/everst/ofi/avv/adp/consulta";

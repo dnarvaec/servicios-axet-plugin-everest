@@ -14,6 +14,7 @@ import org.junit.platform.suite.api.Suite;
 @SelectClasspathResource("features/oficinas/oficinas-orq.feature")
 @SelectClasspathResource("features/oficinas/oficinas-actualizaciones.feature")
 @SelectClasspathResource("features/oficinas/oficinas-bloqueo-tc.feature")
+@SelectClasspathResource("features/oficinas/oficinas-mantenimiento-td.feature")
 @ConfigurationParameter(key = "cucumber.glue",        value = "serenityrest.stepdefinitions")
 @ConfigurationParameter(key = "cucumber.plugin",      value = "io.cucumber.core.plugin.SerenityReporterParallel")
 public class CucumberRunnerTest {}

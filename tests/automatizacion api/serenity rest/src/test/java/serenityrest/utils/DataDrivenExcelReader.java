@@ -430,10 +430,20 @@ public final class DataDrivenExcelReader {
             if (cellValue.isBlank()) {
                 continue;
             }
-            flattened.put(header, parseValue(cellValue));
+            flattened.put(header, isCardMaintenanceIdentifier(requestType, header) ? cellValue : parseValue(cellValue));
         }
 
         return flattened;
+    }
+
+    private static boolean isCardMaintenanceIdentifier(RequestType requestType, String header) {
+        boolean cardMaintenanceSheet = requestType.sheetName.endsWith("_desbloqueo_td_pin")
+            || requestType.sheetName.endsWith("_activacion_plastico_td");
+        return cardMaintenanceSheet && (
+            "obj_operacion.numeroDocumento".equals(header)
+                || "obj_operacion.numeroTarjeta".equals(header)
+                || "obj_operacion.nroTarjeta".equals(header)
+        );
     }
 
     private static String cellText(Cell cell) {
@@ -597,6 +607,12 @@ public final class DataDrivenExcelReader {
         BDB_BLOQUEO_TD("bdb_bloqueo_td", null),
         OCC_BLOQUEO_TD("occ_bloqueo_td", null),
         BPOP_BLOQUEO_TD("bpop_bloqueo_td", null),
+        AVV_DESBLOQUEO_TD_PIN("avv_desbloqueo_td_pin", null),
+        BDB_DESBLOQUEO_TD_PIN("bdb_desbloqueo_td_pin", null),
+        OCC_DESBLOQUEO_TD_PIN("occ_desbloqueo_td_pin", null),
+        BPOP_DESBLOQUEO_TD_PIN("bpop_desbloqueo_td_pin", null),
+        AVV_ACTIVACION_PLASTICO_TD("avv_activacion_plastico_td", null),
+        OCC_ACTIVACION_PLASTICO_TD("occ_activacion_plastico_td", null),
         AVV_BLOQUEO_TC("avv_bloqueo_tc", null),
         BDB_BLOQUEO_TC("bdb_bloqueo_tc", null),
         OCC_BLOQUEO_TC("occ_bloqueo_tc", null),

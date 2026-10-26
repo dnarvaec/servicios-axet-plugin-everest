@@ -43,6 +43,12 @@ public class Hooks {
         actor.whoCan(CallAnApi.at(ApiEndpoints.Oficinas.BASE_URL));
     }
 
+    @Before(value = "@hu302 or @hu303", order = 2)
+    public void configurarMockLocalHu302Hu303() {
+        Actor actor = OnStage.theActorInTheSpotlight();
+        actor.whoCan(CallAnApi.at(ApiEndpoints.Oficinas.LOCAL_MOCK_BASE_URL));
+    }
+
     @After
     public void cerrarEscenario() {
         OnStage.drawTheCurtain();

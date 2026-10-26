@@ -1,0 +1,14 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - heading "EVEREST" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Panel Administrativo
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Usuario
+        - textbox "Usuario" [active] [ref=e10]
+      - generic [ref=e11]:
+        - generic [ref=e12]: Contraseña
+        - textbox "Contraseña" [ref=e13]
+      - button "Ingresar" [ref=e14] [cursor=pointer]
+      - button "Ingresar como Admin" [ref=e15] [cursor=pointer]
+  - region "Notificaciones"
