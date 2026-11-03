@@ -1,0 +1,175 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e16]:
+    - banner [ref=f1e17]:
+      - img "EVEREST" [ref=f1e19]
+      - generic [ref=f1e20]:
+        - img "Grupo AVAL" [ref=f1e21]
+        - generic [ref=f1e22]:
+          - button "Notificaciones, 2 sin leer" [ref=f1e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f1e24]: "2"
+          - button "Accesibilidad" [ref=f1e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f1e32] [cursor=pointer]
+        - button "user user" [ref=f1e34] [cursor=pointer]:
+          - generic [ref=f1e35]: user
+          - generic "user" [ref=f1e36]: U
+    - generic [ref=f1e37]:
+      - complementary [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f1e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f1e42]:
+          - link "Consultar Cliente" [ref=f1e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f1e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f1e54]: Notificaciones
+            - generic "2 sin leer" [ref=f1e55]: "2"
+          - link "Centro de Ayuda" [ref=f1e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f1e58]:
+        - generic [ref=f1e59]:
+          - generic [ref=f1e190]:
+            - navigation "Ubicación" [ref=f1e191]:
+              - generic [ref=f1e192]: Consultar Cliente
+              - generic [ref=f1e193]: /
+              - generic [ref=f1e194]: LOPEZ VARGAS,MARIA FERNANDA
+            - button "Nueva consulta" [ref=f1e195] [cursor=pointer]
+          - generic [ref=f1e196]:
+            - generic [ref=f1e197]:
+              - img "LOPEZ VARGAS,MARIA FERNANDA" [ref=f1e198]: LV
+              - generic [ref=f1e199]:
+                - generic [ref=f1e200]:
+                  - generic [ref=f1e201]:
+                    - generic [ref=f1e202]:
+                      - heading "LOPEZ VARGAS,MARIA FERNANDA" [level=2] [ref=f1e203]
+                      - button "Editar cliente" [ref=f1e204] [cursor=pointer]
+                    - paragraph [ref=f1e206]:
+                      - text: "23456789 · BOGOTA D.C. · Fecha vinculación:"
+                      - strong [ref=f1e207]: Marzo 2017
+                  - img "Banco de Bogotá" [ref=f1e208]
+                - generic [ref=f1e209]: Identidad validada
+            - generic [ref=f1e212]:
+              - generic [ref=f1e213]:
+                - generic [ref=f1e214]: Saldo disponible
+                - generic [ref=f1e217]: $ 8.750.000
+                - generic [ref=f1e218]: 1 cuentas
+              - generic [ref=f1e219]:
+                - generic [ref=f1e220]: Deuda tarjetas
+                - generic [ref=f1e223]: $ 2.500.000
+                - generic [ref=f1e224]: 1 tarjetas
+          - generic [ref=f1e225]:
+            - tablist [ref=f1e226]:
+              - tab "Cuentas 1" [selected] [ref=f1e227] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=f1e228]: "1"
+              - tab "Tarjeta de Crédito 1" [ref=f1e229] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=f1e230]: "1"
+              - tab "Créditos 0" [ref=f1e231] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=f1e232]: "0"
+              - tab "Inversiones 0" [ref=f1e233] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=f1e234]: "0"
+            - tabpanel [ref=f1e235]:
+              - generic [ref=f1e236]:
+                - generic [ref=f1e237]:
+                  - paragraph [ref=f1e238]:
+                    - text: "1 cuentas de depósito · Total disponible:"
+                    - strong [ref=f1e239]: $ 8.750.000
+                  - button "Consultar tarjetas débito" [ref=f1e240] [cursor=pointer]
+                - list [ref=f1e241]:
+                  - listitem [ref=f1e242]:
+                    - generic [ref=f1e243]:
+                      - generic [ref=f1e244]: Cuenta de Ahorros
+                      - generic [ref=f1e245]: 0001 0000 2345 6789 · Ahorros
+                    - generic [ref=f1e246]:
+                      - generic [ref=f1e247]: Saldo disponible
+                      - generic [ref=f1e248]: $ 8.750.000
+                    - generic [ref=f1e249]:
+                      - generic [ref=f1e250]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0001 0000 2345 6789" [ref=f1e251] [cursor=pointer]:
+                        - generic [ref=f1e252]: Ver detalles
+        - dialog [ref=f1e98]:
+          - generic [ref=f1e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e100] [cursor=pointer]
+          - separator [ref=f1e104]
+        - dialog "Tarjetas Débito" [ref=f1e106]:
+          - generic [ref=f1e107]:
+            - generic [ref=f1e108]:
+              - heading "Tarjetas Débito" [level=2] [ref=f1e109]
+              - generic [ref=f1e259]:
+                - strong [ref=f1e260]: "3 Tarjetas:"
+                - text: 2 Activa, 1 Pendiente de Activación
+            - button "Cerrar panel" [ref=f1e110] [cursor=pointer]
+          - separator [ref=f1e114]
+          - generic [ref=f1e261]:
+            - generic [ref=f1e262]:
+              - generic [ref=f1e263]:
+                - generic [ref=f1e264]:
+                  - generic [ref=f1e265]: VISA
+                  - generic [ref=f1e267]:
+                    - generic [ref=f1e268]: 4509 ···· ···· 8841
+                    - generic [ref=f1e269]: Visa Débito · vence 05/2034
+                - generic [ref=f1e270]: Activa
+              - generic [ref=f1e271]:
+                - generic [ref=f1e272]: Entrega y último uso
+                - generic [ref=f1e273]: 10/08/2026 · Entregada en oficina
+              - button "Bloquear" [ref=f1e275] [cursor=pointer]
+            - generic [ref=f1e276]:
+              - generic [ref=f1e277]:
+                - generic [ref=f1e278]:
+                  - generic [ref=f1e279]: VISA
+                  - generic [ref=f1e281]:
+                    - generic [ref=f1e282]: 4566 ···· ···· 2907
+                    - generic [ref=f1e283]: Visa Débito · vence 05/2034
+                - generic [ref=f1e284]: Activa
+              - generic [ref=f1e285]:
+                - generic [ref=f1e286]: Historial
+                - generic [ref=f1e323]: Desbloqueada por user
+                - generic [ref=f1e324]: 18/08/2026 · Bloqueo por intentos fallidos
+                - generic [ref=f1e325]: 17/07/2026 · Entregada en oficina
+              - generic [ref=f1e326]: Tarjeta ****2907 ha sido desbloqueada
+              - button "Bloquear" [ref=f1e331] [cursor=pointer]
+            - generic [ref=f1e292]:
+              - generic [ref=f1e293]:
+                - generic [ref=f1e294]:
+                  - generic [ref=f1e295]: MC
+                  - generic [ref=f1e297]:
+                    - generic [ref=f1e298]: 2221 ···· ···· 3325
+                    - generic [ref=f1e299]: Master Débito · vence 05/2034
+                - generic [ref=f1e300]: Pendiente de Activación
+              - generic [ref=f1e301]:
+                - generic [ref=f1e302]: Entrega y último uso
+                - generic [ref=f1e303]: 01/07/2026 · Entregada en oficina
+              - button "Activar tarjeta" [ref=f1e305] [cursor=pointer]
+        - dialog [ref=f1e116]:
+          - generic [ref=f1e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e118] [cursor=pointer]
+        - dialog [ref=f1e123]:
+          - generic [ref=f1e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e125] [cursor=pointer]
+        - dialog [ref=f1e130]:
+          - generic [ref=f1e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f1e137]:
+      - generic [ref=f1e138]:
+        - generic [ref=f1e139]:
+          - strong [ref=f1e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f1e145]:
+          - strong [ref=f1e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f1e150]:
+          - strong [ref=f1e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f1e155]: API 23ms
+  - region "Notificaciones"

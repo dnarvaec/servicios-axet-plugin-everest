@@ -1,0 +1,7 @@
+{
+  "status": "runtime-observed",
+  "scope": "A/AA",
+  "imagesObserved": 6,
+  "failures": [],
+  "note": "Las imágenes observadas tenían alt visible en el árbol; no se ejecutó un microagente separado."
+}

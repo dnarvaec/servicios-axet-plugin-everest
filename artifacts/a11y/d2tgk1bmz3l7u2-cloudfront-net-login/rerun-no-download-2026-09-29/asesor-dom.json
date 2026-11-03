@@ -1,0 +1,207 @@
+{
+  "url": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "title": "everest-admin",
+  "viewport": {
+    "width": 1324,
+    "height": 666
+  },
+  "body": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar cliente\n\nSelecciona el banco y completa los datos del cliente para validar su identidad.\n\nSolicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad\nTipo de documento *\nSelecciona un tipo de documento\nNúmero de documento *\n \nBuscar\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+  "forms": [
+    {
+      "name": null,
+      "action": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "name": "",
+          "id": "tipoDoc",
+          "aria": null,
+          "text": "Selecciona un tipo de documento",
+          "value": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "",
+          "id": "numDoc",
+          "aria": null,
+          "text": "",
+          "value": ""
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "id": "",
+          "aria": "Buscar cliente",
+          "text": "Buscar",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "interactive": [
+    {
+      "tag": "BUTTON",
+      "text": "2",
+      "aria": "Notificaciones, 2 sin leer",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Accesibilidad",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Centro de ayuda",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "user\nU",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Colapsar menú",
+      "role": null,
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "tag": "A",
+      "text": "Consultar Cliente",
+      "aria": null,
+      "role": null,
+      "type": "",
+      "href": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor"
+    },
+    {
+      "tag": "A",
+      "text": "Notificaciones\n2",
+      "aria": null,
+      "role": null,
+      "type": "",
+      "href": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor/notifications"
+    },
+    {
+      "tag": "A",
+      "text": "Centro de Ayuda",
+      "aria": null,
+      "role": null,
+      "type": "",
+      "href": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor/ayuda"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Selecciona un tipo de documento",
+      "aria": null,
+      "role": "combobox",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "aria": null,
+      "role": null,
+      "type": "text",
+      "checked": false,
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Buscar",
+      "aria": "Buscar cliente",
+      "role": null,
+      "type": "submit",
+      "disabled": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "aria": "Cerrar panel",
+      "role": null,
+      "type": "button",
+      "disabled": false
+    }
+  ]
+}

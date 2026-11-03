@@ -1,0 +1,1 @@
+"{\n  \"bank\": \"AV Villas\",\n  \"documentType\": \"Cédula de ciudadanía\",\n  \"query\": \"00000000\",\n  \"result\": \"business-error\",\n  \"alert\": \"Error de negocio\\n\\nReintentar\",\n  \"retryAvailable\": true,\n  \"identityGatePresent\": false\n}"

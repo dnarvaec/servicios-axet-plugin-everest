@@ -1,0 +1,1057 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "finalUrl": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "mode": "external-target",
+  "status": "suggestions-only",
+  "revalidated": false,
+  "viewport": {
+    "name": "desktop",
+    "width": 1366,
+    "height": 768
+  },
+  "wcagScope": [
+    "A",
+    "AA"
+  ],
+  "mobileExecuted": false,
+  "identityGate": "Checkbox del sandbox marcado en perfiles CC para inspección posterior; no representa biometría real.",
+  "actionsNotSubmitted": [
+    "Bloqueo TD/TC",
+    "Actualización de datos"
+  ],
+  "summary": {
+    "PASS": 8,
+    "FAIL": 5,
+    "WARN": 66
+  },
+  "total": 79,
+  "results": [
+    {
+      "issueKey": "EV-10",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "Los datos están etiquetados de forma explícita, sin abreviaturas ambiguas y facilitando su lectura por asesores y herramientas de accesibilidad.",
+      "testData": "Respuesta normalizada de cliente con datos completos.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-11",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "Los mensajes proporcionan descripciones funcionales claras y accionables para el usuario final.",
+      "testData": "Respuestas de error y estado 206/400 del flujo.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "FAIL",
+      "observation": "AV Villas, CC 00000000: la alerta solo dice “Error de negocio” y ofrece “Reintentar”; no explica causa ni acción correctiva. Falla claridad/accionabilidad.",
+      "evidence": [
+        "screenshots/AVV-CC00000000-not-found-fresh.png"
+      ]
+    },
+    {
+      "issueKey": "EV-12",
+      "hu": "HU-101-ADP-AVV-CLIENTE",
+      "criterion": "La información es uniforme, legible y no presenta concatenaciones confusas.",
+      "testData": "Bloque de datos de contacto en la respuesta de cliente.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-22",
+      "hu": "HU-101-ADP-AVV",
+      "criterion": "Cada categoría de producto está claramente delimitada y categorizada, permitiendo navegación y lectura sin confusiones.",
+      "testData": "Listado de productos consolidado del cliente.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "PASS",
+      "observation": "AV Villas expone cuatro pestañas diferenciadas (Cuentas, Tarjeta de Crédito, Créditos, Inversiones) y conteos 1/1/1/0; agrupación observable y navegable.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-23",
+      "hu": "HU-101-ADP-AVV",
+      "criterion": "Los campos diferencian con total claridad entre saldo total, saldo disponible, sobregiro y deuda.",
+      "testData": "Saldos de cuentas, carteras y cupo disponible de TC.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron algunos importes y etiquetas en tabs/detalles; campos requeridos por el criterio (desglose, tasa, cuota, deuda o mora) no aparecen completos en la pantalla.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-24",
+      "hu": "HU-101-ADP-AVV",
+      "criterion": "El mensaje informa claramente la ausencia de productos sin causar confusión ni alarmas técnicas.",
+      "testData": "Respuesta con código 206 y mensaje descriptivo.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Al consultar CC00000000 AV Villas muestra “Error de negocio” y “Reintentar”, sin causa concreta. No se reprodujo el 404/206/422 específico del producto referido por el caso.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-34",
+      "hu": "HU-101-ADP-BDB",
+      "criterion": "La información está jerárquicamente estructurada, facilitando la comprensión y navegación del asesor.",
+      "testData": "Respuesta consolidada de cliente y portafolio de Banco de Bogotá.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "PASS",
+      "observation": "Bogotá separa encabezado/perfil del cliente, resumen financiero y pestañas de productos; jerarquía y agrupación distinguibles en pantalla.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-35",
+      "hu": "HU-101-ADP-BDB",
+      "criterion": "El mensaje describe claramente la sección afectada sin causar confusión sobre los datos sí entregados.",
+      "testData": "Respuesta de consulta general con bloque parcial.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-36",
+      "hu": "HU-101-ADP-BDB",
+      "criterion": "Los datos numéricos y financieros son inequívocos, legibles y fácilmente interpretables.",
+      "testData": "Listado de cuentas y créditos en la respuesta consolidada.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "PASS",
+      "observation": "Bogotá muestra cuentas con nombre/tipo, número, saldo disponible y estado; los importes se presentan con símbolo y separadores de miles.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-cuenta-detalle.png"
+      ]
+    },
+    {
+      "issueKey": "EV-46",
+      "hu": "HU-102-ADP-AVV",
+      "criterion": "Los conceptos de capital, intereses corrientes e intereses de mora están nítidamente identificados.",
+      "testData": "Detalle de saldos de cartera con intereses y capital.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron algunos importes y etiquetas en tabs/detalles; campos requeridos por el criterio (desglose, tasa, cuota, deuda o mora) no aparecen completos en la pantalla.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-creditos-final.png"
+      ]
+    },
+    {
+      "issueKey": "EV-47",
+      "hu": "HU-102-ADP-AVV",
+      "criterion": "Las fechas siguen un formato estándar y legible para los usuarios y sistemas asistivos.",
+      "testData": "Fechas de corte, vencimiento y próximo pago.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "FAIL",
+      "observation": "Detalle de crédito AV Villas: “Cuota Mensual” y “Próximo Pago” aparecen sin valor; el formato/legibilidad de las fechas solicitadas no se cumple.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-credito-detalle-final.png"
+      ]
+    },
+    {
+      "issueKey": "EV-48",
+      "hu": "HU-102-ADP-AVV",
+      "criterion": "El mensaje indica con claridad que la obligación consultada no fue localizada.",
+      "testData": "Mensaje de error retornado.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Al consultar CC00000000 AV Villas muestra “Error de negocio” y “Reintentar”, sin causa concreta. No se reprodujo el 404/206/422 específico del producto referido por el caso.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-creditos-final.png"
+      ]
+    },
+    {
+      "issueKey": "EV-58",
+      "hu": "HU-102-ADP-BDB",
+      "criterion": "Los campos permiten distinguir con total claridad el valor a pagar de la deuda total y los plazos restantes.",
+      "testData": "Campos de saldos y plazos en la respuesta del banco.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "FAIL",
+      "observation": "Detalle de crédito Bogotá: se muestra saldo a capital, pero “Cuota Mensual”, “Próximo Pago” y valores de cuota/plazo quedan vacíos; no se distingue el valor a pagar de la deuda total como pide el caso.",
+      "evidence": [
+        "screenshots/bogota-creditos-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-59",
+      "hu": "HU-102-ADP-BDB",
+      "criterion": "La información es autoexplicativa y fácilmente interpretable por cualquier usuario.",
+      "testData": "Campos de estado y tasa en la respuesta.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/bogota-creditos-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-60",
+      "hu": "HU-102-ADP-BDB",
+      "criterion": "Los mensajes explican claramente si el crédito no existe o si presenta una condición particular de negocio.",
+      "testData": "Mensajes descriptivos de error del servicio.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/bogota-creditos-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-70",
+      "hu": "HU-103-ADP-AVV",
+      "criterion": "Cada concepto monetario está etiquetado con precisión sin posibilidad de confusión sobre los fondos disponibles.",
+      "testData": "Cupo aprobado, cupo disponible, saldo diferido y total.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-71",
+      "hu": "HU-103-ADP-AVV",
+      "criterion": "Los valores son comprensibles y no presentan códigos numéricos opacos.",
+      "testData": "Valores de franquicia y estado en el JSON de respuesta.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-72",
+      "hu": "HU-103-ADP-AVV",
+      "criterion": "El mensaje indica con claridad que la tarjeta consultada no fue localizada.",
+      "testData": "Mensaje de respuesta ante tarjeta inexistente.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Al consultar CC00000000 AV Villas muestra “Error de negocio” y “Reintentar”, sin causa concreta. No se reprodujo el 404/206/422 específico del producto referido por el caso.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-82",
+      "hu": "HU-103-ADP-BDB",
+      "criterion": "Cada concepto financiero es fácilmente comprensible y legible sin ambigüedades.",
+      "testData": "Campos cupoAprobado, cupoDisponible, saldoTotal, saldoDiferido.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-83",
+      "hu": "HU-103-ADP-BDB",
+      "criterion": "La información es autoexplicativa y comprensible.",
+      "testData": "Campos franquicia y cuotasDiferidas en la salida.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-84",
+      "hu": "HU-103-ADP-BDB",
+      "criterion": "El mensaje indica con claridad que la tarjeta consultada no existe en el banco.",
+      "testData": "Mensaje de error del servicio.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-94",
+      "hu": "HU-104-ADP-AVV",
+      "criterion": "Los conceptos de rentabilidad, capital y tiempo están claramente expuestos sin ambigüedad.",
+      "testData": "Campos monto, tasaEA, plazoDias.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron algunos importes y etiquetas en tabs/detalles; campos requeridos por el criterio (desglose, tasa, cuota, deuda o mora) no aparecen completos en la pantalla.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-inversiones.png"
+      ]
+    },
+    {
+      "issueKey": "EV-95",
+      "hu": "HU-104-ADP-AVV",
+      "criterion": "Las fechas siguen una estructura cronológica clara y legible.",
+      "testData": "Fechas de constitución y vencimiento del CDT.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Inversiones indica 0 productos; no hay CDT con fechas/plazos para contrastar el criterio.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-inversiones.png"
+      ]
+    },
+    {
+      "issueKey": "EV-96",
+      "hu": "HU-104-ADP-AVV",
+      "criterion": "El mensaje informa claramente la no existencia del CDT consultado.",
+      "testData": "Mensaje de respuesta de error.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Al consultar CC00000000 AV Villas muestra “Error de negocio” y “Reintentar”, sin causa concreta. No se reprodujo el 404/206/422 específico del producto referido por el caso.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tab-inversiones.png"
+      ]
+    },
+    {
+      "issueKey": "EV-106",
+      "hu": "HU-104-ADP-BDB",
+      "criterion": "La información es nítida y permite distinguir con total claridad entre el capital inicial y los intereses ganados.",
+      "testData": "Campos de capital y rentabilidad del CDT.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron algunos importes y etiquetas en tabs/detalles; campos requeridos por el criterio (desglose, tasa, cuota, deuda o mora) no aparecen completos en la pantalla.",
+      "evidence": [
+        "screenshots/bogota-inversiones-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-107",
+      "hu": "HU-104-ADP-BDB",
+      "criterion": "Los datos temporales se entienden de forma directa sin requerir conocimientos técnicos.",
+      "testData": "Campos de tiempo y periodicidad.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/bogota-inversiones-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-108",
+      "hu": "HU-104-ADP-BDB",
+      "criterion": "El mensaje informa claramente que el certificado consultado no fue encontrado en la entidad.",
+      "testData": "Mensaje de respuesta del servicio.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/bogota-inversiones-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-114",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-101-ADP-BPO-consulta-cliente.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "FAIL",
+      "observation": "Perfil Banco Popular, CC 34567890: se ve la etiqueta “Fecha vinculación:” sin valor; la información de cliente no está completa/consistente.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-115",
+      "hu": "HU-101-ADP-BPO-CLIENTE",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-101-ADP-BPO-consulta-cliente.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "PASS",
+      "observation": "La búsqueda de cliente inexistente en Popular anuncia “Cliente no encontrado” y explica verificar datos o intentar otra entidad.",
+      "evidence": [
+        "screenshots/BPO-CC00000000-not-found.png"
+      ]
+    },
+    {
+      "issueKey": "EV-121",
+      "hu": "HU-101-ADP-BPO",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: CONSULTA_PRODUCTOS, X-Destination-Bank: BPOP, fuente: HU-101-ADP-BPO-consulta-productos.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "PASS",
+      "observation": "Popular muestra pestañas por familia y conteos; créditos e inversiones están separados con sus montos/conteos visibles.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-tab-creditos.png"
+      ]
+    },
+    {
+      "issueKey": "EV-122",
+      "hu": "HU-101-ADP-BPO",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: CONSULTA_PRODUCTOS, X-Destination-Bank: BPOP, fuente: HU-101-ADP-BPO-consulta-productos.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-128",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: NO, X-Destination-Bank: BOCC, fuente: HU-101-ADP-OCC-consulta-cliente.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "FAIL",
+      "observation": "Perfil Banco de Occidente, CC 23456789: la ubicación aparece como “10010” sin etiqueta/nombre legible; no es comprensible para consumo humano.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-129",
+      "hu": "HU-101-ADP-OCC-CLIENTE",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: NO, X-Destination-Bank: BOCC, fuente: HU-101-ADP-OCC-consulta-cliente.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "PASS",
+      "observation": "Occidente anuncia cliente inexistente con causa y acción: verificar los datos o intentar con otra entidad.",
+      "evidence": [
+        "screenshots/OCC-CC00000000-not-found-fresh.png"
+      ]
+    },
+    {
+      "issueKey": "EV-135",
+      "hu": "HU-101-ADP-OCC",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: CONSULTA_PRODUCTOS, X-Destination-Bank: BOCC, fuente: HU-101-ADP-OCC-consulta-productos.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "PASS",
+      "observation": "Occidente diferencia Cuentas (1), Tarjeta de Crédito (1), Créditos (0) e Inversiones (0) mediante pestañas/conteos.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-136",
+      "hu": "HU-101-ADP-OCC",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: CONSULTA_PRODUCTOS, X-Destination-Bank: BOCC, fuente: HU-101-ADP-OCC-consulta-productos.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-142",
+      "hu": "HU-102-ADP-BPO",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: CONSULTA_DETALLADA_TC, X-Destination-Bank: BPOP, fuente: HU-102-ADP-BPO-consulta-detallada.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-tab-creditos.png"
+      ]
+    },
+    {
+      "issueKey": "EV-143",
+      "hu": "HU-102-ADP-BPO",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: CONSULTA_DETALLADA_TC, X-Destination-Bank: BPOP, fuente: HU-102-ADP-BPO-consulta-detallada.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-tab-creditos.png"
+      ]
+    },
+    {
+      "issueKey": "EV-149",
+      "hu": "HU-102-ADP-OCC",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: NO, X-Destination-Bank: BOCC, fuente: HU-102-ADP-OCC-consulta-detallada.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-tab-creditos.png"
+      ]
+    },
+    {
+      "issueKey": "EV-150",
+      "hu": "HU-102-ADP-OCC",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: NO, X-Destination-Bank: BOCC, fuente: HU-102-ADP-OCC-consulta-detallada.md",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-tab-creditos.png"
+      ]
+    },
+    {
+      "issueKey": "EV-156",
+      "hu": "HU-103-ORQ",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-157",
+      "hu": "HU-103-ORQ",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-103-ORQ-OCC-BPO-consulta-detallada-tc.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-163",
+      "hu": "HU-104-ORQ",
+      "criterion": "La información es clara, consistente y comprensible para el consumo humano.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). La vista y control fueron inspeccionados; el expectedResult completo no tiene salida específica en el flujo visible para esta HU.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-tab-inversiones.png"
+      ]
+    },
+    {
+      "issueKey": "EV-164",
+      "hu": "HU-104-ORQ",
+      "criterion": "Los mensajes son legibles, consistentes y orientan al usuario sin ambigüedad.",
+      "testData": "operacion: NO, X-Destination-Bank: BPOP, fuente: HU-104-ORQ-OCC-BPO-consulta-detallada-cdt.md",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). CC00000000 muestra mensaje claro de cliente inexistente; no es la respuesta específica de obligación/tarjeta/CDT/operación que pide este caso, por lo que no se toma como PASS funcional.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-tab-inversiones.png"
+      ]
+    },
+    {
+      "issueKey": "EV-173",
+      "hu": "HU-201-ADP-AVV",
+      "criterion": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de bloqueo.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron estados existentes en paneles, pero no se ejecutó bloqueo ni hubo confirmación de una transacción; no se puede verificar el mensaje exitoso de HU-201.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tarjetas-debito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-174",
+      "hu": "HU-201-ADP-AVV",
+      "criterion": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "testData": "Foco de accesibilidad: mensajes de error documentados en la historia.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se provocó el error de la operación de bloqueo; no se envió bloqueo. El aviso 00000000 corresponde a consulta de cliente y no reproduce el error específico de HU.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tarjetas-debito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-175",
+      "hu": "HU-201-ADP-AVV",
+      "criterion": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "testData": "Foco de accesibilidad: tarjeta enmascarada, causal y estado.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "PASS",
+      "observation": "Panel de débito AV Villas muestra solo últimos cuatro dígitos, estado “Bloqueada” y motivo “Bloqueo por intentos fallidos”; datos sensibles enmascarados y estado/motivo legibles.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tarjetas-debito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-185",
+      "hu": "HU-201-ADP-BDB",
+      "criterion": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de bloqueo.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. Se observaron estados existentes en paneles, pero no se ejecutó bloqueo ni hubo confirmación de una transacción; no se puede verificar el mensaje exitoso de HU-201.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-186",
+      "hu": "HU-201-ADP-BDB",
+      "criterion": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "testData": "Foco de accesibilidad: mensajes de error documentados en la historia.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se provocó el error de la operación de bloqueo; no se envió bloqueo. El aviso 00000000 corresponde a consulta de cliente y no reproduce el error específico de HU.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-187",
+      "hu": "HU-201-ADP-BDB",
+      "criterion": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "testData": "Foco de accesibilidad: tarjeta enmascarada, causal y estado.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se abrió el panel de tarjetas débito de esta entidad en esta corrida; el estado/causal y máscara no quedaron observados directamente.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-198",
+      "hu": "HU-201-ADP-BPO",
+      "criterion": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de bloqueo.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). Se observaron estados existentes en paneles, pero no se ejecutó bloqueo ni hubo confirmación de una transacción; no se puede verificar el mensaje exitoso de HU-201.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-199",
+      "hu": "HU-201-ADP-BPO",
+      "criterion": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "testData": "Foco de accesibilidad: mensajes de error documentados en la historia.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se provocó el error de la operación de bloqueo; no se envió bloqueo. El aviso 00000000 corresponde a consulta de cliente y no reproduce el error específico de HU.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-200",
+      "hu": "HU-201-ADP-BPO",
+      "criterion": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "testData": "Foco de accesibilidad: tarjeta enmascarada, causal y estado.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se abrió el panel de tarjetas débito de esta entidad en esta corrida; el estado/causal y máscara no quedaron observados directamente.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-210",
+      "hu": "HU-201-ADP-OCC",
+      "criterion": "La confirmacion del bloqueo sea comprensible y no ambigua.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de bloqueo.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. Se observaron estados existentes en paneles, pero no se ejecutó bloqueo ni hubo confirmación de una transacción; no se puede verificar el mensaje exitoso de HU-201.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-211",
+      "hu": "HU-201-ADP-OCC",
+      "criterion": "El usuario entienda el error documentado para la operacion y la accion que debe tomar.",
+      "testData": "Foco de accesibilidad: mensajes de error documentados en la historia.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se provocó el error de la operación de bloqueo; no se envió bloqueo. El aviso 00000000 corresponde a consulta de cliente y no reproduce el error específico de HU.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-212",
+      "hu": "HU-201-ADP-OCC",
+      "criterion": "Los datos sensibles se presenten de forma protegida y entendible.",
+      "testData": "Foco de accesibilidad: tarjeta enmascarada, causal y estado.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se abrió el panel de tarjetas débito de esta entidad en esta corrida; el estado/causal y máscara no quedaron observados directamente.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-220",
+      "hu": "HU-203-ADP-AVV",
+      "criterion": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de actualizacion.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. “Editar cliente” requiere una confirmación adicional de identidad; se pudo inspeccionar el formulario AV Villas, pero no se guardó. No existe evidencia de confirmación de actualización.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-edit-form.png"
+      ]
+    },
+    {
+      "issueKey": "EV-221",
+      "hu": "HU-203-ADP-AVV",
+      "criterion": "El usuario entienda que dato debe corregir o validar.",
+      "testData": "Foco de accesibilidad: mensajes de error funcional.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Formulario AV Villas: al salir del campo Correo con “correo-invalido” no apareció texto de error; Guardar quedó habilitado aunque los campos obligatorios restantes estaban vacíos. No se pulsó Guardar para no persistir cambios; resultado WARN por validación no confirmada al enviar.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-edit-invalid-email.png"
+      ]
+    },
+    {
+      "issueKey": "EV-222",
+      "hu": "HU-203-ADP-AVV",
+      "criterion": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "testData": "Foco de accesibilidad: datos de contacto actualizados.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "El formulario de edición presenta rótulos Correo, Teléfono residencia, Departamento, Ciudad, Dirección y Ocupación; no muestra valores de contacto/preferencias existentes. Se canceló sin guardar.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-edit-form.png"
+      ]
+    },
+    {
+      "issueKey": "EV-231",
+      "hu": "HU-203-ADP-BDB",
+      "criterion": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de actualizacion.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. “Editar cliente” requiere una confirmación adicional de identidad; se pudo inspeccionar el formulario AV Villas, pero no se guardó. No existe evidencia de confirmación de actualización.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-232",
+      "hu": "HU-203-ADP-BDB",
+      "criterion": "El usuario entienda que dato debe corregir o validar.",
+      "testData": "Foco de accesibilidad: mensajes de error funcional.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se envió una actualización con datos inválidos; sin el envío no aparece el mensaje correctivo de esta operación. El documento 00000000 es un error de consulta de cliente, no equivale a validación del perfil.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-233",
+      "hu": "HU-203-ADP-BDB",
+      "criterion": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "testData": "Foco de accesibilidad: datos de contacto actualizados.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se abrió/guardó una edición para esta entidad en esta corrida; no se observaron los campos de contacto/preferencias de este criterio.",
+      "evidence": [
+        "screenshots/BOG-CC12345678-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-242",
+      "hu": "HU-203-ADP-BPO",
+      "criterion": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de actualizacion.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). “Editar cliente” requiere una confirmación adicional de identidad; se pudo inspeccionar el formulario AV Villas, pero no se guardó. No existe evidencia de confirmación de actualización.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-243",
+      "hu": "HU-203-ADP-BPO",
+      "criterion": "El usuario entienda que dato debe corregir o validar.",
+      "testData": "Foco de accesibilidad: mensajes de error funcional.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se envió una actualización con datos inválidos; sin el envío no aparece el mensaje correctivo de esta operación. El documento 00000000 es un error de consulta de cliente, no equivale a validación del perfil.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-244",
+      "hu": "HU-203-ADP-BPO",
+      "criterion": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "testData": "Foco de accesibilidad: datos de contacto actualizados.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se abrió/guardó una edición para esta entidad en esta corrida; no se observaron los campos de contacto/preferencias de este criterio.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-253",
+      "hu": "HU-203-ADP-OCC",
+      "criterion": "La confirmacion indique que datos fueron actualizados sin lenguaje tecnico innecesario.",
+      "testData": "Foco de accesibilidad: mensaje exitoso de actualizacion.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. “Editar cliente” requiere una confirmación adicional de identidad; se pudo inspeccionar el formulario AV Villas, pero no se guardó. No existe evidencia de confirmación de actualización.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-254",
+      "hu": "HU-203-ADP-OCC",
+      "criterion": "El usuario entienda que dato debe corregir o validar.",
+      "testData": "Foco de accesibilidad: mensajes de error funcional.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se envió una actualización con datos inválidos; sin el envío no aparece el mensaje correctivo de esta operación. El documento 00000000 es un error de consulta de cliente, no equivale a validación del perfil.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-255",
+      "hu": "HU-203-ADP-OCC",
+      "criterion": "Telefonos, correos y preferencias se presenten con rotulos consistentes.",
+      "testData": "Foco de accesibilidad: datos de contacto actualizados.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se abrió/guardó una edición para esta entidad en esta corrida; no se observaron los campos de contacto/preferencias de este criterio.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-279",
+      "hu": "HU-202-ADP-BPO",
+      "criterion": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "testData": "Foco de accesibilidad: confirmación del bloqueo, estado BLOQUEADA y datos normalizados/documentados para la operación.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). La pestaña/panel TC muestra el estado actual; no se ejecutó bloqueo preventivo/definitivo y no se observó una confirmación posterior.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-280",
+      "hu": "HU-202-ADP-BPO",
+      "criterion": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "testData": "Foco de accesibilidad: mensajes documentados para tarjeta no encontrada (404), error técnico (502), timeout (504) y operación no soportada (400).",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se generó error 4xx/5xx de bloqueo TC; el resultado de CC00000000 es una consulta de cliente y no evidencia mensajes de esta operación.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-281",
+      "hu": "HU-202-ADP-BPO",
+      "criterion": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "testData": "Foco de accesibilidad: número de tarjeta enmascarado mostrando solo los últimos 4 dígitos, causal BL01/BL02/BL03 cuando aplique y estado BLOQUEADA.",
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "result": "WARN",
+      "observation": "Perfil Popular CC34567890: ubicación BOGOTA DC y fecha de vinculación vacía; Cuentas 0, TC 0, Créditos 1 ($35.000.000), Inversiones 1 ($25.000.000). No se inspeccionó el panel TC de este banco en esta corrida; no hay evidencia directa de enmascaramiento/causal en esa entidad.",
+      "evidence": [
+        "screenshots/BPO-CC34567890-dashboard.png"
+      ]
+    },
+    {
+      "issueKey": "EV-282",
+      "hu": "HU-202-ADP-BDB",
+      "criterion": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "testData": "Foco de accesibilidad: confirmación del bloqueo preventivo, estado BLOQUEADA y respuesta exitosa del banco.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La pestaña/panel TC muestra el estado actual; no se ejecutó bloqueo preventivo/definitivo y no se observó una confirmación posterior.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-283",
+      "hu": "HU-202-ADP-BDB",
+      "criterion": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "testData": "Foco de accesibilidad: mensajes documentados para estado de tarjeta incompatible (422), error interno (502), timeout/conectividad (504) y operación no soportada (400).",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se generó error 4xx/5xx de bloqueo TC; el resultado de CC00000000 es una consulta de cliente y no evidencia mensajes de esta operación.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-284",
+      "hu": "HU-202-ADP-BDB",
+      "criterion": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "testData": "Foco de accesibilidad: número de tarjeta enmascarado mostrando solo los últimos 4 dígitos, causal BL01/BL02/BL03 cuando aplique y estado BLOQUEADA.",
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "result": "WARN",
+      "observation": "Perfil Bogotá: ubicación BOGOTA D.C. y fecha de vinculación Junio 2018; 2 cuentas, 2 TC, 2 créditos, 2 CDT; saldo disponible $3.350.000, créditos $13.000.000, deuda TC $1.120.000 e inversiones $15.000.000. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se inspeccionó el panel TC de este banco en esta corrida; no hay evidencia directa de enmascaramiento/causal en esa entidad.",
+      "evidence": [
+        "screenshots/bogota-tarjeta-de-credito-detalle-1.png"
+      ]
+    },
+    {
+      "issueKey": "EV-285",
+      "hu": "HU-202-ADP-OCC",
+      "criterion": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "testData": "Foco de accesibilidad: confirmación del bloqueo definitivo, estado BLOQUEADA y respuesta normalizada de la operación.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. La pestaña/panel TC muestra el estado actual; no se ejecutó bloqueo preventivo/definitivo y no se observó una confirmación posterior.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-286",
+      "hu": "HU-202-ADP-OCC",
+      "criterion": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "testData": "Foco de accesibilidad: mensajes documentados para tarjeta no bloqueable (422), error de autenticación o reintento (502) y timeout/conectividad (504).",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se generó error 4xx/5xx de bloqueo TC; el resultado de CC00000000 es una consulta de cliente y no evidencia mensajes de esta operación.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-287",
+      "hu": "HU-202-ADP-OCC",
+      "criterion": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "testData": "Foco de accesibilidad: número de tarjeta enmascarado mostrando solo los últimos 4 dígitos, causal BL01/BL02/BL03 cuando aplique y estado BLOQUEADA.",
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "result": "WARN",
+      "observation": "Perfil Occidente CC23456789: ubicación numérica 10010 y fecha Marzo 2019; Cuentas 1 ($475), TC 1 ($25.000.000), Créditos 0, Inversiones 0. El detalle de cuenta deja fecha de apertura y condiciones como “—”. No se inspeccionó el panel TC de este banco en esta corrida; no hay evidencia directa de enmascaramiento/causal en esa entidad.",
+      "evidence": [
+        "screenshots/OCC-CC23456789-tab-tarjeta-credito.png"
+      ]
+    },
+    {
+      "issueKey": "EV-288",
+      "hu": "HU-202-ADP-AVV",
+      "criterion": "La confirmación del bloqueo presenta de forma clara el resultado de la operación, el estado de la tarjeta y la información necesaria para comprender que el bloqueo fue procesado, sin lenguaje técnico innecesario ni ambigüedades.",
+      "testData": "Foco de accesibilidad: confirmación del bloqueo, estado BLOQUEADA, número de autorización/mensaje de respuesta cuando aplique.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. La pestaña/panel TC muestra el estado actual; no se ejecutó bloqueo preventivo/definitivo y no se observó una confirmación posterior.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tc-detalle.png"
+      ]
+    },
+    {
+      "issueKey": "EV-289",
+      "hu": "HU-202-ADP-AVV",
+      "criterion": "Cada error se presenta con un mensaje legible y específico que permite distinguir la causa funcional o técnica y entender qué debe revisarse o intentarse a continuación, sin depender únicamente del código HTTP.",
+      "testData": "Foco de accesibilidad: mensajes documentados para error de negocio (422), error interno (502), timeout/conectividad (504) y operación no soportada (400).",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Perfil AV Villas: ubicación 11001 y fecha de vinculación sin valor; saldo disponible $5.300.000, crédito $8.000.000, 1 TC con cupo $7.800.000, inversiones 0. El detalle de crédito deja Cuota Mensual/Próximo Pago vacíos. No se generó error 4xx/5xx de bloqueo TC; el resultado de CC00000000 es una consulta de cliente y no evidencia mensajes de esta operación.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tc-detalle.png"
+      ]
+    },
+    {
+      "issueKey": "EV-290",
+      "hu": "HU-202-ADP-AVV",
+      "criterion": "El número de tarjeta se presenta de forma protegida en logs y evidencias de auditoría, manteniendo visibles únicamente los últimos 4 dígitos; la causal y el estado cuentan con rótulos comprensibles y no dependen solo de abreviaturas o códigos sin contexto.",
+      "testData": "Foco de accesibilidad: número de tarjeta enmascarado mostrando solo los últimos 4 dígitos, causal BL01/BL02/BL03 cuando aplique y estado BLOQUEADA.",
+      "bank": "AV Villas",
+      "document": "45678901",
+      "result": "WARN",
+      "observation": "Detalle TC AV Villas muestra número enmascarado “••••0045” y estado “Activa”; no presenta causal de bloqueo porque no se ejecutó la operación.",
+      "evidence": [
+        "screenshots/AVV-CC45678901-tc-detalle.png"
+      ]
+    }
+  ]
+}

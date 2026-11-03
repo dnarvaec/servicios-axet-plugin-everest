@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - img "EVEREST" [ref=e6]
+      - generic [ref=e7]:
+        - img "Grupo AVAL" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notificaciones" [ref=e10] [cursor=pointer]
+          - button "Accesibilidad" [ref=e11] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e18] [cursor=pointer]
+        - button "user user" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: user
+          - generic "user" [ref=e22]: U
+    - generic [ref=e23]:
+      - complementary [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e27] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e28]:
+          - link "Consultar Cliente" [ref=e29] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones" [ref=e36] [cursor=pointer]:
+            - /url: /asesor/notifications
+          - link "Centro de Ayuda" [ref=e41] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e43]:
+        - generic [ref=e45]:
+          - generic [ref=e48]:
+            - heading "Consultar cliente" [level=1] [ref=e49]
+            - paragraph [ref=e50]: Selecciona el banco y completa los datos del cliente para validar su identidad.
+          - separator [ref=e51]
+          - generic [ref=e52]:
+            - button [pressed] [ref=e53] [cursor=pointer]:
+              - img "Banco de Bogotá" [ref=e54]
+            - button [ref=e55] [cursor=pointer]:
+              - img "Banco de Occidente" [ref=e56]
+            - button [ref=e57] [cursor=pointer]:
+              - img "banco popular" [ref=e58]
+            - button [ref=e59] [cursor=pointer]:
+              - img "AV Villas" [ref=e60]
+          - note [ref=e61]:
+            - generic [ref=e62]: Solicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad
+          - generic [ref=e63]:
+            - generic [ref=e65]:
+              - generic [ref=e66]: Tipo de documento *
+              - combobox "Tipo de documento *" [ref=e68] [cursor=pointer]:
+                - generic [ref=e69]: Selecciona un tipo de documento
+            - generic [ref=e72]:
+              - generic [ref=e73]: Número de documento *
+              - textbox "Número de documento *" [disabled] [ref=e74]:
+                - /placeholder: "Ej: 79485236"
+            - button "Buscar cliente" [disabled] [ref=e78]: Buscar
+        - dialog [ref=e83]:
+          - generic [ref=e84]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e85] [cursor=pointer]
+          - separator [ref=e89]
+        - dialog "Tarjetas Débito" [ref=e91]:
+          - generic [ref=e92]:
+            - heading "Tarjetas Débito" [level=2] [ref=e94]
+            - button "Cerrar panel" [ref=e95] [cursor=pointer]
+          - separator [ref=e99]
+        - dialog [ref=e101]:
+          - generic [ref=e102]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e103] [cursor=pointer]
+        - dialog [ref=e108]:
+          - generic [ref=e109]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e110] [cursor=pointer]
+        - dialog [ref=e115]:
+          - generic [ref=e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e117] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - strong [ref=e128]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e130]:
+          - strong [ref=e133]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e135]:
+          - strong [ref=e139]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e140]: API 23ms
+  - region "Notificaciones"

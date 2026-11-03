@@ -1,0 +1,2062 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "scope": "desktop; WCAG A/AA",
+  "status": "suggestions-only",
+  "issueCount": 79,
+  "issues": {
+    "EV-10": {
+      "issueKey": "EV-10",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-11": {
+      "issueKey": "EV-11",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-12": {
+      "issueKey": "EV-12",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-22": {
+      "issueKey": "EV-22",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-23": {
+      "issueKey": "EV-23",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-24": {
+      "issueKey": "EV-24",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-34": {
+      "issueKey": "EV-34",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-35": {
+      "issueKey": "EV-35",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-36": {
+      "issueKey": "EV-36",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-46": {
+      "issueKey": "EV-46",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-47": {
+      "issueKey": "EV-47",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-48": {
+      "issueKey": "EV-48",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-58": {
+      "issueKey": "EV-58",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-59": {
+      "issueKey": "EV-59",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-60": {
+      "issueKey": "EV-60",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-70": {
+      "issueKey": "EV-70",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-71": {
+      "issueKey": "EV-71",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-72": {
+      "issueKey": "EV-72",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-82": {
+      "issueKey": "EV-82",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-83": {
+      "issueKey": "EV-83",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-84": {
+      "issueKey": "EV-84",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-94": {
+      "issueKey": "EV-94",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-95": {
+      "issueKey": "EV-95",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-96": {
+      "issueKey": "EV-96",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-106": {
+      "issueKey": "EV-106",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-107": {
+      "issueKey": "EV-107",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-108": {
+      "issueKey": "EV-108",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-114": {
+      "issueKey": "EV-114",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-115": {
+      "issueKey": "EV-115",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-121": {
+      "issueKey": "EV-121",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-122": {
+      "issueKey": "EV-122",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-128": {
+      "issueKey": "EV-128",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-129": {
+      "issueKey": "EV-129",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-135": {
+      "issueKey": "EV-135",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-136": {
+      "issueKey": "EV-136",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-142": {
+      "issueKey": "EV-142",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-143": {
+      "issueKey": "EV-143",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-149": {
+      "issueKey": "EV-149",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-150": {
+      "issueKey": "EV-150",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-156": {
+      "issueKey": "EV-156",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-157": {
+      "issueKey": "EV-157",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-163": {
+      "issueKey": "EV-163",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-164": {
+      "issueKey": "EV-164",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-173": {
+      "issueKey": "EV-173",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-174": {
+      "issueKey": "EV-174",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-175": {
+      "issueKey": "EV-175",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-185": {
+      "issueKey": "EV-185",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-186": {
+      "issueKey": "EV-186",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-187": {
+      "issueKey": "EV-187",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-198": {
+      "issueKey": "EV-198",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-199": {
+      "issueKey": "EV-199",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-200": {
+      "issueKey": "EV-200",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-210": {
+      "issueKey": "EV-210",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-211": {
+      "issueKey": "EV-211",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-212": {
+      "issueKey": "EV-212",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-220": {
+      "issueKey": "EV-220",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-221": {
+      "issueKey": "EV-221",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-222": {
+      "issueKey": "EV-222",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-231": {
+      "issueKey": "EV-231",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-232": {
+      "issueKey": "EV-232",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-233": {
+      "issueKey": "EV-233",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-242": {
+      "issueKey": "EV-242",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-243": {
+      "issueKey": "EV-243",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-244": {
+      "issueKey": "EV-244",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-253": {
+      "issueKey": "EV-253",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-254": {
+      "issueKey": "EV-254",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-255": {
+      "issueKey": "EV-255",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-279": {
+      "issueKey": "EV-279",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-280": {
+      "issueKey": "EV-280",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-281": {
+      "issueKey": "EV-281",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-282": {
+      "issueKey": "EV-282",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-283": {
+      "issueKey": "EV-283",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-284": {
+      "issueKey": "EV-284",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-285": {
+      "issueKey": "EV-285",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-286": {
+      "issueKey": "EV-286",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-287": {
+      "issueKey": "EV-287",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-288": {
+      "issueKey": "EV-288",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-289": {
+      "issueKey": "EV-289",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    },
+    "EV-290": {
+      "issueKey": "EV-290",
+      "status": "WARN",
+      "observation": "La interfaz visible permite observar el flujo transversal de consulta de cliente y su estado; no expone una expectativa funcional identificable para esta clave. No se atribuye PASS/FAIL funcional a la clave.",
+      "bancoDocumento": {
+        "bancos": "Banco de Bogotá; Banco de Occidente; Banco Popular; AV Villas",
+        "tipo": "Cédula de ciudadanía (CC)",
+        "documentosDePrueba": [
+          "12345678",
+          "23456789",
+          "34567890",
+          "45678901"
+        ],
+        "estadoNoEncontrado": "Banco de Bogotá / 00000000"
+      },
+      "equivalenciaObservable": "Consulta transversal de cliente; el detalle de productos, saldos, tarjetas/CDT, bloqueo TD (HU-201), actualización de datos (HU-203) y bloqueo TC (HU-202) no pudo asociarse a esta clave de manera verificable.",
+      "evidencia": [
+        "screenshots/desktop-baseline.png",
+        "screenshots/bogota-found-desktop.png",
+        "screenshots/occidente-23456789-desktop.png",
+        "screenshots/popular-34567890-desktop.png",
+        "screenshots/av-villas-45678901-desktop.png",
+        "screenshots/bogota-00000000-desktop.png",
+        "axe-before.json"
+      ]
+    }
+  }
+}

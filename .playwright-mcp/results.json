@@ -1,0 +1,4720 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "viewport": {
+    "name": "desktop",
+    "width": 1366,
+    "height": 768
+  },
+  "status": "baseline-only",
+  "revalidated": false,
+  "reasonNotValidated": "No se aplicaron correcciones ni se repitio el escaneo; no se realizaron interacciones adicionales en esta continuacion.",
+  "counts": {
+    "authorizedKeys": 79,
+    "uniqueKeys": 79,
+    "results": 79,
+    "WARN": 79,
+    "PASS": 0,
+    "FAIL": 0,
+    "axeViolations": 2,
+    "axePasses": 25,
+    "axeIncomplete": 2
+  },
+  "results": [
+    {
+      "key": "EV-10",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-11",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-12",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-22",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-23",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-24",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-34",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-35",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-36",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-46",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-47",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-48",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-58",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-59",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-60",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-70",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-71",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-72",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-82",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-83",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-84",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-94",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-95",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-96",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-106",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-107",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-108",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-114",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-115",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-121",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-122",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-128",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-129",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-135",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-136",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-142",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-143",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-149",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-150",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-156",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-157",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-163",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-164",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-173",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-174",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-175",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-185",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-186",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-187",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-198",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-199",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-200",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-210",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-211",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-212",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-220",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-221",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-222",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-231",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-232",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-233",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-242",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-243",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-244",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-253",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-254",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-255",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-279",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-280",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-281",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-282",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-283",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-284",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-285",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-286",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-287",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-288",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-289",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    },
+    {
+      "key": "EV-290",
+      "banco_documento": [
+        {
+          "banco": "Banco de Bogota",
+          "documento": "12345678",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "23456789",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "34567890",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "45678901",
+          "resultado": "cliente encontrado; gate biometrico presente y sin marcar"
+        },
+        {
+          "banco": "Banco de Bogota",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco de Occidente",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "Banco Popular",
+          "documento": "00000000",
+          "resultado": "cliente no encontrado"
+        },
+        {
+          "banco": "AV Villas",
+          "documento": "00000000",
+          "resultado": "error de negocio; opcion Reintentar disponible"
+        }
+      ],
+      "observacion": "Evidencia transversal de escritorio: las consultas validas muestran cliente y gate de validacion biometrica sin marcar; 00000000 produce no encontrado en Bogota, Occidente y Popular, y error de negocio en AV Villas. No hay descripcion/criterio verificable de esta clave dentro de los artefactos del rerun, por lo que estos recorridos no prueban por equivalencia saldos, productos, CDT, bloqueo ni actualizacion.",
+      "estado": "WARN",
+      "evidencia": [
+        "screenshots/desktop-asesor.png",
+        "screenshots/bogota-12345678.png",
+        "screenshots/occidente-23456789-biometric-gate.png",
+        "screenshots/popular-34567890-biometric-gate.png",
+        "screenshots/av-villas-45678901-biometric-gate.png",
+        "screenshots/bogota-00000000-not-found.png",
+        "screenshots/occidente-00000000-not-found.png",
+        "screenshots/popular-00000000-not-found.png",
+        "screenshots/av-villas-00000000-business-error.png"
+      ],
+      "evidencia_transversal": true
+    }
+  ],
+  "axeFindings": [
+    {
+      "estado": "FAIL",
+      "regla": "button-name",
+      "impacto": "critical",
+      "selector": "#tipoDoc",
+      "observacion": "El control combobox no tiene nombre accesible discernible.",
+      "evidencia": "axe-before.json"
+    },
+    {
+      "estado": "FAIL",
+      "regla": "color-contrast",
+      "impacto": "serious",
+      "selector": "._title_pcipt_42",
+      "observacion": "El texto MIS HERRAMIENTAS presenta contraste 2.84:1; el umbral esperado es 4.5:1.",
+      "evidencia": "axe-before.json"
+    }
+  ],
+  "scope": {
+    "mobileTests": false,
+    "destructiveActionsSent": false,
+    "balancesProductsCdtBlockingUpdatingVerified": false,
+    "caseKeyDescriptionsAvailable": false
+  },
+  "screenshotsPreserved": [
+    "screenshots/desktop-asesor.png",
+    "screenshots/bogota-12345678.png",
+    "screenshots/occidente-23456789-biometric-gate.png",
+    "screenshots/popular-34567890-biometric-gate.png",
+    "screenshots/av-villas-45678901-biometric-gate.png",
+    "screenshots/bogota-00000000-not-found.png",
+    "screenshots/occidente-00000000-not-found.png",
+    "screenshots/popular-00000000-not-found.png",
+    "screenshots/av-villas-00000000-business-error.png"
+  ]
+}

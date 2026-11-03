@@ -1,0 +1,400 @@
+{
+  "status": "suggestions-only",
+  "revalidated": false,
+  "reasonNotValidated": "No hubo correcciones aplicadas ni reescaneo; contenido y conteos conservan el baseline.",
+  "countsRetainedFromBaseline": true,
+  "findings": [
+    {
+      "id": "EV-114",
+      "criterion": "Datos del cliente claros, consistentes y comprensibles.",
+      "evidence": {
+        "element": "Resumen de cliente; «Fecha vinculación:»",
+        "text": "34567890 · BOGOTA DC · Fecha vinculación: [vacío]",
+        "observation": "El resumen muestra «PEDRO ANDRES MARTINEZ DIAZ», documento 34567890 y ubicación BOGOTA DC; el campo «Fecha vinculación:» aparece sin valor, por lo que el resumen no es completamente consistente/comprensible.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "id": "EV-128",
+      "criterion": "Datos del cliente claros y comprensibles.",
+      "evidence": {
+        "element": "Resumen de cliente; ubicación mostrada como «10010»",
+        "text": "23456789 · 10010 · Fecha vinculación: Marzo 2019",
+        "observation": "El resumen presenta «23456789 · 10010 · Fecha vinculación: Marzo 2019»; el código numérico de ubicación carece de etiqueta o nombre legible.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    }
+  ],
+  "skippedChecks": [
+    {
+      "issueKey": "EV-10",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-12",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-22",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-23",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-24",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-34",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-35",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-36",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-46",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-47",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-48",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-58",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-59",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-60",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-70",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-71",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-72",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-82",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-83",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-84",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-94",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-95",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-96",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-106",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-107",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-108",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-121",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-122",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-135",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-136",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-142",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-143",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-149",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-150",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-156",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-157",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-163",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-164",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-173",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-174",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-175",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-185",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-186",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-187",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-198",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-199",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-200",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-210",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-211",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-212",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-220",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-221",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-222",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-231",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-232",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-233",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-242",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-243",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-244",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-253",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-254",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-255",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-279",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-280",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-281",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-282",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-283",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-284",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-285",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-286",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-287",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-288",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-289",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    },
+    {
+      "issueKey": "EV-290",
+      "status": "WARN",
+      "reason": "Gate biométrico no atravesado u operación expresamente no enviada"
+    }
+  ]
+}

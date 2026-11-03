@@ -1,0 +1,191 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e16]:
+    - banner [ref=f2e17]:
+      - img "EVEREST" [ref=f2e19]
+      - generic [ref=f2e20]:
+        - img "Grupo AVAL" [ref=f2e21]
+        - generic [ref=f2e22]:
+          - button "Notificaciones, 2 sin leer" [ref=f2e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f2e24]: "2"
+          - button "Accesibilidad" [ref=f2e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f2e32] [cursor=pointer]
+        - button "user user" [ref=f2e34] [cursor=pointer]:
+          - generic [ref=f2e35]: user
+          - generic "user" [ref=f2e36]: U
+    - generic [ref=f2e37]:
+      - complementary [ref=f2e38]:
+        - generic [ref=f2e39]:
+          - generic [ref=f2e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f2e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f2e42]:
+          - link "Consultar Cliente" [ref=f2e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f2e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f2e54]: Notificaciones
+            - generic "2 sin leer" [ref=f2e55]: "2"
+          - link "Centro de Ayuda" [ref=f2e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f2e58]:
+        - generic [ref=f2e59]:
+          - generic [ref=f2e1164]:
+            - navigation "Ubicación" [ref=f2e1165]:
+              - generic [ref=f2e1166]: Consultar Cliente
+              - generic [ref=f2e1167]: /
+              - generic [ref=f2e1168]: JUAN CARLOS RODRIGUEZ GOMEZ
+            - button "Nueva consulta" [ref=f2e1169] [cursor=pointer]
+          - generic [ref=f2e1170]:
+            - generic [ref=f2e1171]:
+              - img "JUAN CARLOS RODRIGUEZ GOMEZ" [ref=f2e1172]: JC
+              - generic [ref=f2e1173]:
+                - generic [ref=f2e1174]:
+                  - generic [ref=f2e1175]:
+                    - generic [ref=f2e1176]:
+                      - heading "JUAN CARLOS RODRIGUEZ GOMEZ" [level=2] [ref=f2e1177]
+                      - button "Editar cliente" [ref=f2e1178] [cursor=pointer]
+                    - paragraph [ref=f2e1180]: 12345678 · 11001
+                  - img "AV Villas" [ref=f2e1181]
+                - generic [ref=f2e1182]: Identidad validada
+            - generic [ref=f2e1185]:
+              - generic [ref=f2e1186]:
+                - generic [ref=f2e1187]: Saldo disponible
+                - generic [ref=f2e1190]: $ 3.700.000
+                - generic [ref=f2e1191]: 2 cuentas
+              - generic [ref=f2e1192]:
+                - generic [ref=f2e1193]: Saldo créditos
+                - generic [ref=f2e1196]: $ 6.000.000
+                - generic [ref=f2e1197]: 1 obligaciones
+              - generic [ref=f2e1198]:
+                - generic [ref=f2e1199]: Inversiones
+                - generic [ref=f2e1202]: $ 15.000.000
+                - generic [ref=f2e1203]: 2 CDT's
+          - generic [ref=f2e1204]:
+            - tablist [ref=f2e1205]:
+              - tab "Cuentas 2" [selected] [ref=f2e1206] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=f2e1207]: "2"
+              - tab "Tarjeta de Crédito 2" [ref=f2e1208] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=f2e1209]: "2"
+              - tab "Créditos 1" [ref=f2e1210] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=f2e1211]: "1"
+              - tab "Inversiones 2" [ref=f2e1212] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=f2e1213]: "2"
+            - tabpanel [ref=f2e1214]:
+              - generic [ref=f2e1215]:
+                - generic [ref=f2e1216]:
+                  - paragraph [ref=f2e1217]:
+                    - text: "2 cuentas de depósito · Total disponible:"
+                    - strong [ref=f2e1218]: $ 3.700.000
+                  - button "Consultar tarjetas débito" [ref=f2e1219] [cursor=pointer]
+                - list [ref=f2e1220]:
+                  - listitem [ref=f2e1221]:
+                    - generic [ref=f2e1222]:
+                      - generic [ref=f2e1223]: Cuenta de Ahorros
+                      - generic [ref=f2e1224]: 0084 3800 1 · Ahorros
+                    - generic [ref=f2e1225]:
+                      - generic [ref=f2e1226]: Saldo disponible
+                      - generic [ref=f2e1227]: $ 2.500.000
+                    - generic [ref=f2e1228]:
+                      - generic [ref=f2e1229]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0084 3800 1" [ref=f2e1230] [cursor=pointer]:
+                        - generic [ref=f2e1231]: Ver detalles
+                  - listitem [ref=f2e1236]:
+                    - generic [ref=f2e1237]:
+                      - generic [ref=f2e1238]: Cuenta de Ahorros
+                      - generic [ref=f2e1239]: 0084 3800 2 · Ahorros
+                    - generic [ref=f2e1240]:
+                      - generic [ref=f2e1241]: Saldo disponible
+                      - generic [ref=f2e1242]: $ 1.200.000
+                    - generic [ref=f2e1243]:
+                      - generic [ref=f2e1244]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0084 3800 2" [ref=f2e1245] [cursor=pointer]:
+                        - generic [ref=f2e1246]: Ver detalles
+        - dialog [ref=f2e98]:
+          - generic [ref=f2e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e100] [cursor=pointer]
+          - separator [ref=f2e104]
+        - dialog "Tarjetas Débito" [ref=f2e106]:
+          - generic [ref=f2e107]:
+            - generic [ref=f2e108]:
+              - heading "Tarjetas Débito" [level=2] [ref=f2e109]
+              - generic [ref=f2e1252]:
+                - strong [ref=f2e1253]: "3 Tarjetas:"
+                - text: 2 Activa, 1 Pendiente de Activación
+            - button "Cerrar panel" [ref=f2e110] [cursor=pointer]
+          - separator [ref=f2e114]
+          - generic [ref=f2e1254]:
+            - generic [ref=f2e1255]:
+              - generic [ref=f2e1256]:
+                - generic [ref=f2e1257]:
+                  - generic [ref=f2e1258]: VISA
+                  - generic [ref=f2e1260]:
+                    - generic [ref=f2e1261]: 4509 ···· ···· 8841
+                    - generic [ref=f2e1262]: Visa Débito · vence 05/2034
+                - generic [ref=f2e1263]: Activa
+              - generic [ref=f2e1264]:
+                - generic [ref=f2e1265]: Entrega y último uso
+                - generic [ref=f2e1266]: 10/08/2026 · Entregada en oficina
+              - button "Bloquear" [ref=f2e1268] [cursor=pointer]
+            - generic [ref=f2e1269]:
+              - generic [ref=f2e1270]:
+                - generic [ref=f2e1271]:
+                  - generic [ref=f2e1272]: VISA
+                  - generic [ref=f2e1274]:
+                    - generic [ref=f2e1275]: 4566 ···· ···· 2907
+                    - generic [ref=f2e1276]: Visa Débito · vence 05/2034
+                - generic [ref=f2e1277]: Activa
+              - generic [ref=f2e1278]:
+                - generic [ref=f2e1279]: Historial
+                - generic [ref=f2e1316]: Desbloqueada por user
+                - generic [ref=f2e1317]: 18/08/2026 · Bloqueo por intentos fallidos
+                - generic [ref=f2e1318]: 17/07/2026 · Entregada en oficina
+              - button "Bloquear" [ref=f2e1324] [cursor=pointer]
+            - generic [ref=f2e1285]:
+              - generic [ref=f2e1286]:
+                - generic [ref=f2e1287]:
+                  - generic [ref=f2e1288]: MC
+                  - generic [ref=f2e1290]:
+                    - generic [ref=f2e1291]: 2221 ···· ···· 3325
+                    - generic [ref=f2e1292]: Master Débito · vence 05/2034
+                - generic [ref=f2e1293]: Pendiente de Activación
+              - generic [ref=f2e1294]:
+                - generic [ref=f2e1295]: Entrega y último uso
+                - generic [ref=f2e1296]: 01/07/2026 · Entregada en oficina
+              - generic [ref=f2e1325]:
+                - generic [ref=f2e1326] [cursor=pointer]:
+                  - checkbox "Confirmo que validé la identidad del cliente" [ref=f2e1328]
+                  - generic [ref=f2e1329]: Confirmo que validé la identidad del cliente
+                - button "Cancelar" [ref=f2e1330] [cursor=pointer]
+        - dialog [ref=f2e116]:
+          - generic [ref=f2e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e118] [cursor=pointer]
+        - dialog [ref=f2e123]:
+          - generic [ref=f2e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e125] [cursor=pointer]
+        - dialog [ref=f2e130]:
+          - generic [ref=f2e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f2e137]:
+      - generic [ref=f2e138]:
+        - generic [ref=f2e139]:
+          - strong [ref=f2e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f2e145]:
+          - strong [ref=f2e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f2e150]:
+          - strong [ref=f2e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f2e155]: API 23ms
+  - region "Notificaciones"

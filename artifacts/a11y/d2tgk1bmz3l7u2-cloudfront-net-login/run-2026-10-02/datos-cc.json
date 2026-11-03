@@ -1,0 +1,18 @@
+[
+  {
+    "type": "CC",
+    "document": "12345678"
+  },
+  {
+    "type": "CC",
+    "document": "23456789"
+  },
+  {
+    "type": "CC",
+    "document": "34567890"
+  },
+  {
+    "type": "CC",
+    "document": "45678901"
+  }
+]

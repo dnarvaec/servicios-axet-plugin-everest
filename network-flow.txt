@@ -1,0 +1,4 @@
+18. [POST] https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/orq/consulta-cliente => [200] 
+19. [POST] https://d299ks4asy14z3.cloudfront.net/api/v1/everst/ofi/orq/consulta-general => [200] 
+
+Note: 18 static requests not shown, run with "static" option to see them.

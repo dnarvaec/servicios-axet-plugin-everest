@@ -1,0 +1,48 @@
+[
+  {
+    "bank": "OCC",
+    "operation": "consulta-cliente-error",
+    "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+    "screenshot": "final-occ-consulta-error.png",
+    "result": "mensaje-consulta-observado-ui",
+    "attempt": "CC00000000; Buscar cliente por UI; no es error de operación transaccional"
+  },
+  {
+    "bank": "BDB",
+    "operation": "consulta-cliente-error",
+    "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+    "screenshot": "final-bdb-consulta-error.png",
+    "result": "mensaje-consulta-observado-ui",
+    "attempt": "CC00000000; Buscar cliente por UI; no es error de operación transaccional"
+  },
+  {
+    "bank": "BPO",
+    "operation": "consulta-cliente-error",
+    "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+    "screenshot": "final-bpo-consulta-error.png",
+    "result": "mensaje-consulta-observado-ui",
+    "attempt": "CC00000000; Buscar cliente por UI; no es error de operación transaccional"
+  },
+  {
+    "bank": "AVV",
+    "operation": "consulta-cliente-error",
+    "text": "Cliente no encontrado. No encontramos información con el tipo y número de documento ingresados. Verifica los datos o intenta con otra entidad.",
+    "screenshot": "final-avv-consulta-error.png",
+    "result": "mensaje-consulta-observado-ui",
+    "attempt": "CC00000000; Buscar cliente por UI; espera hasta mensaje final; no es error de operación transaccional"
+  },
+  {
+    "bank": "AVV",
+    "operation": "validacion-form-correo-invalido",
+    "text": "Ingresa un correo válido. El departamento es requerido. La dirección es requerida. La ocupación es requerida.",
+    "screenshot": "final-avv-correo-invalido.png",
+    "result": "validacion-form-observada-sin-confirmacion-actualizacion",
+    "attempt": "Editar cliente; identidad; Continuar; correo-invalido; Guardar; no completar valores válidos ni otros campos",
+    "evidence": {
+      "typeMismatch": true,
+      "ariaInvalid": "true",
+      "ariaDescribedby": null,
+      "formRemainsOpen": true
+    }
+  }
+]

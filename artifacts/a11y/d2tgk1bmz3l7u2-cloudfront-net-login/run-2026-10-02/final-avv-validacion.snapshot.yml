@@ -1,0 +1,188 @@
+- generic [ref=e1]:
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - img "EVEREST" [ref=e19]
+      - generic [ref=e20]:
+        - img "Grupo AVAL" [ref=e21]
+        - generic [ref=e22]:
+          - button "Notificaciones, 2 sin leer" [ref=e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e24]: "2"
+          - button "Accesibilidad" [ref=e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e32] [cursor=pointer]
+        - button "user user" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: user
+          - generic "user" [ref=e36]: U
+    - generic [ref=e37]:
+      - complementary [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e42]:
+          - link "Consultar Cliente" [ref=e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e54]: Notificaciones
+            - generic "2 sin leer" [ref=e55]: "2"
+          - link "Centro de Ayuda" [ref=e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e1551]:
+            - navigation "Ubicación" [ref=e1552]:
+              - generic [ref=e1553]: Consultar Cliente
+              - generic [ref=e1554]: /
+              - generic [ref=e1555]: JUAN CARLOS RODRIGUEZ GOMEZ
+            - button "Nueva consulta" [ref=e1556] [cursor=pointer]
+          - generic [ref=e1557]:
+            - generic [ref=e1558]:
+              - img "JUAN CARLOS RODRIGUEZ GOMEZ" [ref=e1559]: JC
+              - generic [ref=e1560]:
+                - generic [ref=e1561]:
+                  - generic [ref=e1562]:
+                    - generic [ref=e1563]:
+                      - heading "JUAN CARLOS RODRIGUEZ GOMEZ" [level=2] [ref=e1564]
+                      - button "Editar cliente" [ref=e1565] [cursor=pointer]
+                    - paragraph [ref=e1567]:
+                      - text: "12345678 · 11001 · Fecha vinculación:"
+                      - strong
+                  - img "AV Villas" [ref=e1568]
+                - generic [ref=e1569]: Identidad validada
+            - generic [ref=e1572]:
+              - generic [ref=e1573]:
+                - generic [ref=e1574]: Saldo disponible
+                - generic [ref=e1577]: $ 3.700.000
+                - generic [ref=e1578]: 2 cuentas
+              - generic [ref=e1579]:
+                - generic [ref=e1580]: Saldo créditos
+                - generic [ref=e1583]: $ 6.000.000
+                - generic [ref=e1584]: 1 obligaciones
+              - generic [ref=e1585]:
+                - generic [ref=e1586]: Inversiones
+                - generic [ref=e1589]: $ 15.000.000
+                - generic [ref=e1590]: 2 CDT's
+          - generic [ref=e1591]:
+            - tablist [ref=e1592]:
+              - tab "Cuentas 2" [selected] [ref=e1593] [cursor=pointer]:
+                - text: Cuentas
+                - generic [ref=e1594]: "2"
+              - tab "Tarjeta de Crédito 2" [ref=e1595] [cursor=pointer]:
+                - text: Tarjeta de Crédito
+                - generic [ref=e1596]: "2"
+              - tab "Créditos 1" [ref=e1597] [cursor=pointer]:
+                - text: Créditos
+                - generic [ref=e1598]: "1"
+              - tab "Inversiones 2" [ref=e1599] [cursor=pointer]:
+                - text: Inversiones
+                - generic [ref=e1600]: "2"
+            - tabpanel [ref=e1601]:
+              - generic [ref=e1602]:
+                - generic [ref=e1603]:
+                  - paragraph [ref=e1604]:
+                    - text: "2 cuentas de depósito · Total disponible:"
+                    - strong [ref=e1605]: $ 3.700.000
+                  - button "Consultar tarjetas débito" [ref=e1606] [cursor=pointer]
+                - list [ref=e1607]:
+                  - listitem [ref=e1608]:
+                    - generic [ref=e1609]:
+                      - generic [ref=e1610]: Cuenta de Ahorros
+                      - generic [ref=e1611]: 0084 3800 1 · Ahorros
+                    - generic [ref=e1612]:
+                      - generic [ref=e1613]: Saldo disponible
+                      - generic [ref=e1614]: $ 2.500.000
+                    - generic [ref=e1615]:
+                      - generic [ref=e1616]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0084 3800 1" [ref=e1617] [cursor=pointer]:
+                        - generic [ref=e1618]: Ver detalles
+                  - listitem [ref=e1623]:
+                    - generic [ref=e1624]:
+                      - generic [ref=e1625]: Cuenta de Ahorros
+                      - generic [ref=e1626]: 0084 3800 2 · Ahorros
+                    - generic [ref=e1627]:
+                      - generic [ref=e1628]: Saldo disponible
+                      - generic [ref=e1629]: $ 1.200.000
+                    - generic [ref=e1630]:
+                      - generic [ref=e1631]: Activa
+                      - button "Ver detalles de Cuenta de Ahorros, 0084 3800 2" [ref=e1632] [cursor=pointer]:
+                        - generic [ref=e1633]: Ver detalles
+        - dialog [ref=e98]:
+          - generic [ref=e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e100] [cursor=pointer]
+          - separator [ref=e104]
+        - dialog "Tarjetas Débito" [ref=e106]:
+          - generic [ref=e107]:
+            - heading "Tarjetas Débito" [level=2] [ref=e109]
+            - button "Cerrar panel" [ref=e110] [cursor=pointer]
+          - separator [ref=e114]
+        - dialog [ref=e1550]:
+          - generic [ref=e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e118] [cursor=pointer]
+        - dialog [ref=e123]:
+          - generic [ref=e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e125] [cursor=pointer]
+        - dialog [ref=e130]:
+          - generic [ref=e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - strong [ref=e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e145]:
+          - strong [ref=e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e150]:
+          - strong [ref=e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e155]: API 23ms
+  - region "Notificaciones"
+  - dialog [ref=e1638]:
+    - generic [ref=e1639]:
+      - generic [ref=e1640]:
+        - heading "JUAN CARLOS RODRIGUEZ GOMEZ" [level=2] [ref=e1641]
+        - button "Cerrar" [ref=e1642] [cursor=pointer]: ✕
+      - generic [ref=e1643]:
+        - paragraph [ref=e1644]: Modifica los campos necesarios y guarda los cambios.
+        - generic [ref=e1646]:
+          - generic [ref=e1647]:
+            - generic [ref=e1648]:
+              - generic [ref=e1649]: Correo*
+              - textbox "Correo*" [invalid] [ref=e1650]:
+                - /placeholder: correo@ejemplo.com
+                - text: correo-invalido
+              - alert [ref=e1651]: Ingresa un correo válido
+            - generic [ref=e1652]:
+              - generic [ref=e1653]: Teléfono residencia
+              - textbox "Teléfono residencia" [ref=e1654]:
+                - /placeholder: Ej. 3001234567
+          - generic [ref=e1655]:
+            - generic [ref=e1657]:
+              - generic [ref=e1658]: Departamento*
+              - combobox "Departamento*" [ref=e1660] [cursor=pointer]:
+                - generic [ref=e1661]: Selecciona un departamento
+              - alert [ref=e1664]: El departamento es requerido
+            - generic [ref=e1666]:
+              - generic [ref=e1667]: Ciudad*
+              - combobox "Ciudad*" [disabled] [ref=e1669]:
+                - generic [ref=e1670]: Selecciona una ciudad
+          - generic [ref=e1673]:
+            - generic [ref=e1674]: Dirección de residencia*
+            - textbox "Dirección de residencia*" [invalid] [ref=e1675]:
+              - /placeholder: "Ej. Calle 123 # 45-67"
+            - alert [ref=e1676]: La dirección es requerida
+          - generic [ref=e1677]:
+            - generic [ref=e1678]: Ocupación*
+            - textbox "Ocupación*" [invalid] [ref=e1679]:
+              - /placeholder: Ej. Ingeniero de sistemas
+            - alert [ref=e1680]: La ocupación es requerida
+      - generic [ref=e1682]:
+        - button "Cancelar" [ref=e1683] [cursor=pointer]
+        - button "Guardar" [active] [ref=e1684] [cursor=pointer]

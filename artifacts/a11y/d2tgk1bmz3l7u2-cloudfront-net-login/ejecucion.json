@@ -1,0 +1,91 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "finalUrl": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "mode": "external-target",
+  "executionStatus": "partial",
+  "scope": {
+    "wcag": [
+      "A",
+      "AA"
+    ],
+    "viewport": "desktop-only",
+    "mobileRun": false
+  },
+  "appModified": false,
+  "login": "success",
+  "authorizedCaseSource": {
+    "path": "artifacts/a11y/casos-everest-login/casos_accesibilidad_79_extraidos.json",
+    "read": false,
+    "reason": "Playwright bloqueó file:// y el contexto MCP no permite importar Node; el Excel no se abrió."
+  },
+  "caseCoverage": {
+    "expectedCases": 79,
+    "executedByCaseKey": 0,
+    "reason": "No fue posible leer la única fuente autorizada; no se inventan claves, HU ni expected results."
+  },
+  "observedLookups": [
+    {
+      "bank": "Banco de Bogotá",
+      "document": "12345678",
+      "documentType": "CC",
+      "result": "found",
+      "observation": "Apareció el panel de verificación de identidad y una casilla biométrica. Se detuvo antes de marcarla.",
+      "screenshots": [
+        "screenshots/bogota-12345678-before-search.png",
+        "screenshots/bogota-12345678-result.png"
+      ]
+    },
+    {
+      "bank": "Banco de Occidente",
+      "document": "23456789",
+      "documentType": "CC",
+      "result": "found",
+      "observation": "Apareció el panel de verificación de identidad y una casilla biométrica. Se detuvo antes de marcarla.",
+      "screenshots": [
+        "screenshots/occidente-23456789-before-search.png",
+        "screenshots/occidente-23456789-result.png"
+      ]
+    },
+    {
+      "bank": "Banco Popular",
+      "document": "34567890",
+      "documentType": "CC",
+      "result": "found",
+      "observation": "Apareció el panel de verificación de identidad y una casilla biométrica. Se detuvo antes de marcarla.",
+      "screenshots": [
+        "screenshots/popular-34567890-before-search.png",
+        "screenshots/popular-34567890-result.png"
+      ]
+    },
+    {
+      "bank": "AV Villas",
+      "document": "45678901",
+      "documentType": "CC",
+      "result": "found",
+      "observation": "Apareció el panel de verificación de identidad y una casilla biométrica. Se detuvo antes de marcarla.",
+      "screenshots": [
+        "screenshots/av-villas-45678901-before-search.png",
+        "screenshots/av-villas-45678901-result.png"
+      ]
+    },
+    {
+      "bank": "Banco de Bogotá",
+      "document": "00000000",
+      "documentType": "CC",
+      "result": "not-found",
+      "observation": "El sistema mostró “Cliente no encontrado” y “No encontramos información con el tipo y número de documento ingresados”.",
+      "screenshots": [
+        "screenshots/bogota-00000000-before-search.png",
+        "screenshots/bogota-00000000-result.png"
+      ]
+    }
+  ],
+  "safety": {
+    "biometricCheckboxMarked": false,
+    "updateOrDestructiveActionSubmitted": false
+  },
+  "accessibilityScan": {
+    "axe": "not-run",
+    "reason": "No se pudo ejecutar el pipeline canónico de persistencia/normalización en esta sesión."
+  }
+}

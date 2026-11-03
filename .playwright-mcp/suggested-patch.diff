@@ -1,0 +1,8 @@
+--- Suggested remediation for external target (not applied)
++++ Suggested remediation for external target (not applied)
+@@
+- <input type="checkbox">
++ <input type="checkbox" aria-label="Confirmar validación biométrica">
+@@
+- panel de tarjetas cierra sin restaurar foco
++ al cerrar, devolver foco al botón "Consultar tarjetas débito" y mantener el foco dentro del diálogo mientras está abierto

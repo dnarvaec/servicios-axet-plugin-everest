@@ -1,0 +1,145 @@
+{
+  "text": "2\nuser\nU\nMIS HERRAMIENTAS\nConsultar Cliente\nNotificaciones\n2\nCentro de Ayuda\nConsultar cliente\n\nSelecciona el banco y completa los datos del cliente para validar su identidad.\n\nSolicita al cliente presentar su cédula en formato físico o digital como medio de validación de identidad\nTipo de documento *\nCédula de ciudadanía\nNúmero de documento *\n \nBuscar\n\nError de negocio\n\nReintentar\nTarjetas Débito\nEstado del sistema:\n Conectado\nLínea de soporte:\n 01-8000-911-300\nMesa de ayuda:\n soporte@grupoaval.com\nAPI 23ms",
+  "buttons": [
+    {
+      "text": "2",
+      "pressed": null,
+      "disabled": false,
+      "images": [
+        {
+          "alt": "",
+          "src": "/icons/notification-bell.svg"
+        }
+      ]
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": [
+        {
+          "alt": "",
+          "src": "/icons/help-question.svg"
+        }
+      ]
+    },
+    {
+      "text": "user\nU",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": [
+        {
+          "alt": "",
+          "src": "/icons/sidebar-arrow.svg"
+        }
+      ]
+    },
+    {
+      "text": "",
+      "pressed": "false",
+      "disabled": false,
+      "images": [
+        {
+          "alt": "Banco de Bogotá",
+          "src": "/banks/banco-bogota.svg"
+        }
+      ]
+    },
+    {
+      "text": "",
+      "pressed": "false",
+      "disabled": false,
+      "images": [
+        {
+          "alt": "Banco de Occidente",
+          "src": "/banks/occidente.svg"
+        }
+      ]
+    },
+    {
+      "text": "",
+      "pressed": "false",
+      "disabled": false,
+      "images": [
+        {
+          "alt": "banco popular",
+          "src": "/banks/popular.svg"
+        }
+      ]
+    },
+    {
+      "text": "",
+      "pressed": "true",
+      "disabled": false,
+      "images": [
+        {
+          "alt": "AV Villas",
+          "src": "/banks/av-villas.svg"
+        }
+      ]
+    },
+    {
+      "text": "Cédula de ciudadanía",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "Buscar",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "Reintentar",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    },
+    {
+      "text": "",
+      "pressed": null,
+      "disabled": false,
+      "images": []
+    }
+  ],
+  "alerts": [
+    "Error de negocio\n\nReintentar"
+  ]
+}

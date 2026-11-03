@@ -1,0 +1,24 @@
+{
+  "status": "baseline",
+  "scope": "A/AA",
+  "semanticIssues": [
+    {
+      "id": "missing-checkbox-name",
+      "severity": "serious",
+      "wcag": [
+        "4.1.2"
+      ],
+      "evidence": "La casilla de verificación de validación biométrica no expone nombre accesible en el árbol observado."
+    },
+    {
+      "id": "dialog-operability",
+      "severity": "moderate",
+      "wcag": [
+        "2.1.1",
+        "2.4.3"
+      ],
+      "evidence": "El panel Tarjetas Débito intercepta el clic de Ver detalles y su cierre no siempre devuelve el foco."
+    }
+  ],
+  "caseCount": 58
+}

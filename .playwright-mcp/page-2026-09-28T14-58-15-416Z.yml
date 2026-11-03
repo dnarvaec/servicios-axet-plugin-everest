@@ -1,0 +1,85 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - img "EVEREST" [ref=e6]
+      - generic [ref=e7]:
+        - img "Grupo AVAL" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notificaciones, 2 sin leer" [ref=e142] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e143]: "2"
+          - button "Accesibilidad" [ref=e11] [cursor=pointer]
+          - button "Centro de ayuda" [ref=e18] [cursor=pointer]
+        - button "user user" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: user
+          - generic "user" [ref=e22]: U
+    - generic [ref=e23]:
+      - complementary [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=e27] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=e28]:
+          - link "Consultar Cliente" [ref=e29] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=e144] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=e40]: Notificaciones
+            - generic "2 sin leer" [ref=e145]: "2"
+          - link "Centro de Ayuda" [ref=e41] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=e43]:
+        - generic [ref=e147]:
+          - generic [ref=e149]:
+            - img "RODRIGUEZ GOMEZ,JUAN CARLOS" [ref=e150]: RG
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]:
+                  - heading "RODRIGUEZ GOMEZ,JUAN CARLOS" [level=2] [ref=e155]
+                  - button "Editar cliente" [ref=e156] [cursor=pointer]
+                - paragraph [ref=e158]:
+                  - text: "12345678 · BOGOTA D.C. · Fecha vinculación:"
+                  - strong [ref=e159]: Junio 2018
+              - img "Banco de Bogotá" [ref=e160]
+          - generic [ref=e161] [cursor=pointer]:
+            - checkbox "Verifica la identidad del cliente Realiza la validación biométrica y marca esta casilla para continuar con el proceso." [ref=e163]
+            - generic [ref=e164]:
+              - generic [ref=e165]: Verifica la identidad del cliente
+              - generic [ref=e166]: Realiza la validación biométrica y marca esta casilla para continuar con el proceso.
+        - dialog [ref=e83]:
+          - generic [ref=e84]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e85] [cursor=pointer]
+          - separator [ref=e89]
+        - dialog "Tarjetas Débito" [ref=e91]:
+          - generic [ref=e92]:
+            - heading "Tarjetas Débito" [level=2] [ref=e94]
+            - button "Cerrar panel" [ref=e95] [cursor=pointer]
+          - separator [ref=e99]
+        - dialog [ref=e101]:
+          - generic [ref=e102]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e103] [cursor=pointer]
+        - dialog [ref=e108]:
+          - generic [ref=e109]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e110] [cursor=pointer]
+        - dialog [ref=e115]:
+          - generic [ref=e116]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=e117] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - strong [ref=e128]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=e130]:
+          - strong [ref=e133]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=e135]:
+          - strong [ref=e139]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=e140]: API 23ms
+  - region "Notificaciones"

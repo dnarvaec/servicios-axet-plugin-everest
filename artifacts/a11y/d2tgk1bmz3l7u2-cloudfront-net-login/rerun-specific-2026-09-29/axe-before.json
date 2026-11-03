@@ -1,0 +1,33 @@
+{
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "timestamp": "2026-09-29T21:37:07.764Z",
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.10.3"
+  },
+  "scope": "WCAG A/AA, desktop 1366x768",
+  "status": "baseline-only",
+  "revalidated": false,
+  "reasonNotValidated": "No se aplicaron correcciones; no hay reescaneo posterior.",
+  "counts": {
+    "violations": 1,
+    "passes": 25,
+    "incomplete": 2
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "target": [
+        "._title_pcipt_42"
+      ],
+      "html": "<span class=\"_title_pcipt_42\">MIS HERRAMIENTAS</span>",
+      "contrastRatio": 2.84,
+      "foreground": "#999999",
+      "background": "#ffffff",
+      "expectedContrast": "4.5:1",
+      "criterion": "WCAG 1.4.3"
+    }
+  ]
+}

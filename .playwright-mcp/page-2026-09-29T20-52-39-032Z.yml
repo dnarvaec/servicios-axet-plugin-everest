@@ -1,0 +1,85 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e16]:
+    - banner [ref=f1e17]:
+      - img "EVEREST" [ref=f1e19]
+      - generic [ref=f1e20]:
+        - img "Grupo AVAL" [ref=f1e21]
+        - generic [ref=f1e22]:
+          - button "Notificaciones, 2 sin leer" [ref=f1e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f1e24]: "2"
+          - button "Accesibilidad" [ref=f1e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f1e32] [cursor=pointer]
+        - button "user user" [ref=f1e34] [cursor=pointer]:
+          - generic [ref=f1e35]: user
+          - generic "user" [ref=f1e36]: U
+    - generic [ref=f1e37]:
+      - complementary [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f1e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f1e42]:
+          - link "Consultar Cliente" [ref=f1e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f1e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f1e54]: Notificaciones
+            - generic "2 sin leer" [ref=f1e55]: "2"
+          - link "Centro de Ayuda" [ref=f1e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f1e58]:
+        - generic [ref=f1e564]:
+          - generic [ref=f1e566]:
+            - img "PEDRO ANDRES MARTINEZ DIAZ" [ref=f1e567]: PA
+            - generic [ref=f1e569]:
+              - generic [ref=f1e570]:
+                - generic [ref=f1e571]:
+                  - heading "PEDRO ANDRES MARTINEZ DIAZ" [level=2] [ref=f1e572]
+                  - button "Editar cliente" [ref=f1e573] [cursor=pointer]
+                - paragraph [ref=f1e575]:
+                  - text: "34567890 · BOGOTA DC · Fecha vinculación:"
+                  - strong
+              - img "banco popular" [ref=f1e576]
+          - generic [ref=f1e577] [cursor=pointer]:
+            - checkbox "Verifica la identidad del cliente Realiza la validación biométrica y marca esta casilla para continuar con el proceso." [ref=f1e579]
+            - generic [ref=f1e580]:
+              - generic [ref=f1e581]: Verifica la identidad del cliente
+              - generic [ref=f1e582]: Realiza la validación biométrica y marca esta casilla para continuar con el proceso.
+        - dialog [ref=f1e340]:
+          - generic [ref=f1e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e100] [cursor=pointer]
+          - separator [ref=f1e104]
+        - dialog "Tarjetas Débito" [ref=f1e106]:
+          - generic [ref=f1e107]:
+            - heading "Tarjetas Débito" [level=2] [ref=f1e109]
+            - button "Cerrar panel" [ref=f1e110] [cursor=pointer]
+          - separator [ref=f1e114]
+        - dialog [ref=f1e439]:
+          - generic [ref=f1e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e118] [cursor=pointer]
+        - dialog [ref=f1e123]:
+          - generic [ref=f1e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e125] [cursor=pointer]
+        - dialog [ref=f1e130]:
+          - generic [ref=f1e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f1e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f1e137]:
+      - generic [ref=f1e138]:
+        - generic [ref=f1e139]:
+          - strong [ref=f1e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f1e145]:
+          - strong [ref=f1e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f1e150]:
+          - strong [ref=f1e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f1e155]: API 23ms
+  - region "Notificaciones"

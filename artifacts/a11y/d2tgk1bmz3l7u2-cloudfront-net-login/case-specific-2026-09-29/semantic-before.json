@@ -1,0 +1,33 @@
+{
+  "status": "baseline-only",
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "scope": "WCAG 2.2 A/AA",
+  "semanticScan": "manual visible-content review; specialized delegates unavailable",
+  "findings": [
+    {
+      "id": "EV-114",
+      "criterion": "Datos del cliente claros, consistentes y comprensibles.",
+      "evidence": {
+        "element": "Resumen de cliente; «Fecha vinculación:»",
+        "text": "34567890 · BOGOTA DC · Fecha vinculación: [vacío]",
+        "observation": "El resumen muestra «PEDRO ANDRES MARTINEZ DIAZ», documento 34567890 y ubicación BOGOTA DC; el campo «Fecha vinculación:» aparece sin valor, por lo que el resumen no es completamente consistente/comprensible.",
+        "screenshot": "screenshots/04-popular-cliente-gate.png"
+      }
+    },
+    {
+      "id": "EV-128",
+      "criterion": "Datos del cliente claros y comprensibles.",
+      "evidence": {
+        "element": "Resumen de cliente; ubicación mostrada como «10010»",
+        "text": "23456789 · 10010 · Fecha vinculación: Marzo 2019",
+        "observation": "El resumen presenta «23456789 · 10010 · Fecha vinculación: Marzo 2019»; el código numérico de ubicación carece de etiqueta o nombre legible.",
+        "screenshot": "screenshots/03-occidente-cliente-gate.png"
+      }
+    }
+  ],
+  "notes": [
+    "No se cruzó el gate biométrico.",
+    "Los 74 WARN corresponden a expectativas sin evidencia suficiente por gate u operaciones no enviadas."
+  ],
+  "revalidated": false
+}

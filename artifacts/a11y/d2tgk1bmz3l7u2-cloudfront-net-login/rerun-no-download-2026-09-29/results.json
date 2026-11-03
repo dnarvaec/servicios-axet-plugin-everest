@@ -1,0 +1,1637 @@
+{
+  "schemaVersion": 1,
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "mode": "external-target",
+  "status": "baseline-only",
+  "revalidated": false,
+  "viewport": {
+    "name": "desktop",
+    "width": 1324,
+    "height": 666
+  },
+  "wcagScope": "WCAG 2.2 A/AA",
+  "mobileRun": false,
+  "summary": {
+    "total": 79,
+    "PASS": 0,
+    "FAIL": 0,
+    "WARN": 79
+  },
+  "bankResults": [
+    {
+      "bank": "Banco de Bogotá",
+      "accountReference": "CC12345678",
+      "result": "Cliente no encontrado",
+      "evidence": "screenshots/bogota-no-match.png"
+    },
+    {
+      "bank": "Banco de Occidente",
+      "accountReference": "CC23456789",
+      "result": "Cliente no encontrado",
+      "evidence": "screenshots/occidente-no-match.png"
+    },
+    {
+      "bank": "Popular",
+      "accountReference": "CC34567890",
+      "result": "Cliente no encontrado",
+      "evidence": "screenshots/popular-no-match.png"
+    },
+    {
+      "bank": "AV Villas",
+      "accountReference": "CC45678901",
+      "result": "Error de negocio; persistió tras un reintento",
+      "evidence": "screenshots/av-villas-current-state.png"
+    }
+  ],
+  "identityValidation": {
+    "visibleInNoMatchState": false,
+    "marked": false,
+    "note": "No se mostró el checkbox de validación de identidad simulada en los estados consultados; no se marcó. Este control, si aparece en otro flujo, no equivale a biometría real."
+  },
+  "editForms": {
+    "inspected": false,
+    "reason": "No se encontró cliente; no hubo perfil ni formularios de edición disponibles."
+  },
+  "cases": [
+    {
+      "key": "EV-10",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-10; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-11",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-11; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-12",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-12; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-22",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-22; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-23",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-23; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-24",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-24; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-34",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-34; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-35",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-35; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-36",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-36; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-46",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-46; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-47",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-47; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-48",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-48; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-58",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-58; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-59",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-59; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-60",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-60; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-70",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-70; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-71",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-71; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-72",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-72; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-82",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-82; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-83",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-83; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-84",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-84; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-94",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-94; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-95",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-95; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-96",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-96; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-106",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-106; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-107",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-107; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-108",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-108; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-114",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-114; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-115",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-115; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-121",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-121; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-122",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-122; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-128",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-128; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-129",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-129; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-135",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-135; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-136",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-136; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-142",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-142; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-143",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-143; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-149",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-149; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-150",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-150; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-156",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-156; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-157",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-157; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-163",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-163; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-164",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-164; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-173",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-173; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-174",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-174; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-175",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-175; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-185",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-185; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-186",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-186; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-187",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-187; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-198",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-198; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-199",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-199; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-200",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-200; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-210",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-210; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-211",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-211; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-212",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-212; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-220",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-220; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-221",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-221; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-222",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-222; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-231",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-231; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-232",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-232; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-233",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-233; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-242",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-242; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-243",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-243; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-244",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-244; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-253",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-253; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-254",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-254; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-255",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-255; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-279",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-279; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-280",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-280; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-281",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-281; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-282",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-282; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-283",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-283; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-284",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-284; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-285",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-285; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-286",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-286; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-287",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-287; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-288",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-288; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-289",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-289; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    },
+    {
+      "key": "EV-290",
+      "status": "WARN",
+      "panel": "Consultar Cliente > formulario de búsqueda por banco",
+      "observation": "La interfaz muestra selector de banco, selector de tipo de documento, campo Número de documento y botón Buscar cliente. No se proporcionó el criterio asociado a EV-290; no es posible verificar una expectativa exacta sin inventarla.",
+      "evidence": "Cédula de ciudadanía y documento 00000000 se probaron en los cuatro bancos visibles. Resultados y capturas asociadas en evidenceRefs; AV Villas mostró Error de negocio tras un reintento.",
+      "evidenceRefs": [
+        "screenshots/bogota-no-match.png",
+        "screenshots/occidente-no-match.png",
+        "screenshots/popular-no-match.png",
+        "screenshots/av-villas-current-state.png",
+        "screenshots/accessibility-panel.png",
+        "screenshots/notifications-page.png",
+        "screenshots/notifications-unread-tab.png",
+        "screenshots/help-page.png",
+        "screenshots/help-tours-tab.png",
+        "screenshots/help-support-tab.png",
+        "screenshots/user-menu.png"
+      ]
+    }
+  ]
+}

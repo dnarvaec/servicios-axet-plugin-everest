@@ -1,0 +1,88 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e16]:
+    - banner [ref=f2e17]:
+      - img "EVEREST" [ref=f2e19]
+      - generic [ref=f2e20]:
+        - img "Grupo AVAL" [ref=f2e21]
+        - generic [ref=f2e22]:
+          - button "Notificaciones, 2 sin leer" [ref=f2e23] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f2e24]: "2"
+          - button "Accesibilidad" [ref=f2e25] [cursor=pointer]
+          - button "Centro de ayuda" [ref=f2e32] [cursor=pointer]
+        - button "user user" [ref=f2e34] [cursor=pointer]:
+          - generic [ref=f2e35]: user
+          - generic "user" [ref=f2e36]: U
+    - generic [ref=f2e37]:
+      - complementary [ref=f2e38]:
+        - generic [ref=f2e39]:
+          - generic [ref=f2e40]: MIS HERRAMIENTAS
+          - button "Colapsar menú" [ref=f2e41] [cursor=pointer]
+        - navigation "Herramientas asesor" [ref=f2e42]:
+          - link "Consultar Cliente" [ref=f2e43] [cursor=pointer]:
+            - /url: /asesor
+          - link "Notificaciones 2 sin leer" [ref=f2e50] [cursor=pointer]:
+            - /url: /asesor/notifications
+            - generic [ref=f2e54]: Notificaciones
+            - generic "2 sin leer" [ref=f2e55]: "2"
+          - link "Centro de Ayuda" [ref=f2e56] [cursor=pointer]:
+            - /url: /asesor/ayuda
+      - main [ref=f2e58]:
+        - generic [ref=f2e59]:
+          - generic [ref=f2e1140]:
+            - navigation "Ubicación" [ref=f2e1141]:
+              - generic [ref=f2e1142]: Consultar Cliente
+              - generic [ref=f2e1143]: /
+              - generic [ref=f2e1144]: JUAN CARLOS RODRIGUEZ GOMEZ
+            - button "Nueva consulta" [ref=f2e1145] [cursor=pointer]
+          - generic [ref=f2e1147]:
+            - generic [ref=f2e1149]:
+              - img "JUAN CARLOS RODRIGUEZ GOMEZ" [ref=f2e1150]: JC
+              - generic [ref=f2e1152]:
+                - generic [ref=f2e1153]:
+                  - heading "JUAN CARLOS RODRIGUEZ GOMEZ" [level=2] [ref=f2e1155]
+                  - paragraph [ref=f2e1156]: "12345678"
+                - img "AV Villas" [ref=f2e1157]
+            - generic [ref=f2e1158] [cursor=pointer]:
+              - checkbox "Verifica la identidad del cliente Realiza la validación biométrica y marca esta casilla para continuar con el proceso." [ref=f2e1160]
+              - generic [ref=f2e1161]:
+                - generic [ref=f2e1162]: Verifica la identidad del cliente
+                - generic [ref=f2e1163]: Realiza la validación biométrica y marca esta casilla para continuar con el proceso.
+        - dialog [ref=f2e98]:
+          - generic [ref=f2e99]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e100] [cursor=pointer]
+          - separator [ref=f2e104]
+        - dialog "Tarjetas Débito" [ref=f2e106]:
+          - generic [ref=f2e107]:
+            - heading "Tarjetas Débito" [level=2] [ref=f2e109]
+            - button "Cerrar panel" [ref=f2e110] [cursor=pointer]
+          - separator [ref=f2e114]
+        - dialog [ref=f2e116]:
+          - generic [ref=f2e117]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e118] [cursor=pointer]
+        - dialog [ref=f2e123]:
+          - generic [ref=f2e124]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e125] [cursor=pointer]
+        - dialog [ref=f2e130]:
+          - generic [ref=f2e131]:
+            - generic:
+              - heading [level=2]
+            - button "Cerrar panel" [ref=f2e132] [cursor=pointer]
+    - contentinfo "Barra de estado del sistema" [ref=f2e137]:
+      - generic [ref=f2e138]:
+        - generic [ref=f2e139]:
+          - strong [ref=f2e143]: "Estado del sistema:"
+          - text: Conectado
+        - generic [ref=f2e145]:
+          - strong [ref=f2e148]: "Línea de soporte:"
+          - text: 01-8000-911-300
+        - generic [ref=f2e150]:
+          - strong [ref=f2e154]: "Mesa de ayuda:"
+          - text: soporte@grupoaval.com
+      - generic [ref=f2e155]: API 23ms
+  - region "Notificaciones"

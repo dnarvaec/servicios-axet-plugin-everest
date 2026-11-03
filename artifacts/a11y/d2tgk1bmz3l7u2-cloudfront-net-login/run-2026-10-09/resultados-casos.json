@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "status": "completed-desktop-case-run",
+  "target": "https://d2tgk1bmz3l7u2.cloudfront.net/login",
+  "finalUrl": "https://d2tgk1bmz3l7u2.cloudfront.net/asesor",
+  "mode": "external-target",
+  "scope": "web desktop 1366x768; WCAG A/AA; no mobile",
+  "counts": {"PASS": 6, "FAIL": 0, "NO VERIFICADO": 6},
+  "source": {
+    "workbookReadLocally": "casos de prueba/casos everest.xlsx",
+    "filter": "Labels contains accesibilidad; HU-302 or HU-303",
+    "selectedCaseCount": 12,
+    "testDataSource": "tests/Automatizacion api/serenity rest/src/test/resources/colecciones/mock-test-ref.html",
+    "browserUpload": false
+  },
+  "banks": ["Banco de Bogotá", "Banco Popular", "Banco de Occidente", "AV Villas"],
+  "documentPoolsUsed": ["CC Pool A", "CC Pool B"],
+  "results": [
+    {"caseId":"EV-298","hu":"HU-302-ADP-AVV","status":"PASS","observed":"Tarjeta ****2907 cambió a Activa; historial Desbloqueada por user.","evidence":["screenshots/avv-ev298-estado-td-bloqueada-pin.png","screenshots/avv-ev298-desbloqueo-confirmado.png"]},
+    {"caseId":"EV-299","hu":"HU-302-ADP-AVV","status":"NO VERIFICADO","observed":"CC trigger 11111111 se detuvo en Cliente no encontrado antes de la operación; no se observó rechazo 422.","evidence":["screenshots/avv-negativo-cc11111111-cliente-no-encontrado.png"]},
+    {"caseId":"EV-307","hu":"HU-302-ADP-BDB","status":"PASS","observed":"Tarjeta ****2907 cambió a Activa; historial Desbloqueada por user y confirmación visible.","evidence":["screenshots/bbog-ev307-desbloqueo-confirmado.png"]},
+    {"caseId":"EV-308","hu":"HU-302-ADP-BDB","status":"NO VERIFICADO","observed":"CC trigger 11111111 devolvió Cliente no encontrado antes del flujo de desbloqueo; no se observó rechazo 409.","evidence":["screenshots/bbog-ev308-trigger-cc11111111-cliente-no-encontrado.png","screenshots/bbog-cc-pool-b-estados-de-tarjeta.png"]},
+    {"caseId":"EV-316","hu":"HU-302-ADP-BPO","status":"PASS","observed":"Estado previo legible: Bloqueada, Bloqueo por intentos fallidos; instrucción de desbloqueo comprensible.","evidence":["screenshots/bpop-ev316-estado-pin-y-opciones.png"]},
+    {"caseId":"EV-317","hu":"HU-302-ADP-BPO","status":"NO VERIFICADO","observed":"La ruta visible de desbloqueo se completó con éxito; no produjo el rechazo de negocio requerido.","evidence":["screenshots/bpop-ev317-ui-responde-exito-no-error.png"]},
+    {"caseId":"EV-324","hu":"HU-302-ADP-OCC","status":"PASS","observed":"Tarjeta ****2907 cambió a Activa; historial y mensaje posterior identifican el desbloqueo.","evidence":["screenshots/occ-ev324-estado-td-bloqueada-pin.png","screenshots/occ-ev324-desbloqueo-confirmado.png"]},
+    {"caseId":"EV-325","hu":"HU-302-ADP-OCC","status":"NO VERIFICADO","observed":"El flujo normal de la tarjeta elegible terminó con éxito; no se alcanzó el rechazo/RtaDesc 422.","evidence":["screenshots/occ-ev324-desbloqueo-confirmado.png"]},
+    {"caseId":"EV-333","hu":"HU-303-ADP-AVV","status":"PASS","observed":"Tarjeta ****3325 pasó a Activa después de confirmar identidad; permaneció enmascarada.","evidence":["screenshots/avv-ev333-activacion-confirmada.png"]},
+    {"caseId":"EV-334","hu":"HU-303-ADP-AVV","status":"NO VERIFICADO","observed":"CC trigger 00000000 devolvió Cliente no encontrado antes de activar; no se observaron 422/502/504.","evidence":["screenshots/avv-ev334-trigger-cc00000000-cliente-no-encontrado.png"]},
+    {"caseId":"EV-342","hu":"HU-303-ADP-OCC","status":"PASS","observed":"Tarjeta ****3325 pasó a Activa tras confirmar identidad; permaneció enmascarada y desapareció la acción Activar tarjeta.","evidence":["screenshots/occ-ev342-activacion-confirmada.png"]},
+    {"caseId":"EV-343","hu":"HU-303-ADP-OCC","status":"NO VERIFICADO","observed":"La activación OCC visible terminó con éxito; no se observó el rechazo SOAP/RtaCod.","evidence":["screenshots/occ-ev342-activacion-confirmada.png"]}
+  ],
+  "notes": [
+    "El checkbox Identidad validada es una confirmación del mock, no una biometría real.",
+    "Los errores de operación específicos no se simularon mediante API ni manipulación de tráfico.",
+    "Importes y fechas visibles se revisaron manualmente; los datos vacíos del mock no se marcaron como defectos."
+  ]
+}
