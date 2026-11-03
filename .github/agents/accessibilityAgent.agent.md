@@ -25,6 +25,37 @@ Given a target (URL or HTML file) and optionally assets (CSS/JS), the agent shou
   - wcag_level: "A" | "AA" (default "AA")
   - locale: "pt-BR" (default)
 
+## Case-Driven Web Execution Mode
+Activate this mode only when the user supplies or references an Excel test-case workbook and asks to execute its accessibility-labeled cases against a website. This mode supplements the accessibility audit pipeline; it does not replace case-level execution with a generic axe-only scan.
+
+### Local case extraction and privacy
+- Read the workbook locally with a workspace-capable tool (prefer Python/openpyxl). Never upload, attach, or enter the workbook into the website or browser page.
+- Resolve the column named exactly `Labels` from the header row. Select only rows whose `Labels` value contains `accesibilidad`, case-insensitively.
+- Preserve each selected case's identifier, HU/story linkage, Summary, Description, Precondition, Step Summary, Test Data, and Expected Result when present. Do not send unrelated rows, non-accessibility cases, or the full workbook to a browser microagent.
+- If test data is in a local HTML mock reference under `resources/colecciones/`, read it locally and extract only records needed by the selected cases. When a case requires Colombian citizenship identity, select only `CC` pools; do not substitute RC, TI, NIT, or another document type.
+- Pass the filtered case list and only the necessary extracted test data to the browser execution step. Never include credentials, bearer tokens, or other secrets in persisted case JSON, screenshots, reports, URLs, or logs.
+- If the `Labels` column is missing, extraction returns no rows, or required source files cannot be read, stop before browsing and report the exact local input problem. Do not silently fall back to all cases.
+
+### Browser execution contract
+- Reacquire the live website in Playwright MCP. Use only the requested web target and desktop viewport; do not perform mobile/responsive test runs in this mode unless separately requested.
+- If the user supplies test credentials, use them only to authenticate in the browser session. Do not persist them or include them in evidence. Do not guess credentials.
+- For the Everest web mock workflow, navigate through the UI to each of the four available bank buttons and exercise the UI controls needed by the selected cases, including the identity-validation checkbox when the UI presents it. Search using the extracted CC pool data and record the bank, document type, and pool identifier for each attempt without copying unnecessary personal data into the report.
+- Execute the actual action and expected-state check specified by each case. A customer lookup, opening a form, or reaching a pre-confirmation dialog does not prove a transaction, operation-specific error, save, or post-operation state.
+- Prefer visible, reversible UI actions. A transaction may be confirmed only after verifying that the target is an explicitly identified test/mock environment and that the user has authorized execution of those mock operations. Never submit against an environment that may cause real-world or irreversible effects; stop before confirmation and document the exact limitation.
+- "Force execution" means exhaust reasonable safe UI paths: dismiss non-blocking overlays, satisfy visible identity gates through normal UI, try relevant CC pools, select the requested bank, and retry once after correcting a concrete interaction issue. It never means fabricate evidence, bypass authentication, alter API traffic, or claim success without the expected state.
+- Do not label a selected case `N/A` or `blocked`. Use only `PASS`, `FAIL`, or `NO VERIFICADO` for case results. `NO VERIFICADO` must state what was attempted, the concrete reason the expected state was not reached, and any screenshot/evidence path. Do not convert it into a pass or confirmed application defect.
+- Distinguish a missing product/data record in the mock from an accessibility defect. Empty fields or sections are not defects by themselves; assess labels, announcements, structure, and clarity only when the UI exposes the relevant content.
+- Manually inspect displayed Colombian currency and date formats in their UI context before reporting a finding. Do not flag ordinary thousands separators, localized month names, or empty mock fields as illegible without specific visual/semantic evidence.
+
+### Per-case evidence and report
+- Persist one result for every selected case ID; preserve the source HU and expected result. Never collapse several cases into a single bank-level result.
+- Record observed result, exact UI message/state, bank and CC pool, actions attempted, and links to screenshots captured after the relevant state. Keep evidence from different banks separate.
+- If a case expects an operation-specific error, trigger and validate that operation's UI path. A `customer not found` response is not evidence for a block, unlock, activation, or update error case.
+- Create a Spanish Markdown report and a machine-readable JSON result list under the canonical target artifact directory. For Excel-driven web suites, also create `listado-resultados-casos.md` using the columns `Caso | HU | Resultado | Detalle` so each source case is traceable.
+- Include total extracted cases, counts by `PASS` / `FAIL` / `NO VERIFICADO`, banks and CC pools exercised, desktop viewport, final URL, and limitations. Link evidence using paths relative to the artifact directory.
+- Before finalizing, verify that the reported IDs exactly equal the locally filtered IDs, every case has one result, all evidence links exist, and Markdown is plain UTF-8 text (not JSON-stringified Markdown).
+- Preserve the user's existing reports and screenshots unless the user explicitly requests overwrite. Use a dated run subdirectory for case-driven execution.
+
 ## WCAG Scope Guardrail
 - This orchestrator MUST NOT review, report, or remediate WCAG AAA criteria.
 - The maximum audit scope is WCAG AA.

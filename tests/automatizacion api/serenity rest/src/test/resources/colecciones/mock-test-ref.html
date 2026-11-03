@@ -1,4 +1,4 @@
-<title>Mock Server — Referencia de Pruebas</title>
+﻿<title>Mock Server &mdash; Referencia de Pruebas</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -417,8 +417,10 @@
 
   .http-404 { color: var(--err); background: var(--err-bg); }
   .http-409 { color: var(--warn); background: var(--warn-bg); }
+  .http-422 { color: var(--warn); background: var(--warn-bg); }
   .http-502 { color: var(--soap); background: var(--soap-bg); }
   .http-503 { color: var(--soap); background: var(--soap-bg); }
+  .http-504 { color: var(--soap); background: var(--soap-bg); }
 
   /* NOTE BOX */
   .note-box {
@@ -497,7 +499,7 @@
   <span class="base-url">{{base_url}} = http://localhost:9090</span>
 </div>
 
-<div class="section-title">Identidades de prueba — 10 pools</div>
+<div class="section-title">Identidades de prueba &mdash; 10 pools</div>
 
 <div class="pool-grid">
   <div class="pool-card">
@@ -551,7 +553,7 @@
   </div>
   <div class="pool-card">
     <span class="pool-badge h">POOL H</span>
-    <span class="doc-num">PA567890</span>
+    <span class="doc-num">77889900</span>
     <span class="doc-type">PS</span>
     <span class="doc-name">JOHN SMITH FOREIGN</span>
     <span class="doc-products">SDA</span>
@@ -579,7 +581,7 @@
     <code>cualquier doc no registrado</code>
     <span class="trigger-desc">Documento que no pertenece a ninguno de los 10 pools devuelve error de negocio (codigo 206).</span>
     <div class="trigger-resp">
-      <span class="trigger-resp-label">Respuesta ORQ — HTTP 200</span>
+      <span class="trigger-resp-label">Respuesta ORQ &mdash; HTTP 200</span>
       <pre class="trigger-resp-body">{
   "codigo": "206",
   "descripcion": "Error de Negocio",
@@ -589,11 +591,11 @@
     </div>
   </div>
   <div class="trigger-box validation">
-    <span class="trigger-label">Validacion — chars especiales</span>
+    <span class="trigger-label">Validacion &mdash; chars especiales</span>
     <code>ab@!# / *test* / campo;</code>
     <span class="trigger-desc">Campo identificacion con caracteres no alfanumericos devuelve HTTP 400 validacion.</span>
     <div class="trigger-resp">
-      <span class="trigger-resp-label">Respuesta ORQ — HTTP 400</span>
+      <span class="trigger-resp-label">Respuesta ORQ &mdash; HTTP 400</span>
       <pre class="trigger-resp-body">{
   "codigo": "400",
   "descripcion": "Error de Validacion",
@@ -603,16 +605,22 @@
     </div>
   </div>
   <div class="trigger-box cards">
-    <span class="trigger-label">Tarjeta no encontrada (TC)</span>
-    <code>0000000000000000</code>
-    <span class="trigger-desc">CardEmbossNum no registrado en los pools activos. Aplica solo a operaciones de bloqueo/desbloqueo TC (BPO/BdB).</span>
+    <span class="trigger-label">BPO Bloqueo TC &mdash; triggers por AcctId</span>
+    <code>9999999999999999</code>
+    <span class="trigger-desc">No encontrada &mdash; StatusCode BPO 1160 &rarr; ADP HTTP 404</span>
+    <code>7777777777777777</code>
+    <span class="trigger-desc">Estado incompatible &mdash; StatusCode BPO 1200 &rarr; ADP HTTP 422</span>
+    <code>3333333333333333</code>
+    <span class="trigger-desc">Error tecnico &mdash; StatusCode BPO 300 &rarr; ADP HTTP 502</span>
+    <code>8888888888888888</code>
+    <span class="trigger-desc">Timeout (30 s delay) &rarr; ADP HTTP 504</span>
   </div>
   <div class="trigger-box" style="background:var(--soap-bg);border-color:var(--soap);">
-    <span class="trigger-label" style="color:var(--soap);">Error tecnico — 502</span>
+    <span class="trigger-label" style="color:var(--soap);">Error tecnico &mdash; 502</span>
     <code style="color:var(--soap);">99999999</code>
     <span class="trigger-desc">Documento que produce un error tecnico en el banco (HTTP 500 banco). El ADP propaga HTTP 502 Bad Gateway.</span>
     <div class="trigger-resp">
-      <span class="trigger-resp-label">Respuesta ADP — HTTP 502</span>
+      <span class="trigger-resp-label">Respuesta ADP &mdash; HTTP 502</span>
       <pre class="trigger-resp-body">{
   "codigo": "502",
   "descripcion": "Error Tecnico",
@@ -622,11 +630,11 @@
     </div>
   </div>
   <div class="trigger-box" style="background:var(--warn-bg);border-color:var(--warn);">
-    <span class="trigger-label" style="color:var(--warn);">Conflicto de estado — 409</span>
+    <span class="trigger-label" style="color:var(--warn);">Conflicto de estado &mdash; 409</span>
     <code style="color:var(--warn);">11111111</code>
     <span class="trigger-desc">Documento que desencadena un conflicto de estado (tarjeta ya bloqueada, no bloqueada por PIN errado, etc.). Aplica a operaciones P2/P3 de tarjeta debito.</span>
     <div class="trigger-resp">
-      <span class="trigger-resp-label">Respuesta ORQ — HTTP 409</span>
+      <span class="trigger-resp-label">Respuesta ORQ &mdash; HTTP 409</span>
       <pre class="trigger-resp-body">{
   "statusCode": "409",
   "statusDesc": "Tarjeta ya bloqueada",
@@ -684,12 +692,12 @@
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td>MARIA FERNANDA LOPEZ VARGAS</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td>PEDRO ANDRES MARTINEZ DIAZ</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td>ANA LUCIA HERRERA MUNOZ</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td>EMPRESA COMERCIAL SAS</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td>CARLOS ANTONIO JIMENEZ RUIZ</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td>LAURA PATRICIA GARCIA SILVA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td>CARLOS ANTONIO JIMENEZ RUIZ</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td>SOFIA VALENTINA TORRES PEREZ</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td>JOHN SMITH FOREIGN</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td>JOHN SMITH FOREIGN</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td>MICHAEL ALEJANDRO BROWN</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td>PIERRE DUPONT DIPLOMATICO</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td>PIERRE DUPONT DIPLOMATICO</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
@@ -700,7 +708,7 @@
     Request body (reemplazar tipoDocumento y numeroDocumento):
     <br><code>{"operacion": "CONSULTA_GENERAL", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · fuente: bdb/customer-products-pool-a.json</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; fuente: bdb/customer-products-pool-a.json</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
@@ -754,12 +762,12 @@ Saldo:               2500000.00 COP</pre>
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td>MARIA FERNANDA LOPEZ VARGAS</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td>PEDRO ANDRES MARTINEZ DIAZ</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td>ANA LUCIA HERRERA MUNOZ</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td>EMPRESA COMERCIAL SAS</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td>CARLOS ANTONIO JIMENEZ RUIZ</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td>LAURA PATRICIA GARCIA SILVA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td>CARLOS ANTONIO JIMENEZ RUIZ</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td>SOFIA VALENTINA TORRES PEREZ</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td>JOHN SMITH FOREIGN</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td>JOHN SMITH FOREIGN</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td>MICHAEL ALEJANDRO BROWN</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td>PIERRE DUPONT DIPLOMATICO</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td>PIERRE DUPONT DIPLOMATICO</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
@@ -769,12 +777,12 @@ Saldo:               2500000.00 COP</pre>
   <div class="note-box">
     Request body: <code>{"operacion": "CONSULTA_CLIENTE", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · estructura difiere por banco</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; estructura difiere por banco</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bdb/consulta-cliente-rest-pool-a.json — ver respuesta</span>
+      <span class="resp-hint">fuente: bdb/consulta-cliente-rest-pool-a.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">boName:              RODRIGUEZ GOMEZ,JUAN CARLOS
 firstName:           JUAN CARLOS
@@ -801,7 +809,7 @@ email:               juan.rodriguez@email.com</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: avv/consultar-datos-cliente-pool-a.json — ver respuesta</span>
+      <span class="resp-hint">fuente: avv/consultar-datos-cliente-pool-a.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">codRespuesta:        0
 mensajeRespuesta:    Transaccion Exitosa
@@ -828,7 +836,7 @@ numeroPersonasCargo: 1</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: occ/consulta-cliente-pool-a.xml · el ADP devuelve el XML parseado — ver respuesta</span>
+      <span class="resp-hint">fuente: occ/consulta-cliente-pool-a.xml &middot; el ADP devuelve el XML parseado &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">RtaCod:              00
 RtaMnsje:            Transaccion Exitosa
@@ -852,7 +860,7 @@ CorreoElectronico:   juan.rodriguez@email.com</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bpo/customer-mdm-pool-a.xml · el ADP devuelve el XML parseado — ver respuesta</span>
+      <span class="resp-hint">fuente: bpo/customer-mdm-pool-a.xml &middot; el ADP devuelve el XML parseado &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          OK
@@ -895,16 +903,16 @@ EMail:               juan.rodriguez@email.com</pre>
         </tr>
       </thead>
       <tbody>
-        <tr><td><span class="dot-badge a">A</span></td><td class="mono">CC</td><td class="mono">12345678</td><td class="muted">1 prod: SDA 001012345678 · $2.500.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge a">A</span></td><td class="mono">CC</td><td class="mono">12345678</td><td class="muted">1 prod: SDA 001012345678 &middot; $2.500.000</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td class="muted">2 prods: SDA 001023456789 + CCA 001023456790</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td class="muted">2 prods: LOC 001034567890 + CDA 001034567891</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td class="muted">3 prods: SDA 001045678901 + LOC + CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td class="muted">1 prod: DDA 001090012345 · $45.000.000</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td class="muted">1 prod: SDA 001055667788 · $3.200.000</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td class="muted">1 prod: SDA 001010203040 · $1.500.000</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td class="muted">1 prod: SDA 001090000001 · $8.900.000</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td class="muted">1 prod: SDA 001066778899 · $4.700.000</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td class="muted">1 prod: SDA 001044556677 · $2.100.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td class="muted">1 prod: DDA 001090012345 &middot; $45.000.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td class="muted">1 prod: SDA 001055667788 &middot; $3.200.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td class="muted">1 prod: SDA 001010203040 &middot; $1.500.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td class="muted">1 prod: SDA 001090000001 &middot; $8.900.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td class="muted">1 prod: SDA 001066778899 &middot; $4.700.000</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td class="muted">1 prod: SDA 001044556677 &middot; $2.100.000</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
@@ -914,12 +922,12 @@ EMail:               juan.rodriguez@email.com</pre>
   <div class="note-box">
     Request body: <code>{"operacion": "CONSULTA_PRODUCTOS", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · estructura difiere por banco</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; estructura difiere por banco</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: avv/consultar-productos-pool-a.xml · SDA 008438001 · ver respuesta</span>
+      <span class="resp-hint">fuente: avv/consultar-productos-pool-a.xml &middot; SDA 008438001 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Exitoso
@@ -933,7 +941,7 @@ Saldo Avail:         2500000.00 COP</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: occ/everest-balance-grouped-pool-a.xml · DLA + SDA · ver respuesta</span>
+      <span class="resp-hint">fuente: occ/everest-balance-grouped-pool-a.xml &middot; DLA + SDA &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Success
@@ -954,7 +962,7 @@ Saldo_actual:        8750000.00 COP</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bpo/balance-inquiry-grouped-pool-a.xml · SDA 00123456789 · ver respuesta</span>
+      <span class="resp-hint">fuente: bpo/balance-inquiry-grouped-pool-a.xml &middot; SDA 00123456789 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion Exitosa
@@ -1004,14 +1012,14 @@ Saldo_disponible:    2500000.00 COP</pre>
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td class="mono">559536650</td><td class="mono">26456554</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td colspan="3" class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
-        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">99999999999999999</td><td class="muted">— BdB</td><td class="muted">— BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
+        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">99999999999999999</td><td class="muted">&mdash; BdB</td><td class="muted">&mdash; BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td colspan="3" class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td colspan="3" class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
       </tbody>
@@ -1021,14 +1029,14 @@ Saldo_disponible:    2500000.00 COP</pre>
     BOG/OCC: <code>{"operacion": "CONSULTA_DETALLADA_CARTERA", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroObligacion": "559536650"}}</code>
     <br>AVV: <code>{"operacion": "CONSULTA_DETALLADA_CARTERA", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroObligacion": "26456554"}}</code>
     <br>BPO: <code>{"operacion": "CONSULTA_DETALLADA_CARTERA", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "acctId": "5391689991756210", "acctType": "CCA"}}</code>
-    <br><em>BdB — obligacion no encontrada (PNF):</em> usar <code>numeroObligacion: "99999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 — <code>"Obligacion no encontrada en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR — cliente no encontrado).
+    <br><em>BdB &mdash; obligacion no encontrada (PNF):</em> usar <code>numeroObligacion: "99999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 &mdash; <code>"Obligacion no encontrada en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR &mdash; cliente no encontrado).
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · estructura difiere por banco</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; estructura difiere por banco</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bdb/retrieve-loan-balance-pool-a.json · LOC 0001000012345678 · ver respuesta</span>
+      <span class="resp-hint">fuente: bdb/retrieve-loan-balance-pool-a.json &middot; LOC 0001000012345678 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion exitosa
@@ -1054,7 +1062,7 @@ Rate:                16.0</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: avv/consultar-cartera-pool-a.xml · CCA 4111000012345678 (el pool-a responde CCA) · ver respuesta</span>
+      <span class="resp-hint">fuente: avv/consultar-cartera-pool-a.xml &middot; CCA 4111000012345678 (el pool-a responde CCA) &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Exitoso
@@ -1079,7 +1087,7 @@ OverDueDays:         0</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml · AcctId y AcctType se reflejan del request · ver respuesta</span>
+      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml &middot; AcctId y AcctType se reflejan del request &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Success
@@ -1100,7 +1108,7 @@ StatusOverDraft:     N</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml · SDA 00123456789 · ver respuesta</span>
+      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml &middot; SDA 00123456789 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion Exitosa
@@ -1153,14 +1161,14 @@ Saldo_total:         2500000.00 COP</pre>
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td class="mono">4222222222222222</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td class="mono">4333333333333333</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td class="mono">4444444444444444</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td class="mono">5500005555555559</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td class="mono">4000100010001000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td class="mono">5500005555555559</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td class="mono">4000100010001000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td class="mono">4000200020002000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td class="mono">4000300030003000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td class="mono">4000300030003000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td class="mono">4000400040004000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td class="mono">4000500050005000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td class="mono">4000500050005000</td><td class="mono">5391689991756210 / CCA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td colspan="2" class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
-        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">9999999999999999</td><td class="muted">— BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
+        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">9999999999999999</td><td class="muted">&mdash; BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td colspan="2" class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td colspan="2" class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
       </tbody>
@@ -1169,14 +1177,14 @@ Saldo_total:         2500000.00 COP</pre>
   <div class="note-box">
     BOG/AVV/OCC: <code>{"operacion": "CONSULTA_DETALLADA_TC", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "referenciaTarjeta": "4111111111111111"}}</code>
     <br>BPO: <code>{"operacion": "CONSULTA_DETALLADA_TC", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "acctId": "5391689991756210", "acctType": "CCA"}}</code>
-    <br><em>BdB — tarjeta no encontrada (PNF):</em> usar <code>referenciaTarjeta: "9999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 — <code>"Tarjeta no encontrada en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR — cliente no encontrado).
+    <br><em>BdB &mdash; tarjeta no encontrada (PNF):</em> usar <code>referenciaTarjeta: "9999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 &mdash; <code>"Tarjeta no encontrada en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR &mdash; cliente no encontrado).
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · estructura difiere por banco</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; estructura difiere por banco</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bdb/retrieve-credit-card-balance-pool-a.json · CCA 4111000012345678 · ver respuesta</span>
+      <span class="resp-hint">fuente: bdb/retrieve-credit-card-balance-pool-a.json &middot; CCA 4111000012345678 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion exitosa
@@ -1203,7 +1211,7 @@ Term:                null</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: avv/consultar-cartera-pool-a.xml · CCA 4111000012345678 (mismo stub que CARTERA) · ver respuesta</span>
+      <span class="resp-hint">fuente: avv/consultar-cartera-pool-a.xml &middot; CCA 4111000012345678 (mismo stub que CARTERA) &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Exitoso
@@ -1228,7 +1236,7 @@ OverDueDays:         0</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml · AcctId y AcctType se reflejan del request · ver respuesta</span>
+      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml &middot; AcctId y AcctType se reflejan del request &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Success
@@ -1249,7 +1257,7 @@ StatusOverDraft:     N</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml · SDA 00123456789 · ver respuesta</span>
+      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml &middot; SDA 00123456789 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion Exitosa
@@ -1303,14 +1311,14 @@ Saldo_total:         2500000.00 COP</pre>
         <tr><td><span class="dot-badge b">B</span></td><td class="mono">CC</td><td class="mono">23456789</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge c">C</span></td><td class="mono">CC</td><td class="mono">34567890</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge d">D</span></td><td class="mono">CC</td><td class="mono">45678901</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge e">E</span></td><td class="mono">NIT</td><td class="mono">900123456</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge f">F</span></td><td class="mono">RC</td><td class="mono">55667788</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge e">E</span></td><td class="mono">CC</td><td class="mono">900123456</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge f">F</span></td><td class="mono">TI</td><td class="mono">55667788</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge g">G</span></td><td class="mono">TI</td><td class="mono">1020304050</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PS</td><td class="mono">PA567890</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge h">H</span></td><td class="mono">PP</td><td class="mono">77889900</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge i">I</span></td><td class="mono">CE</td><td class="mono">66778899</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
-        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CD</td><td class="mono">44556677</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
+        <tr><td><span class="dot-badge j">J</span></td><td class="mono">CE</td><td class="mono">44556677</td><td class="mono">0000000026456554</td><td class="mono">26456554</td><td class="mono">CDT-001 / CDA</td><td><span class="http-chip http-200">200</span></td></tr>
         <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">CC</td><td class="mono">00000000</td><td colspan="3" class="muted">no encontrado</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
-        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">9999999999999999</td><td class="muted">— BdB</td><td class="muted">— BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
+        <tr><td><span class="dot-badge err">PNF</span></td><td class="mono">CC</td><td class="mono">12345678 (pool)</td><td class="mono">9999999999999999</td><td class="muted">&mdash; BdB</td><td class="muted">&mdash; BdB</td><td><span class="http-chip http-200">200</span> <span class="muted">cod 206</span></td></tr>
         <tr><td><span class="dot-badge warn">VAL</span></td><td class="mono">CC</td><td class="mono">ab@!#</td><td colspan="3" class="muted">chars invalidos</td><td><span class="http-chip http-400">400</span></td></tr>
         <tr><td><span class="dot-badge tech">502</span></td><td class="mono">CC</td><td class="mono">99999999</td><td colspan="3" class="muted">error tecnico</td><td><span class="http-chip http-502">502</span></td></tr>
       </tbody>
@@ -1320,14 +1328,14 @@ Saldo_total:         2500000.00 COP</pre>
     BOG: <code>{"operacion": "CONSULTA_DETALLADA_CDT", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroProducto": "0000000026456554"}}</code>
     <br>AVV: <code>{"operacion": "CONSULTA_DETALLADA_CDT", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroProducto": "26456554"}}</code>
     <br>OCC/BPO: <code>{"operacion": "CONSULTA_DETALLADA_CDT", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "acctId": "CDT-001", "acctType": "CDA"}}</code>
-    <br><em>BdB — CDT no encontrado (PNF):</em> usar <code>numeroProducto: "9999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 — <code>"CDT no encontrado en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR — cliente no encontrado).
+    <br><em>BdB &mdash; CDT no encontrado (PNF):</em> usar <code>numeroProducto: "9999999999999999"</code> con cualquier doc del pool (A-J). Retorna cod 206 &mdash; <code>"CDT no encontrado en BdB"</code>. El trigger opera por URL path; el doc debe ser conocido (si es desconocido gana ERR &mdash; cliente no encontrado).
   </div>
-  <div class="resp-section-title">Respuesta exitosa — ejemplo Pool A · CC 12345678 · estructura difiere por banco</div>
+  <div class="resp-section-title">Respuesta exitosa &mdash; ejemplo Pool A &middot; CC 12345678 &middot; estructura difiere por banco</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bdb/retrieve-certificate-balance-pool-a.json · CDA 0001000012345678 · ver respuesta</span>
+      <span class="resp-hint">fuente: bdb/retrieve-certificate-balance-pool-a.json &middot; CDA 0001000012345678 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion exitosa
@@ -1350,7 +1358,7 @@ FinalCurAmt:         10575000.00 COP</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: avv/consultar-cdt-pool-a.xml · CDA 008438111 · ver respuesta</span>
+      <span class="resp-hint">fuente: avv/consultar-cdt-pool-a.xml &middot; CDA 008438111 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Exitoso
@@ -1368,7 +1376,7 @@ Term:                12</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml · AcctId y AcctType se reflejan del request · ver respuesta</span>
+      <span class="resp-hint">fuente: occ/everest-balance-by-product-pool-a.xml &middot; AcctId y AcctType se reflejan del request &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Success
@@ -1389,7 +1397,7 @@ StatusOverDraft:     N</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml · SDA 00123456789 · ver respuesta</span>
+      <span class="resp-hint">fuente: bpo/balance-inquiry-by-product-pool-a.xml &middot; SDA 00123456789 &middot; ver respuesta</span>
     </summary>
     <pre class="resp-code">StatusCode:          0
 StatusDesc:          Transaccion Exitosa
@@ -1413,17 +1421,22 @@ Saldo_total:         2500000.00 COP</pre>
   <div class="op-header">
     <span class="op-method">POST</span>
     <span class="op-endpoint">{{base_url}}/api/v1/everst/ofi/orq/bloqueo-td</span>
-    <div class="op-banks">
-      <span class="bank-chip">BBOG</span>
-      <span class="bank-chip">BOCC</span>
-      <span class="bank-chip">BPOP</span>
-      <span class="bank-chip" style="opacity:0.5">BAVV</span>
+    <div class=”op-banks”>
+      <span class=”bank-chip”>BAVV</span>
+      <span class=”bank-chip”>BBOG</span>
+      <span class=”bank-chip”>BOCC</span>
+      <span class=”bank-chip”>BPOP</span>
     </div>
   </div>
-  <div class="note-box">
+  <div class=”note-box”>
     Bloquea definitivamente una tarjeta debito. El discriminador principal es el header <code>X-Destination-Bank</code>.
-    <strong>BAVV no soporta esta operacion</strong> (gap tecnico — devuelve 503).
-    Para forzar errores usar <code>numeroDocumento: "00000000"</code> (404) o <code>"11111111"</code> (409 ya bloqueada).
+    Para forzar errores usar <code>numeroDocumento: “00000000”</code> (404) o <code>”11111111”</code> (409 ya bloqueada).
+    <br><strong>Nota discriminadores por banco:</strong>
+    BAVV usa <code>nroDocumento</code> (Long) en el body banco &mdash; el ADP lo toma de <code>numeroDocumento</code>.
+    BBOG usa <code>cardNumber</code> en el body banco &mdash; el ADP lo toma de <code>numeroTarjeta</code>.
+    BOCC usa <code>Producto</code> (campo SOAP) &mdash; el ADP lo toma de <code>numeroTarjeta</code>.
+    BPOP usa <code>CardId</code> (campo SOAP) &mdash; el ADP lo toma de <code>numeroTarjeta</code> del body.
+    <br><strong>Nota 206:</strong> Para bloqueo TD el banco no usa HTTP 206. Los errores de negocio retornan <strong>422</strong> o <strong>404</strong> desde el ADP.
   </div>
   <div class="op-table-wrap">
     <table>
@@ -1440,30 +1453,37 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BBOG</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Bloqueo exitoso — consecutivoAval GA-2026-000123</td>
+          <td class="muted">Bloqueo exitoso &mdash; consecutivoAval GA-2026-000123</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BOCC</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Bloqueo exitoso — consecutivoAval GA-2026-000124</td>
+          <td class="muted">Bloqueo exitoso &mdash; consecutivoAval GA-2026-000124</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BPOP</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Bloqueo exitoso — consecutivoAval GA-2026-000125</td>
+          <td class="muted">Bloqueo exitoso &mdash; consecutivoAval GA-2026-000125</td>
         </tr>
         <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
+          <td><span class="dot-badge tech">ERR</span></td>
           <td><span class="bank-chip">BAVV</span></td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">Servicio no disponible para esta entidad</td>
+          <td class="mono">nroDocumento=44444444</td>
+          <td><span class="http-chip http-502">502</span></td>
+          <td class="muted">Error tecnico banco &mdash; banco HTTP 502 &rarr; FeignException generico &rarr; ADP 502</td>
+        </tr>
+        <tr>
+          <td><span class="dot-badge tech">TIM</span></td>
+          <td><span class="bank-chip">BAVV</span></td>
+          <td class="mono">nroDocumento=88888888</td>
+          <td><span class="http-chip http-504">504</span></td>
+          <td class="muted">Timeout &mdash; banco HTTP 503 &rarr; FeignException.ServiceUnavailable &rarr; ADP 504</td>
         </tr>
         <tr>
           <td><span class="dot-badge err">ERR</span></td>
@@ -1482,7 +1502,7 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge warn">VAL</span></td>
           <td class="muted">ausente</td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-400">400</span></td>
           <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
         </tr>
@@ -1490,14 +1510,98 @@ Saldo_total:         2500000.00 COP</pre>
     </table>
   </div>
   <div class="note-box">
-    Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "causal": "BL01"}}</code>
+    Request body ADP directo BAVV: <code>{"operacion": "BLOQUEO_TD_DEFINITIVO", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroTarjeta": "1234567890123456", "causal": "BL01"}}</code>
+    <br>Request body ADP directo BBOG/BOCC/BPOP: <code>{"operacion": "BLOQUEO_TD_DEFINITIVO", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroTarjeta": "4111111111111111", "causal": "BL01"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — estructura comun a BBOG/BOCC/BPOP (consecutivoAval difiere)</div>
+
+  <div class="resp-section-title">BAVV ADP &mdash; Prueba directa &middot; POST /avv/PFBA_CanalOtros295/WRBA_CanalOtros_BloqTempMedios</div>
+  <div class="note-box">
+    El mock AVV bloqueo TD usa el mismo endpoint que bloqueo TC. El campo discriminador es
+    <code>nroDocumento</code> (Long), que el ADP toma de <code>numeroDocumento</code> del body.
+    Pool de datos validos devuelve HTTP 200. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">44444444</td><td class="muted">502</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/04-bloqueo-medios-502-err.json &mdash; FeignException generico &rarr; ADP 502</td></tr>
+        <tr><td class="mono">88888888</td><td class="muted">HTTP 503</td><td><span class="http-chip http-504">504</span></td><td class="muted">avv/04-bloqueo-medios-timeout-err.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BBOG ADP &mdash; Prueba directa &middot; PUT /bdb/V1/product/debitcard/status-lock</div>
+  <div class="note-box">
+    El mock BDB se activa por el campo JSON <code>cardNumber</code>. El pool de tarjetas validas devuelve HTTP 200.
+    Triggers de error por <code>cardNumber</code>:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>cardNumber</th><th>HTTP banco</th><th>HTTP ADP</th><th>Descripcion</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">0000000000000000</td><td class="muted">404</td><td><span class="http-chip http-404">404</span></td><td class="muted">Tarjeta no encontrada &mdash; FeignException.NotFound</td></tr>
+        <tr><td class=”mono”>1111111111111111</td><td class=”muted”>409</td><td><span class=”http-chip http-409”>409</span></td><td class=”muted”>Tarjeta ya bloqueada &mdash; FeignException.Conflict</td></tr>
+        <tr><td class=”mono”>2222222222222222</td><td class=”muted”>502</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error tecnico banco &mdash; FeignException otro</td></tr>
+        <tr><td class=”mono”>3333333333333333</td><td class=”muted”>503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Servicio no disponible &mdash; FeignException.ServiceUnavailable</td></tr>
+        <tr><td class=”mono”>4000000000000422</td><td class=”muted”>422</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>Error de negocio &mdash; tarjeta no se puede bloquear en estado actual</td></tr>
+        <tr><td class=”mono”>4000000000000502</td><td class=”muted”>502</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error de conectividad banco &mdash; FeignException otro</td></tr>
+        <tr><td class=”mono”>4000000000000504</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>bdb/04-debit-card-lock-504-err.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BOCC ADP &mdash; Prueba directa &middot; POST /occ/services/BloquearTarjetaDebitoCarton</div>
+  <div class=”note-box”>
+    El mock OCC se activa por el campo SOAP <code>Producto</code> (numero de tarjeta debito). Triggers de error:
+  </div>
+  <div class=”op-table-wrap”>
+    <table>
+      <thead>
+        <tr><th>Producto (= nroTarjeta TD)</th><th>RtaCod / HTTP banco</th><th>HTTP ADP</th><th>Descripcion</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class=”mono”>0000000000000404</td><td class=”mono muted”>4040</td><td><span class=”http-chip http-404”>404</span></td><td class=”muted”>Tarjeta no encontrada &mdash; RtaCod startsWith(“404”)</td></tr>
+        <tr><td class=”mono”>0000000000000422</td><td class=”mono muted”>0020</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>Estado incompatible para el bloqueo &mdash; error negocio</td></tr>
+        <tr><td class=”mono”>0000000000000502</td><td class=”muted”>HTTP 500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error tecnico banco &mdash; WebServiceIOException</td></tr>
+        <tr><td class=”mono”>0000000000000504</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Servicio no disponible &mdash; WebServiceTransportException 503 &rarr; ADP 503 &rarr; ORQ 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BPOP ADP &mdash; Prueba directa &middot; POST /bpo/prodschnsmngt/SSL/LockDebitCardBySofia</div>
+  <div class=”note-box”>
+    Los mocks BPO bloqueo-TD usan dos discriminadores segun el escenario:
+    <ul style=”margin:4px 0 0 16px;padding:0”>
+      <li><strong>Errores negocio (422, 404):</strong> campo SOAP <code>RqUID</code>, que el ADP toma del header HTTP <code>X-Trace-Id</code>. Enviar <code>X-Trace-Id: &lt;UUID&gt;</code> con el valor trigger.</li>
+      <li><strong>Error tecnico (502) y timeout (504):</strong> campo SOAP <code>CardId</code>, que el ADP toma del campo <code>numeroTarjeta</code> del body. Enviar <code>numeroTarjeta=4444444444444444</code> (502) o <code>8888888888888888</code> (504).</li>
+    </ul>
+    Triggers de error:
+  </div>
+  <div class=”op-table-wrap”>
+    <table>
+      <thead>
+        <tr><th>Discriminador</th><th>Respuesta banco</th><th>HTTP ADP</th><th>Descripcion</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono" style="font-size:10px">00000000-0000-0000-0000-000000000000</td><td class="mono muted">StatusCode=600</td><td><span class="http-chip http-422">422</span></td><td class="muted">Tarjeta no puede ser bloqueada &mdash; error negocio</td></tr>
+        <tr><td class="mono" style="font-size:10px">11111111-1111-1111-1111-111111111111</td><td class="mono muted">StatusCode=1160</td><td><span class="http-chip http-422">422</span></td><td class="muted">Tarjeta debito no encontrada &mdash; error negocio SOAP</td></tr>
+        <tr><td class="mono" style="font-size:10px">22222222-2222-2222-2222-222222222222</td><td class="muted">SOAP Fault "not found"</td><td><span class="http-chip http-404">404</span></td><td class="muted">Tarjeta no encontrada &mdash; SoapFaultClientException</td></tr>
+        <tr><td class=”mono”>numeroTarjeta=4444444444444444 (body ADP)</td><td class=”muted”>SOAP Fault “IP”</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>IP no autorizada en Datapower &mdash; CardId SOAP body &rarr; SoapFaultClientException &rarr; ADP 502</td></tr>
+        <tr><td class=”mono”>numeroTarjeta=8888888888888888 (body ADP)</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Servicio no disponible &mdash; CardId SOAP body &rarr; WebServiceTransportException 503 &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>Respuestas &mdash; estructuras de referencia</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/bloqueo-td-bbog-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/bloqueo-td-bbog-ok.json</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -1517,7 +1621,7 @@ Saldo_total:         2500000.00 COP</pre>
     <summary class="resp-summary">
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/bloqueo-td-bocc-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/bloqueo-td-bocc-ok.json</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -1535,8 +1639,8 @@ Saldo_total:         2500000.00 COP</pre>
   </details>
   <details class="resp-detail">
     <summary class="resp-summary">
-      <span class="http-chip http-404">404</span>
-      <span class="resp-hint">fuente: orq/bloqueo-td-err-notfound.json — ver respuesta</span>
+      <span class="http-chip http-422">422</span>
+      <span class="resp-hint">BOCC Producto=0000000000000404 / BBOG cardNumber=0000000000000000 / BPOP RqUID=22222222</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "404",
@@ -1547,14 +1651,50 @@ Saldo_total:         2500000.00 COP</pre>
   </details>
   <details class="resp-detail">
     <summary class="resp-summary">
+      <span class="http-chip http-422">422</span>
+      <span class="resp-hint">BOCC Producto=0000000000000422 / BBOG cardNumber=4000000000000422 / BPOP RqUID=00000000</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "422",
+  "statusDesc": "Error de negocio",
+  "data": null,
+  "error": "Error de negocio &mdash; tarjeta no puede ser bloqueada"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
       <span class="http-chip http-409">409</span>
-      <span class="resp-hint">fuente: orq/bloqueo-td-err-already-blocked.json — ver respuesta</span>
+      <span class="resp-hint">BBOG: FeignException.Conflict(409) &rarr; ADP 409; no hay mock configurado actualmente</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "409",
   "statusDesc": "Tarjeta ya bloqueada",
   "data": null,
   "error": "La tarjeta ya tiene un bloqueo activo"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-502">502</span>
+      <span class="resp-hint">BAVV nroDocumento=44444444 / BBOG cardNumber=4000000000000502 / BOCC Producto=0000000000000502 / BPOP numeroTarjeta=4444444444444444</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "502",
+  "statusDesc": "Error tecnico banco",
+  "data": null,
+  "error": "Error en el servicio del banco"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-504">504</span>
+      <span class="resp-hint">BAVV nroDocumento=88888888 / BBOG cardNumber=4000000000000504 / BOCC Producto=0000000000000504 / BPOP numeroTarjeta=8888888888888888</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "504",
+  "statusDesc": "Timeout",
+  "data": null,
+  "error": "Timeout del servicio del banco"
 }</pre>
   </details>
 </div>
@@ -1565,16 +1705,20 @@ Saldo_total:         2500000.00 COP</pre>
     <span class="op-method">POST</span>
     <span class="op-endpoint">{{base_url}}/api/v1/everst/ofi/orq/bloqueo-tc</span>
     <div class="op-banks">
-      <span class="bank-chip" style="opacity:0.5">BBOG</span>
-      <span class="bank-chip" style="opacity:0.5">BAVV</span>
-      <span class="bank-chip" style="opacity:0.5">BOCC</span>
-      <span class="bank-chip" style="opacity:0.5">BPOP</span>
+      <span class="bank-chip">BAVV</span>
+      <span class="bank-chip">BBOG</span>
+      <span class="bank-chip">BOCC</span>
+      <span class="bank-chip">BPOP</span>
     </div>
   </div>
   <div class="note-box">
-    Bloqueo de tarjeta de credito. <strong>Gap masivo — todos los bancos devuelven 503</strong>.
-    Solo se pueden probar los casos de error de validacion (400) y conflicto de estado (409).
-    Para 409 usar <code>numeroDocumento: "11111111"</code>.
+    <strong>HU-202 implementado para todos los bancos.</strong> Bloqueo de tarjeta de credito &mdash; los cuatro ADPs
+    desplegados y validados en CloudFront <code>https://d299ks4asy14z3.cloudfront.net</code>.
+    <br><strong>Nota 206 &mdash; UNICO caso donde el banco usa HTTP 206:</strong> El adaptador OCC bloqueo TC
+    (<code>OccBloqueoTcAdapter</code>) es el UNICO en toda la plataforma que recibe HTTP 206 del banco como
+    se&ntilde;al de error de negocio. El ADP mapea ese 206 &rarr; ADP <strong>422</strong>.
+    El trigger es <code>TrjtaNro: "0000000000000000"</code>. Para los demas bancos y operaciones el banco
+    nunca devuelve HTTP 206.
   </div>
   <div class="op-table-wrap">
     <table>
@@ -1582,50 +1726,188 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <th>Caso</th>
           <th>Banco</th>
-          <th>Doc Trigger</th>
+          <th>Trigger</th>
           <th>HTTP</th>
           <th>Descripcion</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
-          <td class="muted">todos</td>
-          <td class="muted">cualquier pool</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">Gap masivo — ningun banco soporta esta operacion</td>
-        </tr>
-        <tr>
-          <td><span class="dot-badge err">ERR</span></td>
-          <td class="muted">cualquier</td>
-          <td class="mono">11111111</td>
-          <td><span class="http-chip http-409">409</span></td>
-          <td class="muted">Tarjeta ya tiene un bloqueo activo (prioridad 2, antes del gap)</td>
-        </tr>
-        <tr>
-          <td><span class="dot-badge warn">VAL</span></td>
-          <td class="muted">ausente</td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-400">400</span></td>
-          <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
-        </tr>
+        <tr><td><span class="dot-badge a">OK</span></td><td><span class="bank-chip">BAVV</span></td><td class="mono">nroDoc=12345678 &middot; tarjeta=6013678000024336</td><td><span class="http-chip http-200">200</span></td><td class="muted">Bloqueo exitoso &mdash; indBloqueo=S fijo</td></tr>
+        <tr><td><span class="dot-badge a">OK</span></td><td><span class="bank-chip">BBOG</span></td><td class="mono">tarjeta=4111222233334444</td><td><span class="http-chip http-200">200</span></td><td class="muted">Bloqueo exitoso &mdash; LockId=P, BlockReason=33 fijos</td></tr>
+        <tr><td><span class="dot-badge a">OK</span></td><td><span class="bank-chip">BOCC</span></td><td class="mono">tarjeta=4111222233334444 &middot; causal=BL01</td><td><span class="http-chip http-200">200</span></td><td class="muted">Bloqueo exitoso &mdash; REST OAuth2</td></tr>
+        <tr><td><span class="dot-badge a">OK</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=4111222233334444 &middot; causal=BL01</td><td><span class="http-chip http-200">200</span></td><td class="muted">Bloqueo exitoso &mdash; SOAP StatusCode 0</td></tr>
+        <tr><td><span class="dot-badge err">ERR</span></td><td><span class="bank-chip">BAVV</span></td><td class="mono">nroDoc=33333333</td><td><span class="http-chip http-400">400</span></td><td class="muted">Solicitud invalida en AVV &mdash; banco HTTP 400 &rarr; ADP 400</td></tr>
+        <tr><td><span class=”dot-badge tech”>ERR</span></td><td><span class=”bank-chip”>BAVV</span></td><td class=”mono”>nroDoc=44444444</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error tecnico banco &mdash; banco HTTP 500 &rarr; ADP 502</td></tr>
+        <tr><td><span class=”dot-badge err”>ERR</span></td><td><span class=”bank-chip”>BAVV</span></td><td class=”mono”>nroDoc=55555555</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>Tarjeta no encontrada &mdash; codRespuesta=201 &rarr; ADP 422</td></tr>
+        <tr><td><span class=”dot-badge tech”>TIM</span></td><td><span class=”bank-chip”>BAVV</span></td><td class=”mono”>nroDoc=66666666</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Timeout &mdash; banco HTTP 503 &rarr; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+        <tr><td><span class=”dot-badge err”>ERR</span></td><td><span class=”bank-chip”>BBOG</span></td><td class=”mono”>tarjeta con guiones (ej. 1234-5678-9012-3456)</td><td><span class=”http-chip http-400”>400</span></td><td class=”muted”>Validacion banco &mdash; CardId chars especiales &rarr; banco HTTP 400 &rarr; FeignException.BadRequest &rarr; ADP 400</td></tr>
+        <tr><td><span class=”dot-badge tech”>ERR</span></td><td><span class=”bank-chip”>BBOG</span></td><td class=”mono”>tarjeta=0000000000000000</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error tecnico banco &mdash; CardId 0000... &rarr; banco HTTP 500 &rarr; ADP 502</td></tr>
+        <tr><td><span class=”dot-badge err”>ERR</span></td><td><span class=”bank-chip”>BBOG</span></td><td class=”mono”>tarjeta=1111111111111111</td><td><span class=”http-chip http-409”>409</span></td><td class=”muted”>Tarjeta ya bloqueada &mdash; CardId 1111... &rarr; banco HTTP 409 &rarr; ADP 409</td></tr>
+        <tr><td><span class=”dot-badge tech”>TIM</span></td><td><span class=”bank-chip”>BBOG</span></td><td class=”mono”>tarjeta=8888888888888888</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Timeout &mdash; CardId 8888... &rarr; banco HTTP 503 &rarr; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+        <tr><td><span class=”dot-badge err”>ERR</span></td><td><span class=”bank-chip”>BOCC</span></td><td class=”mono”>tarjeta=0000000000000000</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>Tarjeta no bloqueable &mdash; TrjtaNro 0000... &rarr; banco HTTP 206 &rarr; ADP 422</td></tr>
+        <tr><td><span class=”dot-badge err”>ERR</span></td><td><span class=”bank-chip”>BOCC</span></td><td class=”mono”>tarjeta con guiones (ej. 1234-5678-9012-3456)</td><td><span class=”http-chip http-400”>400</span></td><td class=”muted”>Validacion banco &mdash; TrjtaNro chars especiales &rarr; banco HTTP 400 &rarr; Retrofit code==400 &rarr; ADP 400</td></tr>
+        <tr><td><span class=”dot-badge tech”>ERR</span></td><td><span class=”bank-chip”>BOCC</span></td><td class=”mono”>tarjeta=1111111111111111</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>Error tecnico banco &mdash; TrjtaNro 1111... &rarr; banco HTTP 500 &rarr; ADP 502</td></tr>
+        <tr><td><span class=”dot-badge tech”>TIM</span></td><td><span class=”bank-chip”>BOCC</span></td><td class=”mono”>tarjeta=8888888888888888</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>Timeout &mdash; TrjtaNro 8888... &rarr; banco HTTP 408 &rarr; OkHttp readTimeout / code==408 handler &rarr; ADP 504</td></tr>
+        <tr><td><span class="dot-badge err">ERR</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=9999999999999999</td><td><span class="http-chip http-404">404</span></td><td class="muted">Tarjeta no encontrada &mdash; StatusCode BPO 1160 &rarr; ADP 404</td></tr>
+        <tr><td><span class="dot-badge err">ERR</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=7777777777777777</td><td><span class="http-chip http-422">422</span></td><td class="muted">Estado incompatible &mdash; StatusCode BPO 1200 &rarr; ADP 422</td></tr>
+        <tr><td><span class="dot-badge tech">ERR</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=3333333333333333</td><td><span class="http-chip http-502">502</span></td><td class="muted">Error tecnico backend &mdash; StatusCode BPO 300 &rarr; ADP 502</td></tr>
+        <tr><td><span class="dot-badge tech">ERR</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=5555555555555555</td><td><span class="http-chip http-502">502</span></td><td class="muted">SOAP Fault &mdash; banco HTTP 500 + faultstring error tecnico &rarr; ADP 502</td></tr>
+        <tr><td><span class="dot-badge tech">TIM</span></td><td><span class="bank-chip">BPOP</span></td><td class="mono">tarjeta=8888888888888888</td><td><span class="http-chip http-504">504</span></td><td class="muted">Timeout &mdash; AcctId 8888... &rarr; banco HTTP 408 &rarr; WebServiceTransportException &quot;timeout&quot; &rarr; ADP 504</td></tr>
+        <tr><td><span class="dot-badge warn">VAL</span></td><td class="muted">ausente</td><td class="muted">&mdash;</td><td><span class="http-chip http-400">400</span></td><td class="muted">Header X-Destination-Bank ausente o no reconocido</td></tr>
       </tbody>
     </table>
   </div>
   <div class="note-box">
-    Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678"}}</code>
+    Request body ADP directo BAVV: <code>{"operacion": "BLOQUEO_TC", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroTarjeta": "6013678000024336"}}</code>
+    <br>Request body ADP directo BBOG/BPOP: <code>{"operacion": "BLOQUEO_TC", "obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "numeroTarjeta": "4111222233334444", "causal": "BL01"}}</code>
+    <br>Request body ADP directo BOCC: <code>{"operacion": "BLOQUEO_TC", "obj_operacion": {"numeroTarjeta": "4111222233334444", "causal": "BL01", "clienteNombre": "JUAN PEREZ"}}</code>
+  </div>
+
+  <div class=”resp-section-title”>BAVV ADP &mdash; Prueba directa &middot; POST /avv/PFBA_CanalOtros295/WRBA_CanalOtros_BloqTempMedios</div>
+  <div class=”note-box”>
+    El mock AVV bloqueo TC usa el mismo endpoint que bloqueo TD. El campo discriminador es
+    <code>nroDocumento</code> (Long), que es la cedula del cliente.<br>
+    <strong>Importante:</strong> Para probar escenarios de error, QA debe usar los numeros de documento
+    “magicos” indicados abajo (no son cedulas reales). Pool de documentos validos (A-J) devuelve HTTP 200.
+    Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">12345678</td><td class="muted">200</td><td><span class="http-chip http-200">200</span></td><td class="muted">avv/04-bloqueo-medios-ok.json (codRespuesta=0)</td></tr>
+        <tr><td class="mono">33333333</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">avv/04-bloqueo-tc-400-err.json</td></tr>
+        <tr><td class=”mono”>44444444</td><td class=”muted”>500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>avv/04-bloqueo-tc-500-err.json</td></tr>
+        <tr><td class=”mono”>55555555</td><td class=”muted”>200 (codRespuesta=201)</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>avv/04-bloqueo-tc-err.json &mdash; tarjeta no encontrada</td></tr>
+        <tr><td class=”mono”>66666666</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>avv/04-bloqueo-tc-timeout.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BBOG ADP &mdash; Prueba directa &middot; POST /bdb/V1/Product/credit-card/block</div>
+  <div class="note-box">
+    El mock BdB bloqueo TC se activa por el campo JSON <code>CardId</code>. El ADP mapea
+    <code>numeroTarjeta &rarr; CardId</code>, fija <code>LockId=P</code> y <code>BlockReason=33</code>.
+    El pool de tarjetas validas (ej. 4111222233334444) devuelve HTTP 200. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>CardId (= numeroTarjeta)</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">4111222233334444</td><td class="muted">200</td><td><span class="http-chip http-200">200</span></td><td class="muted">bdb/10-bloqueo-tc-ok.json</td></tr>
+        <tr><td class="mono">CardId con guiones (ej. 1234-5678-9012-3456)</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">bdb/10-bloqueo-tc-validation-err.json &mdash; chars especiales &rarr; FeignException.BadRequest &rarr; ADP 400</td></tr>
+        <tr><td class="mono">0000000000000000</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">bdb/10-bloqueo-tc-err.json &mdash; error tecnico banco</td></tr>
+        <tr><td class="mono">1111111111111111</td><td class="muted">409</td><td><span class="http-chip http-422">422</span></td><td class="muted">bdb/10-bloqueo-tc-conflict-err.json &mdash; estado incompatible</td></tr>
+        <tr><td class="mono">8888888888888888</td><td class="muted">503</td><td><span class="http-chip http-504">504</span></td><td class="muted">bdb/10-bloqueo-tc-timeout.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BOCC ADP &mdash; Prueba directa &middot; POST /occ/products/credit-cards/block <span style="color:#e88;font-weight:400;font-size:11px">(UNICO adaptador con HTTP 206 del banco)</span></div>
+  <div class="note-box">
+    El mock OCC bloqueo TC se activa por el campo JSON <code>TrjtaNro</code>. El pool de tarjetas validas
+    (ej. 4111222233334444) devuelve HTTP 200. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>TrjtaNro</th><th>HTTP banco</th><th>HTTP ADP</th><th>Descripcion</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">4111222233334444</td><td class="muted">200</td><td><span class="http-chip http-200">200</span></td><td class="muted">occ/18-bloqueo-tc-ok.json</td></tr>
+        <tr><td class="mono">TrjtaNro con guiones (ej. 1234-5678-9012-3456)</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">occ/18-bloqueo-tc-validation-err.json &mdash; chars especiales &rarr; Retrofit code==400 &rarr; ADP 400</td></tr>
+        <tr><td class="mono">0000000000000000</td><td class="muted">206</td><td><span class="http-chip http-422">422</span></td><td class="muted">occ/18-bloqueo-tc-err.json &mdash; banco HTTP 206 &rarr; ADP 422 (UNICO caso 206 en plataforma)</td></tr>
+        <tr><td class="mono">1111111111111111</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">occ/18-bloqueo-tc-500-err.json &mdash; error tecnico banco</td></tr>
+        <tr><td class="mono">8888888888888888</td><td class="muted">408 (delay 30 s)</td><td><span class="http-chip http-504">504</span></td><td class="muted">occ/18-bloqueo-tc-timeout.json &mdash; HTTP 408 + fixedDelay &rarr; OkHttp timeout / code==408 &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-box">
+    Mapeo OCC bloqueo TC: HTTP 206 &rarr; ADP 422 &middot; HTTP 400 &rarr; ADP 400 &middot; HTTP 401 &rarr; retry/502 &middot; HTTP 408 &rarr; ADP 504 &middot; HTTP 500 &rarr; ADP 502 &middot; RtaCod != "00" &rarr; ADP 422.
+  </div>
+
+  <div class="resp-section-title">BPOP ADP &mdash; Prueba directa &middot; POST /bpo/accounts/SSL/SrvCodeCardBlock</div>
+  <div class="note-box">
+    El mock BPO se activa por el campo SOAP <code>ifx:AcctId</code> (namespace <code>urn://grupoaval.com/xsd/ifx/</code>).
+    El ADP mapea <code>numeroTarjeta &rarr; AcctId</code> y <code>causal &rarr; BlockCode1</code>, con <code>AcctType=B</code> fijo.
+    El pool de tarjetas validas (ej. 4111222233334444) devuelve StatusCode BPO <code>0</code> &rarr; HTTP 200.
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Caso</th>
+          <th>AcctId (= numeroTarjeta)</th>
+          <th>StatusCode BPO</th>
+          <th>HTTP ADP</th>
+          <th>Mock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="dot-badge a">OK</span></td><td class="mono">4111222233334444</td><td class="mono muted">0</td><td><span class="http-chip http-200">200</span></td><td class="muted">bpo/14-code-card-block-ok.xml</td></tr>
+        <tr><td><span class="dot-badge err">ERR</span></td><td class="mono">9999999999999999</td><td class="mono muted">1160</td><td><span class="http-chip http-404">404</span></td><td class="muted">bpo/14-code-card-block-err.xml &mdash; CARD NUMBER NOT FOUND</td></tr>
+        <tr><td><span class="dot-badge warn">ERR</span></td><td class="mono">7777777777777777</td><td class="mono muted">1200</td><td><span class="http-chip http-422">422</span></td><td class="muted">bpo/14-code-card-block-notfound-err.xml &mdash; ESTADO INCOMPATIBLE</td></tr>
+        <tr><td><span class="dot-badge tech">ERR</span></td><td class="mono">3333333333333333</td><td class="mono muted">300</td><td><span class="http-chip http-502">502</span></td><td class="muted">bpo/14-code-card-block-validation-err.xml &mdash; TECHNICAL ERROR IN BACKEND</td></tr>
+        <tr><td><span class="dot-badge tech">TIM</span></td><td class="mono">8888888888888888</td><td class="mono muted">&mdash; (408)</td><td><span class="http-chip http-504">504</span></td><td class="muted">bpo/14-code-card-block-timeout.json &mdash; banco HTTP 408 &rarr; WebServiceTransportException &quot;timeout&quot; &rarr; ADP 504</td></tr>
+        <tr><td><span class="dot-badge tech">ERR</span></td><td class="mono">5555555555555555</td><td class="muted">&mdash; (SOAP Fault)</td><td><span class="http-chip http-502">502</span></td><td class="muted">bpo/14-code-card-block-soapfault-err.xml &mdash; HTTP 500 SOAP Fault</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-box">
+    SOAP trigger (namespace <code>urn://grupoaval.com/accounts/v1/</code>):
+    <code>&lt;ifx:AcctId&gt;9999999999999999&lt;/ifx:AcctId&gt;</code> dentro de <code>v1:CodeCardBlockRq</code>.
   </div>
   <details class="resp-detail">
     <summary class="resp-summary">
-      <span class="http-chip http-503">503</span>
-      <span class="resp-hint">respuesta gap masivo — ver respuesta</span>
+      <span class="http-chip http-404">404</span>
+      <span class="resp-hint">AcctId=9999999999999999 &middot; BPO StatusCode 1160 &mdash; SOAP response</span>
     </summary>
-    <pre class="resp-code">{
-  "statusCode": "503",
-  "statusDesc": "Servicio no disponible",
-  "data": null,
-  "error": "Servicio no disponible para esta entidad. Gap masivo: ninguna entidad soporta esta operacion"
-}</pre>
+    <pre class="resp-code">&lt;ifx:Status&gt;
+  &lt;ifx:StatusCode&gt;1160&lt;/ifx:StatusCode&gt;
+  &lt;ifx:ServerStatusCode&gt;VPL5SCB05S&lt;/ifx:ServerStatusCode&gt;
+  &lt;ifx:Severity&gt;Error&lt;/ifx:Severity&gt;
+  &lt;ifx:StatusDesc&gt;No existe informacion para los criterios seleccionados&lt;/ifx:StatusDesc&gt;
+  &lt;ifx:AdditionalStatus&gt;
+    &lt;ifx:StatusCode&gt;1160&lt;/ifx:StatusCode&gt;
+    &lt;ifx:StatusDesc&gt;CARD NUMBER NOT FOUND&lt;/ifx:StatusDesc&gt;
+  &lt;/ifx:AdditionalStatus&gt;
+&lt;/ifx:Status&gt;</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-422">422</span>
+      <span class="resp-hint">AcctId=7777777777777777 &middot; BPO StatusCode 1200 &mdash; SOAP response</span>
+    </summary>
+    <pre class="resp-code">&lt;ifx:Status&gt;
+  &lt;ifx:StatusCode&gt;1200&lt;/ifx:StatusCode&gt;
+  &lt;ifx:ServerStatusCode&gt;VPL5SCB06S&lt;/ifx:ServerStatusCode&gt;
+  &lt;ifx:Severity&gt;Error&lt;/ifx:Severity&gt;
+  &lt;ifx:StatusDesc&gt;ESTADO INCOMPATIBLE PARA EL BLOQUEO&lt;/ifx:StatusDesc&gt;
+  &lt;ifx:AdditionalStatus&gt;
+    &lt;ifx:StatusCode&gt;1200&lt;/ifx:StatusCode&gt;
+    &lt;ifx:StatusDesc&gt;CARD STATE INCOMPATIBLE FOR BLOCK OPERATION&lt;/ifx:StatusDesc&gt;
+  &lt;/ifx:AdditionalStatus&gt;
+&lt;/ifx:Status&gt;</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-502">502</span>
+      <span class="resp-hint">AcctId=3333333333333333 &middot; BPO StatusCode 300 &mdash; SOAP response</span>
+    </summary>
+    <pre class="resp-code">&lt;ifx:Status&gt;
+  &lt;ifx:StatusCode&gt;300&lt;/ifx:StatusCode&gt;
+  &lt;ifx:ServerStatusCode&gt;VPL5SCB03S&lt;/ifx:ServerStatusCode&gt;
+  &lt;ifx:Severity&gt;Error&lt;/ifx:Severity&gt;
+  &lt;ifx:StatusDesc&gt;Error tecnico - comunicarse con la entidad&lt;/ifx:StatusDesc&gt;
+  &lt;ifx:AdditionalStatus&gt;
+    &lt;ifx:StatusCode&gt;300&lt;/ifx:StatusCode&gt;
+    &lt;ifx:StatusDesc&gt;TECHNICAL ERROR IN BACKEND PROCESSING&lt;/ifx:StatusDesc&gt;
+  &lt;/ifx:AdditionalStatus&gt;
+&lt;/ifx:Status&gt;</pre>
   </details>
 </div>
 
@@ -1636,15 +1918,16 @@ Saldo_total:         2500000.00 COP</pre>
     <span class="op-endpoint">{{base_url}}/api/v1/everst/ofi/orq/actualizacion-datos</span>
     <div class="op-banks">
       <span class="bank-chip">BAVV</span>
-      <span class="bank-chip" style="opacity:0.5">BBOG</span>
-      <span class="bank-chip" style="opacity:0.5">BOCC</span>
-      <span class="bank-chip" style="opacity:0.5">BPOP</span>
+      <span class="bank-chip">BBOG</span>
+      <span class="bank-chip">BOCC</span>
+      <span class="bank-chip">BPOP</span>
     </div>
   </div>
   <div class="note-box">
-    Actualizacion de datos del cliente. <strong>Solo BAVV soporta esta operacion</strong>.
-    BBOG, BOCC y BPOP devuelven 503 (gap).
-    Para forzar 404 usar <code>numeroDocumento: "00000000"</code>.
+    Actualizacion de datos del cliente. <strong>Todos los bancos implementados</strong> (otro equipo &mdash; rama en paralelo).
+    Para errores a nivel banco, consultar las subsecciones ADP por banco al final de esta tab.
+    <br><strong>Nota 206:</strong> Ninguno de estos adaptadores usa HTTP 206 del banco. Los errores de negocio
+    retornan 422 (BAVV) o 400/422 (BBOG/OCC/BPO). La respuesta 206 es exclusiva del flujo de consulta detallada.
   </div>
   <div class="op-table-wrap">
     <table>
@@ -1652,7 +1935,7 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <th>Caso</th>
           <th>Banco</th>
-          <th>Doc Trigger</th>
+          <th>Trigger</th>
           <th>HTTP</th>
           <th>Descripcion</th>
         </tr>
@@ -1661,56 +1944,253 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BAVV</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Actualizacion exitosa — codRespuesta 0</td>
+          <td class="muted">Actualizacion exitosa &mdash; codRespuesta 0</td>
         </tr>
         <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
+          <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BBOG</span></td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">Servicio no disponible para esta entidad</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
+          <td><span class="http-chip http-200">200</span></td>
+          <td class="muted">Actualizacion exitosa</td>
         </tr>
         <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
+          <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BOCC</span></td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">Servicio no disponible para esta entidad</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
+          <td><span class="http-chip http-200">200</span></td>
+          <td class="muted">Actualizacion exitosa</td>
         </tr>
         <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
+          <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BPOP</span></td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">Servicio no disponible para esta entidad</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
+          <td><span class="http-chip http-200">200</span></td>
+          <td class="muted">Actualizacion exitosa &mdash; StatusCode BPO 0</td>
         </tr>
         <tr>
           <td><span class="dot-badge err">ERR</span></td>
-          <td class="muted">cualquier</td>
-          <td class="mono">00000000</td>
-          <td><span class="http-chip http-404">404</span></td>
-          <td class="muted">Cliente no encontrado para el documento indicado</td>
+          <td><span class="bank-chip">BAVV</span></td>
+          <td class="mono">nroDocumento=00000000</td>
+          <td><span class="http-chip http-422">422</span></td>
+          <td class="muted">Error de negocio &mdash; codRespuesta=201 (no encontrado / no procesado)</td>
         </tr>
         <tr>
-          <td><span class="dot-badge warn">VAL</span></td>
+          <td><span class=”dot-badge tech”>ERR</span></td>
+          <td><span class=”bank-chip”>BAVV</span></td>
+          <td class=”mono”>nroDocumento=33333333</td>
+          <td><span class=”http-chip http-502”>502</span></td>
+          <td class=”muted”>Error tecnico banco &mdash; banco HTTP 502 &rarr; ADP 502</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>TIM</span></td>
+          <td><span class=”bank-chip”>BAVV</span></td>
+          <td class=”mono”>nroDocumento=22222222</td>
+          <td><span class=”http-chip http-504”>504</span></td>
+          <td class=”muted”>Timeout banco &mdash; banco HTTP 503 &rarr; FeignException.ServiceUnavailable &rarr; ADP 504</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge err”>ERR</span></td>
+          <td><span class=”bank-chip”>BAVV</span></td>
+          <td class=”mono”>nroDocumento=44444444</td>
+          <td><span class=”http-chip http-400”>400</span></td>
+          <td class=”muted”>Datos invalidos banco &mdash; HTTP 400</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>ERR</span></td>
+          <td><span class=”bank-chip”>BBOG</span></td>
+          <td class=”mono”>datosActualizar.celular=4444444444 (body)</td>
+          <td><span class=”http-chip http-502”>502</span></td>
+          <td class=”muted”>Error tecnico banco &mdash; banco HTTP 401 &rarr; FeignException.Unauthorized &rarr; ADP 502</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge err”>ERR</span></td>
+          <td><span class=”bank-chip”>BBOG</span></td>
+          <td class=”mono”>simError=bad-request</td>
+          <td><span class=”http-chip http-400”>400</span></td>
+          <td class=”muted”>Datos invalidos &mdash; HTTP 400 &rarr; FeignException.BadRequest</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>TIM</span></td>
+          <td><span class=”bank-chip”>BBOG</span></td>
+          <td class=”mono”>datosActualizar.celular=3000000504 (body)</td>
+          <td><span class=”http-chip http-504”>504</span></td>
+          <td class=”muted”>Timeout banco &mdash; banco HTTP 503 &rarr; FeignException.ServiceUnavailable &rarr; ADP 504</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge err”>ERR</span></td>
+          <td><span class=”bank-chip”>BOCC</span></td>
+          <td class=”mono”>datosActualizar.celular=0000000000 (body)</td>
+          <td><span class=”http-chip http-400”>400</span></td>
+          <td class=”muted”>Datos invalidos &mdash; CntctoMdio=0000000000 &rarr; banco HTTP 400</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>ERR</span></td>
+          <td><span class=”bank-chip”>BOCC</span></td>
+          <td class=”mono”>datosActualizar.celular=4444444444 (body)</td>
+          <td><span class=”http-chip http-502”>502</span></td>
+          <td class=”muted”>Error tecnico banco &mdash; CntctoMdio=4444444444 &rarr; banco HTTP 500 &rarr; ADP 502</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>TIM</span></td>
+          <td><span class=”bank-chip”>BOCC</span></td>
+          <td class=”mono”>datosActualizar.celular=3333333333 (body)</td>
+          <td><span class=”http-chip http-504”>504</span></td>
+          <td class=”muted”>Timeout &mdash; CntctoMdio=3333333333 &rarr; banco HTTP 503 &rarr; ADP 503 &rarr; ORQ 504</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge err”>ERR</span></td>
+          <td><span class=”bank-chip”>BPOP</span></td>
+          <td class=”mono”>X-Trace-Id=00000000-0000-0000-0000-000000000000</td>
+          <td><span class=”http-chip http-422”>422</span></td>
+          <td class=”muted”>Cliente no encontrado en MDM &mdash; X-Trace-Id=00000000... &rarr; BPO StatusCode 100</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge err”>ERR</span></td>
+          <td><span class=”bank-chip”>BPOP</span></td>
+          <td class=”mono”>X-Trace-Id=11111111-1111-1111-1111-111111111111</td>
+          <td><span class=”http-chip http-502”>502</span></td>
+          <td class=”muted”>Error tecnico &mdash; X-Trace-Id=11111111... &rarr; banco HTTP 500 SOAP Fault (PartyMDM)</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>ERR</span></td>
+          <td><span class=”bank-chip”>BPOP</span></td>
+          <td class=”mono”>datosActualizar.celular=4000000502 (body)</td>
+          <td><span class=”http-chip http-502”>502</span></td>
+          <td class=”muted”>Error tecnico IIB &mdash; celular=4000000502 en body &rarr; banco HTTP 500 (MaintainGrupoAval)</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge tech”>TIM</span></td>
+          <td><span class=”bank-chip”>BPOP</span></td>
+          <td class=”mono”>datosActualizar.celular=3000000504 (body)</td>
+          <td><span class=”http-chip http-504”>504</span></td>
+          <td class=”muted”>Servicio no disponible &mdash; celular=3000000504 en body &rarr; banco HTTP 503 &rarr; ADP 503 &rarr; ORQ 504</td>
+        </tr>
+        <tr>
+          <td><span class=”dot-badge warn”>VAL</span></td>
           <td class="muted">ausente</td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-400">400</span></td>
           <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div class="note-box">
-    Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "correo": "nuevo@email.com", "celular": "3101234567"}}</code>
+
+  <div class=”resp-section-title”>BAVV ADP &mdash; Prueba directa &middot; POST /avv/actualizarDatosCliente</div>
+  <div class=”note-box”>
+    El mock AVV se activa por el campo JSON <code>nroDocumento</code> (cedula del cliente).
+    <strong>Importante:</strong> Para probar errores, QA debe usar los numeros de documento “magicos” indicados &mdash;
+    no son cedulas reales. Pool de datos validos (cualquier nroDocumento fuera del pool de errores) devuelve
+    <code>codRespuesta=0</code> &rarr; ADP 200. Triggers de error:
   </div>
-  <details class="resp-detail">
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>Respuesta banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">00000000</td><td class="mono muted">codRespuesta=201</td><td><span class="http-chip http-422">422</span></td><td class="muted">avv/03-actualizar-datos-cliente-err.json</td></tr>
+        <tr><td class="mono">11111111</td><td class="muted">HTTP 500</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/03-actualizar-datos-cliente-500-err.json &mdash; FeignException generico &rarr; ADP 502</td></tr>
+        <tr><td class="mono">33333333</td><td class="muted">HTTP 502</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/03-actualizar-datos-cliente-502-err.json &mdash; FeignException generico &rarr; ADP 502</td></tr>
+        <tr><td class="mono">22222222</td><td class="muted">HTTP 503</td><td><span class="http-chip http-504">504</span></td><td class="muted">avv/03-actualizar-datos-cliente-503-err.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+        <tr><td class="mono">44444444</td><td class="muted">HTTP 400</td><td><span class="http-chip http-400">400</span></td><td class="muted">avv/03-actualizar-datos-cliente-400-err.json &mdash; datos invalidos</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BBOG ADP &mdash; Prueba directa &middot; PUT /bdb/V3/enterprise/customer/basic-info</div>
+  <div class=”note-box”>
+    Error tecnico (502): campo <code>datosActualizar.celular=4444444444</code> en el body ADP &mdash; activa banco HTTP 401 &rarr; FeignException.Unauthorized &rarr; ADP 502.
+    Timeout (504): campo <code>datosActualizar.celular=3000000504</code> en el body ADP. Pool de datos validos devuelve HTTP 200 &rarr; ADP 200. Triggers de error:
+  </div>
+  <div class=”op-table-wrap”>
+    <table>
+      <thead>
+        <tr><th>Trigger</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class=”mono”>datosActualizar.celular=4444444444 (body)</td><td class=”muted”>401</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>bdb/09c-actualizar-datos-502-err.json &mdash; FeignException.Unauthorized &rarr; ADP 502</td></tr>
+        <tr><td class=”mono”>body simError=error</td><td class=”muted”>500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>bdb/09-actualizar-datos-cliente-err.json &mdash; FeignException generico &rarr; ADP 502</td></tr>
+        <tr><td class=”mono”>body simError=bad-request</td><td class=”muted”>400</td><td><span class=”http-chip http-400”>400</span></td><td class=”muted”>bdb/09b-actualizar-datos-bad-request-err.json</td></tr>
+        <tr><td class=”mono”>datosActualizar.celular=3000000504 (body)</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>bdb/09-actualizar-datos-cliente-timeout-err.json &mdash; FeignException.ServiceUnavailable &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-box">
+    Mapeo <code>BdbActualizacionAdapter</code>: FeignException.BadRequest|NotFound &rarr; ADP 400 &middot;
+    FeignException.Unauthorized|Forbidden &rarr; ADP 502 &middot; FeignException.GatewayTimeout|ServiceUnavailable &rarr; ADP 504 &middot;
+    FeignException otro &rarr; ADP 502.
+  </div>
+
+  <div class="resp-section-title">BOCC ADP &mdash; Prueba directa &middot; PUT /occ/UpdateCustomerData/v1/customers/persons/data/updatePersonsData</div>
+  <div class="note-box">
+    El mock OCC se activa por el campo JSON <code>Data.InfoCntactoDatos.Item.CntctoMdio</code>.
+    <strong>Para activar errores QA debe enviar el valor en <code>datosActualizar.celular</code> del request ADP</strong>
+    &mdash; el adaptador mapea ese campo a <code>CntctoMdio</code> en el request OCC.
+    Cualquier valor normal devuelve HTTP 200. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>Campo discriminador</th><th>Valor trigger</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class=”mono”>Data.InfoCntactoDatos.Item.CntctoMdio</td><td class=”mono”>0000000000</td><td class=”muted”>400</td><td><span class=”http-chip http-400”>400</span></td><td class=”muted”>occ/12-actualizar-datos-err.json &mdash; enviar datosActualizar.celular=0000000000</td></tr>
+        <tr><td class=”mono”>Data.InfoCntactoDatos.Item.CntctoMdio</td><td class=”mono”>4444444444</td><td class=”muted”>500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>occ/12-actualizar-datos-502-err.json &mdash; enviar datosActualizar.celular=4444444444</td></tr>
+        <tr><td class=”mono”>Data.InfoCntactoDatos.Item.CntctoMdio</td><td class=”mono”>3333333333</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>occ/12-actualizar-datos-timeout.json &mdash; enviar datosActualizar.celular=3333333333</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BPOP ADP &mdash; Prueba directa &middot; POST /bpo/Maintenance/SSL/PartyMaintenanceMDMBySofia</div>
+  <div class=”note-box”>
+    El mock BPO se activa por el campo SOAP <code>RqUID</code>, que el ADP toma del header HTTP
+    <strong><code>X-Trace-Id</code></strong> de la peticion entrante. Para forzar un error, QA debe enviar
+    <code>X-Trace-Id: &lt;UUID&gt;</code> con el valor trigger. Cualquier cedula funciona.<br>
+    UUID normal (o ausente) devuelve HTTP 200 &rarr; ADP 200. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>Campo discriminador</th><th>Valor trigger</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">RqUID</td><td class="mono">00000000-0000-0000-0000-000000000000</td><td class="muted">200</td><td><span class="http-chip http-422">422</span></td><td class="muted">bpo/21-party-maintenance-mdm-err.json &mdash; StatusCode=100 (cliente no encontrado)</td></tr>
+        <tr><td class=”mono”>RqUID</td><td class=”mono”>11111111-1111-1111-1111-111111111111</td><td class=”muted”>500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>bpo/21-party-maintenance-mdm-500-err.json &mdash; SOAP Fault</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class=”resp-section-title”>BPOP ADP &mdash; Prueba directa &middot; POST /bpo/Maintenance/SSL/MaintainGrupoAvalBySofia</div>
+  <div class=”note-box”>
+    Servicio MaintainGrupoAval (HU-203). Los mocks se activan por el campo <code>datosActualizar.celular</code>
+    del request ADP &mdash; el adaptador lo mapea al elemento SOAP <code>celular</code>.
+    <strong>Advertencia:</strong> el header <code>X-Trace-Id</code> se usa como <code>RqUID</code> en el SOAP.
+    Los valores <code>00000000-0000-0000-0000-000000000000</code> y <code>11111111-1111-1111-1111-111111111111</code>
+    estan reservados para triggers de error de negocio (422) y pisaran el mock de celular si se usan
+    en pruebas de 502/504. Usar cualquier otro valor (ej. <code>trace-bpop-502</code>). Triggers de error:
+  </div>
+  <div class=”op-table-wrap”>
+    <table>
+      <thead>
+        <tr><th>Campo discriminador</th><th>Valor trigger</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class=”mono”>RqUID</td><td class=”mono”>00000000-0000-0000-0000-000000000000</td><td class=”muted”>200 (err body)</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>bpo/20-maintain-grupo-aval-err.json &mdash; error negocio grupo aval</td></tr>
+        <tr><td class=”mono”>RqUID</td><td class=”mono”>11111111-1111-1111-1111-111111111111</td><td class=”muted”>200 (err body)</td><td><span class=”http-chip http-422”>422</span></td><td class=”muted”>bpo/20b-maintain-grupo-aval-bad-data-err.json &mdash; datos invalidos</td></tr>
+        <tr><td class=”mono”>celular (body ADP)</td><td class=”mono”>4000000502</td><td class=”muted”>500</td><td><span class=”http-chip http-502”>502</span></td><td class=”muted”>bpo/20-maintain-grupo-aval-502-err.json &mdash; SOAP Fault IIB</td></tr>
+        <tr><td class=”mono”>celular (body ADP)</td><td class=”mono”>3000000504</td><td class=”muted”>HTTP 503</td><td><span class=”http-chip http-504”>504</span></td><td class=”muted”>bpo/20-maintain-grupo-aval-504-err.json &mdash; banco HTTP 503 &rarr; ADP 504</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details class=”resp-detail”>
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/actualizacion-datos-bavv-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: avv/03-actualizar-datos-cliente-ok.json</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -1723,14 +2203,139 @@ Saldo_total:         2500000.00 COP</pre>
   </details>
   <details class="resp-detail">
     <summary class="resp-summary">
-      <span class="http-chip http-404">404</span>
-      <span class="resp-hint">fuente: orq/actualizacion-datos-err-notfound.json — ver respuesta</span>
+      <span class="bank-chip">BAVV</span>
+      <span class="http-chip http-422">422</span>
+      <span class="resp-hint">nroDocumento=00000000 &middot; avv/03-actualizar-datos-cliente-err.json</span>
     </summary>
     <pre class="resp-code">{
-  "statusCode": "404",
-  "statusDesc": "Cliente no encontrado",
+  "statusCode": "422",
+  "statusDesc": "Error de negocio",
   "data": null,
-  "error": "No se encontro el cliente para el documento indicado"
+  "error": "Error de negocio en el banco &mdash; cliente no encontrado o datos no procesados"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BAVV</span>
+      <span class="http-chip http-400">400</span>
+      <span class="resp-hint">nroDocumento=44444444 &middot; avv/03-actualizar-datos-cliente-400-err.json</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "400",
+  "statusDesc": "Datos invalidos",
+  "data": null,
+  "error": "Solicitud invalida: datos del cliente incorrectos o faltantes"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BBOG</span>
+      <span class="http-chip http-200">200</span>
+      <span class="resp-hint">fuente: bdb/09-actualizar-datos-cliente-ok.json</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "200",
+  "statusDesc": "Successfully updated"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BBOG</span>
+      <span class="http-chip http-400">400</span>
+      <span class="resp-hint">simError=bad-request &middot; bdb/09b-actualizar-datos-bad-request-err.json</span>
+    </summary>
+    <pre class="resp-code">{
+  "Status": {
+    "StatusCode": 400,
+    "StatusDesc": "Bad Request",
+    "Severity": "Error"
+  }
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BOCC</span>
+      <span class="http-chip http-200">200</span>
+      <span class="resp-hint">fuente: occ/12-actualizar-datos-ok.json &mdash; body vacio</span>
+    </summary>
+    <pre class="resp-code">(sin body &mdash; banco OCC devuelve HTTP 200 con body vacio en caso de exito)</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BOCC</span>
+      <span class="http-chip http-400">400</span>
+      <span class="resp-hint">CntctoMdio=0000000000 &middot; occ/12-actualizar-datos-err.json</span>
+    </summary>
+    <pre class="resp-code">{
+  "code": "400",
+  "message": "Solicitud invalida: datos de contacto invalidos"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BPOP</span>
+      <span class="http-chip http-200">200</span>
+      <span class="resp-hint">fuente: bpo/21-party-maintenance-mdm-ok.json</span>
+    </summary>
+    <pre class="resp-code">&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;soapenv:Body&gt;
+    &lt;main:partyMaintenanceMDMResponse
+        xmlns:main="urn://grupoaval.com/Maintenance/v1/PartyMaintenanceMDM"
+        xmlns:ifx="urn://grupoaval.com/xsd/ifx/"&gt;
+      &lt;ifx:Status&gt;
+        &lt;ifx:StatusCode&gt;0&lt;/ifx:StatusCode&gt;
+        &lt;ifx:Severity&gt;Info&lt;/ifx:Severity&gt;
+        &lt;ifx:StatusDesc&gt;OK&lt;/ifx:StatusDesc&gt;
+      &lt;/ifx:Status&gt;
+      &lt;ifx:RqUID&gt;{RqUID}&lt;/ifx:RqUID&gt;
+      &lt;main:TCRMService&gt;
+        &lt;main:ResponseControl&gt;
+          &lt;main:returnCode&gt;0&lt;/main:returnCode&gt;
+          &lt;main:returnMessage&gt;ACTUALIZACION EXITOSA&lt;/main:returnMessage&gt;
+        &lt;/main:ResponseControl&gt;
+      &lt;/main:TCRMService&gt;
+    &lt;/main:partyMaintenanceMDMResponse&gt;
+  &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="bank-chip">BPOP</span>
+      <span class="http-chip http-422">422</span>
+      <span class="resp-hint">RqUID=00000000-... &middot; bpo/21-party-maintenance-mdm-err.json</span>
+    </summary>
+    <pre class="resp-code">&lt;!-- BPO devuelve HTTP 200 con StatusCode=100; el ADP mapea a 422 --&gt;
+&lt;ifx:Status&gt;
+  &lt;ifx:StatusCode&gt;100&lt;/ifx:StatusCode&gt;
+  &lt;ifx:Severity&gt;Error&lt;/ifx:Severity&gt;
+  &lt;ifx:StatusDesc&gt;CLIENTE NO ENCONTRADO&lt;/ifx:StatusDesc&gt;
+&lt;/ifx:Status&gt;
+...
+&lt;main:returnCode&gt;100&lt;/main:returnCode&gt;
+&lt;main:returnMessage&gt;CLIENTE NO ENCONTRADO&lt;/main:returnMessage&gt;</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-502">502</span>
+      <span class="resp-hint">BAVV nroDocumento=33333333 &middot; BBOG datosActualizar.celular=4444444444 &middot; BOCC datosActualizar.celular=4444444444 &middot; BPOP datosActualizar.celular=4000000502</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "502",
+  "statusDesc": "Error tecnico banco",
+  "data": null,
+  "error": "Error en el servicio del banco"
+}</pre>
+  </details>
+  <details class="resp-detail">
+    <summary class="resp-summary">
+      <span class="http-chip http-504">504</span>
+      <span class="resp-hint">BAVV nroDocumento=22222222 &middot; BBOG datosActualizar.celular=3000000504 &middot; BOCC datosActualizar.celular=3333333333 &middot; BPOP datosActualizar.celular=3000000504</span>
+    </summary>
+    <pre class="resp-code">{
+  "statusCode": "504",
+  "statusDesc": "Timeout",
+  "data": null,
+  "error": "Timeout del servicio del banco"
 }</pre>
   </details>
 </div>
@@ -1748,8 +2353,8 @@ Saldo_total:         2500000.00 COP</pre>
     </div>
   </div>
   <div class="note-box">
-    Asignacion o cambio de clave de tarjeta debito. <strong>BAVV y BOCC soportan esta operacion</strong>.
-    BBOG y BPOP devuelven 503 (gap).
+    Asignacion o cambio de clave de tarjeta debito. <strong>BAVV y BOCC soportan esta operacion via ORQ</strong>.
+    BBOG y BPOP devuelven 503 (gap). BPOP tiene endpoint <code>/bpo/ast/tdact/AsignacionClave</code> con prueba directa (400 mockeado).
     Para forzar 404 usar <code>numeroDocumento: "00000000"</code>.
   </div>
   <div class="op-table-wrap">
@@ -1758,8 +2363,8 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <th>Caso</th>
           <th>Banco</th>
-          <th>Doc Trigger</th>
-          <th>HTTP</th>
+          <th>Trigger ORQ</th>
+          <th>HTTP ORQ</th>
           <th>Descripcion</th>
         </tr>
       </thead>
@@ -1767,28 +2372,28 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BAVV</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Asignacion exitosa — TRANSACCION CORRECTA</td>
+          <td class="muted">Asignacion exitosa &mdash; TRANSACCION CORRECTA</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BOCC</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Asignacion exitosa — TRANSACCION CORRECTA</td>
+          <td class="muted">Asignacion exitosa &mdash; TRANSACCION CORRECTA</td>
         </tr>
         <tr>
           <td><span class="dot-badge tech">GAP</span></td>
           <td><span class="bank-chip">BBOG</span></td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-503">503</span></td>
           <td class="muted">Servicio no disponible para esta entidad</td>
         </tr>
         <tr>
           <td><span class="dot-badge tech">GAP</span></td>
           <td><span class="bank-chip">BPOP</span></td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-503">503</span></td>
           <td class="muted">Servicio no disponible para esta entidad</td>
         </tr>
@@ -1802,7 +2407,7 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge warn">VAL</span></td>
           <td class="muted">ausente</td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-400">400</span></td>
           <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
         </tr>
@@ -1812,13 +2417,64 @@ Saldo_total:         2500000.00 COP</pre>
   <div class="note-box">
     Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "clave": "1234"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — estructura comun a BAVV y BOCC</div>
+
+  <div class="resp-section-title">BAVV ADP &mdash; Prueba directa &middot; POST /avv/actualizar</div>
+  <div class="note-box">
+    El mock AVV se activa cuando el body tiene el campo <code>clave</code> (se diferencia de activacion de plastico que usa <code>medios</code>).
+    El campo discriminador de error es <code>nroDocumento</code>. Triggers:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">22222222</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">avv/05-asignar-clave-400-err.json</td></tr>
+        <tr><td class="mono">11111111</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/05-asignar-clave-500-err.json</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BOCC ADP &mdash; Prueba directa &middot; POST /occ/services/ReexpedicionClaveTarjetaDebitoCarton (SOAP)</div>
+  <div class="note-box">
+    El mock OCC SOAP se activa por el campo <code>SesionId</code> en el encabezado SOAP.
+    Las tarjetas del pool devuelven <code>RtaCod=0000</code> &rarr; HTTP 200 OK.
+    Los triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>SesionId</th><th>HTTP banco</th><th>RtaCod</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">99999</td><td class="muted">200</td><td class="mono muted">0020</td><td><span class="http-chip http-422">422</span></td><td class="muted">occ/20-asignacion-clave-td-err.json &mdash; TARJETA NO ENCONTRADA</td></tr>
+        <tr><td class="mono">99996</td><td class="muted">500</td><td class="muted">&mdash; (text/plain)</td><td><span class="http-chip http-502">502</span></td><td class="muted">occ/20-asignacion-clave-td-500-err.json &mdash; WebServiceIOException</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BPOP ADP &mdash; Prueba directa &middot; POST /bpo/ast/tdact/AsignacionClave (REST)</div>
+  <div class="note-box">
+    El mock BPO REST se activa por el campo <code>trace.rqUID</code>. Trigger de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>trace.rqUID</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">bad-request-00000</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">bpo/18-tdact-activacion-400-err.json</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">Respuesta exitosa &mdash; estructura comun a BAVV y BOCC</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/asignacion-clave-td-bavv-ok.json / orq/asignacion-clave-td-bocc-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/asignacion-clave-td-bavv-ok.json / orq/asignacion-clave-td-bocc-ok.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -1833,7 +2489,7 @@ Saldo_total:         2500000.00 COP</pre>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="http-chip http-404">404</span>
-      <span class="resp-hint">fuente: orq/asignacion-clave-td-err-notfound.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/asignacion-clave-td-err-notfound.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "404",
@@ -1853,13 +2509,13 @@ Saldo_total:         2500000.00 COP</pre>
       <span class="bank-chip">BBOG</span>
       <span class="bank-chip">BAVV</span>
       <span class="bank-chip">BOCC</span>
-      <span class="bank-chip" style="opacity:0.5">BPOP</span>
+      <span class="bank-chip">BPOP</span>
     </div>
   </div>
   <div class="note-box">
-    Desbloqueo de tarjeta debito bloqueada por PIN errado. <strong>BBOG, BAVV y BOCC soportan esta operacion</strong>.
-    BPOP devuelve 503 (valor de idUnlock pendiente de confirmacion).
+    Desbloqueo de tarjeta debito bloqueada por PIN errado. <strong>Todos los bancos tienen mocks disponibles</strong>.
     Para forzar 404 usar <code>numeroDocumento: "00000000"</code>; para 409 (tarjeta no bloqueada por PIN) usar <code>"11111111"</code>.
+    Ver subsecciones por banco para triggers de 400/500 a nivel ADP.
   </div>
   <div class="op-table-wrap">
     <table>
@@ -1876,30 +2532,30 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BBOG</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Desbloqueo exitoso — tarjeta ACTIVA</td>
+          <td class="muted">Desbloqueo exitoso &mdash; tarjeta ACTIVA</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BAVV</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Desbloqueo exitoso — tarjeta ACTIVA</td>
+          <td class="muted">Desbloqueo exitoso &mdash; tarjeta ACTIVA</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BOCC</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Desbloqueo exitoso — tarjeta ACTIVA</td>
+          <td class="muted">Desbloqueo exitoso &mdash; tarjeta ACTIVA</td>
         </tr>
         <tr>
-          <td><span class="dot-badge tech">GAP</span></td>
+          <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BPOP</span></td>
-          <td class="muted">—</td>
-          <td><span class="http-chip http-503">503</span></td>
-          <td class="muted">idUnlock pendiente de confirmacion</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
+          <td><span class="http-chip http-200">200</span></td>
+          <td class="muted">Desbloqueo exitoso &mdash; StatusCode BPO 0</td>
         </tr>
         <tr>
           <td><span class="dot-badge err">ERR</span></td>
@@ -1913,12 +2569,12 @@ Saldo_total:         2500000.00 COP</pre>
           <td class="muted">cualquier</td>
           <td class="mono">11111111</td>
           <td><span class="http-chip http-409">409</span></td>
-          <td class="muted">Tarjeta no esta bloqueada por PIN errado — estado incompatible</td>
+          <td class="muted">Tarjeta no esta bloqueada por PIN errado &mdash; estado incompatible</td>
         </tr>
         <tr>
           <td><span class="dot-badge warn">VAL</span></td>
           <td class="muted">ausente</td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-400">400</span></td>
           <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
         </tr>
@@ -1928,14 +2584,82 @@ Saldo_total:         2500000.00 COP</pre>
   <div class="note-box">
     Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — estructura comun a BBOG/BAVV/BOCC</div>
+
+  <div class="resp-section-title">BAVV ADP &mdash; Prueba directa &middot; POST /avv/PFBA_CanalOtros295/WRBA_CanalOtros_BloqTempMedios</div>
+  <div class="note-box">
+    El mock AVV usa <code>indBloqueo='0'</code> para desbloqueo (bloqueo usa <code>'S'</code>).
+    El campo discriminador de error es <code>nroDocumento</code> (entero). Triggers:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">33333333</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">avv/09-desbloqueo-medios-400-err.json</td></tr>
+        <tr><td class="mono">44444444</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/09-desbloqueo-medios-500-err.json</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BBOG ADP &mdash; Prueba directa &middot; PUT /bdb/V1/product/debitcard/status-unlock</div>
+  <div class="note-box">
+    El mock BDB se activa por el campo <code>debitCardNumber</code> (string 16 digitos). Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>debitCardNumber</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">0000000000000000</td><td class="muted">404</td><td><span class="http-chip http-404">404</span></td><td class="muted">bdb/05-debit-card-unlock-err.json &mdash; tarjeta no encontrada</td></tr>
+        <tr><td class="mono">1111111111111111</td><td class="muted">409</td><td><span class="http-chip http-409">409</span></td><td class="muted">bdb/05b-debit-card-unlock-state-incompatible-err.json &mdash; estado incompatible</td></tr>
+        <tr><td class="mono">2222222222222222</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">bdb/05-debit-card-unlock-500-err.json &mdash; error tecnico</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BOCC ADP &mdash; Prueba directa &middot; POST /occ/services/ActivarTarjetaDebitoCarton (SOAP)</div>
+  <div class="note-box">
+    El mock OCC SOAP se activa por el campo <code>SesionId</code> en el encabezado SOAP. Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>SesionId</th><th>HTTP banco</th><th>RtaCod</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">99999</td><td class="muted">200</td><td class="mono muted">error body</td><td><span class="http-chip http-422">422</span></td><td class="muted">occ/09-activar-td-err.json &mdash; error de negocio</td></tr>
+        <tr><td class="mono">99996</td><td class="muted">500</td><td class="muted">&mdash; (text/plain)</td><td><span class="http-chip http-502">502</span></td><td class="muted">occ/09-activar-td-500-err.json &mdash; WebServiceIOException</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BPOP ADP &mdash; Prueba directa &middot; POST /bpo/prodschnsmngt/SSL/UnlockDebitCardBySofia (SOAP)</div>
+  <div class="note-box">
+    El mock BPO SOAP se activa por el campo <code>RqUID</code> en el encabezado SOAP. El pool de datos validos devuelve
+    <code>StatusCode=0</code> &rarr; HTTP 200. Trigger de error tecnico:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>RqUID</th><th>HTTP banco</th><th>Cuerpo</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">11111111-1111-1111-1111-111111111111</td><td class="muted">500</td><td class="muted">SOAP Fault</td><td><span class="http-chip http-502">502</span></td><td class="muted">bpo/07-unlock-debit-card-soapfault-err.json</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">Respuesta exitosa &mdash; estructura comun a todos los bancos</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BBOG</span>
       <span class="bank-chip">BAVV</span>
       <span class="bank-chip">BOCC</span>
+      <span class="bank-chip">BPOP</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/desbloqueo-td-pin-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/desbloqueo-td-pin-ok.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -1952,7 +2676,7 @@ Saldo_total:         2500000.00 COP</pre>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="http-chip http-409">409</span>
-      <span class="resp-hint">fuente: orq/desbloqueo-td-pin-err-not-pin.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/desbloqueo-td-pin-err-not-pin.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "409",
@@ -1979,6 +2703,7 @@ Saldo_total:         2500000.00 COP</pre>
     Activacion de plastico de tarjeta debito. <strong>BAVV y BOCC soportan esta operacion</strong>.
     BBOG y BPOP devuelven 503 (gap).
     Para forzar 404 usar <code>numeroDocumento: "00000000"</code>.
+    Ver subsecciones por banco para triggers de 400/500 a nivel ADP.
   </div>
   <div class="op-table-wrap">
     <table>
@@ -1995,28 +2720,28 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BAVV</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Activacion exitosa — TRANSACCION EXITOSA</td>
+          <td class="muted">Activacion exitosa &mdash; TRANSACCION EXITOSA</td>
         </tr>
         <tr>
           <td><span class="dot-badge a">OK</span></td>
           <td><span class="bank-chip">BOCC</span></td>
-          <td class="muted">cualquier pool A–J</td>
+          <td class="muted">cualquier pool A&ndash;J</td>
           <td><span class="http-chip http-200">200</span></td>
-          <td class="muted">Activacion exitosa — TRANSACCION EXITOSA</td>
+          <td class="muted">Activacion exitosa &mdash; TRANSACCION EXITOSA</td>
         </tr>
         <tr>
           <td><span class="dot-badge tech">GAP</span></td>
           <td><span class="bank-chip">BBOG</span></td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-503">503</span></td>
           <td class="muted">Servicio no disponible para esta entidad</td>
         </tr>
         <tr>
           <td><span class="dot-badge tech">GAP</span></td>
           <td><span class="bank-chip">BPOP</span></td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-503">503</span></td>
           <td class="muted">Servicio no disponible para esta entidad</td>
         </tr>
@@ -2030,7 +2755,7 @@ Saldo_total:         2500000.00 COP</pre>
         <tr>
           <td><span class="dot-badge warn">VAL</span></td>
           <td class="muted">ausente</td>
-          <td class="muted">—</td>
+          <td class="muted">&mdash;</td>
           <td><span class="http-chip http-400">400</span></td>
           <td class="muted">Header X-Destination-Bank ausente o no reconocido</td>
         </tr>
@@ -2040,13 +2765,49 @@ Saldo_total:         2500000.00 COP</pre>
   <div class="note-box">
     Request body: <code>{"obj_operacion": {"tipoDocumento": "CC", "numeroDocumento": "12345678", "nroTarjeta": "6013679045160937"}}</code>
   </div>
-  <div class="resp-section-title">Respuesta exitosa — estructura comun a BAVV y BOCC</div>
+
+  <div class="resp-section-title">BAVV ADP &mdash; Prueba directa &middot; POST /avv/actualizar</div>
+  <div class="note-box">
+    El mock AVV se activa cuando el body tiene el campo <code>medios</code> (lista con tipo de medio TD).
+    El campo discriminador de error es <code>nroDocumento</code> (string). Triggers:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>nroDocumento</th><th>HTTP banco</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">33333333</td><td class="muted">400</td><td><span class="http-chip http-400">400</span></td><td class="muted">avv/06-asignar-medio-400-err.json</td></tr>
+        <tr><td class="mono">44444444</td><td class="muted">500</td><td><span class="http-chip http-502">502</span></td><td class="muted">avv/06-asignar-medio-500-err.json</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">BOCC ADP &mdash; Prueba directa &middot; POST /occ/services/AsociarPlasticoTarjetaDebito (SOAP)</div>
+  <div class="note-box">
+    El mock OCC SOAP se activa por el campo <code>SesionId</code> en el encabezado SOAP.
+    Las tarjetas del pool devuelven RtaCod exitoso &rarr; HTTP 200.
+    Triggers de error:
+  </div>
+  <div class="op-table-wrap">
+    <table>
+      <thead>
+        <tr><th>SesionId</th><th>HTTP banco</th><th>RtaCod / Cuerpo</th><th>HTTP ADP</th><th>Mock</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">99999</td><td class="muted">200</td><td class="mono muted">error body</td><td><span class="http-chip http-422">422</span></td><td class="muted">occ/13-asociar-plastico-td-err.json &mdash; error de negocio</td></tr>
+        <tr><td class="mono">99996</td><td class="muted">500</td><td class="muted">text/plain</td><td><span class="http-chip http-502">502</span></td><td class="muted">occ/13-asociar-plastico-td-500-err.json &mdash; WebServiceIOException</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resp-section-title">Respuesta exitosa &mdash; estructura comun a BAVV y BOCC</div>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="bank-chip">BAVV</span>
       <span class="bank-chip">BOCC</span>
       <span class="http-chip http-200">200</span>
-      <span class="resp-hint">fuente: orq/activacion-plastico-td-bavv-ok.json / orq/activacion-plastico-td-bocc-ok.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/activacion-plastico-td-bavv-ok.json / orq/activacion-plastico-td-bocc-ok.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "200",
@@ -2069,7 +2830,7 @@ Saldo_total:         2500000.00 COP</pre>
   <details class="resp-detail">
     <summary class="resp-summary">
       <span class="http-chip http-404">404</span>
-      <span class="resp-hint">fuente: orq/activacion-plastico-td-err-notfound.json — ver respuesta</span>
+      <span class="resp-hint">fuente: orq/activacion-plastico-td-err-notfound.json &mdash; ver respuesta</span>
     </summary>
     <pre class="resp-code">{
   "statusCode": "404",
